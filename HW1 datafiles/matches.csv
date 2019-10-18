@@ -1,0 +1,2011 @@
+"match_hometeam_id","match_id","epoch","match_status","match_live","match_hometeam_name","match_awayteam_id","match_awayteam_name","match_hometeam_score","match_awayteam_score","match_hometeam_halftime_score","match_awayteam_halftime_score","match_hometeam_extra_score","match_awayteam_extra_score","match_hometeam_penalty_score","match_awayteam_penalty_score","home_in_list","away_in_list","league_id"
+3238,139896,1539973800,"Finished",0,"Eintracht Frankfurt",3256,"Dusseldorf",7,1,3,0,3,0,NA,NA,1,1,195
+3026,139895,1539974700,"Finished",0,"Lyon",3049,"Nimes",2,0,1,0,1,0,NA,NA,1,1,176
+7095,139897,1539975600,"Finished",0,"Celta Vigo",7108,"Alaves",0,1,0,0,0,0,NA,NA,1,1,468
+7099,140221,1540033200,"Finished",0,"Real Madrid",7097,"Levante",1,2,0,2,0,2,NA,NA,1,1,468
+2616,140194,1540035000,"Finished",0,"Chelsea",2627,"Manchester United",2,2,1,0,1,0,NA,NA,1,1,148
+4184,140214,1540040400,"Finished",0,"AS Roma",4178,"Spal",0,2,NA,NA,NA,NA,NA,NA,1,1,262
+7615,141402,1540040400,"Finished",0,"Basaksehir",7604,"Kayserispor",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+3224,140208,1540042200,"Finished",0,"Augsburg",3226,"RB Leipzig",0,0,NA,NA,NA,NA,NA,NA,1,1,195
+3236,140212,1540042200,"Finished",0,"Wolfsburg",3225,"Bayern Munich",1,3,NA,NA,NA,NA,NA,NA,1,1,195
+2615,140195,1540044000,"Finished",0,"Bournemouth",2614,"Southampton",0,0,NA,NA,NA,NA,NA,NA,1,1,148
+2620,140199,1540044000,"Finished",0,"West Ham",2628,"Tottenham",0,1,NA,NA,NA,NA,NA,NA,1,1,148
+2626,140197,1540044000,"Finished",0,"Manchester City",2629,"Burnley",5,0,NA,NA,NA,NA,NA,NA,1,1,148
+2630,140198,1540044000,"Finished",0,"Newcastle",2613,"Brighton",0,1,NA,NA,NA,NA,NA,NA,1,1,148
+2646,140200,1540044000,"Finished",0,"Wolves",2623,"Watford",0,2,NA,NA,NA,NA,NA,NA,1,1,148
+7109,140222,1540044900,"Finished",0,"Valencia",7103,"Leganes",1,1,NA,NA,NA,NA,NA,NA,1,1,468
+3040,140202,1540047600,"Finished",0,"Paris SG",3033,"Amiens",5,0,2,0,2,0,NA,NA,1,1,176
+4187,140215,1540051200,"Finished",0,"Juventus",4179,"Genoa",1,1,1,0,1,0,NA,NA,1,1,262
+7610,141403,1540051200,"Finished",0,"Sivasspor",7603,"Fenerbahce",0,0,NA,NA,NA,NA,NA,NA,1,1,511
+3235,140213,1540053000,"Finished",0,"Schalke",3223,"Werder Bremen",0,2,0,1,0,1,NA,NA,1,1,195
+7107,140223,1540053000,"Finished",0,"Villarreal",7106,"Atl. Madrid",1,1,0,0,0,0,NA,NA,1,1,468
+3030,140204,1540058400,"Finished",0,"Dijon",3022,"Lille",1,2,0,2,0,2,NA,NA,1,1,176
+3031,140205,1540058400,"Finished",0,"Nantes",3024,"Toulouse",4,0,2,0,2,0,NA,NA,1,1,176
+3036,140207,1540058400,"Finished",0,"Strasbourg",3039,"Monaco",2,1,1,0,1,0,NA,NA,1,1,176
+3046,140206,1540058400,"Finished",0,"Reims",3037,"Angers",1,1,0,1,0,1,NA,NA,1,1,176
+4180,140216,1540060200,"Finished",0,"Udinese",4174,"Napoli",0,3,0,1,0,1,NA,NA,1,1,262
+7105,140224,1540061100,"Finished",0,"Barcelona",7102,"Sevilla",4,2,2,0,2,0,NA,NA,1,1,468
+7623,142512,1540117800,"Finished",0,"Rizespor",7611,"Konyaspor",1,1,1,0,1,0,NA,NA,1,1,511
+3268,141761,1540121400,"Finished",0,"Paderborn",3242,"Union Berlin",0,0,0,0,0,0,NA,NA,1,1,195
+3034,141487,1540126800,"Finished",0,"Montpellier",3038,"Bordeaux",2,0,1,0,1,0,NA,NA,1,1,176
+4185,141493,1540126800,"Finished",0,"Bologna",4170,"Torino",2,2,0,1,0,1,NA,NA,1,1,262
+4192,141495,1540126800,"Finished",0,"Parma",4183,"Lazio",0,2,0,0,0,0,NA,NA,1,1,262
+7613,142513,1540126800,"Finished",0,"Alanyaspor",7608,"Antalyaspor",0,1,NA,NA,NA,NA,NA,NA,1,1,511
+7621,142514,1540126800,"Finished",0,"Ankaragucu",7618,"Yeni Malatyaspor",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+3231,141490,1540128600,"Finished",0,"Hertha Berlin",3222,"Freiburg",1,1,1,1,1,1,NA,NA,1,1,195
+7096,141504,1540131300,"Finished",0,"Eibar",7104,"Ath Bilbao",1,1,1,1,1,1,NA,NA,1,1,468
+2612,141486,1540134000,"Finished",0,"Everton",2619,"Crystal Palace",2,0,0,0,0,0,NA,NA,1,1,148
+3025,141488,1540134000,"Finished",0,"St Etienne",3035,"Rennes",1,1,1,1,1,1,NA,NA,1,1,176
+3234,141491,1540137600,"Finished",0,"B. Monchengladbach",3237,"Mainz",4,0,1,0,1,0,NA,NA,1,1,195
+4173,141496,1540137600,"Finished",0,"Fiorentina",4171,"Cagliari",1,1,0,0,0,0,NA,NA,1,1,262
+7620,142515,1540137600,"Finished",0,"Goztepe",7614,"Besiktas",2,0,0,0,0,0,NA,NA,1,1,511
+4189,141497,1540146600,"Finished",0,"Inter",4186,"AC Milan",1,0,0,0,0,0,NA,NA,1,1,262
+7091,141506,1540147500,"Finished",0,"Betis",7115,"Valladolid",0,1,0,1,0,1,NA,NA,1,1,468
+3041,141489,1540148400,"Finished",0,"Nice",3023,"Marseille",0,1,0,1,0,1,NA,NA,1,1,176
+4176,142627,1540233000,"Finished",0,"Sampdoria",4175,"Sassuolo",0,0,0,0,0,0,NA,NA,1,1,262
+2617,142626,1540234800,"Finished",0,"Arsenal",2611,"Leicester",3,1,1,1,1,1,NA,NA,1,1,148
+2641,142767,1540320300,"Finished",0,"Norwich",2632,"Aston Villa",2,1,0,1,0,1,NA,NA,1,1,148
+2627,142733,1540321200,"Finished",0,"Manchester United",4187,"Juventus",0,1,0,1,0,1,NA,NA,1,1,148
+3233,142732,1540321200,"Finished",0,"Hoffenheim",3026,"Lyon",3,3,1,1,1,1,NA,NA,1,1,195
+3040,142889,1540407600,"Finished",0,"Paris SG",4174,"Napoli",2,2,0,1,0,1,NA,NA,1,1,176
+3230,142885,1540407600,"Finished",0,"Dortmund",7106,"Atl. Madrid",4,0,1,0,1,0,NA,NA,1,1,195
+7105,142884,1540407600,"Finished",0,"Barcelona",4189,"Inter",2,0,1,0,1,0,NA,NA,1,1,468
+7606,142886,1540407600,"Finished",0,"Galatasaray",3235,"Schalke",0,0,0,0,0,0,NA,NA,1,1,511
+4186,143085,1540486500,"Finished",0,"AC Milan",7091,"Betis",1,2,0,1,0,1,NA,NA,1,1,262
+3023,143101,1540494000,"Finished",0,"Marseille",4183,"Lazio",1,3,0,1,0,1,NA,NA,1,1,176
+3222,143184,1540578600,"Finished",0,"Freiburg",3234,"B. Monchengladbach",3,1,1,1,1,1,NA,NA,1,1,195
+3049,143183,1540579500,"Finished",0,"Nimes",3025,"St Etienne",1,1,0,1,0,1,NA,NA,1,1,176
+7115,143186,1540580400,"Finished",0,"Valladolid",7090,"Espanyol",1,1,0,1,0,1,NA,NA,1,1,468
+4181,143421,1540645200,"Finished",0,"Atalanta",4192,"Parma",3,0,0,0,0,0,NA,NA,1,1,262
+7611,144555,1540645200,"Finished",0,"Konyaspor",7615,"Basaksehir",0,1,NA,NA,NA,NA,NA,NA,1,1,511
+3230,143416,1540647000,"Finished",0,"Dortmund",3231,"Hertha Berlin",2,2,1,1,1,1,NA,NA,1,1,195
+3237,143419,1540647000,"Finished",0,"Mainz",3225,"Bayern Munich",1,2,0,1,0,1,NA,NA,1,1,195
+3256,143417,1540647000,"Finished",0,"Dusseldorf",3236,"Wolfsburg",0,3,0,1,0,1,NA,NA,1,1,195
+2613,143404,1540648800,"Finished",0,"Brighton",2646,"Wolves",1,0,0,0,0,0,NA,NA,1,1,148
+2614,143407,1540648800,"Finished",0,"Southampton",2630,"Newcastle",0,0,0,0,0,0,NA,NA,1,1,148
+7104,143429,1540649700,"Finished",0,"Ath Bilbao",7109,"Valencia",0,0,0,0,0,0,NA,NA,1,1,468
+3037,143410,1540652400,"Finished",0,"Angers",3026,"Lyon",1,2,0,0,0,0,NA,NA,1,1,176
+7608,144556,1540656000,"Finished",0,"Antalyaspor",7605,"Trabzonspor",1,1,1,1,1,1,NA,NA,1,1,511
+2611,143409,1540657800,"Finished",0,"Leicester",2620,"West Ham",1,1,0,1,0,1,NA,NA,1,1,148
+7095,143430,1540657800,"Finished",0,"Celta Vigo",7096,"Eibar",4,0,2,0,2,0,NA,NA,1,1,468
+7097,143431,1540657800,"Finished",0,"Levante",7103,"Leganes",2,0,1,0,1,0,NA,NA,1,1,468
+3024,143415,1540663200,"Finished",0,"Toulouse",3034,"Montpellier",0,3,0,2,0,2,NA,NA,1,1,176
+3033,143411,1540663200,"Finished",0,"Amiens",3031,"Nantes",1,2,0,1,0,1,NA,NA,1,1,176
+3039,143414,1540663200,"Finished",0,"Monaco",3030,"Dijon",2,2,1,1,1,1,NA,NA,1,1,176
+4170,143423,1540665000,"Finished",0,"Torino",4173,"Fiorentina",1,1,1,1,1,1,NA,NA,1,1,262
+7106,143432,1540665900,"Finished",0,"Atl. Madrid",7101,"Real Sociedad",2,0,1,0,1,0,NA,NA,1,1,468
+7604,145632,1540719000,"Finished",0,"Kayserispor",7610,"Sivasspor",2,0,0,0,0,0,NA,NA,1,1,511
+7100,144690,1540720800,"Finished",0,"Getafe",7091,"Betis",2,0,0,0,0,0,NA,NA,1,1,468
+4175,144680,1540722600,"Finished",0,"Sassuolo",4185,"Bologna",2,2,1,1,1,1,NA,NA,1,1,262
+2619,144672,1540729800,"Finished",0,"Crystal Palace",2617,"Arsenal",2,2,1,0,1,0,NA,NA,1,1,148
+2629,144671,1540729800,"Finished",0,"Burnley",2616,"Chelsea",0,4,0,1,0,1,NA,NA,1,1,148
+3035,144674,1540731600,"Finished",0,"Rennes",3046,"Reims",0,2,0,1,0,1,NA,NA,1,1,176
+4179,144682,1540731600,"Finished",0,"Genoa",4180,"Udinese",2,2,1,0,1,0,NA,NA,1,1,262
+3226,144678,1540733400,"Finished",0,"RB Leipzig",3235,"Schalke",0,0,0,0,0,0,NA,NA,1,1,195
+7618,145633,1540735200,"Finished",0,"Yeni Malatyaspor",7606,"Galatasaray",2,0,1,0,1,0,NA,NA,1,1,511
+7105,144691,1540736100,"Finished",0,"Barcelona",7099,"Real Madrid",5,1,2,0,2,0,NA,NA,1,1,468
+2627,144673,1540738800,"Finished",0,"Manchester United",2612,"Everton",2,1,1,0,1,0,NA,NA,1,1,148
+3038,144675,1540738800,"Finished",0,"Bordeaux",3041,"Nice",0,1,0,0,0,0,NA,NA,1,1,176
+3223,144679,1540742400,"Finished",0,"Werder Bremen",3227,"Bayer Leverkusen",2,6,0,3,0,3,NA,NA,1,1,195
+4186,144684,1540742400,"Finished",0,"AC Milan",4176,"Sampdoria",3,2,2,2,2,2,NA,NA,1,1,262
+7108,144692,1540744200,"Finished",0,"Alaves",7107,"Villarreal",2,1,0,1,0,1,NA,NA,1,1,468
+7603,145634,1540744200,"Finished",0,"Fenerbahce",7621,"Ankaragucu",1,3,0,1,0,1,NA,NA,1,1,511
+4174,144685,1540751400,"Finished",0,"Napoli",4184,"AS Roma",1,1,0,1,0,1,NA,NA,1,1,262
+3023,144676,1540753200,"Finished",0,"Marseille",3040,"Paris SG",0,2,0,0,0,0,NA,NA,1,1,176
+7614,145786,1540828800,"Finished",0,"Besiktas",7623,"Rizespor",4,1,2,0,2,0,NA,NA,1,1,511
+4183,145698,1540837800,"Finished",0,"Lazio",4189,"Inter",0,3,0,2,0,2,NA,NA,1,1,262
+2628,145697,1540839600,"Finished",0,"Tottenham",2626,"Manchester City",0,1,0,1,0,1,NA,NA,1,1,148
+3034,145899,1540917900,"Finished",0,"Montpellier",3031,"Nantes",0,3,0,0,0,0,NA,NA,1,1,176
+2615,145882,1540925100,"Finished",0,"Bournemouth",2641,"Norwich",2,1,1,0,1,0,NA,NA,1,1,148
+3036,145900,1540926300,"Finished",0,"Strasbourg",3022,"Lille",2,0,1,0,1,0,NA,NA,1,1,176
+4186,115600,1541010600,"Finished",0,"AC Milan",4179,"Genoa",2,1,1,0,1,0,NA,NA,1,1,262
+7189,146292,1541010600,"Finished",0,"Mallorca",7115,"Valladolid",1,2,0,2,0,2,NA,NA,1,1,468
+2620,146069,1541011500,"Finished",0,"West Ham",2628,"Tottenham",1,3,0,1,0,1,NA,NA,1,1,148
+3226,146120,1541011500,"Finished",0,"RB Leipzig",3233,"Hoffenheim",2,0,0,0,0,0,NA,NA,1,1,195
+3234,146118,1541011500,"Finished",0,"B. Monchengladbach",3227,"Bayer Leverkusen",0,5,0,2,0,2,NA,NA,1,1,195
+3027,146088,1541012700,"Finished",0,"Metz",3033,"Amiens",1,2,0,1,0,1,NA,NA,1,1,176
+7095,146540,1541081700,"Finished",0,"Celta Vigo",7101,"Real Sociedad",1,1,0,0,0,0,NA,NA,1,1,468
+7606,146792,1541178000,"Finished",0,"Galatasaray",7603,"Fenerbahce",2,2,1,0,1,0,NA,NA,1,1,511
+3040,146608,1541184300,"Finished",0,"Paris SG",3022,"Lille",2,1,0,0,0,0,NA,NA,1,1,176
+7619,147899,1541237400,"Finished",0,"Kasimpasa",7608,"Antalyaspor",1,2,1,1,1,1,NA,NA,1,1,511
+7103,146844,1541242800,"Finished",0,"Leganes",7106,"Atl. Madrid",1,1,0,0,0,0,NA,NA,1,1,468
+2615,146818,1541244600,"Finished",0,"Bournemouth",2627,"Manchester United",1,2,1,1,1,1,NA,NA,1,1,148
+4189,146837,1541250000,"Finished",0,"Inter",4179,"Genoa",5,0,NA,NA,NA,NA,NA,NA,1,1,262
+3225,146833,1541251800,"Finished",0,"Bayern Munich",3222,"Freiburg",1,1,0,0,0,0,NA,NA,1,1,195
+3227,146832,1541251800,"Finished",0,"Bayer Leverkusen",3233,"Hoffenheim",1,4,NA,NA,NA,NA,NA,NA,1,1,195
+3236,146835,1541251800,"Finished",0,"Wolfsburg",3230,"Dortmund",0,1,0,1,0,1,NA,NA,1,1,195
+2612,146820,1541253600,"Finished",0,"Everton",2613,"Brighton",3,1,NA,NA,NA,NA,NA,NA,1,1,148
+2620,146822,1541253600,"Finished",0,"West Ham",2629,"Burnley",4,2,NA,NA,NA,NA,NA,NA,1,1,148
+2630,146821,1541253600,"Finished",0,"Newcastle",2623,"Watford",1,0,0,0,0,0,NA,NA,1,1,148
+7099,146845,1541254500,"Finished",0,"Real Madrid",7115,"Valladolid",2,0,0,0,0,0,NA,NA,1,1,468
+3026,146825,1541257200,"Finished",0,"Lyon",3038,"Bordeaux",1,1,1,0,1,0,NA,NA,1,1,176
+7615,147901,1541257200,"Finished",0,"Basaksehir",7614,"Besiktas",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+4173,146838,1541260800,"Finished",0,"Fiorentina",4184,"AS Roma",1,1,1,0,1,0,NA,NA,1,1,262
+2617,146823,1541262600,"Finished",0,"Arsenal",2621,"Liverpool",1,1,0,0,0,0,NA,NA,1,1,148
+3231,146836,1541262600,"Finished",0,"Hertha Berlin",3226,"RB Leipzig",0,3,0,1,0,1,NA,NA,1,1,195
+3030,146827,1541268000,"Finished",0,"Dijon",3049,"Nimes",0,4,0,2,0,2,NA,NA,1,1,176
+3036,146830,1541268000,"Finished",0,"Strasbourg",3024,"Toulouse",1,1,0,0,0,0,NA,NA,1,1,176
+3041,146828,1541268000,"Finished",0,"Nice",3033,"Amiens",1,0,1,0,1,0,NA,NA,1,1,176
+3046,146829,1541268000,"Finished",0,"Reims",3039,"Monaco",1,0,1,0,1,0,NA,NA,1,1,176
+4187,146839,1541269800,"Finished",0,"Juventus",4171,"Cagliari",3,1,2,1,2,1,NA,NA,1,1,262
+2646,146824,1541270700,"Finished",0,"Wolves",2628,"Tottenham",2,3,0,2,0,2,NA,NA,1,1,148
+7621,148965,1541323800,"Finished",0,"Ankaragucu",7604,"Kayserispor",3,1,2,0,2,0,NA,NA,1,1,511
+7096,147997,1541325600,"Finished",0,"Eibar",7108,"Alaves",2,1,0,1,0,1,NA,NA,1,1,468
+4183,147987,1541327400,"Finished",0,"Lazio",4178,"Spal",4,1,2,1,2,1,NA,NA,1,1,262
+7613,148966,1541332800,"Finished",0,"Alanyaspor",7618,"Yeni Malatyaspor",0,1,NA,NA,NA,NA,NA,NA,1,1,511
+4176,147990,1541336400,"Finished",0,"Sampdoria",4170,"Torino",1,4,0,2,0,2,NA,NA,1,1,262
+3234,147985,1541338200,"Finished",0,"B. Monchengladbach",3256,"Dusseldorf",3,0,0,0,0,0,NA,NA,1,1,195
+2626,147980,1541340000,"Finished",0,"Manchester City",2614,"Southampton",6,1,4,1,4,1,NA,NA,1,1,148
+7107,147998,1541340900,"Finished",0,"Villarreal",7097,"Levante",1,1,0,0,0,0,NA,NA,1,1,468
+2616,147981,1541343600,"Finished",0,"Chelsea",2619,"Crystal Palace",3,1,1,0,1,0,NA,NA,1,1,148
+3025,147983,1541343600,"Finished",0,"St Etienne",3037,"Angers",4,3,2,2,2,2,NA,NA,1,1,176
+3237,147986,1541347200,"Finished",0,"Mainz",3223,"Werder Bremen",2,1,1,0,1,0,NA,NA,1,1,195
+4185,147991,1541347200,"Finished",0,"Bologna",4181,"Atalanta",1,2,1,0,1,0,NA,NA,1,1,262
+7101,148000,1541349000,"Finished",0,"Real Sociedad",7102,"Sevilla",0,0,0,0,0,0,NA,NA,1,1,468
+4180,147992,1541356200,"Finished",0,"Udinese",4186,"AC Milan",0,1,0,0,0,0,NA,NA,1,1,262
+7091,148001,1541357100,"Finished",0,"Betis",7095,"Celta Vigo",3,3,1,0,1,0,NA,NA,1,1,468
+3034,147984,1541358000,"Finished",0,"Montpellier",3023,"Marseille",3,0,0,0,0,0,NA,NA,1,1,176
+7610,149170,1541433600,"Finished",0,"Sivasspor",7611,"Konyaspor",0,0,0,0,0,0,NA,NA,1,1,511
+7620,149169,1541433600,"Finished",0,"Goztepe",7623,"Rizespor",2,0,1,0,1,0,NA,NA,1,1,511
+7090,149084,1541444400,"Finished",0,"Espanyol",7104,"Ath Bilbao",1,0,1,0,1,0,NA,NA,1,1,468
+3235,149204,1541530800,"Finished",0,"Schalke",7606,"Galatasaray",2,0,1,0,1,0,NA,NA,1,1,195
+4174,149203,1541530800,"Finished",0,"Napoli",3040,"Paris SG",1,1,0,1,0,1,NA,NA,1,1,262
+4189,149202,1541530800,"Finished",0,"Inter",7105,"Barcelona",1,1,0,0,0,0,NA,NA,1,1,262
+7106,149200,1541530800,"Finished",0,"Atl. Madrid",3230,"Dortmund",2,0,1,0,1,0,NA,NA,1,1,468
+3026,149312,1541617200,"Finished",0,"Lyon",3233,"Hoffenheim",2,2,2,0,2,0,NA,NA,1,1,176
+4187,149311,1541617200,"Finished",0,"Juventus",2627,"Manchester Utd",1,2,0,0,0,0,NA,NA,1,1,262
+4183,149485,1541696100,"Finished",0,"Lazio",3023,"Marseille",2,1,1,0,1,0,NA,NA,1,1,262
+7091,149492,1541703600,"Finished",0,"Betis",4186,"AC Milan",1,1,1,0,1,0,NA,NA,1,1,468
+7618,149762,1541779200,"Finished",0,"Yeni Malatyaspor",7605,"Trabzonspor",5,0,2,0,2,0,NA,NA,1,1,511
+3022,149583,1541789100,"Finished",0,"Lille",3036,"Strasbourg",0,0,0,0,0,0,NA,NA,1,1,176
+7097,149587,1541790000,"Finished",0,"Levante",7101,"Real Sociedad",1,3,1,0,1,0,NA,NA,1,1,468
+7611,150759,1541842200,"Finished",0,"Konyaspor",7621,"Ankaragucu",2,0,0,0,0,0,NA,NA,1,1,511
+7115,149811,1541847600,"Finished",0,"Valladolid",7096,"Eibar",0,0,0,0,0,0,NA,NA,1,1,468
+7623,150760,1541851200,"Finished",0,"Rizespor",7615,"Basaksehir",1,2,NA,NA,NA,NA,NA,NA,1,1,511
+4170,149804,1541854800,"Finished",0,"Torino",4192,"Parma",1,2,1,2,1,2,NA,NA,1,1,262
+3222,149799,1541856600,"Finished",0,"Freiburg",3237,"Mainz",1,3,0,2,0,2,NA,NA,1,1,195
+3223,149802,1541856600,"Finished",0,"Werder Bremen",3234,"B. Monchengladbach",1,3,0,1,0,1,NA,NA,1,1,195
+3233,149800,1541856600,"Finished",0,"Hoffenheim",3224,"Augsburg",2,1,0,0,0,0,NA,NA,1,1,195
+3256,149798,1541856600,"Finished",0,"Dusseldorf",3231,"Hertha Berlin",4,1,0,0,0,0,NA,NA,1,1,195
+2611,149789,1541858400,"Finished",0,"Leicester",2629,"Burnley",0,0,0,0,0,0,NA,NA,1,1,148
+2614,149791,1541858400,"Finished",0,"Southampton",2623,"Watford",1,1,1,0,1,0,NA,NA,1,1,148
+2630,149790,1541858400,"Finished",0,"Newcastle",2615,"Bournemouth",2,1,2,1,2,1,NA,NA,1,1,148
+7100,149812,1541859300,"Finished",0,"Getafe",7109,"Valencia",0,1,0,0,0,0,NA,NA,1,1,468
+7604,150761,1541862000,"Finished",0,"Kayserispor",7606,"Galatasaray",0,3,NA,NA,NA,NA,NA,NA,1,1,511
+4178,149805,1541865600,"Finished",0,"Spal",4171,"Cagliari",2,2,1,0,1,0,NA,NA,1,1,262
+2619,149792,1541867400,"Finished",0,"Crystal Palace",2628,"Tottenham",0,1,0,0,0,0,NA,NA,1,1,148
+3230,149803,1541867400,"Finished",0,"Dortmund",3225,"Bayern Munich",3,2,0,1,0,1,NA,NA,1,1,195
+7106,149813,1541867400,"Finished",0,"Atl. Madrid",7104,"Ath Bilbao",3,2,0,1,0,1,NA,NA,1,1,468
+3024,149797,1541872800,"Finished",0,"Toulouse",3033,"Amiens",0,1,0,1,0,1,NA,NA,1,1,176
+3025,149796,1541872800,"Finished",0,"St Etienne",3046,"Reims",2,0,2,0,2,0,NA,NA,1,1,176
+3037,149794,1541872800,"Finished",0,"Angers",3034,"Montpellier",1,0,0,0,0,0,NA,NA,1,1,176
+3049,149795,1541872800,"Finished",0,"Nimes",3041,"Nice",0,1,0,0,0,0,NA,NA,1,1,176
+4179,149806,1541874600,"Finished",0,"Genoa",4174,"Napoli",1,2,1,0,1,0,NA,NA,1,1,262
+4181,150851,1541932200,"Finished",0,"Atalanta",4189,"Inter",4,1,1,0,1,0,NA,NA,1,1,262
+4184,150852,1541941200,"Finished",0,"AS Roma",4176,"Sampdoria",4,1,1,0,1,0,NA,NA,1,1,262
+4203,151241,1541941200,"Finished",0,"Brescia",4188,"Verona",4,2,2,0,2,0,NA,NA,1,1,262
+2616,150842,1541942100,"Finished",0,"Chelsea",2612,"Everton",0,0,0,0,0,0,NA,NA,1,1,148
+3226,150849,1541943000,"Finished",0,"RB Leipzig",3227,"Bayer Leverkusen",3,0,1,0,1,0,NA,NA,1,1,195
+7603,151775,1541944800,"Finished",0,"Fenerbahce",7613,"Alanyaspor",2,0,2,0,2,0,NA,NA,1,1,511
+7105,150862,1541945700,"Finished",0,"Barcelona",7091,"Betis",3,4,0,2,0,2,NA,NA,1,1,468
+3023,150846,1541948400,"Finished",0,"Marseille",3030,"Dijon",2,0,1,0,1,0,NA,NA,1,1,176
+3035,150847,1541948400,"Finished",0,"Rennes",3031,"Nantes",1,1,1,1,1,1,NA,NA,1,1,176
+2617,150843,1541950200,"Finished",0,"Arsenal",2646,"Wolves",1,1,0,1,0,1,NA,NA,1,1,148
+2626,150844,1541950200,"Finished",0,"Manchester City",2627,"Manchester Utd",3,1,1,0,1,0,NA,NA,1,1,148
+3238,150850,1541952000,"Finished",0,"Eintracht Frankfurt",3235,"Schalke",3,0,0,0,0,0,NA,NA,1,1,195
+4175,150855,1541952000,"Finished",0,"Sassuolo",4183,"Lazio",1,1,1,1,1,1,NA,NA,1,1,262
+7102,150864,1541953800,"Finished",0,"Sevilla",7090,"Espanyol",2,1,0,1,0,1,NA,NA,1,1,468
+7614,151777,1541953800,"Finished",0,"Besiktas",7610,"Sivasspor",1,2,1,1,1,1,NA,NA,1,1,511
+4186,150856,1541961000,"Finished",0,"AC Milan",4187,"Juventus",0,2,0,1,0,1,NA,NA,1,1,262
+7095,150865,1541961900,"Finished",0,"Celta Vigo",7099,"Real Madrid",2,4,0,1,0,1,NA,NA,1,1,468
+3039,150848,1541962800,"Finished",0,"Monaco",3040,"Paris SG",0,4,0,2,0,2,NA,NA,1,1,176
+7108,154054,1542186000,"Finished",0,"Alaves (Esp)",7113,"Osasuna (Esp)",2,0,0,0,0,0,NA,NA,1,1,468
+3236,152166,1542285000,"Finished",0,"Wolfsburg (Ger)",3268,"Paderborn (Ger)",1,3,1,1,1,1,NA,NA,1,1,195
+3024,154188,1542295800,"Finished",0,"Toulouse (Fra)",7101,"Real Sociedad (Esp)",2,2,1,1,1,1,NA,NA,1,1,176
+7606,154481,1542990600,"Finished",0,"Galatasaray",7611,"Konyaspor",1,1,0,0,0,0,NA,NA,1,1,511
+3026,154301,1542999600,"Finished",0,"Lyon",3025,"St Etienne",1,0,0,0,0,0,NA,NA,1,1,176
+7103,154303,1542999600,"Finished",0,"Leganes",7108,"Alaves",1,0,1,0,1,0,NA,NA,1,1,468
+7096,154539,1543057200,"Finished",0,"Eibar",7099,"Real Madrid",3,0,1,0,1,0,NA,NA,1,1,468
+7613,155321,1543060800,"Finished",0,"Alanyaspor",7604,"Kayserispor",5,0,1,0,1,0,NA,NA,1,1,511
+4180,154532,1543064400,"Finished",0,"Udinese",4184,"AS Roma",1,0,0,0,0,0,NA,NA,1,1,262
+3224,154526,1543066200,"Finished",0,"Augsburg",3238,"Eintracht Frankfurt",1,3,0,1,0,1,NA,NA,1,1,195
+3225,154527,1543066200,"Finished",0,"Bayern Munich",3256,"Dusseldorf",3,3,2,1,2,1,NA,NA,1,1,195
+3231,154528,1543066200,"Finished",0,"Hertha Berlin",3233,"Hoffenheim",3,3,1,2,1,2,NA,NA,1,1,195
+3236,154530,1543066200,"Finished",0,"Wolfsburg",3226,"RB Leipzig",1,0,0,0,0,0,NA,NA,1,1,195
+3237,154529,1543066200,"Finished",0,"Mainz",3230,"Dortmund",1,2,0,0,0,0,NA,NA,1,1,195
+2613,154513,1543068000,"Finished",0,"Brighton",2611,"Leicester",1,1,1,0,1,0,NA,NA,1,1,148
+2620,154518,1543068000,"Finished",0,"West Ham",2626,"Manchester City",0,4,0,3,0,3,NA,NA,1,1,148
+2623,154517,1543068000,"Finished",0,"Watford",2621,"Liverpool",0,3,0,0,0,0,NA,NA,1,1,148
+2627,154516,1543068000,"Finished",0,"Manchester Utd",2619,"Crystal Palace",0,0,0,0,0,0,NA,NA,1,1,148
+3040,154520,1543071600,"Finished",0,"Paris SG",3024,"Toulouse",1,0,1,0,1,0,NA,NA,1,1,176
+7621,155322,1543071600,"Finished",0,"Ankaragucu",7614,"Besiktas",1,4,0,3,0,3,NA,NA,1,1,511
+4187,154533,1543075200,"Finished",0,"Juventus",4178,"Spal",2,0,1,0,1,0,NA,NA,1,1,262
+2628,154519,1543077000,"Finished",0,"Tottenham",2616,"Chelsea",3,1,2,0,2,0,NA,NA,1,1,148
+3030,154522,1543082400,"Finished",0,"Dijon",3038,"Bordeaux",0,0,0,0,0,0,NA,NA,1,1,176
+3031,154523,1543082400,"Finished",0,"Nantes",3037,"Angers",1,1,0,1,0,1,NA,NA,1,1,176
+3036,154525,1543082400,"Finished",0,"Strasbourg",3049,"Nimes",0,1,0,0,0,0,NA,NA,1,1,176
+7106,154542,1543085100,"Finished",0,"Atl. Madrid",7105,"Barcelona",1,1,0,0,0,0,NA,NA,1,1,468
+7610,156130,1543138200,"Finished",0,"Sivasspor",7623,"Rizespor",1,1,0,0,0,0,NA,NA,1,1,511
+7104,155406,1543140000,"Finished",0,"Ath Bilbao",7100,"Getafe",1,1,0,0,0,0,NA,NA,1,1,468
+4192,155395,1543141800,"Finished",0,"Parma",4175,"Sassuolo",2,1,2,1,2,1,NA,NA,1,1,262
+2615,155388,1543149000,"Finished",0,"Bournemouth",2617,"Arsenal",1,2,1,1,1,1,NA,NA,1,1,148
+3034,155390,1543150800,"Finished",0,"Montpellier",3035,"Rennes",2,2,1,1,1,1,NA,NA,1,1,176
+4185,155396,1543150800,"Finished",0,"Bologna",4173,"Fiorentina",0,0,0,0,0,0,NA,NA,1,1,262
+3222,155393,1543152600,"Finished",0,"Freiburg",3223,"Werder Bremen",1,1,1,0,1,0,NA,NA,1,1,195
+7102,155407,1543155300,"Finished",0,"Sevilla",7115,"Valladolid",1,0,1,0,1,0,NA,NA,1,1,468
+3041,155391,1543158000,"Finished",0,"Nice",3022,"Lille",2,0,1,0,1,0,NA,NA,1,1,176
+7605,156133,1543158000,"Finished",0,"Trabzonspor",7603,"Fenerbahce",2,1,0,0,0,0,NA,NA,1,1,511
+7619,156132,1543158000,"Finished",0,"Kasimpasa",7618,"Yeni Malatyaspor",3,0,1,0,1,0,NA,NA,1,1,511
+4183,155399,1543161600,"Finished",0,"Lazio",4186,"AC Milan",1,1,0,0,0,0,NA,NA,1,1,262
+4179,155400,1543170600,"Finished",0,"Genoa",4176,"Sampdoria",1,1,1,1,1,1,NA,NA,1,1,262
+7107,155409,1543171500,"Finished",0,"Villarreal",7091,"Betis",2,1,0,0,0,0,NA,NA,1,1,468
+3033,155392,1543172400,"Finished",0,"Amiens",3023,"Marseille",1,3,1,1,1,1,NA,NA,1,1,176
+7620,156264,1543248000,"Finished",0,"Goztepe",7615,"Basaksehir",0,2,0,1,0,1,NA,NA,1,1,511
+4171,156201,1543257000,"Finished",0,"Cagliari",4170,"Torino",0,0,0,0,0,0,NA,NA,1,1,262
+7101,156202,1543258800,"Finished",0,"Real Sociedad",7095,"Celta Vigo",2,1,1,0,1,0,NA,NA,1,1,468
+2629,156200,1543260600,"Finished",0,"Burnley",2630,"Newcastle",1,2,1,2,1,2,NA,NA,1,1,148
+3026,156308,1543345200,"Finished",0,"Lyon",2626,"Manchester City",2,2,NA,NA,NA,NA,NA,NA,1,1,176
+4184,156304,1543345200,"Finished",0,"AS Roma",7099,"Real Madrid",0,2,NA,NA,NA,NA,NA,NA,1,1,262
+4187,156307,1543345200,"Finished",0,"Juventus",7109,"Valencia",1,0,NA,NA,NA,NA,NA,NA,1,1,262
+7106,156420,1543424100,"Finished",0,"Atl. Madrid",3039,"Monaco",2,0,NA,NA,NA,NA,NA,NA,1,1,468
+2628,156427,1543431600,"Finished",0,"Tottenham",4189,"Inter",1,0,NA,NA,NA,NA,NA,NA,1,1,148
+3040,156425,1543431600,"Finished",0,"Paris SG",2621,"Liverpool",2,1,NA,NA,NA,NA,NA,NA,1,1,176
+3238,156576,1543518000,"Finished",0,"Eintracht Frankfurt",3023,"Marseille",4,0,2,0,2,0,NA,NA,1,1,195
+7611,156805,1543593600,"Finished",0,"Konyaspor",7613,"Alanyaspor",2,0,0,0,0,0,NA,NA,1,1,511
+7623,156806,1543593600,"Finished",0,"Rizespor",7621,"Ankaragucu",1,1,0,1,0,1,NA,NA,1,1,511
+3256,156653,1543602600,"Finished",0,"Dusseldorf",3237,"Mainz",0,1,0,0,0,0,NA,NA,1,1,195
+3025,156652,1543603500,"Finished",0,"St Etienne",3031,"Nantes",3,0,0,0,0,0,NA,NA,1,1,176
+7608,157481,1543665600,"Finished",0,"Antalyaspor",7620,"Goztepe",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+7615,157482,1543665600,"Finished",0,"Basaksehir",7610,"Sivasspor",0,1,NA,NA,NA,NA,NA,NA,1,1,511
+3223,156859,1543671000,"Finished",0,"Werder Bremen",3225,"Bayern Munich",1,2,NA,NA,NA,NA,NA,NA,1,1,195
+3230,156856,1543671000,"Finished",0,"Dortmund",3222,"Freiburg",2,0,NA,NA,NA,NA,NA,NA,1,1,195
+2611,156847,1543672800,"Finished",0,"Leicester",2623,"Watford",2,0,2,0,2,0,NA,NA,1,1,148
+2619,156845,1543672800,"Finished",0,"Crystal Palace",2629,"Burnley",2,0,1,0,1,0,NA,NA,1,1,148
+2626,156848,1543672800,"Finished",0,"Manchester City",2615,"Bournemouth",3,1,1,1,1,1,NA,NA,1,1,148
+2630,156849,1543672800,"Finished",0,"Newcastle",2620,"West Ham",0,3,0,1,0,1,NA,NA,1,1,148
+7115,156869,1543673700,"Finished",0,"Valladolid",7103,"Leganes",2,4,0,2,0,2,NA,NA,1,1,468
+3022,156851,1543676400,"Finished",0,"Lille",3026,"Lyon",2,2,2,0,2,0,NA,NA,1,1,176
+7604,157483,1543676400,"Finished",0,"Kayserispor",7605,"Trabzonspor",0,2,NA,NA,NA,NA,NA,NA,1,1,511
+4173,156862,1543680000,"Finished",0,"Fiorentina",4187,"Juventus",0,3,0,1,0,1,NA,NA,1,1,262
+2614,156850,1543681800,"Finished",0,"Southampton",2627,"Manchester Utd",2,2,NA,NA,NA,NA,NA,NA,1,1,148
+3233,156860,1543681800,"Finished",0,"Hoffenheim",3235,"Schalke",1,1,0,0,0,0,NA,NA,1,1,195
+7100,156870,1543681800,"Finished",0,"Getafe",7090,"Espanyol",3,0,0,0,0,0,NA,NA,1,1,468
+3039,156854,1543687200,"Finished",0,"Monaco",3034,"Montpellier",1,2,1,0,1,0,NA,NA,1,1,176
+3049,156855,1543687200,"Finished",0,"Nimes",3033,"Amiens",3,0,1,0,1,0,NA,NA,1,1,176
+4176,156863,1543689000,"Finished",0,"Sampdoria",4185,"Bologna",4,1,3,1,3,1,NA,NA,1,1,262
+7099,156871,1543689900,"Finished",0,"Real Madrid",7109,"Valencia",2,0,1,0,1,0,NA,NA,1,1,468
+7091,157554,1543744800,"Finished",0,"Betis",7101,"Real Sociedad",1,0,1,0,1,0,NA,NA,1,1,468
+4186,157544,1543746600,"Finished",0,"AC Milan",4192,"Parma",2,1,0,0,0,0,NA,NA,1,1,262
+3024,157538,1543755600,"Finished",0,"Toulouse",3030,"Dijon",2,2,0,1,0,1,NA,NA,1,1,176
+4170,157547,1543755600,"Finished",0,"Torino",4179,"Genoa",2,1,NA,NA,NA,NA,NA,NA,1,1,262
+4175,157546,1543755600,"Finished",0,"Sassuolo",4180,"Udinese",0,0,0,0,0,0,NA,NA,1,1,262
+2617,157536,1543755900,"Finished",0,"Arsenal",2628,"Tottenham",4,2,1,2,1,2,NA,NA,1,1,148
+3226,157542,1543757400,"Finished",0,"RB Leipzig",3234,"B. Monchengladbach",2,0,2,0,2,0,NA,NA,1,1,195
+3023,157539,1543762800,"Finished",0,"Marseille",3046,"Reims",0,0,NA,NA,NA,NA,NA,NA,1,1,176
+3035,157540,1543762800,"Finished",0,"Rennes",3036,"Strasbourg",1,4,NA,NA,NA,NA,NA,NA,1,1,176
+2621,157537,1543763700,"Finished",0,"Liverpool",2612,"Everton",1,0,0,0,0,0,NA,NA,1,1,148
+3238,157543,1543766400,"Finished",0,"Eintracht Frankfurt",3236,"Wolfsburg",1,2,NA,NA,NA,NA,NA,NA,1,1,195
+7614,158328,1543766400,"Finished",0,"Besiktas",7606,"Galatasaray",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+7105,157556,1543768200,"Finished",0,"Barcelona",7107,"Villarreal",2,0,NA,NA,NA,NA,NA,NA,1,1,468
+4184,157549,1543775400,"Finished",0,"AS Roma",4189,"Inter",2,2,0,1,0,1,NA,NA,1,1,262
+7108,157557,1543776300,"Finished",0,"Alaves",7102,"Sevilla",1,1,1,0,1,0,NA,NA,1,1,468
+3038,157541,1543777200,"Finished",0,"Bordeaux",3040,"Paris SG",2,2,0,1,0,1,NA,NA,1,1,176
+7603,158511,1543852800,"Finished",0,"Fenerbahce",7619,"Kasimpasa",2,2,NA,NA,NA,NA,NA,NA,1,1,511
+4181,158447,1543861800,"Finished",0,"Atalanta",4174,"Napoli",1,2,0,1,0,1,NA,NA,1,1,262
+7097,158448,1543863600,"Finished",0,"Levante",7104,"Ath Bilbao",3,0,1,0,1,0,NA,NA,1,1,468
+3033,158700,1543942800,"Finished",0,"Amiens",3039,"Monaco",0,2,0,1,0,1,NA,NA,1,1,176
+3041,158701,1543942800,"Finished",0,"Nice",3037,"Angers",0,0,NA,NA,NA,NA,NA,NA,1,1,176
+2613,158697,1543949100,"Finished",0,"Brighton",2619,"Crystal Palace",3,1,3,0,3,0,NA,NA,1,1,148
+4176,158764,1543949100,"Finished",0,"Sampdoria",4178,"Spal",2,1,1,1,1,1,NA,NA,1,1,262
+2623,158699,1543950000,"Finished",0,"Watford",2626,"Manchester City",1,2,0,1,0,1,NA,NA,1,1,148
+3034,158702,1543950000,"Finished",0,"Montpellier",3022,"Lille",0,1,0,1,0,1,NA,NA,1,1,176
+3026,158547,1544029200,"Finished",0,"Lyon",3035,"Rennes",0,2,0,2,0,2,NA,NA,1,1,176
+3031,158548,1544029200,"Finished",0,"Nantes",3023,"Marseille",3,2,2,2,2,2,NA,NA,1,1,176
+3038,158544,1544029200,"Finished",0,"Bordeaux",3025,"St Etienne",3,2,1,1,1,1,NA,NA,1,1,176
+3046,158549,1544029200,"Finished",0,"Reims",3024,"Toulouse",0,1,0,1,0,1,NA,NA,1,1,176
+7101,158677,1544034600,"Finished",0,"Real Sociedad",7095,"Celta Vigo",2,0,2,0,2,0,NA,NA,1,1,468
+2612,158539,1544035500,"Finished",0,"Everton",2630,"Newcastle",1,1,1,1,1,1,NA,NA,1,1,148
+2629,158538,1544035500,"Finished",0,"Burnley",2621,"Liverpool",1,3,0,0,0,0,NA,NA,1,1,148
+2646,158541,1544035500,"Finished",0,"Wolves",2616,"Chelsea",2,1,0,1,0,1,NA,NA,1,1,148
+2627,158542,1544036400,"Finished",0,"Manchester Utd",2617,"Arsenal",2,2,NA,NA,NA,NA,NA,NA,1,1,148
+2628,158543,1544036400,"Finished",0,"Tottenham",2614,"Southampton",3,1,1,0,1,0,NA,NA,1,1,148
+3036,158550,1544036400,"Finished",0,"Strasbourg",3040,"Paris SG",1,1,1,0,1,0,NA,NA,1,1,176
+7115,158681,1544038200,"Finished",0,"Valladolid",7189,"Mallorca",2,1,0,0,0,0,NA,NA,1,1,468
+7613,159158,1544198400,"Finished",0,"Alanyaspor",7614,"Besiktas",0,0,0,0,0,0,NA,NA,1,1,511
+3223,159025,1544207400,"Finished",0,"Werder Bremen",3256,"Dusseldorf",3,1,NA,NA,NA,NA,NA,NA,1,1,195
+4187,159026,1544207400,"Finished",0,"Juventus",4189,"Inter",1,0,0,0,0,0,NA,NA,1,1,262
+7103,159029,1544209200,"Finished",0,"Leganes",7100,"Getafe",1,1,NA,NA,NA,NA,NA,NA,1,1,468
+7610,159774,1544261400,"Finished",0,"Sivasspor",7620,"Goztepe",2,0,0,0,0,0,NA,NA,1,1,511
+7106,159201,1544266800,"Finished",0,"Atl. Madrid",7108,"Alaves",3,0,1,0,1,0,NA,NA,1,1,468
+2615,159175,1544268600,"Finished",0,"Bournemouth",2621,"Liverpool",0,4,0,1,0,1,NA,NA,1,1,148
+7605,159775,1544270400,"Finished",0,"Trabzonspor",7611,"Konyaspor",3,0,0,0,0,0,NA,NA,1,1,511
+3222,159191,1544275800,"Finished",0,"Freiburg",3226,"RB Leipzig",3,0,NA,NA,NA,NA,NA,NA,1,1,195
+3227,159189,1544275800,"Finished",0,"Bayer Leverkusen",3224,"Augsburg",1,0,0,0,0,0,NA,NA,1,1,195
+3235,159192,1544275800,"Finished",0,"Schalke",3230,"Dortmund",1,2,0,1,0,1,NA,NA,1,1,195
+3236,159193,1544275800,"Finished",0,"Wolfsburg",3233,"Hoffenheim",2,2,2,1,2,1,NA,NA,1,1,195
+2620,159180,1544277600,"Finished",0,"West Ham",2619,"Crystal Palace",3,2,0,1,0,1,NA,NA,1,1,148
+2629,159177,1544277600,"Finished",0,"Burnley",2613,"Brighton",1,0,1,0,1,0,NA,NA,1,1,148
+7109,159202,1544278500,"Finished",0,"Valencia",7102,"Sevilla",1,1,0,0,0,0,NA,NA,1,1,468
+7606,159776,1544281200,"Finished",0,"Galatasaray",7623,"Rizespor",2,2,1,0,1,0,NA,NA,1,1,511
+4171,159196,1544284800,"Finished",0,"Cagliari",4184,"AS Roma",2,2,0,2,0,2,NA,NA,1,1,262
+2616,159181,1544286600,"Finished",0,"Chelsea",2626,"Manchester City",2,0,1,0,1,0,NA,NA,1,1,148
+3231,159194,1544286600,"Finished",0,"Hertha Berlin",3238,"Eintracht Frankfurt",1,0,1,0,1,0,NA,NA,1,1,195
+7107,159203,1544286600,"Finished",0,"Villarreal",7095,"Celta Vigo",2,3,0,1,0,1,NA,NA,1,1,468
+3035,159187,1544292000,"Finished",0,"Rennes",3030,"Dijon",2,0,0,0,0,0,NA,NA,1,1,176
+4183,159197,1544293800,"Finished",0,"Lazio",4176,"Sampdoria",2,2,0,1,0,1,NA,NA,1,1,262
+2611,159182,1544294700,"Finished",0,"Leicester",2628,"Tottenham",0,2,0,1,0,1,NA,NA,1,1,148
+7090,159204,1544294700,"Finished",0,"Espanyol",7105,"Barcelona",0,4,0,3,0,3,NA,NA,1,1,468
+7096,159830,1544349600,"Finished",0,"Eibar",7097,"Levante",4,4,1,2,1,2,NA,NA,1,1,468
+4175,159820,1544351400,"Finished",0,"Sassuolo",4173,"Fiorentina",3,3,0,0,0,0,NA,NA,1,1,262
+7630,160526,1544356800,"Finished",0,"Denizlispor",7617,"Genclerbirligi",0,0,0,0,0,0,NA,NA,1,1,511
+4180,159823,1544360400,"Finished",0,"Udinese",4181,"Atalanta",1,3,1,1,1,1,NA,NA,1,1,262
+2630,159814,1544367600,"Finished",0,"Newcastle",2646,"Wolves",1,2,1,1,1,1,NA,NA,1,1,148
+3022,159816,1544367600,"Finished",0,"Lille",3046,"Reims",1,1,0,0,0,0,NA,NA,1,1,176
+4179,159824,1544371200,"Finished",0,"Genoa",4178,"Spal",1,1,1,1,1,1,NA,NA,1,1,262
+7101,159832,1544373000,"Finished",0,"Real Sociedad",7115,"Valladolid",1,2,0,1,0,1,NA,NA,1,1,468
+4186,159825,1544380200,"Finished",0,"AC Milan",4170,"Torino",0,0,0,0,0,0,NA,NA,1,1,262
+7619,160656,1544457600,"Finished",0,"Kasimpasa",7604,"Kayserispor",0,3,0,1,0,1,NA,NA,1,1,511
+7621,160655,1544457600,"Finished",0,"Ankaragucu",7615,"Basaksehir",0,1,0,1,0,1,NA,NA,1,1,511
+2612,160597,1544468400,"Finished",0,"Everton",2623,"Watford",2,2,1,0,1,0,NA,NA,1,1,148
+2621,160677,1544554800,"Finished",0,"Liverpool",4174,"Napoli",1,0,1,0,1,0,NA,NA,1,1,148
+3039,160678,1544554800,"Finished",0,"Monaco",3230,"Dortmund",0,2,0,1,0,1,NA,NA,1,1,176
+7105,160673,1544554800,"Finished",0,"Barcelona",2628,"Tottenham",1,1,1,0,1,0,NA,NA,1,1,468
+2626,160767,1544641200,"Finished",0,"Manchester City",3233,"Hoffenheim",2,1,1,1,1,1,NA,NA,1,1,148
+7109,160769,1544641200,"Finished",0,"Valencia",2627,"Manchester Utd",2,1,1,0,1,0,NA,NA,1,1,468
+4183,160936,1544720100,"Finished",0,"Lazio",3238,"Eintracht Frankfurt",1,2,0,0,0,0,NA,NA,1,1,262
+7095,161002,1544814000,"Finished",0,"Celta Vigo",7103,"Leganes",0,0,0,0,0,0,NA,NA,1,1,468
+7610,161656,1544866200,"Finished",0,"Sivasspor",7621,"Ankaragucu",4,0,2,0,2,0,NA,NA,1,1,511
+7617,161660,1544866200,"Finished",0,"Genclerbirligi",7631,"Gaziantep",2,1,1,0,1,0,NA,NA,1,1,511
+7623,161655,1544866200,"Finished",0,"Rizespor",7613,"Alanyaspor",1,1,0,1,0,1,NA,NA,1,1,511
+7100,161193,1544871600,"Finished",0,"Getafe",7101,"Real Sociedad",1,0,1,0,1,0,NA,NA,1,1,468
+2626,161169,1544873400,"Finished",0,"Manchester City",2612,"Everton",3,1,1,0,1,0,NA,NA,1,1,148
+7611,161657,1544875200,"Finished",0,"Konyaspor",7619,"Kasimpasa",3,2,0,0,0,0,NA,NA,1,1,511
+3224,161181,1544880600,"Finished",0,"Augsburg",3235,"Schalke",1,1,1,0,1,0,NA,NA,1,1,195
+3233,161184,1544880600,"Finished",0,"Hoffenheim",3234,"B. Monchengladbach",0,0,0,0,0,0,NA,NA,1,1,195
+3256,161182,1544880600,"Finished",0,"Dusseldorf",3222,"Freiburg",2,0,0,0,0,0,NA,NA,1,1,195
+2619,161170,1544882400,"Finished",0,"Crystal Palace",2611,"Leicester",1,0,NA,NA,NA,NA,NA,NA,1,1,148
+2628,161172,1544882400,"Finished",0,"Tottenham",2629,"Burnley",1,0,0,0,0,0,NA,NA,1,1,148
+2646,161174,1544882400,"Finished",0,"Wolves",2615,"Bournemouth",2,0,NA,NA,NA,NA,NA,NA,1,1,148
+7115,161194,1544883300,"Finished",0,"Valladolid",7106,"Atl. Madrid",2,3,0,2,0,2,NA,NA,1,1,468
+7615,161658,1544886000,"Finished",0,"Basaksehir",7606,"Galatasaray",1,1,NA,NA,NA,NA,NA,NA,1,1,511
+4189,161187,1544889600,"Finished",0,"Inter",4180,"Udinese",1,0,0,0,0,0,NA,NA,1,1,262
+3230,161186,1544891400,"Finished",0,"Dortmund",3223,"Werder Bremen",2,1,2,1,2,1,NA,NA,1,1,195
+3046,161180,1544896800,"Finished",0,"Reims",3036,"Strasbourg",2,1,1,0,1,0,NA,NA,1,1,176
+4170,161188,1544898600,"Finished",0,"Torino",4187,"Juventus",0,1,0,0,0,0,NA,NA,1,1,262
+7096,161196,1544899500,"Finished",0,"Eibar",7109,"Valencia",1,1,0,1,0,1,NA,NA,1,1,468
+7618,162316,1544952600,"Finished",0,"Yeni Malatyaspor",7608,"Antalyaspor",2,0,2,0,2,0,NA,NA,1,1,511
+2613,161695,1544963400,"Finished",0,"Brighton",2616,"Chelsea",1,2,0,2,0,2,NA,NA,1,1,148
+2614,161696,1544963400,"Finished",0,"Southampton",2617,"Arsenal",3,2,2,1,2,1,NA,NA,1,1,148
+3049,161699,1544965200,"Finished",0,"Nimes",3022,"Lille",2,3,NA,NA,NA,NA,NA,NA,1,1,176
+4176,161707,1544965200,"Finished",0,"Sampdoria",4192,"Parma",2,0,0,0,0,0,NA,NA,1,1,262
+3226,161702,1544967000,"Finished",0,"RB Leipzig",3237,"Mainz",4,1,2,1,2,1,NA,NA,1,1,195
+7090,161715,1544969700,"Finished",0,"Espanyol",7091,"Betis",1,3,1,1,1,1,NA,NA,1,1,468
+2621,161697,1544972400,"Finished",0,"Liverpool",2627,"Manchester Utd",3,1,1,1,1,1,NA,NA,1,1,148
+3041,160999,1544972400,"Finished",0,"Nice",3025,"St Etienne",1,1,0,0,0,0,NA,NA,1,1,176
+7614,162318,1544972400,"Finished",0,"Besiktas",7605,"Trabzonspor",2,2,0,1,0,1,NA,NA,1,1,511
+3238,161703,1544976000,"Finished",0,"Eintracht Frankfurt",3227,"Bayer Leverkusen",2,1,1,0,1,0,NA,NA,1,1,195
+4171,161708,1544976000,"Finished",0,"Cagliari",4174,"Napoli",0,1,0,0,0,0,NA,NA,1,1,262
+4184,161709,1544985000,"Finished",0,"AS Roma",4179,"Genoa",3,2,2,2,2,2,NA,NA,1,1,262
+7097,161717,1544985900,"Finished",0,"Levante",7105,"Barcelona",0,5,0,2,0,2,NA,NA,1,1,468
+3026,161698,1544986800,"Finished",0,"Lyon",3039,"Monaco",3,0,2,0,2,0,NA,NA,1,1,176
+4203,161896,1544986800,"Finished",0,"Brescia",4268,"Lecce",2,1,0,1,0,1,NA,NA,1,1,262
+4181,162375,1545071400,"Finished",0,"Atalanta",4183,"Lazio",1,0,1,0,1,0,NA,NA,1,1,262
+7108,162376,1545073200,"Finished",0,"Alaves",7104,"Ath Bilbao",0,0,0,0,0,0,NA,NA,1,1,468
+3231,162435,1545157800,"Finished",0,"Hertha Berlin",3224,"Augsburg",2,2,2,2,2,2,NA,NA,1,1,195
+3256,162434,1545157800,"Finished",0,"Dusseldorf",3230,"Dortmund",2,1,1,0,1,0,NA,NA,1,1,195
+4185,162437,1545157800,"Finished",0,"Bologna",4186,"AC Milan",0,0,0,0,0,0,NA,NA,1,1,262
+3235,162534,1545237000,"Finished",0,"Schalke",3227,"Bayer Leverkusen",1,2,1,2,1,2,NA,NA,1,1,195
+3033,162562,1545237900,"Finished",0,"Amiens",3026,"Lyon",2,3,0,2,0,2,NA,NA,1,1,176
+3223,162538,1545244200,"Finished",0,"Werder Bremen",3233,"Hoffenheim",1,1,0,1,0,1,NA,NA,1,1,195
+3225,162535,1545244200,"Finished",0,"Bayern Munich",3226,"RB Leipzig",1,0,0,0,0,0,NA,NA,1,1,195
+3237,162537,1545244200,"Finished",0,"Mainz",3238,"Eintracht Frankfurt",2,2,2,2,2,2,NA,NA,1,1,195
+2616,162558,1545245100,"Finished",0,"Chelsea",2615,"Bournemouth",1,0,0,0,0,0,NA,NA,1,1,148
+2617,162557,1545245100,"Finished",0,"Arsenal",2628,"Tottenham",0,2,0,1,0,1,NA,NA,1,1,148
+3030,162563,1545246300,"Finished",0,"Dijon",3038,"Bordeaux",0,1,0,0,0,0,NA,NA,1,1,176
+3035,162568,1545246300,"Finished",0,"Rennes",3031,"Nantes",2,1,0,0,0,0,NA,NA,1,1,176
+3230,162715,1545417000,"Finished",0,"Dortmund",3234,"B. Monchengladbach",2,1,1,1,1,1,NA,NA,1,1,195
+2646,162714,1545418800,"Finished",0,"Wolves",2621,"Liverpool",0,2,0,1,0,1,NA,NA,1,1,148
+7101,162718,1545418800,"Finished",0,"Real Sociedad",7108,"Alaves",0,1,0,1,0,1,NA,NA,1,1,468
+7621,163286,1545471000,"Finished",0,"Ankaragucu",7620,"Goztepe",0,3,0,0,0,0,NA,NA,1,1,511
+4183,162840,1545474600,"Finished",0,"Lazio",4171,"Cagliari",3,1,2,0,2,0,NA,NA,1,1,262
+7091,162854,1545476400,"Finished",0,"Betis",7096,"Eibar",1,1,1,0,1,0,NA,NA,1,1,468
+2617,162816,1545478200,"Finished",0,"Arsenal",2629,"Burnley",3,1,1,0,1,0,NA,NA,1,1,148
+7613,163287,1545480000,"Finished",0,"Alanyaspor",7615,"Basaksehir",1,1,0,1,0,1,NA,NA,1,1,511
+4174,162844,1545483600,"Finished",0,"Napoli",4178,"Spal",1,0,1,0,1,0,NA,NA,1,1,262
+4175,162845,1545483600,"Finished",0,"Sassuolo",4170,"Torino",1,1,0,0,0,0,NA,NA,1,1,262
+4179,162843,1545483600,"Finished",0,"Genoa",4181,"Atalanta",3,1,1,0,1,0,NA,NA,1,1,262
+4186,162841,1545483600,"Finished",0,"AC Milan",4173,"Fiorentina",0,1,0,0,0,0,NA,NA,1,1,262
+3226,162837,1545485400,"Finished",0,"RB Leipzig",3223,"Werder Bremen",3,2,2,0,2,0,NA,NA,1,1,195
+3227,162834,1545485400,"Finished",0,"Bayer Leverkusen",3231,"Hertha Berlin",3,1,2,1,2,1,NA,NA,1,1,195
+2615,162817,1545487200,"Finished",0,"Bournemouth",2613,"Brighton",2,0,1,0,1,0,NA,NA,1,1,148
+2616,162818,1545487200,"Finished",0,"Chelsea",2611,"Leicester",0,1,0,0,0,0,NA,NA,1,1,148
+2620,162822,1545487200,"Finished",0,"West Ham",2623,"Watford",0,2,0,1,0,1,NA,NA,1,1,148
+2626,162820,1545487200,"Finished",0,"Manchester City",2619,"Crystal Palace",2,3,1,2,1,2,NA,NA,1,1,148
+7106,162855,1545488100,"Finished",0,"Atl. Madrid",7090,"Espanyol",1,0,0,0,0,0,NA,NA,1,1,468
+7619,163288,1545490800,"Finished",0,"Kasimpasa",7614,"Besiktas",4,1,2,0,2,0,NA,NA,1,1,511
+4192,162848,1545494400,"Finished",0,"Parma",4185,"Bologna",0,0,0,0,0,0,NA,NA,1,1,262
+3238,162839,1545496200,"Finished",0,"Eintracht Frankfurt",3225,"Bayern Munich",0,3,0,1,0,1,NA,NA,1,1,195
+7105,162856,1545496200,"Finished",0,"Barcelona",7095,"Celta Vigo",2,0,2,0,2,0,NA,NA,1,1,468
+4187,162849,1545503400,"Finished",0,"Juventus",4184,"AS Roma",1,0,1,0,1,0,NA,NA,1,1,262
+7104,162857,1545504300,"Finished",0,"Ath Bilbao",7115,"Valladolid",1,1,1,0,1,0,NA,NA,1,1,468
+3022,162826,1545505200,"Finished",0,"Lille",3024,"Toulouse",1,2,1,0,1,0,NA,NA,1,1,176
+3025,162832,1545505200,"Finished",0,"St Etienne",3030,"Dijon",3,0,1,0,1,0,NA,NA,1,1,176
+3034,162828,1545505200,"Finished",0,"Montpellier",3026,"Lyon",1,1,0,0,0,0,NA,NA,1,1,176
+3035,162831,1545505200,"Finished",0,"Rennes",3049,"Nimes",4,0,2,0,2,0,NA,NA,1,1,176
+3036,162833,1545505200,"Finished",0,"Strasbourg",3041,"Nice",2,0,2,0,2,0,NA,NA,1,1,176
+3037,162824,1545505200,"Finished",0,"Angers",3023,"Marseille",1,1,1,0,1,0,NA,NA,1,1,176
+3040,162829,1545505200,"Finished",0,"Paris SG",3031,"Nantes",1,0,0,0,0,0,NA,NA,1,1,176
+7605,163668,1545566400,"Finished",0,"Trabzonspor",7623,"Rizespor",4,1,1,0,1,0,NA,NA,1,1,511
+3224,163314,1545571800,"Finished",0,"Augsburg",3236,"Wolfsburg",2,3,0,2,0,2,NA,NA,1,1,195
+7103,163321,1545574500,"Finished",0,"Leganes",7102,"Sevilla",1,1,1,0,1,0,NA,NA,1,1,468
+2612,163313,1545577200,"Finished",0,"Everton",2628,"Tottenham",2,6,1,3,1,3,NA,NA,1,1,148
+3038,162825,1545577200,"Finished",0,"Bordeaux",3033,"Amiens",1,1,1,0,1,0,NA,NA,1,1,176
+7606,163669,1545577200,"Finished",0,"Galatasaray",7610,"Sivasspor",4,2,2,2,2,2,NA,NA,1,1,511
+3233,163315,1545580800,"Finished",0,"Hoffenheim",3237,"Mainz",1,1,1,1,1,1,NA,NA,1,1,195
+7608,163681,1545667200,"Finished",0,"Antalyaspor",7603,"Fenerbahce",0,0,0,0,0,0,NA,NA,1,1,511
+4171,163734,1545829200,"Finished",0,"Cagliari",4179,"Genoa",1,0,1,0,1,0,NA,NA,1,1,262
+4173,163735,1545829200,"Finished",0,"Fiorentina",4192,"Parma",0,1,0,1,0,1,NA,NA,1,1,262
+4181,163732,1545829200,"Finished",0,"Atalanta",4187,"Juventus",2,2,1,1,1,1,NA,NA,1,1,262
+4185,163733,1545829200,"Finished",0,"Bologna",4183,"Lazio",0,2,0,1,0,1,NA,NA,1,1,262
+2611,163725,1545832800,"Finished",0,"Leicester",2626,"Manchester City",2,1,1,1,1,1,NA,NA,1,1,148
+2621,163726,1545832800,"Finished",0,"Liverpool",2630,"Newcastle",4,0,1,0,1,0,NA,NA,1,1,148
+2628,163728,1545832800,"Finished",0,"Tottenham",2615,"Bournemouth",5,0,3,0,3,0,NA,NA,1,1,148
+2629,163723,1545832800,"Finished",0,"Burnley",2612,"Everton",1,5,1,3,1,3,NA,NA,1,1,148
+4178,163738,1545840000,"Finished",0,"Spal",4180,"Udinese",0,0,0,0,0,0,NA,NA,1,1,262
+4184,163737,1545840000,"Finished",0,"AS Roma",4175,"Sassuolo",3,1,2,0,2,0,NA,NA,1,1,262
+2613,163729,1545840900,"Finished",0,"Brighton",2617,"Arsenal",1,1,1,1,1,1,NA,NA,1,1,148
+2623,163730,1545849000,"Finished",0,"Watford",2616,"Chelsea",1,2,1,1,1,1,NA,NA,1,1,148
+4189,163740,1545849000,"Finished",0,"Inter",4174,"Napoli",1,0,0,0,0,0,NA,NA,1,1,262
+2614,163937,1545936300,"Finished",0,"Southampton",2620,"West Ham",1,2,0,0,0,0,NA,NA,1,1,148
+4187,164019,1546079400,"Finished",0,"Juventus",4176,"Sampdoria",2,1,1,1,1,1,NA,NA,1,1,262
+4175,164025,1546088400,"Finished",0,"Sassuolo",4181,"Atalanta",2,6,0,2,0,2,NA,NA,1,1,262
+4179,164022,1546088400,"Finished",0,"Genoa",4173,"Fiorentina",0,0,0,0,0,0,NA,NA,1,1,262
+4180,164026,1546088400,"Finished",0,"Udinese",4171,"Cagliari",2,0,1,0,1,0,NA,NA,1,1,262
+4183,164023,1546088400,"Finished",0,"Lazio",4170,"Torino",1,1,0,1,0,1,NA,NA,1,1,262
+4192,164024,1546088400,"Finished",0,"Parma",4184,"AS Roma",0,2,0,0,0,0,NA,NA,1,1,262
+2613,164013,1546092000,"Finished",0,"Brighton",2612,"Everton",1,0,0,0,0,0,NA,NA,1,1,148
+2623,164017,1546092000,"Finished",0,"Watford",2630,"Newcastle",1,1,0,1,0,1,NA,NA,1,1,148
+2628,164016,1546092000,"Finished",0,"Tottenham",2646,"Wolves",1,3,1,0,1,0,NA,NA,1,1,148
+4174,164027,1546099200,"Finished",0,"Napoli",4185,"Bologna",3,2,1,1,1,1,NA,NA,1,1,262
+2621,164018,1546101000,"Finished",0,"Liverpool",2617,"Arsenal",5,1,4,1,4,1,NA,NA,1,1,148
+4186,164028,1546108200,"Finished",0,"AC Milan",4178,"Spal",2,1,1,1,1,1,NA,NA,1,1,262
+2619,164261,1546167600,"Finished",0,"Crystal Palace",2616,"Chelsea",0,1,0,0,0,0,NA,NA,1,1,148
+2614,164263,1546175700,"Finished",0,"Southampton",2626,"Manchester City",1,3,1,3,1,3,NA,NA,1,1,148
+2629,164262,1546175700,"Finished",0,"Burnley",2620,"West Ham",2,0,2,0,2,0,NA,NA,1,1,148
+2627,164264,1546183800,"Finished",0,"Manchester Utd",2615,"Bournemouth",4,1,3,1,3,1,NA,NA,1,1,148
+2612,164406,1546342200,"Finished",0,"Everton",2611,"Leicester",0,1,0,0,0,0,NA,NA,1,1,148
+2615,164536,1546454700,"Finished",0,"Bournemouth",2623,"Watford",3,3,3,3,3,3,NA,NA,1,1,148
+2616,164537,1546454700,"Finished",0,"Chelsea",2614,"Southampton",0,0,0,0,0,0,NA,NA,1,1,148
+2620,164539,1546454700,"Finished",0,"West Ham",2613,"Brighton",2,2,0,0,0,0,NA,NA,1,1,148
+2646,164540,1546454700,"Finished",0,"Wolves",2619,"Crystal Palace",0,2,0,0,0,0,NA,NA,1,1,148
+2630,164541,1546455600,"Finished",0,"Newcastle",2627,"Manchester Utd",0,2,0,0,0,0,NA,NA,1,1,148
+2626,164600,1546542000,"Finished",0,"Manchester City",2621,"Liverpool",2,1,1,0,1,0,NA,NA,1,1,148
+7107,164601,1546543800,"Finished",0,"Villarreal",7099,"Real Madrid",2,2,1,2,1,2,NA,NA,1,1,468
+7090,164667,1546628400,"Finished",0,"Espanyol",7103,"Leganes",1,0,1,0,1,0,NA,NA,1,1,468
+2615,164854,1546687800,"Finished",0,"Bournemouth",2613,"Brighton",1,3,0,2,0,2,NA,NA,1,1,148
+7108,164729,1546697700,"Finished",0,"Alaves",7109,"Valencia",2,1,2,1,2,1,NA,NA,1,1,468
+7096,165035,1546768800,"Finished",0,"Eibar",7107,"Villarreal",0,0,0,0,0,0,NA,NA,1,1,468
+7102,165036,1546784100,"Finished",0,"Sevilla",7106,"Atl. Madrid",1,1,1,1,1,1,NA,NA,1,1,468
+3024,164905,1546787700,"Finished",0,"Toulouse",3041,"Nice",4,1,2,0,2,0,NA,NA,1,1,176
+7099,165037,1546792200,"Finished",0,"Real Madrid",7101,"Real Sociedad",0,2,0,1,0,1,NA,NA,1,1,468
+7100,165038,1546800300,"Finished",0,"Getafe",7105,"Barcelona",1,2,1,2,1,2,NA,NA,1,1,468
+3230,165578,1546869600,"Finished",0,"Dortmund (Ger)",3256,"Dusseldorf (Ger)",3,2,2,1,2,1,NA,NA,1,1,195
+2646,165507,1546886700,"Finished",0,"Wolves",2621,"Liverpool",2,1,1,0,1,0,NA,NA,1,1,148
+7095,165483,1546887600,"Finished",0,"Celta Vigo",7104,"Ath Bilbao",1,2,1,1,1,1,NA,NA,1,1,468
+7618,167086,1546948800,"Finished",0,"Yeni Malatyaspor (Tur)",7630,"Denizlispor (Tur)",1,0,0,0,0,0,NA,NA,1,1,511
+3031,161179,1546966800,"Finished",0,"Nantes",3034,"Montpellier",2,0,0,0,0,0,NA,NA,1,1,176
+3033,161177,1546966800,"Finished",0,"Amiens",3037,"Angers",0,0,0,0,0,0,NA,NA,1,1,176
+2628,165601,1546974000,"Finished",0,"Tottenham",2616,"Chelsea",1,0,1,0,1,0,NA,NA,1,1,148
+3026,165609,1546974000,"Finished",0,"Lyon",3036,"Strasbourg",1,2,0,1,0,1,NA,NA,1,1,176
+7100,165761,1547058600,"Finished",0,"Getafe",7115,"Valladolid",1,0,0,0,0,0,NA,NA,1,1,468
+7107,165762,1547058600,"Finished",0,"Villarreal",7090,"Espanyol",2,2,0,1,0,1,NA,NA,1,1,468
+7099,165763,1547062200,"Finished",0,"Real Madrid",7103,"Leganes",3,0,1,0,1,0,NA,NA,1,1,468
+7104,165823,1547141400,"Finished",0,"Ath Bilbao",7102,"Sevilla",1,3,0,1,0,1,NA,NA,1,1,468
+7091,165824,1547145000,"Finished",0,"Betis",7101,"Real Sociedad",0,0,0,0,0,0,NA,NA,1,1,468
+7097,165825,1547148600,"Finished",0,"Levante",7105,"Barcelona",2,1,2,0,2,0,NA,NA,1,1,468
+3026,165877,1547232300,"Finished",0,"Lyon",3046,"Reims",1,1,0,1,0,1,NA,NA,1,1,176
+3237,166422,1547283600,"Finished",0,"Mainz (Ger)",3222,"Freiburg (Ger)",2,2,2,0,2,0,NA,NA,1,1,195
+7623,167103,1547283600,"Finished",0,"Rizespor (Tur)",7630,"Denizlispor (Tur)",2,1,0,1,0,1,NA,NA,1,1,511
+2620,166016,1547292600,"Finished",0,"West Ham",2617,"Arsenal",1,0,0,0,0,0,NA,NA,1,1,148
+3237,167490,1547294400,"Finished",0,"Mainz (Ger)",3222,"Freiburg (Ger)",2,2,NA,NA,NA,NA,NA,NA,1,1,195
+3226,166437,1547298000,"Finished",0,"RB Leipzig (Ger)",7606,"Galatasaray (Tur)",1,1,1,0,1,0,NA,NA,1,1,195
+2611,166021,1547301600,"Finished",0,"Leicester",2614,"Southampton",1,2,0,2,0,2,NA,NA,1,1,148
+2613,166017,1547301600,"Finished",0,"Brighton",2621,"Liverpool",0,1,0,0,0,0,NA,NA,1,1,148
+2619,166020,1547301600,"Finished",0,"Crystal Palace",2623,"Watford",1,2,NA,NA,NA,NA,NA,NA,1,1,148
+7109,166030,1547302500,"Finished",0,"Valencia",7115,"Valladolid",1,1,0,0,0,0,NA,NA,1,1,468
+3033,166023,1547305200,"Finished",0,"Amiens",3040,"Paris SG",0,3,NA,NA,NA,NA,NA,NA,1,1,176
+2616,166022,1547310600,"Finished",0,"Chelsea",2630,"Newcastle",2,1,1,1,1,1,NA,NA,1,1,148
+3041,166027,1547316000,"Finished",0,"Nice",3038,"Bordeaux",1,0,1,0,1,0,NA,NA,1,1,176
+4185,166273,1547318700,"Finished",0,"Bologna",4187,"Juventus",0,2,0,1,0,1,NA,NA,1,1,262
+7107,166032,1547318700,"Finished",0,"Villarreal",7100,"Getafe",1,2,0,0,0,0,NA,NA,1,1,468
+7106,166448,1547373600,"Finished",0,"Atl. Madrid",7097,"Levante",1,0,0,0,0,0,NA,NA,1,1,468
+3231,166518,1547381400,"Finished",0,"Hertha Berlin",3234,"B. Monchengladbach",0,1,NA,NA,NA,NA,NA,NA,1,1,195
+3031,166445,1547384400,"Finished",0,"Nantes",3035,"Rennes",0,1,0,1,0,1,NA,NA,1,1,176
+4170,166675,1547384400,"Finished",0,"Torino",4173,"Fiorentina",0,2,0,0,0,0,NA,NA,1,1,262
+2612,166443,1547385300,"Finished",0,"Everton",2615,"Bournemouth",2,0,0,0,0,0,NA,NA,1,1,148
+3256,168139,1547385600,"Finished",0,"Dusseldorf",3231,"Hertha Berlin",3,1,NA,NA,NA,NA,NA,NA,1,1,195
+7104,166449,1547388900,"Finished",0,"Ath Bilbao",7102,"Sevilla",2,0,1,0,1,0,NA,NA,1,1,468
+3024,166446,1547391600,"Finished",0,"Toulouse",3036,"Strasbourg",1,2,1,1,1,1,NA,NA,1,1,176
+3030,166025,1547391600,"Finished",0,"Dijon",3034,"Montpellier",1,1,0,0,0,0,NA,NA,1,1,176
+2628,166444,1547393400,"Finished",0,"Tottenham",2627,"Manchester Utd",0,1,0,1,0,1,NA,NA,1,1,148
+7105,166450,1547397000,"Finished",0,"Barcelona",7096,"Eibar",3,0,1,0,1,0,NA,NA,1,1,468
+4174,166677,1547405100,"Finished",0,"Napoli",4175,"Sassuolo",2,0,1,0,1,0,NA,NA,1,1,262
+7091,166451,1547405100,"Finished",0,"Betis",7099,"Real Madrid",1,2,0,1,0,1,NA,NA,1,1,468
+3023,166447,1547406000,"Finished",0,"Marseille",3039,"Monaco",1,1,1,1,1,1,NA,NA,1,1,176
+4171,167072,1547479800,"Finished",0,"Cagliari",4181,"Atalanta",0,2,0,0,0,0,NA,NA,1,1,262
+2626,167048,1547492400,"Finished",0,"Manchester City",2646,"Wolves",3,0,2,0,2,0,NA,NA,1,1,148
+7101,167049,1547492400,"Finished",0,"Real Sociedad",7090,"Espanyol",3,2,2,2,2,2,NA,NA,1,1,468
+7608,167170,1547560800,"Finished",0,"Antalyaspor",7620,"Goztepe",3,3,2,0,2,0,NA,NA,1,1,511
+3037,159184,1547571600,"Finished",0,"Angers",3038,"Bordeaux",1,2,0,1,0,1,NA,NA,1,1,176
+7115,167167,1547573400,"Finished",0,"Valladolid",7100,"Getafe",1,1,0,1,0,1,NA,NA,1,1,468
+7189,168922,1547629200,"Finished",0,"Mallorca (Esp)",3228,"FC Koln (Ger)",1,0,0,0,0,0,NA,NA,1,1,468
+4187,167276,1547656200,"Finished",0,"Juventus",4186,"AC Milan",1,0,0,0,0,0,NA,NA,1,1,262
+3024,159188,1547658000,"Finished",0,"Toulouse",3026,"Lyon",2,2,1,0,1,0,NA,NA,1,1,176
+3039,159024,1547658000,"Finished",0,"Monaco",3041,"Nice",1,1,0,1,0,1,NA,NA,1,1,176
+3049,159186,1547658000,"Finished",0,"Nimes",3031,"Nantes",1,0,0,0,0,0,NA,NA,1,1,176
+7102,167292,1547663400,"Finished",0,"Sevilla",7104,"Ath Bilbao",0,1,0,0,0,0,NA,NA,1,1,468
+3025,159817,1547665200,"Finished",0,"St Etienne",3023,"Marseille",2,1,0,1,0,1,NA,NA,1,1,176
+7103,167293,1547667000,"Finished",0,"Leganes",7099,"Real Madrid",1,0,1,0,1,0,NA,NA,1,1,468
+7613,167169,1547735400,"Finished",0,"Alanyaspor",7619,"Kasimpasa",0,0,0,0,0,0,NA,NA,1,1,511
+7101,167431,1547746200,"Finished",0,"Real Sociedad",7091,"Betis",2,2,1,1,1,1,NA,NA,1,1,468
+7090,167432,1547749800,"Finished",0,"Espanyol",7107,"Villarreal",3,1,2,1,2,1,NA,NA,1,1,468
+7105,167433,1547753400,"Finished",0,"Barcelona",7097,"Levante",3,0,2,0,2,0,NA,NA,1,1,468
+3233,167502,1547836200,"Finished",0,"Hoffenheim",3225,"Bayern Munich",1,3,0,2,0,2,NA,NA,1,1,195
+3022,167501,1547837100,"Finished",0,"Lille",3033,"Amiens",2,1,1,1,1,1,NA,NA,1,1,176
+7100,167504,1547838000,"Finished",0,"Getafe",7108,"Alaves",4,0,1,0,1,0,NA,NA,1,1,468
+7618,168055,1547890200,"Finished",0,"Yeni Malatyaspor",7620,"Goztepe",3,2,2,2,2,2,NA,NA,1,1,511
+7631,168059,1547890200,"Finished",0,"Gaziantep",7630,"Denizlispor",0,1,0,1,0,1,NA,NA,1,1,511
+2646,167624,1547897400,"Finished",0,"Wolves",2611,"Leicester",4,3,2,0,2,0,NA,NA,1,1,148
+7608,168056,1547899200,"Finished",0,"Antalyaspor",7604,"Kayserispor",0,0,0,0,0,0,NA,NA,1,1,511
+4184,167644,1547902800,"Finished",0,"AS Roma",4170,"Torino",3,2,2,0,2,0,NA,NA,1,1,262
+3224,167638,1547904600,"Finished",0,"Augsburg",3256,"Dusseldorf",1,2,0,1,0,1,NA,NA,1,1,195
+3227,167639,1547904600,"Finished",0,"Bayer Leverkusen",3234,"B. Monchengladbach",0,1,0,1,0,1,NA,NA,1,1,195
+3238,167640,1547904600,"Finished",0,"Eintracht Frankfurt",3222,"Freiburg",3,1,3,0,3,0,NA,NA,1,1,195
+2614,167629,1547906400,"Finished",0,"Southampton",2612,"Everton",2,1,NA,NA,NA,NA,NA,NA,1,1,148
+2615,167625,1547906400,"Finished",0,"Bournemouth",2620,"West Ham",2,0,0,0,0,0,NA,NA,1,1,148
+2621,167626,1547906400,"Finished",0,"Liverpool",2619,"Crystal Palace",4,3,NA,NA,NA,NA,NA,NA,1,1,148
+2623,167630,1547906400,"Finished",0,"Watford",2629,"Burnley",0,0,0,0,0,0,NA,NA,1,1,148
+2627,167627,1547906400,"Finished",0,"Manchester Utd",2613,"Brighton",2,1,2,0,2,0,NA,NA,1,1,148
+7099,167651,1547907300,"Finished",0,"Real Madrid",7102,"Sevilla",2,0,0,0,0,0,NA,NA,1,1,468
+7606,168057,1547910000,"Finished",0,"Galatasaray",7621,"Ankaragucu",6,0,NA,NA,NA,NA,NA,NA,1,1,511
+4180,167645,1547913600,"Finished",0,"Udinese",4192,"Parma",1,2,0,1,0,1,NA,NA,1,1,262
+2617,167631,1547915400,"Finished",0,"Arsenal",2616,"Chelsea",2,0,2,0,2,0,NA,NA,1,1,148
+3226,167643,1547915400,"Finished",0,"RB Leipzig",3230,"Dortmund",0,1,0,1,0,1,NA,NA,1,1,195
+3039,167635,1547920800,"Finished",0,"Monaco",3036,"Strasbourg",1,5,1,2,1,2,NA,NA,1,1,176
+3046,167637,1547920800,"Finished",0,"Reims",3041,"Nice",1,1,1,0,1,0,NA,NA,1,1,176
+3049,167636,1547920800,"Finished",0,"Nimes",3024,"Toulouse",0,1,0,1,0,1,NA,NA,1,1,176
+4189,167646,1547922600,"Finished",0,"Inter",4175,"Sassuolo",0,0,0,0,0,0,NA,NA,1,1,262
+7095,167653,1547923500,"Finished",0,"Celta Vigo",7109,"Valencia",1,2,1,0,1,0,NA,NA,1,1,468
+7113,168549,1547978400,"Finished",0,"Osasuna",7189,"Mallorca",2,0,1,0,1,0,NA,NA,1,1,468
+7613,168763,1547985600,"Finished",0,"Alanyaspor",7610,"Sivasspor",2,0,2,0,2,0,NA,NA,1,1,511
+3035,168151,1547989200,"Finished",0,"Rennes",3034,"Montpellier",0,0,0,0,0,0,NA,NA,1,1,176
+4173,168157,1547989200,"Finished",0,"Fiorentina",4176,"Sampdoria",3,3,1,1,1,1,NA,NA,1,1,262
+4178,168158,1547989200,"Finished",0,"Spal",4185,"Bologna",1,1,0,1,0,1,NA,NA,1,1,262
+7107,168166,1547993700,"Finished",0,"Villarreal",7104,"Ath Bilbao",1,1,0,1,0,1,NA,NA,1,1,468
+3037,167633,1547996400,"Finished",0,"Angers",3031,"Nantes",1,0,0,0,0,0,NA,NA,1,1,176
+7605,168764,1547996400,"Finished",0,"Trabzonspor",7615,"Basaksehir",2,4,0,2,0,2,NA,NA,1,1,511
+3235,168155,1548000000,"Finished",0,"Schalke",3236,"Wolfsburg",2,1,1,1,1,1,NA,NA,1,1,195
+7097,168167,1548001800,"Finished",0,"Levante",7115,"Valladolid",2,0,1,0,1,0,NA,NA,1,1,468
+3038,167634,1548003600,"Finished",0,"Bordeaux",3030,"Dijon",1,0,0,0,0,0,NA,NA,1,1,176
+4174,168160,1548009000,"Finished",0,"Napoli",4183,"Lazio",2,1,2,0,2,0,NA,NA,1,1,262
+7105,168169,1548009900,"Finished",0,"Barcelona",7103,"Leganes",3,1,1,0,1,0,NA,NA,1,1,468
+3025,168153,1548010800,"Finished",0,"St Etienne",3026,"Lyon",1,2,1,0,1,0,NA,NA,1,1,176
+4179,168830,1548075600,"Finished",0,"Genoa",4186,"AC Milan",0,2,0,0,0,0,NA,NA,1,1,262
+7619,168867,1548086400,"Finished",0,"Kasimpasa",7623,"Rizespor",0,1,0,1,0,1,NA,NA,1,1,511
+7096,168832,1548097200,"Finished",0,"Eibar",7090,"Espanyol",3,0,1,0,1,0,NA,NA,1,1,468
+3039,168977,1548183600,"Finished",0,"Monaco",3027,"Metz",1,3,1,1,1,1,NA,NA,1,1,176
+7100,169579,1548185400,"Finished",0,"Getafe",7109,"Valencia",1,0,0,0,0,0,NA,NA,1,1,468
+7620,169267,1548252000,"Finished",0,"Goztepe",7608,"Antalyaspor",3,0,2,0,2,0,NA,NA,1,1,511
+3025,169191,1548261000,"Finished",0,"St Etienne",3030,"Dijon",3,6,1,2,1,2,NA,NA,1,1,176
+3049,166028,1548262800,"Finished",0,"Nimes",3037,"Angers",3,1,2,0,2,0,NA,NA,1,1,176
+3040,169286,1548270300,"Finished",0,"Paris SG",3036,"Strasbourg",2,0,1,0,1,0,NA,NA,1,1,176
+7102,169577,1548271800,"Finished",0,"Sevilla",7105,"Barcelona",2,0,0,0,0,0,NA,NA,1,1,468
+7090,169575,1548351000,"Finished",0,"Espanyol",7091,"Betis",1,1,1,0,1,0,NA,NA,1,1,468
+3033,169387,1548356400,"Finished",0,"Amiens",3026,"Lyon",0,2,0,2,0,2,NA,NA,1,1,176
+3231,169482,1548441000,"Finished",0,"Hertha Berlin",3235,"Schalke",2,2,2,2,2,2,NA,NA,1,1,195
+3023,169481,1548441900,"Finished",0,"Marseille",3022,"Lille",1,2,0,1,0,1,NA,NA,1,1,176
+2617,169514,1548442500,"Finished",0,"Arsenal",2627,"Manchester Utd",1,3,1,2,1,2,NA,NA,1,1,148
+7102,169674,1548500400,"Finished",0,"Sevilla",7097,"Levante",5,0,0,0,0,0,NA,NA,1,1,468
+4175,169667,1548507600,"Finished",0,"Sassuolo",4171,"Cagliari",3,0,2,0,2,0,NA,NA,1,1,262
+3222,169663,1548509400,"Finished",0,"Freiburg",3233,"Hoffenheim",2,4,1,1,1,1,NA,NA,1,1,195
+3234,169661,1548509400,"Finished",0,"B. Monchengladbach",3224,"Augsburg",2,0,0,0,0,0,NA,NA,1,1,195
+3236,169665,1548509400,"Finished",0,"Wolfsburg",3227,"Bayer Leverkusen",0,3,0,1,0,1,NA,NA,1,1,195
+2626,169878,1548511200,"Finished",0,"Manchester City",2629,"Burnley",5,0,NA,NA,NA,NA,NA,NA,1,1,148
+2630,169880,1548511200,"Finished",0,"Newcastle",2623,"Watford",0,2,NA,NA,NA,NA,NA,NA,1,1,148
+2641,169790,1548511200,"Finished",0,"Norwich",2654,"Sheffield Utd",2,2,NA,NA,NA,NA,NA,NA,1,1,148
+7106,169675,1548512100,"Finished",0,"Atl. Madrid",7100,"Getafe",2,0,2,0,2,0,NA,NA,1,1,468
+7620,170064,1548514800,"Finished",0,"Goztepe",7606,"Galatasaray",0,1,NA,NA,NA,NA,NA,NA,1,1,511
+4176,169668,1548518400,"Finished",0,"Sampdoria",4180,"Udinese",4,0,1,0,1,0,NA,NA,1,1,262
+3223,169666,1548520200,"Finished",0,"Werder Bremen",3238,"Eintracht Frankfurt",2,2,1,1,1,1,NA,NA,1,1,195
+7103,169676,1548520200,"Finished",0,"Leganes",7096,"Eibar",2,2,0,2,0,2,NA,NA,1,1,468
+3030,169657,1548525600,"Finished",0,"Dijon",3039,"Monaco",2,0,1,0,1,0,NA,NA,1,1,176
+3036,169660,1548525600,"Finished",0,"Strasbourg",3038,"Bordeaux",1,0,0,0,0,0,NA,NA,1,1,176
+3041,169659,1548525600,"Finished",0,"Nice",3049,"Nimes",2,0,1,0,1,0,NA,NA,1,1,176
+4186,169669,1548527400,"Finished",0,"AC Milan",4174,"Napoli",0,0,0,0,0,0,NA,NA,1,1,262
+7109,169677,1548528300,"Finished",0,"Valencia",7107,"Villarreal",3,0,1,0,1,0,NA,NA,1,1,468
+7115,170186,1548583200,"Finished",0,"Valladolid",7095,"Celta Vigo",2,1,0,1,0,1,NA,NA,1,1,468
+7611,170827,1548590400,"Finished",0,"Konyaspor",7608,"Antalyaspor",2,0,1,0,1,0,NA,NA,1,1,511
+4181,170177,1548594000,"Finished",0,"Atalanta",4184,"AS Roma",3,3,1,3,1,3,NA,NA,1,1,262
+4192,170179,1548594000,"Finished",0,"Parma",4178,"Spal",2,3,1,0,1,0,NA,NA,1,1,262
+2619,170312,1548601200,"Finished",0,"Crystal Palace",2628,"Tottenham",2,0,2,0,2,0,NA,NA,1,1,148
+3033,170171,1548601200,"Finished",0,"Amiens",3026,"Lyon",0,1,0,0,0,0,NA,NA,1,1,176
+7610,170828,1548601200,"Finished",0,"Sivasspor",7605,"Trabzonspor",1,1,0,0,0,0,NA,NA,1,1,511
+3256,170175,1548604800,"Finished",0,"Dusseldorf",3226,"RB Leipzig",0,4,0,3,0,3,NA,NA,1,1,195
+4170,170180,1548604800,"Finished",0,"Torino",4189,"Inter",1,0,1,0,1,0,NA,NA,1,1,262
+7104,170188,1548606600,"Finished",0,"Ath Bilbao",7091,"Betis",1,0,1,0,1,0,NA,NA,1,1,468
+3024,170172,1548612000,"Finished",0,"Toulouse",3037,"Angers",0,0,0,0,0,0,NA,NA,1,1,176
+4183,170181,1548613800,"Finished",0,"Lazio",4187,"Juventus",1,2,0,0,0,0,NA,NA,1,1,262
+7090,170190,1548614700,"Finished",0,"Espanyol",7099,"Real Madrid",2,4,1,3,1,3,NA,NA,1,1,468
+3040,170173,1548615600,"Finished",0,"Paris SG",3035,"Rennes",4,1,1,1,1,1,NA,NA,1,1,176
+7603,171007,1548691200,"Finished",0,"Fenerbahce",7618,"Yeni Malatyaspor",3,2,NA,NA,NA,NA,NA,NA,1,1,511
+7615,171006,1548691200,"Finished",0,"Basaksehir",7619,"Kasimpasa",2,0,1,0,1,0,NA,NA,1,1,511
+7621,171005,1548691200,"Finished",0,"Ankaragucu",7613,"Alanyaspor",0,2,0,1,0,1,NA,NA,1,1,511
+2646,171045,1548787500,"Finished",0,"Wolves",2620,"West Ham",3,0,0,0,0,0,NA,NA,1,1,148
+4186,171069,1548787500,"Finished",0,"AC Milan",4174,"Napoli",2,0,2,0,2,0,NA,NA,1,1,262
+2627,171046,1548788400,"Finished",0,"Manchester Utd",2629,"Burnley",2,2,0,0,0,0,NA,NA,1,1,148
+2630,171047,1548788400,"Finished",0,"Newcastle",2626,"Manchester City",2,1,0,1,0,1,NA,NA,1,1,148
+7109,171086,1548790200,"Finished",0,"Valencia",7100,"Getafe",3,1,0,1,0,1,NA,NA,1,1,468
+4173,171257,1548864900,"Finished",0,"Fiorentina",4184,"AS Roma",7,1,3,1,3,1,NA,NA,1,1,262
+3036,171248,1548866700,"Finished",0,"Strasbourg",3038,"Bordeaux",3,2,0,1,0,1,NA,NA,1,1,176
+2614,171182,1548873900,"Finished",0,"Southampton",2619,"Crystal Palace",1,1,0,1,0,1,NA,NA,1,1,148
+2615,171181,1548873900,"Finished",0,"Bournemouth",2616,"Chelsea",4,0,0,0,0,0,NA,NA,1,1,148
+4181,171258,1548873900,"Finished",0,"Atalanta",4187,"Juventus",3,0,2,0,2,0,NA,NA,1,1,262
+2621,171183,1548874800,"Finished",0,"Liverpool",2611,"Leicester",1,1,1,1,1,1,NA,NA,1,1,148
+2628,171184,1548874800,"Finished",0,"Tottenham",2623,"Watford",2,1,0,1,0,1,NA,NA,1,1,148
+3031,169656,1548874800,"Finished",0,"Nantes",3025,"St Etienne",1,1,0,0,0,0,NA,NA,1,1,176
+7105,171280,1548876600,"Finished",0,"Barcelona",7102,"Sevilla",6,1,2,0,2,0,NA,NA,1,1,468
+3242,171412,1548959400,"Finished",0,"Union Berlin",3228,"FC Koln",2,0,2,0,2,0,NA,NA,1,1,195
+7603,171620,1549038600,"Finished",0,"Fenerbahce",7620,"Goztepe",2,0,1,0,1,0,NA,NA,1,1,511
+3022,171512,1549046700,"Finished",0,"Lille",3041,"Nice",4,0,2,0,2,0,NA,NA,1,1,176
+7618,172273,1549099800,"Finished",0,"Yeni Malatyaspor",7604,"Kayserispor",1,1,1,1,1,1,NA,NA,1,1,511
+7097,171744,1549105200,"Finished",0,"Levante",7100,"Getafe",0,0,0,0,0,0,NA,NA,1,1,468
+2628,171719,1549107000,"Finished",0,"Tottenham",2630,"Newcastle",1,0,0,0,0,0,NA,NA,1,1,148
+7605,172275,1549108800,"Finished",0,"Trabzonspor",7621,"Ankaragucu",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+7619,172274,1549108800,"Finished",0,"Kasimpasa",7610,"Sivasspor",1,3,1,1,1,1,NA,NA,1,1,511
+3227,171731,1549114200,"Finished",0,"Bayer Leverkusen",3225,"Bayern Munich",3,1,0,1,0,1,NA,NA,1,1,195
+3231,171733,1549114200,"Finished",0,"Hertha Berlin",3236,"Wolfsburg",0,1,0,0,0,0,NA,NA,1,1,195
+3233,171734,1549114200,"Finished",0,"Hoffenheim",3256,"Dusseldorf",1,1,1,0,1,0,NA,NA,1,1,195
+3238,171732,1549114200,"Finished",0,"Eintracht Frankfurt",3230,"Dortmund",1,1,1,1,1,1,NA,NA,1,1,195
+2612,171724,1549116000,"Finished",0,"Everton",2646,"Wolves",1,3,NA,NA,NA,NA,NA,NA,1,1,148
+2613,171720,1549116000,"Finished",0,"Brighton",2623,"Watford",0,0,0,0,0,0,NA,NA,1,1,148
+2629,171721,1549116000,"Finished",0,"Burnley",2614,"Southampton",1,1,0,0,0,0,NA,NA,1,1,148
+7101,171745,1549116900,"Finished",0,"Real Sociedad",7104,"Ath Bilbao",2,1,2,0,2,0,NA,NA,1,1,468
+7613,172276,1549119600,"Finished",0,"Alanyaspor",7606,"Galatasaray",1,1,1,0,1,0,NA,NA,1,1,511
+4174,171738,1549123200,"Finished",0,"Napoli",4176,"Sampdoria",3,0,2,0,2,0,NA,NA,1,1,262
+3235,171736,1549125000,"Finished",0,"Schalke",3234,"B. Monchengladbach",0,2,0,0,0,0,NA,NA,1,1,195
+7105,171746,1549125000,"Finished",0,"Barcelona",7109,"Valencia",2,2,1,2,1,2,NA,NA,1,1,468
+3035,171729,1549130400,"Finished",0,"Rennes",3033,"Amiens",1,0,0,0,0,0,NA,NA,1,1,176
+3037,171726,1549130400,"Finished",0,"Angers",3030,"Dijon",1,0,1,0,1,0,NA,NA,1,1,176
+3039,171728,1549130400,"Finished",0,"Monaco",3024,"Toulouse",2,1,1,1,1,1,NA,NA,1,1,176
+4187,171739,1549132200,"Finished",0,"Juventus",4192,"Parma",3,3,1,0,1,0,NA,NA,1,1,262
+7095,171747,1549133100,"Finished",0,"Celta Vigo",7102,"Sevilla",1,0,0,0,0,0,NA,NA,1,1,468
+3046,171730,1549134000,"Finished",0,"Reims",3023,"Marseille",2,1,1,0,1,0,NA,NA,1,1,176
+7107,172368,1549188000,"Finished",0,"Villarreal",7090,"Espanyol",2,2,1,0,1,0,NA,NA,1,1,468
+4178,172359,1549189800,"Finished",0,"Spal",4170,"Torino",0,0,0,0,0,0,NA,NA,1,1,262
+3049,172354,1549198800,"Finished",0,"Nimes",3034,"Montpellier",1,1,1,0,1,0,NA,NA,1,1,176
+4179,172360,1549198800,"Finished",0,"Genoa",4175,"Sassuolo",1,1,1,1,1,1,NA,NA,1,1,262
+4180,172361,1549198800,"Finished",0,"Udinese",4173,"Fiorentina",1,1,0,0,0,0,NA,NA,1,1,262
+2611,172352,1549199100,"Finished",0,"Leicester",2627,"Manchester Utd",0,1,0,1,0,1,NA,NA,1,1,148
+3224,172357,1549200600,"Finished",0,"Augsburg",3237,"Mainz",3,0,2,0,2,0,NA,NA,1,1,195
+7091,172369,1549203300,"Finished",0,"Betis",7106,"Atl. Madrid",1,0,0,0,0,0,NA,NA,1,1,468
+7608,173080,1549206000,"Finished",0,"Antalyaspor",7614,"Besiktas",2,6,0,3,0,3,NA,NA,1,1,511
+2626,172353,1549207800,"Finished",0,"Manchester City",2617,"Arsenal",3,1,2,1,2,1,NA,NA,1,1,148
+4189,172362,1549209600,"Finished",0,"Inter",4185,"Bologna",0,1,0,1,0,1,NA,NA,1,1,262
+7113,172851,1549209600,"Finished",0,"Osasuna",7110,"Granada CF",1,0,0,0,0,0,NA,NA,1,1,468
+4184,172363,1549218600,"Finished",0,"AS Roma",4186,"AC Milan",1,1,0,1,0,1,NA,NA,1,1,262
+7099,172371,1549219500,"Finished",0,"Real Madrid",7108,"Alaves",3,0,1,0,1,0,NA,NA,1,1,468
+3026,172356,1549220400,"Finished",0,"Lyon",3040,"Paris SG",2,1,1,1,1,1,NA,NA,1,1,176
+2620,173205,1549306800,"Finished",0,"West Ham",2621,"Liverpool",1,1,1,1,1,1,NA,NA,1,1,148
+4171,173207,1549306800,"Finished",0,"Cagliari",4181,"Atalanta",0,1,0,0,0,0,NA,NA,1,1,262
+3031,174024,1549384200,"Finished",0,"Nantes",3024,"Toulouse",2,0,2,0,2,0,NA,NA,1,1,176
+3023,161701,1549386000,"Finished",0,"Marseille",3038,"Bordeaux",1,0,1,0,1,0,NA,NA,1,1,176
+7618,173618,1549463400,"Finished",0,"Yeni Malatyaspor",7620,"Goztepe",1,0,1,0,1,0,NA,NA,1,1,511
+3226,173512,1549470600,"Finished",0,"RB Leipzig",3236,"Wolfsburg",1,0,1,0,1,0,NA,NA,1,1,195
+2612,173464,1549478700,"Finished",0,"Everton",2626,"Manchester City",0,2,0,1,0,1,NA,NA,1,1,148
+3235,173514,1549478700,"Finished",0,"Schalke",3256,"Dusseldorf",4,1,1,0,1,0,NA,NA,1,1,195
+7105,173766,1549479600,"Finished",0,"Barcelona",7099,"Real Madrid",1,1,0,1,0,1,NA,NA,1,1,468
+3035,173510,1549479900,"Finished",0,"Rennes",3022,"Lille",2,1,0,0,0,0,NA,NA,1,1,176
+7091,173765,1549566000,"Finished",0,"Betis",7109,"Valencia",2,2,1,0,1,0,NA,NA,1,1,468
+7604,175417,1549643400,"Finished",0,"Kayserispor",7603,"Fenerbahce",1,0,0,0,0,0,NA,NA,1,1,511
+3237,173796,1549650600,"Finished",0,"Mainz",3227,"Bayer Leverkusen",1,5,1,4,1,4,NA,NA,1,1,195
+2632,173826,1549651500,"Finished",0,"Aston Villa",2654,"Sheffield Utd",3,3,0,1,0,1,NA,NA,1,1,148
+3030,173795,1549651500,"Finished",0,"Dijon",3023,"Marseille",1,2,1,0,1,0,NA,NA,1,1,176
+7115,173799,1549652400,"Finished",0,"Valladolid",7107,"Villarreal",0,0,0,0,0,0,NA,NA,1,1,468
+7100,174051,1549710000,"Finished",0,"Getafe",7095,"Celta Vigo",3,1,1,1,1,1,NA,NA,1,1,468
+7623,175419,1549713600,"Finished",0,"Rizespor",7608,"Antalyaspor",1,1,1,0,1,0,NA,NA,1,1,511
+3222,174041,1549719000,"Finished",0,"Freiburg",3236,"Wolfsburg",3,3,NA,NA,NA,NA,NA,NA,1,1,195
+3226,174043,1549719000,"Finished",0,"RB Leipzig",3238,"Eintracht Frankfurt",0,0,NA,NA,NA,NA,NA,NA,1,1,195
+3230,174040,1549719000,"Finished",0,"Dortmund",3233,"Hoffenheim",3,3,2,0,2,0,NA,NA,1,1,195
+3234,174039,1549719000,"Finished",0,"B. Monchengladbach",3231,"Hertha Berlin",0,3,0,1,0,1,NA,NA,1,1,195
+2619,174029,1549720800,"Finished",0,"Crystal Palace",2620,"West Ham",1,1,0,1,0,1,NA,NA,1,1,148
+2621,174031,1549720800,"Finished",0,"Liverpool",2615,"Bournemouth",3,0,2,0,2,0,NA,NA,1,1,148
+2623,174033,1549720800,"Finished",0,"Watford",2612,"Everton",1,0,0,0,0,0,NA,NA,1,1,148
+7106,174052,1549721700,"Finished",0,"Atl. Madrid",7099,"Real Madrid",1,3,1,2,1,2,NA,NA,1,1,468
+3040,174035,1549724400,"Finished",0,"Paris SG",3038,"Bordeaux",1,0,1,0,1,0,NA,NA,1,1,176
+4173,174045,1549728000,"Finished",0,"Fiorentina",4174,"Napoli",0,0,0,0,0,0,NA,NA,1,1,262
+2613,174034,1549729800,"Finished",0,"Brighton",2629,"Burnley",1,3,0,1,0,1,NA,NA,1,1,148
+3225,174044,1549729800,"Finished",0,"Bayern Munich",3235,"Schalke",3,1,2,1,2,1,NA,NA,1,1,195
+3036,174038,1549735200,"Finished",0,"Strasbourg",3037,"Angers",1,2,0,1,0,1,NA,NA,1,1,176
+4192,174046,1549737000,"Finished",0,"Parma",4189,"Inter",0,1,0,0,0,0,NA,NA,1,1,262
+7611,175418,1549791000,"Finished",0,"Konyaspor",7618,"Yeni Malatyaspor",1,1,0,0,0,0,NA,NA,1,1,511
+7103,174660,1549792800,"Finished",0,"Leganes",7091,"Betis",3,0,2,0,2,0,NA,NA,1,1,468
+4185,174650,1549794600,"Finished",0,"Bologna",4179,"Genoa",1,1,1,1,1,1,NA,NA,1,1,262
+7620,175416,1549800000,"Finished",0,"Goztepe",7613,"Alanyaspor",3,2,2,1,2,1,NA,NA,1,1,511
+2628,174641,1549801800,"Finished",0,"Tottenham",2611,"Leicester",3,1,1,0,1,0,NA,NA,1,1,148
+3024,174644,1549803600,"Finished",0,"Toulouse",3046,"Reims",1,1,0,0,0,0,NA,NA,1,1,176
+3031,174037,1549803600,"Finished",0,"Nantes",3049,"Nimes",2,4,2,0,2,0,NA,NA,1,1,176
+3034,174643,1549803600,"Finished",0,"Montpellier",3039,"Monaco",2,2,0,1,0,1,NA,NA,1,1,176
+4170,174653,1549803600,"Finished",0,"Torino",4180,"Udinese",1,0,1,0,1,0,NA,NA,1,1,262
+4181,174651,1549803600,"Finished",0,"Atalanta",4178,"Spal",2,1,0,1,0,1,NA,NA,1,1,262
+3223,174648,1549805400,"Finished",0,"Werder Bremen",3224,"Augsburg",4,0,3,0,3,0,NA,NA,1,1,195
+7109,174661,1549808100,"Finished",0,"Valencia",7101,"Real Sociedad",0,0,0,0,0,0,NA,NA,1,1,468
+2626,174642,1549810800,"Finished",0,"Manchester City",2616,"Chelsea",6,0,4,0,4,0,NA,NA,1,1,148
+3035,174646,1549810800,"Finished",0,"Rennes",3025,"St Etienne",3,0,1,0,1,0,NA,NA,1,1,176
+7606,175415,1549810800,"Finished",0,"Galatasaray",7605,"Trabzonspor",3,1,2,1,2,1,NA,NA,1,1,511
+4175,174654,1549814400,"Finished",0,"Sassuolo",4187,"Juventus",0,3,0,1,0,1,NA,NA,1,1,262
+7102,174662,1549816200,"Finished",0,"Sevilla",7096,"Eibar",2,2,0,1,0,1,NA,NA,1,1,468
+4186,174655,1549823400,"Finished",0,"AC Milan",4171,"Cagliari",3,0,2,0,2,0,NA,NA,1,1,262
+7104,174663,1549824300,"Finished",0,"Ath Bilbao",7105,"Barcelona",0,0,0,0,0,0,NA,NA,1,1,468
+3041,174647,1549825200,"Finished",0,"Nice",3026,"Lyon",1,0,0,0,0,0,NA,NA,1,1,176
+7621,175412,1549900800,"Finished",0,"Ankaragucu",7619,"Kasimpasa",3,0,1,0,1,0,NA,NA,1,1,511
+2646,175509,1549911600,"Finished",0,"Wolves",2630,"Newcastle",1,1,0,0,0,0,NA,NA,1,1,148
+7108,175510,1549911600,"Finished",0,"Alaves",7097,"Levante",2,0,1,0,1,0,NA,NA,1,1,468
+2627,175632,1549998000,"Finished",0,"Manchester Utd",3040,"Paris SG",0,2,0,0,0,0,NA,NA,1,1,148
+3025,172355,1550077200,"Finished",0,"St Etienne",3036,"Strasbourg",2,1,2,0,2,0,NA,NA,1,1,176
+2628,175801,1550084400,"Finished",0,"Tottenham",3230,"Dortmund",3,0,0,0,0,0,NA,NA,1,1,148
+3035,176043,1550163300,"Finished",0,"Rennes",7091,"Betis",3,3,3,1,3,1,NA,NA,1,1,176
+4183,176040,1550163300,"Finished",0,"Lazio",7102,"Sevilla",0,1,0,1,0,1,NA,NA,1,1,262
+3268,176969,1550248200,"Finished",0,"Paderborn",3228,"FC Koln",3,2,0,1,0,1,NA,NA,1,1,195
+7618,177054,1550248200,"Finished",0,"Yeni Malatyaspor",7614,"Besiktas",1,2,0,0,0,0,NA,NA,1,1,511
+3049,176232,1550250000,"Finished",0,"Nimes",3030,"Dijon",2,0,1,0,1,0,NA,NA,1,1,176
+3224,176895,1550255400,"Finished",0,"Augsburg",3225,"Bayern Munich",2,3,2,2,2,2,NA,NA,1,1,195
+7096,176898,1550257200,"Finished",0,"Eibar",7100,"Getafe",2,2,0,1,0,1,NA,NA,1,1,468
+7095,176244,1550314800,"Finished",0,"Celta Vigo",7097,"Levante",1,4,0,2,0,2,NA,NA,1,1,468
+3235,176234,1550323800,"Finished",0,"Schalke",3222,"Freiburg",0,0,0,0,0,0,NA,NA,1,1,195
+3236,176236,1550323800,"Finished",0,"Wolfsburg",3237,"Mainz",3,0,1,0,1,0,NA,NA,1,1,195
+3023,176229,1550329200,"Finished",0,"Marseille",3033,"Amiens",2,0,2,0,2,0,NA,NA,1,1,176
+7603,176829,1550329200,"Finished",0,"Fenerbahce",7611,"Konyaspor",1,1,1,1,1,1,NA,NA,1,1,511
+4171,176238,1550332800,"Finished",0,"Cagliari",4192,"Parma",2,1,0,1,0,1,NA,NA,1,1,262
+3231,176237,1550334600,"Finished",0,"Hertha Berlin",3223,"Werder Bremen",1,1,1,0,1,0,NA,NA,1,1,195
+7101,176246,1550334600,"Finished",0,"Real Sociedad",7103,"Leganes",3,0,0,0,0,0,NA,NA,1,1,468
+3037,176230,1550340000,"Finished",0,"Angers",3041,"Nice",3,0,1,0,1,0,NA,NA,1,1,176
+3039,176231,1550340000,"Finished",0,"Monaco",3031,"Nantes",1,0,1,0,1,0,NA,NA,1,1,176
+4181,176239,1550341800,"Finished",0,"Atalanta",4186,"AC Milan",1,3,1,1,1,1,NA,NA,1,1,262
+7105,176247,1550342700,"Finished",0,"Barcelona",7115,"Valladolid",1,0,1,0,1,0,NA,NA,1,1,468
+4178,177081,1550399400,"Finished",0,"Spal",4173,"Fiorentina",1,4,1,1,1,1,NA,NA,1,1,262
+7604,177849,1550404800,"Finished",0,"Kayserispor",7620,"Goztepe",2,1,1,0,1,0,NA,NA,1,1,511
+7605,177850,1550404800,"Finished",0,"Trabzonspor",7613,"Alanyaspor",0,2,0,0,0,0,NA,NA,1,1,511
+3022,177076,1550408400,"Finished",0,"Lille",3034,"Montpellier",0,0,NA,NA,NA,NA,NA,NA,1,1,176
+3038,177074,1550408400,"Finished",0,"Bordeaux",3024,"Toulouse",2,1,1,0,1,0,NA,NA,1,1,176
+4179,177083,1550408400,"Finished",0,"Genoa",4183,"Lazio",2,1,0,1,0,1,NA,NA,1,1,262
+3238,177079,1550410200,"Finished",0,"Eintracht Frankfurt",3234,"B. Monchengladbach",1,1,1,0,1,0,NA,NA,1,1,195
+7109,177092,1550412900,"Finished",0,"Valencia",7090,"Espanyol",0,0,0,0,0,0,NA,NA,1,1,468
+3046,177077,1550415600,"Finished",0,"Reims",3035,"Rennes",2,0,1,0,1,0,NA,NA,1,1,176
+7619,177851,1550415600,"Finished",0,"Kasimpasa",7606,"Galatasaray",1,4,1,2,1,2,NA,NA,1,1,511
+3227,177080,1550419200,"Finished",0,"Bayer Leverkusen",3256,"Dusseldorf",2,0,1,0,1,0,NA,NA,1,1,195
+4189,177085,1550419200,"Finished",0,"Inter",4176,"Sampdoria",2,1,0,0,0,0,NA,NA,1,1,262
+7107,177093,1550421000,"Finished",0,"Villarreal",7102,"Sevilla",3,0,2,0,2,0,NA,NA,1,1,468
+4174,177086,1550428200,"Finished",0,"Napoli",4170,"Torino",0,0,0,0,0,0,NA,NA,1,1,262
+7091,177094,1550429100,"Finished",0,"Betis",7108,"Alaves",1,1,1,1,1,1,NA,NA,1,1,468
+3025,177078,1550430000,"Finished",0,"St Etienne",3040,"Paris SG",0,1,0,0,0,0,NA,NA,1,1,176
+7608,178018,1550505600,"Finished",0,"Antalyaspor",7615,"Basaksehir",0,1,0,1,0,1,NA,NA,1,1,511
+2616,177974,1550514600,"Finished",0,"Chelsea",2627,"Manchester Utd",0,2,0,2,0,2,NA,NA,1,1,148
+4184,177949,1550514600,"Finished",0,"AS Roma",4185,"Bologna",2,1,0,0,0,0,NA,NA,1,1,262
+2621,178050,1550602800,"Finished",0,"Liverpool",3225,"Bayern Munich",0,0,0,0,0,0,NA,NA,1,1,148
+3026,178051,1550602800,"Finished",0,"Lyon",7105,"Barcelona",0,0,0,0,0,0,NA,NA,1,1,176
+7102,178183,1550678400,"Finished",0,"Sevilla",4183,"Lazio",2,0,1,0,1,0,NA,NA,1,1,468
+3040,159183,1550689200,"Finished",0,"Paris SG",3034,"Montpellier",5,1,2,1,2,1,NA,NA,1,1,176
+3235,178182,1550689200,"Finished",0,"Schalke",2626,"Manchester City",2,3,2,1,2,1,NA,NA,1,1,195
+7106,178181,1550689200,"Finished",0,"Atl. Madrid",4187,"Juventus",2,0,0,0,0,0,NA,NA,1,1,468
+7091,178353,1550775600,"Finished",0,"Betis",3035,"Rennes",1,3,1,2,1,2,NA,NA,1,1,468
+7620,179585,1550853000,"Finished",0,"Goztepe",7605,"Trabzonspor",1,3,0,1,0,1,NA,NA,1,1,511
+7623,179586,1550853000,"Finished",0,"Rizespor",7618,"Yeni Malatyaspor",3,0,1,0,1,0,NA,NA,1,1,511
+3030,178524,1550854800,"Finished",0,"Dijon",3025,"St Etienne",0,1,0,0,0,0,NA,NA,1,1,176
+3036,178525,1550861100,"Finished",0,"Strasbourg",3022,"Lille",1,1,0,1,0,1,NA,NA,1,1,176
+7610,179563,1550914200,"Finished",0,"Sivasspor",7608,"Antalyaspor",1,2,0,2,0,2,NA,NA,1,1,511
+2629,178780,1550921400,"Finished",0,"Burnley",2628,"Tottenham",2,1,0,0,0,0,NA,NA,1,1,148
+7613,179564,1550923200,"Finished",0,"Alanyaspor",7619,"Kasimpasa",3,0,1,0,1,0,NA,NA,1,1,511
+4170,178792,1550926800,"Finished",0,"Torino",4181,"Atalanta",2,0,1,0,1,0,NA,NA,1,1,262
+3222,178789,1550928600,"Finished",0,"Freiburg",3224,"Augsburg",5,1,3,0,3,0,NA,NA,1,1,195
+3225,178788,1550928600,"Finished",0,"Bayern Munich",3231,"Hertha Berlin",1,0,0,0,0,0,NA,NA,1,1,195
+3234,178787,1550928600,"Finished",0,"B. Monchengladbach",3236,"Wolfsburg",0,3,0,1,0,1,NA,NA,1,1,195
+3237,178790,1550928600,"Finished",0,"Mainz",3235,"Schalke",3,0,1,0,1,0,NA,NA,1,1,195
+2615,178781,1550930400,"Finished",0,"Bournemouth",2646,"Wolves",1,1,1,0,1,0,NA,NA,1,1,148
+7102,178799,1550931300,"Finished",0,"Sevilla",7105,"Barcelona",2,4,2,1,2,1,NA,NA,1,1,468
+3040,178784,1550934000,"Finished",0,"Paris SG",3049,"Nimes",3,0,1,0,1,0,NA,NA,1,1,176
+2611,178783,1550939400,"Finished",0,"Leicester",2619,"Crystal Palace",1,4,0,1,0,1,NA,NA,1,1,148
+7108,178800,1550939400,"Finished",0,"Alaves",7095,"Celta Vigo",0,0,0,0,0,0,NA,NA,1,1,468
+3033,178785,1550944800,"Finished",0,"Amiens",3041,"Nice",1,0,1,0,1,0,NA,NA,1,1,176
+7104,178801,1550947500,"Finished",0,"Ath Bilbao",7096,"Eibar",1,0,1,0,1,0,NA,NA,1,1,468
+7103,179628,1551002400,"Finished",0,"Leganes",7109,"Valencia",1,1,0,1,0,1,NA,NA,1,1,468
+4176,179618,1551004200,"Finished",0,"Sampdoria",4171,"Cagliari",1,0,0,0,0,0,NA,NA,1,1,262
+7611,180460,1551009600,"Finished",0,"Konyaspor",7604,"Kayserispor",0,1,0,0,0,0,NA,NA,1,1,511
+3031,179612,1551013200,"Finished",0,"Nantes",3038,"Bordeaux",1,0,0,0,0,0,NA,NA,1,1,176
+3034,179611,1551013200,"Finished",0,"Montpellier",3046,"Reims",2,4,1,1,1,1,NA,NA,1,1,176
+4175,179621,1551013200,"Finished",0,"Sassuolo",4178,"Spal",1,1,1,0,1,0,NA,NA,1,1,262
+4185,179619,1551013200,"Finished",0,"Bologna",4187,"Juventus",0,1,0,0,0,0,NA,NA,1,1,262
+2617,179609,1551013500,"Finished",0,"Arsenal",2614,"Southampton",2,0,2,0,2,0,NA,NA,1,1,148
+2627,179610,1551013500,"Finished",0,"Manchester Utd",2621,"Liverpool",0,0,0,0,0,0,NA,NA,1,1,148
+7106,179629,1551017700,"Finished",0,"Atl. Madrid",7107,"Villarreal",2,0,1,0,1,0,NA,NA,1,1,468
+3035,179614,1551020400,"Finished",0,"Rennes",3023,"Marseille",1,1,1,0,1,0,NA,NA,1,1,176
+3230,179617,1551024000,"Finished",0,"Dortmund",3227,"Bayer Leverkusen",3,2,2,1,2,1,NA,NA,1,1,195
+4192,179622,1551024000,"Finished",0,"Parma",4174,"Napoli",0,4,0,2,0,2,NA,NA,1,1,262
+7115,179630,1551025800,"Finished",0,"Valladolid",7091,"Betis",0,2,0,1,0,1,NA,NA,1,1,468
+4173,179623,1551033000,"Finished",0,"Fiorentina",4189,"Inter",3,3,1,2,1,2,NA,NA,1,1,262
+7097,179631,1551033900,"Finished",0,"Levante",7099,"Real Madrid",1,2,0,1,0,1,NA,NA,1,1,468
+3039,179615,1551034800,"Finished",0,"Monaco",3026,"Lyon",2,0,2,0,2,0,NA,NA,1,1,176
+7614,180645,1551114000,"Finished",0,"Besiktas",7603,"Fenerbahce",3,3,3,0,3,0,NA,NA,1,1,511
+3226,180564,1551119400,"Finished",0,"RB Leipzig",3233,"Hoffenheim",1,1,0,1,0,1,NA,NA,1,1,195
+2611,180698,1551206700,"Finished",0,"Leicester",2613,"Brighton",2,1,1,0,1,0,NA,NA,1,1,148
+2630,180699,1551207600,"Finished",0,"Newcastle",2629,"Burnley",2,0,2,0,2,0,NA,NA,1,1,148
+4186,173746,1551207600,"Finished",0,"AC Milan",4183,"Lazio",0,0,0,0,0,0,NA,NA,1,1,262
+4268,180742,1551207600,"Finished",0,"Lecce",4188,"Verona",2,1,1,0,1,0,NA,NA,1,1,262
+3040,180728,1551208200,"Finished",0,"Paris SG",3030,"Dijon",3,0,2,0,2,0,NA,NA,1,1,176
+2617,180817,1551293100,"Finished",0,"Arsenal",2615,"Bournemouth",5,1,2,1,2,1,NA,NA,1,1,148
+2616,180819,1551294000,"Finished",0,"Chelsea",2628,"Tottenham",2,0,0,0,0,0,NA,NA,1,1,148
+2619,180820,1551294000,"Finished",0,"Crystal Palace",2627,"Manchester Utd",1,3,0,1,0,1,NA,NA,1,1,148
+2621,180821,1551294000,"Finished",0,"Liverpool",2623,"Watford",5,0,2,0,2,0,NA,NA,1,1,148
+2626,180822,1551294000,"Finished",0,"Manchester City",2620,"West Ham",1,0,0,0,0,0,NA,NA,1,1,148
+4173,173527,1551294000,"Finished",0,"Fiorentina",4181,"Atalanta",3,3,2,2,2,2,NA,NA,1,1,262
+7099,180947,1551294000,"Finished",0,"Real Madrid",7105,"Barcelona",0,3,0,0,0,0,NA,NA,1,1,468
+7109,181064,1551380400,"Finished",0,"Valencia",7091,"Betis",1,0,0,0,0,0,NA,NA,1,1,468
+7608,181304,1551457800,"Finished",0,"Antalyaspor",7621,"Ankaragucu",2,4,2,3,2,3,NA,NA,1,1,511
+3224,181120,1551465000,"Finished",0,"Augsburg",3230,"Dortmund",2,1,1,0,1,0,NA,NA,1,1,195
+4171,181121,1551465000,"Finished",0,"Cagliari",4189,"Inter",2,1,2,1,2,1,NA,NA,1,1,262
+7090,181368,1551524400,"Finished",0,"Espanyol",7115,"Valladolid",3,1,1,1,1,1,NA,NA,1,1,468
+2628,181345,1551526200,"Finished",0,"Tottenham",2617,"Arsenal",1,1,0,1,0,1,NA,NA,1,1,148
+7604,182108,1551528000,"Finished",0,"Kayserispor",7614,"Besiktas",2,2,NA,NA,NA,NA,NA,NA,1,1,511
+3227,181356,1551533400,"Finished",0,"Bayer Leverkusen",3222,"Freiburg",2,0,1,0,1,0,NA,NA,1,1,195
+3231,181358,1551533400,"Finished",0,"Hertha Berlin",3237,"Mainz",2,1,0,0,0,0,NA,NA,1,1,195
+3235,181360,1551533400,"Finished",0,"Schalke",3256,"Dusseldorf",0,4,NA,NA,NA,NA,NA,NA,1,1,195
+3238,181357,1551533400,"Finished",0,"Eintracht Frankfurt",3233,"Hoffenheim",3,2,1,1,1,1,NA,NA,1,1,195
+2615,181346,1551535200,"Finished",0,"Bournemouth",2626,"Manchester City",0,1,0,0,0,0,NA,NA,1,1,148
+2627,181349,1551535200,"Finished",0,"Manchester Utd",2614,"Southampton",3,2,0,1,0,1,NA,NA,1,1,148
+2629,181348,1551535200,"Finished",0,"Burnley",2619,"Crystal Palace",1,3,0,1,0,1,NA,NA,1,1,148
+7107,181369,1551536100,"Finished",0,"Villarreal",7108,"Alaves",1,2,NA,NA,NA,NA,NA,NA,1,1,468
+7603,182109,1551538800,"Finished",0,"Fenerbahce",7623,"Rizespor",3,2,NA,NA,NA,NA,NA,NA,1,1,511
+4186,181363,1551542400,"Finished",0,"AC Milan",4175,"Sassuolo",1,0,1,0,1,0,NA,NA,1,1,262
+2620,181351,1551544200,"Finished",0,"West Ham",2630,"Newcastle",2,0,2,0,2,0,NA,NA,1,1,148
+3234,181361,1551544200,"Finished",0,"B. Monchengladbach",3225,"Bayern Munich",1,5,1,2,1,2,NA,NA,1,1,195
+3037,181353,1551549600,"Finished",0,"Angers",3039,"Monaco",2,2,2,0,2,0,NA,NA,1,1,176
+3046,181355,1551549600,"Finished",0,"Reims",3033,"Amiens",2,2,0,2,0,2,NA,NA,1,1,176
+4183,181364,1551551400,"Finished",0,"Lazio",4184,"AS Roma",3,0,1,0,1,0,NA,NA,1,1,262
+7099,181371,1551552300,"Finished",0,"Real Madrid",7105,"Barcelona",0,1,0,1,0,1,NA,NA,1,1,468
+7611,182959,1551605400,"Finished",0,"Konyaspor",7620,"Goztepe",1,1,1,0,1,0,NA,NA,1,1,511
+7096,182225,1551607200,"Finished",0,"Eibar",7095,"Celta Vigo",1,0,0,0,0,0,NA,NA,1,1,468
+2623,182205,1551610800,"Finished",0,"Watford",2611,"Leicester",2,1,1,0,1,0,NA,NA,1,1,148
+7618,182960,1551614400,"Finished",0,"Yeni Malatyaspor",7615,"Basaksehir",0,2,0,1,0,1,NA,NA,1,1,511
+3022,182209,1551618000,"Finished",0,"Lille",3030,"Dijon",1,0,0,0,0,0,NA,NA,1,1,176
+3041,182210,1551618000,"Finished",0,"Nice",3036,"Strasbourg",1,0,1,0,1,0,NA,NA,1,1,176
+4178,182217,1551618000,"Finished",0,"Spal",4176,"Sampdoria",1,2,0,2,0,2,NA,NA,1,1,262
+4180,182218,1551618000,"Finished",0,"Udinese",4185,"Bologna",2,1,1,1,1,1,NA,NA,1,1,262
+7091,182226,1551622500,"Finished",0,"Betis",7100,"Getafe",1,2,0,2,0,2,NA,NA,1,1,468
+3026,182211,1551625200,"Finished",0,"Lyon",3024,"Toulouse",5,1,3,1,3,1,NA,NA,1,1,176
+2612,182207,1551626100,"Finished",0,"Everton",2621,"Liverpool",0,0,0,0,0,0,NA,NA,1,1,148
+3236,182214,1551628800,"Finished",0,"Wolfsburg",3223,"Werder Bremen",1,1,0,0,0,0,NA,NA,1,1,195
+4181,182219,1551628800,"Finished",0,"Atalanta",4173,"Fiorentina",3,1,2,1,2,1,NA,NA,1,1,262
+7101,182227,1551630600,"Finished",0,"Real Sociedad",7106,"Atl. Madrid",0,2,0,2,0,2,NA,NA,1,1,468
+4174,182220,1551637800,"Finished",0,"Napoli",4187,"Juventus",1,2,0,2,0,2,NA,NA,1,1,262
+7109,182228,1551638700,"Finished",0,"Valencia",7104,"Ath Bilbao",2,0,0,0,0,0,NA,NA,1,1,468
+3023,182212,1551639600,"Finished",0,"Marseille",3025,"St Etienne",2,0,2,0,2,0,NA,NA,1,1,176
+7619,183097,1551715200,"Finished",0,"Kasimpasa",7605,"Trabzonspor",2,2,0,2,0,2,NA,NA,1,1,511
+7103,183019,1551726000,"Finished",0,"Leganes",7097,"Levante",1,0,1,0,1,0,NA,NA,1,1,468
+3038,181119,1551805200,"Finished",0,"Bordeaux",3034,"Montpellier",1,2,1,1,1,1,NA,NA,1,1,176
+3230,183159,1551812400,"Finished",0,"Dortmund",2628,"Tottenham",0,1,0,0,0,0,NA,NA,1,1,195
+3040,183262,1551898800,"Finished",0,"Paris SG",2627,"Manchester Utd",1,3,1,2,1,2,NA,NA,1,1,176
+3035,183474,1551977700,"Finished",0,"Rennes",2617,"Arsenal",3,1,1,1,1,1,NA,NA,1,1,176
+3238,183473,1551977700,"Finished",0,"Eintracht Frankfurt",4189,"Inter",0,0,0,0,0,0,NA,NA,1,1,195
+7610,185691,1552062600,"Finished",0,"Sivasspor",7618,"Yeni Malatyaspor",2,0,2,0,2,0,NA,NA,1,1,511
+3223,183576,1552069800,"Finished",0,"Werder Bremen",3235,"Schalke",4,2,1,1,1,1,NA,NA,1,1,195
+4187,183577,1552069800,"Finished",0,"Juventus",4180,"Udinese",4,1,2,0,2,0,NA,NA,1,1,262
+7104,183579,1552071600,"Finished",0,"Ath Bilbao",7090,"Espanyol",1,1,0,1,0,1,NA,NA,1,1,468
+7108,183832,1552129200,"Finished",0,"Alaves",7096,"Eibar",1,1,0,0,0,0,NA,NA,1,1,468
+2619,183809,1552131000,"Finished",0,"Crystal Palace",2613,"Brighton",1,2,0,1,0,1,NA,NA,1,1,148
+3222,183823,1552138200,"Finished",0,"Freiburg",3231,"Hertha Berlin",2,1,1,0,1,0,NA,NA,1,1,195
+3225,183821,1552138200,"Finished",0,"Bayern Munich",3236,"Wolfsburg",6,0,2,0,2,0,NA,NA,1,1,195
+3226,183824,1552138200,"Finished",0,"RB Leipzig",3224,"Augsburg",0,0,0,0,0,0,NA,NA,1,1,195
+2614,183814,1552140000,"Finished",0,"Southampton",2628,"Tottenham",2,1,0,1,0,1,NA,NA,1,1,148
+2630,183813,1552140000,"Finished",0,"Newcastle",2612,"Everton",3,2,0,2,0,2,NA,NA,1,1,148
+7106,183833,1552140900,"Finished",0,"Atl. Madrid",7103,"Leganes",1,0,0,0,0,0,NA,NA,1,1,468
+3036,183816,1552143600,"Finished",0,"Strasbourg",3026,"Lyon",2,2,0,1,0,1,NA,NA,1,1,176
+7615,185686,1552143600,"Finished",0,"Basaksehir",7603,"Fenerbahce",2,1,1,0,1,0,NA,NA,1,1,511
+4192,183826,1552147200,"Finished",0,"Parma",4179,"Genoa",1,0,0,0,0,0,NA,NA,1,1,262
+2626,183815,1552149000,"Finished",0,"Manchester City",2623,"Watford",3,1,0,0,0,0,NA,NA,1,1,148
+3237,183825,1552149000,"Finished",0,"Mainz",3234,"B. Monchengladbach",0,1,0,0,0,0,NA,NA,1,1,195
+3030,183818,1552154400,"Finished",0,"Dijon",3046,"Reims",1,1,1,1,1,1,NA,NA,1,1,176
+3033,183817,1552154400,"Finished",0,"Amiens",3049,"Nimes",2,1,0,0,0,0,NA,NA,1,1,176
+3039,183819,1552154400,"Finished",0,"Monaco",3038,"Bordeaux",1,1,0,0,0,0,NA,NA,1,1,176
+7095,184836,1552212000,"Finished",0,"Celta Vigo",7091,"Betis",0,1,0,0,0,0,NA,NA,1,1,468
+4185,184826,1552213800,"Finished",0,"Bologna",4171,"Cagliari",2,0,1,0,1,0,NA,NA,1,1,262
+2621,184816,1552215600,"Finished",0,"Liverpool",2629,"Burnley",4,2,2,1,2,1,NA,NA,1,1,148
+7620,185689,1552219200,"Finished",0,"Goztepe",7619,"Kasimpasa",0,0,0,0,0,0,NA,NA,1,1,511
+7623,185690,1552219200,"Finished",0,"Rizespor",7604,"Kayserispor",3,0,1,0,1,0,NA,NA,1,1,511
+3025,184820,1552222800,"Finished",0,"St Etienne",3022,"Lille",0,1,0,0,0,0,NA,NA,1,1,176
+3034,184819,1552222800,"Finished",0,"Montpellier",3037,"Angers",2,2,2,0,2,0,NA,NA,1,1,176
+4176,184829,1552222800,"Finished",0,"Sampdoria",4181,"Atalanta",1,2,0,0,0,0,NA,NA,1,1,262
+4189,184828,1552222800,"Finished",0,"Inter",4178,"Spal",2,0,0,0,0,0,NA,NA,1,1,262
+2616,184817,1552223100,"Finished",0,"Chelsea",2646,"Wolves",1,1,0,0,0,0,NA,NA,1,1,148
+7614,185687,1552230000,"Finished",0,"Besiktas",7611,"Konyaspor",3,2,2,1,2,1,NA,NA,1,1,511
+2617,184818,1552231800,"Finished",0,"Arsenal",2627,"Manchester Utd",2,0,1,0,1,0,NA,NA,1,1,148
+4175,184830,1552233600,"Finished",0,"Sassuolo",4174,"Napoli",1,1,0,0,0,0,NA,NA,1,1,262
+7097,184838,1552235400,"Finished",0,"Levante",7107,"Villarreal",0,2,0,0,0,0,NA,NA,1,1,468
+7102,184839,1552235400,"Finished",0,"Sevilla",7101,"Real Sociedad",5,2,1,1,1,1,NA,NA,1,1,468
+4173,184831,1552242600,"Finished",0,"Fiorentina",4183,"Lazio",1,1,0,1,0,1,NA,NA,1,1,262
+7115,184840,1552243500,"Finished",0,"Valladolid",7099,"Real Madrid",1,4,1,1,1,1,NA,NA,1,1,468
+3023,184823,1552244400,"Finished",0,"Marseille",3041,"Nice",1,0,0,0,0,0,NA,NA,1,1,176
+7606,185688,1552320000,"Finished",0,"Galatasaray",7608,"Antalyaspor",5,0,1,0,1,0,NA,NA,1,1,511
+3256,185809,1552329000,"Finished",0,"Dusseldorf",3238,"Eintracht Frankfurt",0,3,0,0,0,0,NA,NA,1,1,195
+3030,161176,1552410000,"Finished",0,"Dijon",3040,"Paris SG",0,4,0,2,0,2,NA,NA,1,1,176
+2626,185915,1552417200,"Finished",0,"Manchester City",3235,"Schalke",7,0,3,0,3,0,NA,NA,1,1,148
+4187,185914,1552417200,"Finished",0,"Juventus",7106,"Atl. Madrid",3,0,1,0,1,0,NA,NA,1,1,262
+3225,186064,1552503600,"Finished",0,"Bayern Munich",2621,"Liverpool",1,3,1,1,1,1,NA,NA,1,1,195
+7105,186063,1552503600,"Finished",0,"Barcelona",3026,"Lyon",5,1,2,0,2,0,NA,NA,1,1,468
+2617,186245,1552590000,"Finished",0,"Arsenal",3035,"Rennes",3,0,2,0,2,0,NA,NA,1,1,148
+4189,186247,1552590000,"Finished",0,"Inter",3238,"Eintracht Frankfurt",0,1,0,1,0,1,NA,NA,1,1,262
+7603,186534,1552667400,"Finished",0,"Fenerbahce",7610,"Sivasspor",2,1,0,0,0,0,NA,NA,1,1,511
+3041,186347,1552669200,"Finished",0,"Nice",3024,"Toulouse",1,1,1,0,1,0,NA,NA,1,1,176
+3234,186349,1552674600,"Finished",0,"B. Monchengladbach",3222,"Freiburg",1,1,1,1,1,1,NA,NA,1,1,195
+4171,186350,1552674600,"Finished",0,"Cagliari",4173,"Fiorentina",2,1,0,0,0,0,NA,NA,1,1,262
+3022,186348,1552675500,"Finished",0,"Lille",3039,"Monaco",0,1,0,0,0,0,NA,NA,1,1,176
+7101,186352,1552676400,"Finished",0,"Real Sociedad",7097,"Levante",1,1,1,0,1,0,NA,NA,1,1,468
+7611,187580,1552728600,"Finished",0,"Konyaspor",7623,"Rizespor",0,2,0,1,0,1,NA,NA,1,1,511
+2623,187081,1552734900,"Finished",0,"Watford",2619,"Crystal Palace",2,1,1,0,1,0,NA,NA,1,1,148
+4175,186640,1552741200,"Finished",0,"Sassuolo",4176,"Sampdoria",3,5,1,3,1,3,NA,NA,1,1,262
+3235,186636,1552743000,"Finished",0,"Schalke",3226,"RB Leipzig",0,1,0,1,0,1,NA,NA,1,1,195
+3236,186638,1552743000,"Finished",0,"Wolfsburg",3256,"Dusseldorf",5,2,1,1,1,1,NA,NA,1,1,195
+2615,186624,1552744800,"Finished",0,"Bournemouth",2630,"Newcastle",2,2,0,1,0,1,NA,NA,1,1,148
+2629,186626,1552744800,"Finished",0,"Burnley",2611,"Leicester",1,2,1,1,1,1,NA,NA,1,1,148
+7099,186648,1552745700,"Finished",0,"Real Madrid",7095,"Celta Vigo",2,0,0,0,0,0,NA,NA,1,1,468
+7608,188733,1552748400,"Finished",0,"Antalyaspor",7613,"Alanyaspor",3,0,2,0,2,0,NA,NA,1,1,511
+7614,187583,1552748400,"Finished",0,"Besiktas",7620,"Goztepe",1,0,0,0,0,0,NA,NA,1,1,511
+4178,186641,1552752000,"Finished",0,"Spal",4184,"AS Roma",2,1,1,0,1,0,NA,NA,1,1,262
+3231,186639,1552753800,"Finished",0,"Hertha Berlin",3230,"Dortmund",2,3,2,1,2,1,NA,NA,1,1,195
+7104,186649,1552753800,"Finished",0,"Ath Bilbao",7106,"Atl. Madrid",2,0,0,0,0,0,NA,NA,1,1,468
+3037,186631,1552759200,"Finished",0,"Angers",3033,"Amiens",0,0,0,0,0,0,NA,NA,1,1,176
+3049,186634,1552759200,"Finished",0,"Nimes",3036,"Strasbourg",2,2,0,1,0,1,NA,NA,1,1,176
+4170,186642,1552761000,"Finished",0,"Torino",4185,"Bologna",2,3,1,2,1,2,NA,NA,1,1,262
+2646,187083,1552762500,"Finished",0,"Wolves",2627,"Manchester Utd",2,1,0,0,0,0,NA,NA,1,1,148
+7618,188732,1552815000,"Finished",0,"Yeni Malatyaspor",7621,"Ankaragucu",3,1,0,0,0,0,NA,NA,1,1,511
+7096,187728,1552816800,"Finished",0,"Eibar",7115,"Valladolid",1,2,0,0,0,0,NA,NA,1,1,468
+4179,187718,1552818600,"Finished",0,"Genoa",4187,"Juventus",2,0,0,0,0,0,NA,NA,1,1,262
+3227,187715,1552822200,"Finished",0,"Bayer Leverkusen",3223,"Werder Bremen",1,3,0,2,0,2,NA,NA,1,1,195
+7604,188734,1552824000,"Finished",0,"Kayserispor",7615,"Basaksehir",1,1,1,0,1,0,NA,NA,1,1,511
+3026,186630,1552825800,"Finished",0,"Lyon",3034,"Montpellier",3,2,1,1,1,1,NA,NA,1,1,176
+3046,187712,1552827600,"Finished",0,"Reims",3031,"Nantes",1,0,0,0,0,0,NA,NA,1,1,176
+4183,187721,1552827600,"Finished",0,"Lazio",4192,"Parma",4,1,4,0,4,0,NA,NA,1,1,262
+7090,187729,1552832100,"Finished",0,"Espanyol",7102,"Sevilla",0,1,0,0,0,0,NA,NA,1,1,468
+3038,187713,1552834800,"Finished",0,"Bordeaux",3035,"Rennes",1,1,0,0,0,0,NA,NA,1,1,176
+2612,187711,1552836600,"Finished",0,"Everton",2616,"Chelsea",2,0,0,0,0,0,NA,NA,1,1,148
+3225,187717,1552838400,"Finished",0,"Bayern Munich",3237,"Mainz",6,0,3,0,3,0,NA,NA,1,1,195
+4174,187722,1552838400,"Finished",0,"Napoli",4180,"Udinese",4,2,2,2,2,2,NA,NA,1,1,262
+7109,187730,1552840200,"Finished",0,"Valencia",7100,"Getafe",0,0,0,0,0,0,NA,NA,1,1,468
+4186,187723,1552847400,"Finished",0,"AC Milan",4189,"Inter",2,3,0,1,0,1,NA,NA,1,1,262
+7091,187732,1552848300,"Finished",0,"Betis",7105,"Barcelona",1,4,0,2,0,2,NA,NA,1,1,468
+3040,187714,1552849200,"Finished",0,"Paris SG",3023,"Marseille",3,1,1,0,1,0,NA,NA,1,1,176
+7104,191583,1553158800,"Finished",0,"Ath Bilbao (Esp)",7096,"Eibar (Esp)",3,3,1,2,1,2,NA,NA,1,1,468
+3268,191644,1553169600,"Finished",0,"Paderborn (Ger)",3228,"FC Koln (Ger)",5,3,2,2,2,2,NA,NA,1,1,195
+7102,189400,1553280300,"Finished",0,"Sevilla (Esp)",3235,"Schalke (Ger)",2,0,1,0,1,0,NA,NA,1,1,468
+7617,194507,1553601600,"Finished",0,"Genclerbirligi (Tur)",7621,"Ankaragucu (Tur)",1,0,1,0,1,0,NA,NA,1,1,511
+7630,194327,1553698800,"Finished",0,"Denizlispor (Tur)",7620,"Goztepe (Tur)",1,0,1,0,1,0,NA,NA,1,1,511
+3233,191686,1553884200,"Finished",0,"Hoffenheim",3227,"Bayer Leverkusen",4,1,1,1,1,1,NA,NA,1,1,195
+3035,191685,1553885100,"Finished",0,"Rennes",3026,"Lyon",0,1,0,0,0,0,NA,NA,1,1,176
+3242,192537,1553943600,"Finished",0,"Union Berlin",3268,"Paderborn",1,3,0,1,0,1,NA,NA,1,1,195
+7100,192032,1553943600,"Finished",0,"Getafe",7103,"Leganes",0,2,0,0,0,0,NA,NA,1,1,468
+4180,192024,1553950800,"Finished",0,"Udinese",4179,"Genoa",2,0,1,0,1,0,NA,NA,1,1,262
+3222,192020,1553952600,"Finished",0,"Freiburg",3225,"Bayern Munich",1,1,1,1,1,1,NA,NA,1,1,195
+3223,192022,1553952600,"Finished",0,"Werder Bremen",3237,"Mainz",3,1,2,0,2,0,NA,NA,1,1,195
+3230,192018,1553952600,"Finished",0,"Dortmund",3236,"Wolfsburg",2,0,0,0,0,0,NA,NA,1,1,195
+3256,192019,1553952600,"Finished",0,"Dusseldorf",3234,"B. Monchengladbach",3,1,3,0,3,0,NA,NA,1,1,195
+2611,192014,1553954400,"Finished",0,"Leicester",2615,"Bournemouth",2,0,1,0,1,0,NA,NA,1,1,148
+2613,192011,1553954400,"Finished",0,"Brighton",2614,"Southampton",0,1,0,0,0,0,NA,NA,1,1,148
+2627,192015,1553954400,"Finished",0,"Manchester Utd",2623,"Watford",2,1,1,0,1,0,NA,NA,1,1,148
+2629,192012,1553954400,"Finished",0,"Burnley",2646,"Wolves",2,0,1,0,1,0,NA,NA,1,1,148
+7105,192033,1553955300,"Finished",0,"Barcelona",7090,"Espanyol",2,0,0,0,0,0,NA,NA,1,1,468
+3023,192017,1553958000,"Finished",0,"Marseille",3037,"Angers",2,2,2,1,2,1,NA,NA,1,1,176
+2620,192016,1553963400,"Finished",0,"West Ham",2612,"Everton",0,2,0,2,0,2,NA,NA,1,1,148
+3226,192023,1553963400,"Finished",0,"RB Leipzig",3231,"Hertha Berlin",5,0,2,0,2,0,NA,NA,1,1,195
+7095,192034,1553963400,"Finished",0,"Celta Vigo",7107,"Villarreal",3,2,0,2,0,2,NA,NA,1,1,468
+4176,192026,1553970600,"Finished",0,"Sampdoria",4186,"AC Milan",1,0,1,0,1,0,NA,NA,1,1,262
+7108,192035,1553971500,"Finished",0,"Alaves",7106,"Atl. Madrid",0,4,0,2,0,2,NA,NA,1,1,468
+7097,193209,1554026400,"Finished",0,"Levante",7096,"Eibar",2,2,2,1,2,1,NA,NA,1,1,468
+4192,193199,1554028200,"Finished",0,"Parma",4181,"Atalanta",1,3,1,1,1,1,NA,NA,1,1,262
+3030,193192,1554037200,"Finished",0,"Dijon",3041,"Nice",0,1,0,0,0,0,NA,NA,1,1,176
+3033,193191,1554037200,"Finished",0,"Amiens",3038,"Bordeaux",0,0,0,0,0,0,NA,NA,1,1,176
+4173,193201,1554037200,"Finished",0,"Fiorentina",4170,"Torino",1,1,1,1,1,1,NA,NA,1,1,262
+4184,193200,1554037200,"Finished",0,"AS Roma",4174,"Napoli",1,4,1,1,1,1,NA,NA,1,1,262
+7102,193211,1554041700,"Finished",0,"Sevilla",7109,"Valencia",0,1,0,1,0,1,NA,NA,1,1,468
+3031,193195,1554044400,"Finished",0,"Nantes",3022,"Lille",2,3,0,0,0,0,NA,NA,1,1,176
+2621,193190,1554046200,"Finished",0,"Liverpool",2628,"Tottenham",2,1,1,0,1,0,NA,NA,1,1,148
+4185,193203,1554048000,"Finished",0,"Bologna",4175,"Sassuolo",2,1,0,0,0,0,NA,NA,1,1,262
+7115,193212,1554049800,"Finished",0,"Valladolid",7101,"Real Sociedad",1,1,1,0,1,0,NA,NA,1,1,468
+4189,193204,1554057000,"Finished",0,"Inter",4183,"Lazio",0,1,0,1,0,1,NA,NA,1,1,262
+3024,193196,1554058800,"Finished",0,"Toulouse",3040,"Paris SG",0,1,0,0,0,0,NA,NA,1,1,176
+3025,193194,1554143400,"Finished",0,"St Etienne",3049,"Nimes",2,1,1,1,1,1,NA,NA,1,1,176
+2617,194200,1554145200,"Finished",0,"Arsenal",2630,"Newcastle",2,0,1,0,1,0,NA,NA,1,1,148
+4186,194381,1554224400,"Finished",0,"AC Milan",4180,"Udinese",1,1,1,0,1,0,NA,NA,1,1,262
+7606,194496,1554224400,"Finished",0,"Galatasaray",7618,"Yeni Malatyaspor",0,0,0,0,0,0,NA,NA,1,1,511
+7090,194387,1554229800,"Finished",0,"Espanyol",7100,"Getafe",1,1,0,0,0,0,NA,NA,1,1,468
+2646,194380,1554230700,"Finished",0,"Wolves",2627,"Manchester Utd",2,1,1,1,1,1,NA,NA,1,1,148
+4171,194382,1554231600,"Finished",0,"Cagliari",4187,"Juventus",0,2,0,1,0,1,NA,NA,1,1,262
+4188,194448,1554231600,"Finished",0,"Verona",4203,"Brescia",2,2,1,2,1,2,NA,NA,1,1,262
+3026,194434,1554232200,"Finished",0,"Lyon",3035,"Rennes",2,3,0,1,0,1,NA,NA,1,1,176
+7107,194388,1554233400,"Finished",0,"Villarreal",7105,"Barcelona",4,4,1,2,1,2,NA,NA,1,1,468
+3036,194556,1554310800,"Finished",0,"Strasbourg",3046,"Reims",4,0,1,0,1,0,NA,NA,1,1,176
+7104,194567,1554312600,"Finished",0,"Ath Bilbao",7097,"Levante",3,2,2,0,2,0,NA,NA,1,1,468
+2616,179608,1554317100,"Finished",0,"Chelsea",2613,"Brighton",3,0,1,0,1,0,NA,NA,1,1,148
+2628,187709,1554317100,"Finished",0,"Tottenham",2619,"Crystal Palace",2,0,0,0,0,0,NA,NA,1,1,148
+3235,194664,1554317100,"Finished",0,"Schalke",3223,"Werder Bremen",0,2,0,0,0,0,NA,NA,1,1,195
+3040,194662,1554318000,"Finished",0,"Paris SG",3031,"Nantes",3,0,1,0,1,0,NA,NA,1,1,176
+4170,194562,1554318000,"Finished",0,"Torino",4176,"Sampdoria",2,1,2,0,2,0,NA,NA,1,1,262
+4178,194561,1554318000,"Finished",0,"Spal",4183,"Lazio",1,0,0,0,0,0,NA,NA,1,1,262
+4179,194560,1554318000,"Finished",0,"Genoa",4189,"Inter",0,4,0,2,0,2,NA,NA,1,1,262
+4184,194558,1554318000,"Finished",0,"AS Roma",4173,"Fiorentina",2,2,1,1,1,1,NA,NA,1,1,262
+7109,194570,1554319800,"Finished",0,"Valencia",7099,"Real Madrid",2,1,1,0,1,0,NA,NA,1,1,468
+7102,194893,1554399000,"Finished",0,"Sevilla",7108,"Alaves",2,0,1,0,1,0,NA,NA,1,1,468
+7103,194894,1554402600,"Finished",0,"Leganes",7115,"Valladolid",1,0,0,0,0,0,NA,NA,1,1,468
+4181,194890,1554404400,"Finished",0,"Atalanta",4185,"Bologna",4,1,4,0,4,0,NA,NA,1,1,262
+7101,194895,1554406200,"Finished",0,"Real Sociedad",7091,"Betis",2,1,1,0,1,0,NA,NA,1,1,468
+7605,195250,1554485400,"Finished",0,"Trabzonspor",7608,"Antalyaspor",4,1,1,1,1,1,NA,NA,1,1,511
+3237,195032,1554489000,"Finished",0,"Mainz",3222,"Freiburg",5,0,3,0,3,0,NA,NA,1,1,195
+3038,195031,1554489900,"Finished",0,"Bordeaux",3023,"Marseille",2,0,1,0,1,0,NA,NA,1,1,176
+2614,195030,1554490800,"Finished",0,"Southampton",2621,"Liverpool",1,3,1,1,1,1,NA,NA,1,1,148
+4192,195353,1554555600,"Finished",0,"Parma",4170,"Torino",0,0,0,0,0,0,NA,NA,1,1,262
+7610,196431,1554555600,"Finished",0,"Sivasspor",7604,"Kayserispor",1,3,0,3,0,3,NA,NA,1,1,511
+3227,195347,1554557400,"Finished",0,"Bayer Leverkusen",3226,"RB Leipzig",2,4,2,1,2,1,NA,NA,1,1,195
+3231,195348,1554557400,"Finished",0,"Hertha Berlin",3256,"Dusseldorf",1,2,1,1,1,1,NA,NA,1,1,195
+3235,195349,1554557400,"Finished",0,"Schalke",3238,"Eintracht Frankfurt",1,2,1,1,1,1,NA,NA,1,1,195
+2615,195339,1554559200,"Finished",0,"Bournemouth",2629,"Burnley",1,3,1,2,1,2,NA,NA,1,1,148
+2630,195341,1554559200,"Finished",0,"Newcastle",2619,"Crystal Palace",0,1,0,0,0,0,NA,NA,1,1,148
+7099,195362,1554560100,"Finished",0,"Real Madrid",7096,"Eibar",2,1,0,1,0,1,NA,NA,1,1,468
+3026,195342,1554562800,"Finished",0,"Lyon",3030,"Dijon",1,3,1,2,1,2,NA,NA,1,1,176
+4187,195354,1554566400,"Finished",0,"Juventus",4186,"AC Milan",2,1,0,1,0,1,NA,NA,1,1,262
+7606,196432,1554566400,"Finished",0,"Galatasaray",7618,"Yeni Malatyaspor",3,0,1,0,1,0,NA,NA,1,1,511
+2626,195864,1554568200,"Finished",0,"Manchester City",2613,"Brighton",1,0,1,0,1,0,NA,NA,1,1,148
+3225,195352,1554568200,"Finished",0,"Bayern Munich",3230,"Dortmund",5,0,4,0,4,0,NA,NA,1,1,195
+3033,195343,1554573600,"Finished",0,"Amiens",3025,"St Etienne",2,2,1,1,1,1,NA,NA,1,1,176
+3037,195344,1554573600,"Finished",0,"Angers",3035,"Rennes",3,3,0,1,0,1,NA,NA,1,1,176
+4176,195355,1554575400,"Finished",0,"Sampdoria",4184,"AS Roma",0,1,0,0,0,0,NA,NA,1,1,262
+7105,195364,1554576300,"Finished",0,"Barcelona",7106,"Atl. Madrid",2,0,0,0,0,0,NA,NA,1,1,468
+7108,196523,1554631200,"Finished",0,"Alaves",7103,"Leganes",1,1,1,0,1,0,NA,NA,1,1,468
+7100,196524,1554638400,"Finished",0,"Getafe",7104,"Ath Bilbao",1,0,0,0,0,0,NA,NA,1,1,468
+3024,196508,1554642000,"Finished",0,"Toulouse",3031,"Nantes",1,0,0,0,0,0,NA,NA,1,1,176
+3046,196507,1554642000,"Finished",0,"Reims",3022,"Lille",1,1,0,0,0,0,NA,NA,1,1,176
+4171,196514,1554642000,"Finished",0,"Cagliari",4178,"Spal",2,1,1,1,1,1,NA,NA,1,1,262
+7621,197548,1554642000,"Finished",0,"Ankaragucu",7603,"Fenerbahce",1,1,1,0,1,0,NA,NA,1,1,511
+2612,196506,1554642300,"Finished",0,"Everton",2617,"Arsenal",1,0,1,0,1,0,NA,NA,1,1,148
+3224,196511,1554643800,"Finished",0,"Augsburg",3233,"Hoffenheim",0,4,0,1,0,1,NA,NA,1,1,195
+7115,196525,1554646500,"Finished",0,"Valladolid",7102,"Sevilla",0,2,0,0,0,0,NA,NA,1,1,468
+3041,196509,1554649200,"Finished",0,"Nice",3034,"Montpellier",1,0,1,0,1,0,NA,NA,1,1,176
+3234,196512,1554652800,"Finished",0,"B. Monchengladbach",3223,"Werder Bremen",1,1,0,0,0,0,NA,NA,1,1,195
+4183,196517,1554652800,"Finished",0,"Lazio",4175,"Sassuolo",2,2,0,0,0,0,NA,NA,1,1,262
+4189,196516,1554652800,"Finished",0,"Inter",4181,"Atalanta",0,0,0,0,0,0,NA,NA,1,1,262
+7615,197550,1554652800,"Finished",0,"Basaksehir",7611,"Konyaspor",2,0,0,0,0,0,NA,NA,1,1,511
+7095,196526,1554654600,"Finished",0,"Celta Vigo",7101,"Real Sociedad",3,1,0,1,0,1,NA,NA,1,1,468
+4174,196518,1554661800,"Finished",0,"Napoli",4179,"Genoa",1,1,1,1,1,1,NA,NA,1,1,262
+7091,196528,1554662700,"Finished",0,"Betis",7107,"Villarreal",2,1,1,1,1,1,NA,NA,1,1,468
+3040,196510,1554663600,"Finished",0,"Paris SG",3036,"Strasbourg",2,2,1,2,1,2,NA,NA,1,1,176
+7623,197747,1554742800,"Finished",0,"Rizespor",7614,"Besiktas",2,7,1,2,1,2,NA,NA,1,1,511
+2616,197648,1554750000,"Finished",0,"Chelsea",2620,"West Ham",2,0,1,0,1,0,NA,NA,1,1,148
+3049,181354,1554829200,"Finished",0,"Nimes",3035,"Rennes",3,1,1,1,1,1,NA,NA,1,1,176
+2628,197783,1554836400,"Finished",0,"Tottenham",2626,"Manchester City",1,0,0,0,0,0,NA,NA,1,1,148
+2627,197940,1554922800,"Finished",0,"Manchester Utd",7105,"Barcelona",0,1,0,1,0,1,NA,NA,1,1,148
+2617,198150,1555009200,"Finished",0,"Arsenal",4174,"Napoli",2,0,2,0,2,0,NA,NA,1,1,148
+7107,198153,1555009200,"Finished",0,"Villarreal",7109,"Valencia",1,3,1,1,1,1,NA,NA,1,1,468
+3030,198602,1555088400,"Finished",0,"Dijon",3033,"Amiens",0,0,0,0,0,0,NA,NA,1,1,176
+3031,198262,1555094700,"Finished",0,"Nantes",3026,"Lyon",2,1,1,1,1,1,NA,NA,1,1,176
+2611,198261,1555095600,"Finished",0,"Leicester",2630,"Newcastle",0,1,0,1,0,1,NA,NA,1,1,148
+7090,198617,1555153200,"Finished",0,"Espanyol",7108,"Alaves",2,1,1,0,1,0,NA,NA,1,1,468
+4178,198610,1555160400,"Finished",0,"Spal",4187,"Juventus",2,1,0,1,0,1,NA,NA,1,1,262
+7611,199751,1555160400,"Finished",0,"Konyaspor",7610,"Sivasspor",1,1,1,1,1,1,NA,NA,1,1,511
+7623,199752,1555160400,"Finished",0,"Rizespor",7620,"Goztepe",1,0,0,0,0,0,NA,NA,1,1,511
+3223,198608,1555162200,"Finished",0,"Werder Bremen",3222,"Freiburg",2,1,0,0,0,0,NA,NA,1,1,195
+3226,198606,1555162200,"Finished",0,"RB Leipzig",3236,"Wolfsburg",2,0,2,0,2,0,NA,NA,1,1,195
+2613,198595,1555164000,"Finished",0,"Brighton",2615,"Bournemouth",0,5,0,1,0,1,NA,NA,1,1,148
+2614,198598,1555164000,"Finished",0,"Southampton",2646,"Wolves",3,1,2,1,2,1,NA,NA,1,1,148
+3023,198600,1555167600,"Finished",0,"Marseille",3049,"Nimes",2,1,0,0,0,0,NA,NA,1,1,176
+4184,198611,1555171200,"Finished",0,"AS Roma",4180,"Udinese",1,0,0,0,0,0,NA,NA,1,1,262
+7614,199753,1555171200,"Finished",0,"Besiktas",7615,"Basaksehir",2,1,1,1,1,1,NA,NA,1,1,511
+2627,198599,1555173000,"Finished",0,"Manchester Utd",2620,"West Ham",2,1,1,0,1,0,NA,NA,1,1,148
+3230,198609,1555173000,"Finished",0,"Dortmund",3237,"Mainz",2,1,2,0,2,0,NA,NA,1,1,195
+7106,198619,1555173000,"Finished",0,"Atl. Madrid",7095,"Celta Vigo",2,0,1,0,1,0,NA,NA,1,1,468
+3039,198603,1555178400,"Finished",0,"Monaco",3046,"Reims",0,0,0,0,0,0,NA,NA,1,1,176
+4186,198612,1555180200,"Finished",0,"AC Milan",4183,"Lazio",1,0,0,0,0,0,NA,NA,1,1,262
+7102,198620,1555181100,"Finished",0,"Sevilla",7091,"Betis",3,2,1,0,1,0,NA,NA,1,1,468
+7115,199870,1555236000,"Finished",0,"Valladolid",7100,"Getafe",2,2,1,1,1,1,NA,NA,1,1,468
+4170,199860,1555237800,"Finished",0,"Torino",4171,"Cagliari",1,1,0,0,0,0,NA,NA,1,1,262
+7604,200854,1555237800,"Finished",0,"Kayserispor",7621,"Ankaragucu",0,2,0,0,0,0,NA,NA,1,1,511
+3233,199857,1555241400,"Finished",0,"Hoffenheim",3231,"Hertha Berlin",2,0,1,0,1,0,NA,NA,1,1,195
+3034,199853,1555246800,"Finished",0,"Montpellier",3024,"Toulouse",2,1,0,0,0,0,NA,NA,1,1,176
+3035,199854,1555246800,"Finished",0,"Rennes",3041,"Nice",0,0,0,0,0,0,NA,NA,1,1,176
+4173,199861,1555246800,"Finished",0,"Fiorentina",4185,"Bologna",0,0,0,0,0,0,NA,NA,1,1,262
+4175,199863,1555246800,"Finished",0,"Sassuolo",4192,"Parma",0,0,0,0,0,0,NA,NA,1,1,262
+4176,199862,1555246800,"Finished",0,"Sampdoria",4179,"Genoa",2,0,1,0,1,0,NA,NA,1,1,262
+7608,200855,1555246800,"Finished",0,"Antalyaspor",7619,"Kasimpasa",1,0,1,0,1,0,NA,NA,1,1,511
+7618,200856,1555246800,"Finished",0,"Yeni Malatyaspor",7613,"Alanyaspor",1,1,1,1,1,1,NA,NA,1,1,511
+2619,199851,1555247100,"Finished",0,"Crystal Palace",2626,"Manchester City",1,3,0,1,0,1,NA,NA,1,1,148
+3256,199858,1555248600,"Finished",0,"Dusseldorf",3225,"Bayern Munich",1,4,0,2,0,2,NA,NA,1,1,195
+7101,199872,1555251300,"Finished",0,"Real Sociedad",7096,"Eibar",1,1,1,0,1,0,NA,NA,1,1,468
+3025,199855,1555254000,"Finished",0,"St Etienne",3038,"Bordeaux",3,0,0,0,0,0,NA,NA,1,1,176
+2621,199852,1555255800,"Finished",0,"Liverpool",2616,"Chelsea",2,0,0,0,0,0,NA,NA,1,1,148
+3238,199859,1555257600,"Finished",0,"Eintracht Frankfurt",3224,"Augsburg",1,3,1,2,1,2,NA,NA,1,1,195
+7603,200857,1555257600,"Finished",0,"Fenerbahce",7606,"Galatasaray",1,1,0,0,0,0,NA,NA,1,1,511
+7109,199874,1555267500,"Finished",0,"Valencia",7097,"Levante",3,1,1,0,1,0,NA,NA,1,1,468
+3022,199856,1555268400,"Finished",0,"Lille",3040,"Paris SG",5,1,1,1,1,1,NA,NA,1,1,176
+2623,200965,1555354800,"Finished",0,"Watford",2617,"Arsenal",0,1,0,1,0,1,NA,NA,1,1,148
+7103,200967,1555354800,"Finished",0,"Leganes",7099,"Real Madrid",1,1,1,0,1,0,NA,NA,1,1,468
+7105,201123,1555441200,"Finished",0,"Barcelona",2627,"Manchester Utd",3,0,2,0,2,0,NA,NA,1,1,468
+3031,183820,1555520400,"Finished",0,"Nantes",3040,"Paris SG",3,2,2,1,2,1,NA,NA,1,1,176
+4183,180565,1555520400,"Finished",0,"Lazio",4180,"Udinese",2,0,2,0,2,0,NA,NA,1,1,262
+2626,201241,1555527600,"Finished",0,"Manchester City",2628,"Tottenham",4,3,3,2,3,2,NA,NA,1,1,148
+4174,201482,1555614000,"Finished",0,"Napoli",2617,"Arsenal",0,1,0,1,0,1,NA,NA,1,1,262
+7109,201483,1555614000,"Finished",0,"Valencia",7107,"Villarreal",2,0,1,0,1,0,NA,NA,1,1,468
+3030,201821,1555693200,"Finished",0,"Dijon",3035,"Rennes",3,2,1,0,1,0,NA,NA,1,1,176
+3026,201822,1555699500,"Finished",0,"Lyon",3037,"Angers",2,1,2,0,2,0,NA,NA,1,1,176
+7108,201824,1555700400,"Finished",0,"Alaves",7115,"Valladolid",2,2,2,1,2,1,NA,NA,1,1,468
+4192,202244,1555756200,"Finished",0,"Parma",4186,"AC Milan",1,1,0,0,0,0,NA,NA,1,1,262
+2626,202228,1555759800,"Finished",0,"Manchester City",2628,"Tottenham",1,0,1,0,1,0,NA,NA,1,1,148
+4179,202248,1555765200,"Finished",0,"Genoa",4170,"Torino",0,1,0,0,0,0,NA,NA,1,1,262
+4180,202250,1555765200,"Finished",0,"Udinese",4175,"Sassuolo",1,1,0,1,0,1,NA,NA,1,1,262
+4185,202245,1555765200,"Finished",0,"Bologna",4176,"Sampdoria",3,0,0,0,0,0,NA,NA,1,1,262
+7605,203131,1555765200,"Finished",0,"Trabzonspor",7618,"Yeni Malatyaspor",2,1,1,1,1,1,NA,NA,1,1,511
+3225,202240,1555767000,"Finished",0,"Bayern Munich",3223,"Werder Bremen",1,0,0,0,0,0,NA,NA,1,1,195
+3237,202241,1555767000,"Finished",0,"Mainz",3256,"Dusseldorf",3,1,1,1,1,1,NA,NA,1,1,195
+2620,202231,1555768800,"Finished",0,"West Ham",2611,"Leicester",2,2,1,0,1,0,NA,NA,1,1,148
+2646,202232,1555768800,"Finished",0,"Wolves",2613,"Brighton",0,0,0,0,0,0,NA,NA,1,1,148
+7096,202259,1555769700,"Finished",0,"Eibar",7106,"Atl. Madrid",0,1,0,0,0,0,NA,NA,1,1,468
+4187,202251,1555776000,"Finished",0,"Juventus",4173,"Fiorentina",2,1,1,1,1,1,NA,NA,1,1,262
+7606,203132,1555776000,"Finished",0,"Galatasaray",7604,"Kayserispor",3,1,3,1,3,1,NA,NA,1,1,511
+2630,202233,1555777800,"Finished",0,"Newcastle",2614,"Southampton",3,1,2,0,2,0,NA,NA,1,1,148
+3234,202242,1555777800,"Finished",0,"B. Monchengladbach",3226,"RB Leipzig",1,2,0,1,0,1,NA,NA,1,1,195
+3036,202237,1555783200,"Finished",0,"Strasbourg",3034,"Montpellier",1,3,1,2,1,2,NA,NA,1,1,176
+3049,202236,1555783200,"Finished",0,"Nimes",3038,"Bordeaux",2,1,1,1,1,1,NA,NA,1,1,176
+3235,202243,1555785000,"Finished",0,"Schalke",3233,"Hoffenheim",2,5,0,2,0,2,NA,NA,1,1,195
+4189,202252,1555785000,"Finished",0,"Inter",4184,"AS Roma",1,1,0,1,0,1,NA,NA,1,1,262
+7105,202261,1555785900,"Finished",0,"Barcelona",7101,"Real Sociedad",2,1,1,0,1,0,NA,NA,1,1,468
+7097,203204,1555840800,"Finished",0,"Levante",7090,"Espanyol",2,2,0,1,0,1,NA,NA,1,1,468
+7621,203679,1555842600,"Finished",0,"Ankaragucu",7611,"Konyaspor",0,0,0,0,0,0,NA,NA,1,1,511
+7100,203205,1555848000,"Finished",0,"Getafe",7102,"Sevilla",3,0,2,0,2,0,NA,NA,1,1,468
+2612,203192,1555849800,"Finished",0,"Everton",2627,"Manchester Utd",4,0,2,0,2,0,NA,NA,1,1,148
+3024,203196,1555851600,"Finished",0,"Toulouse",3022,"Lille",0,0,0,0,0,0,NA,NA,1,1,176
+3031,203195,1555851600,"Finished",0,"Nantes",3033,"Amiens",3,2,0,0,0,0,NA,NA,1,1,176
+7615,203680,1555851600,"Finished",0,"Basaksehir",7623,"Rizespor",1,1,0,0,0,0,NA,NA,1,1,511
+3222,203199,1555853400,"Finished",0,"Freiburg",3230,"Dortmund",0,4,0,1,0,1,NA,NA,1,1,195
+7099,203206,1555856100,"Finished",0,"Real Madrid",7104,"Ath Bilbao",3,0,0,0,0,0,NA,NA,1,1,468
+2617,203193,1555858800,"Finished",0,"Arsenal",2619,"Crystal Palace",2,3,0,1,0,1,NA,NA,1,1,148
+3046,203197,1555858800,"Finished",0,"Reims",3025,"St Etienne",0,2,0,1,0,1,NA,NA,1,1,176
+7613,203681,1555862400,"Finished",0,"Alanyaspor",7603,"Fenerbahce",1,0,0,0,0,0,NA,NA,1,1,511
+7107,203207,1555864200,"Finished",0,"Villarreal",7103,"Leganes",2,1,0,0,0,0,NA,NA,1,1,468
+7091,203208,1555872300,"Finished",0,"Betis",7109,"Valencia",1,2,0,1,0,1,NA,NA,1,1,468
+3040,203198,1555873200,"Finished",0,"Paris SG",3039,"Monaco",3,1,2,0,2,0,NA,NA,1,1,176
+4174,203800,1555952400,"Finished",0,"Napoli",4181,"Atalanta",1,2,1,0,1,0,NA,NA,1,1,262
+7610,204160,1555952400,"Finished",0,"Sivasspor",7614,"Besiktas",1,2,1,1,1,1,NA,NA,1,1,511
+3236,203799,1555957800,"Finished",0,"Wolfsburg",3238,"Eintracht Frankfurt",1,1,0,0,0,0,NA,NA,1,1,195
+2616,203798,1555959600,"Finished",0,"Chelsea",2629,"Burnley",2,2,2,2,2,2,NA,NA,1,1,148
+2623,186627,1556045100,"Finished",0,"Watford",2614,"Southampton",1,1,0,1,0,1,NA,NA,1,1,148
+2628,204186,1556045100,"Finished",0,"Tottenham",2613,"Brighton",1,0,0,0,0,0,NA,NA,1,1,148
+7108,204193,1556047800,"Finished",0,"Alaves",7105,"Barcelona",0,2,0,0,0,0,NA,NA,1,1,468
+7106,204379,1556127000,"Finished",0,"Atl. Madrid",7109,"Valencia",3,2,1,1,1,1,NA,NA,1,1,468
+7090,204380,1556130600,"Finished",0,"Espanyol",7095,"Celta Vigo",1,1,1,0,1,0,NA,NA,1,1,468
+7103,204381,1556130600,"Finished",0,"Leganes",7104,"Ath Bilbao",0,1,0,1,0,1,NA,NA,1,1,468
+2646,186629,1556131500,"Finished",0,"Wolves",2617,"Arsenal",3,1,3,0,3,0,NA,NA,1,1,148
+3223,204423,1556131500,"Finished",0,"Werder Bremen",3225,"Bayern Munich",2,3,0,1,0,1,NA,NA,1,1,195
+4186,204432,1556131500,"Finished",0,"AC Milan",4183,"Lazio",0,1,0,0,0,0,NA,NA,1,1,262
+2627,204375,1556132400,"Finished",0,"Manchester Utd",2626,"Manchester City",0,2,0,0,0,0,NA,NA,1,1,148
+7097,204382,1556134200,"Finished",0,"Levante",7091,"Betis",4,0,2,0,2,0,NA,NA,1,1,468
+7618,204715,1556211600,"Finished",0,"Yeni Malatyaspor",7606,"Galatasaray",2,5,1,2,1,2,NA,NA,1,1,511
+7101,204616,1556217000,"Finished",0,"Real Sociedad",7107,"Villarreal",0,1,0,0,0,0,NA,NA,1,1,468
+4181,204672,1556217900,"Finished",0,"Atalanta",4173,"Fiorentina",2,1,1,1,1,1,NA,NA,1,1,262
+7100,204617,1556220600,"Finished",0,"Getafe",7099,"Real Madrid",0,0,0,0,0,0,NA,NA,1,1,468
+7615,205002,1556299800,"Finished",0,"Basaksehir",7620,"Goztepe",0,2,0,1,0,1,NA,NA,1,1,511
+3224,204788,1556303400,"Finished",0,"Augsburg",3227,"Bayer Leverkusen",1,4,1,1,1,1,NA,NA,1,1,195
+3038,204787,1556304300,"Finished",0,"Bordeaux",3026,"Lyon",2,3,2,1,2,1,NA,NA,1,1,176
+7104,205076,1556362800,"Finished",0,"Ath Bilbao",7108,"Alaves",1,1,1,1,1,1,NA,NA,1,1,468
+2628,205061,1556364600,"Finished",0,"Tottenham",2620,"West Ham",0,1,0,0,0,0,NA,NA,1,1,148
+7623,206121,1556370000,"Finished",0,"Rizespor",7610,"Sivasspor",0,0,0,0,0,0,NA,NA,1,1,511
+3226,205071,1556371800,"Finished",0,"RB Leipzig",3222,"Freiburg",2,1,1,0,1,0,NA,NA,1,1,195
+3230,205067,1556371800,"Finished",0,"Dortmund",3235,"Schalke",2,4,1,2,1,2,NA,NA,1,1,195
+3238,205069,1556371800,"Finished",0,"Eintracht Frankfurt",3231,"Hertha Berlin",0,0,0,0,0,0,NA,NA,1,1,195
+3256,205068,1556371800,"Finished",0,"Dusseldorf",3223,"Werder Bremen",4,1,2,1,2,1,NA,NA,1,1,195
+2614,205064,1556373600,"Finished",0,"Southampton",2615,"Bournemouth",3,3,1,2,1,2,NA,NA,1,1,148
+2619,205062,1556373600,"Finished",0,"Crystal Palace",2612,"Everton",0,0,0,0,0,0,NA,NA,1,1,148
+2623,205065,1556373600,"Finished",0,"Watford",2646,"Wolves",1,2,0,1,0,1,NA,NA,1,1,148
+7106,205077,1556374500,"Finished",0,"Atl. Madrid",7115,"Valladolid",1,0,0,0,0,0,NA,NA,1,1,468
+4184,205074,1556380800,"Finished",0,"AS Roma",4171,"Cagliari",3,0,2,0,2,0,NA,NA,1,1,262
+7603,206122,1556380800,"Finished",0,"Fenerbahce",7605,"Trabzonspor",1,1,0,1,0,1,NA,NA,1,1,511
+2613,205066,1556382600,"Finished",0,"Brighton",2630,"Newcastle",1,1,0,1,0,1,NA,NA,1,1,148
+7103,205078,1556382600,"Finished",0,"Leganes",7095,"Celta Vigo",0,0,0,0,0,0,NA,NA,1,1,468
+4189,205075,1556389800,"Finished",0,"Inter",4187,"Juventus",1,1,1,0,1,0,NA,NA,1,1,262
+7105,205079,1556390700,"Finished",0,"Barcelona",7097,"Levante",1,0,0,0,0,0,NA,NA,1,1,468
+7109,206183,1556445600,"Finished",0,"Valencia",7096,"Eibar",0,1,0,0,0,0,NA,NA,1,1,468
+2611,207174,1556449200,"Finished",0,"Leicester",2617,"Arsenal",3,0,0,0,0,0,NA,NA,1,1,148
+3022,206172,1556456400,"Finished",0,"Lille",3049,"Nimes",5,0,0,0,0,0,NA,NA,1,1,176
+3033,206169,1556456400,"Finished",0,"Amiens",3036,"Strasbourg",0,0,0,0,0,0,NA,NA,1,1,176
+3037,206170,1556456400,"Finished",0,"Angers",3046,"Reims",1,1,0,0,0,0,NA,NA,1,1,176
+4178,206180,1556456400,"Finished",0,"Spal",4179,"Genoa",1,1,1,0,1,0,NA,NA,1,1,262
+7604,207083,1556456400,"Finished",0,"Kayserispor",7613,"Alanyaspor",1,1,1,1,1,1,NA,NA,1,1,511
+2629,206167,1556456700,"Finished",0,"Burnley",2626,"Manchester City",0,1,0,0,0,0,NA,NA,1,1,148
+3233,206176,1556458200,"Finished",0,"Hoffenheim",3236,"Wolfsburg",1,4,1,1,1,1,NA,NA,1,1,195
+7101,206185,1556460900,"Finished",0,"Real Sociedad",7100,"Getafe",2,1,1,0,1,0,NA,NA,1,1,468
+3025,206174,1556463600,"Finished",0,"St Etienne",3024,"Toulouse",2,0,2,0,2,0,NA,NA,1,1,176
+2627,206168,1556465400,"Finished",0,"Manchester Utd",2616,"Chelsea",1,1,1,1,1,1,NA,NA,1,1,148
+4176,206181,1556467200,"Finished",0,"Sampdoria",4183,"Lazio",1,2,0,2,0,2,NA,NA,1,1,262
+7614,207084,1556467200,"Finished",0,"Besiktas",7621,"Ankaragucu",4,1,1,0,1,0,NA,NA,1,1,511
+4170,206182,1556476200,"Finished",0,"Torino",4186,"AC Milan",2,0,0,0,0,0,NA,NA,1,1,262
+3023,206175,1556478000,"Finished",0,"Marseille",3031,"Nantes",1,2,1,1,1,1,NA,NA,1,1,176
+4268,206491,1556478000,"Finished",0,"Lecce",4203,"Brescia",1,0,0,0,0,0,NA,NA,1,1,262
+4181,207185,1556557200,"Finished",0,"Atalanta",4180,"Udinese",2,0,0,0,0,0,NA,NA,1,1,262
+7611,207279,1556557200,"Finished",0,"Konyaspor",7606,"Galatasaray",0,0,0,0,0,0,NA,NA,1,1,511
+7618,207280,1556557200,"Finished",0,"Yeni Malatyaspor",7619,"Kasimpasa",2,1,1,0,1,0,NA,NA,1,1,511
+4173,207186,1556564400,"Finished",0,"Fiorentina",4175,"Sassuolo",0,1,0,1,0,1,NA,NA,1,1,262
+7091,207187,1556564400,"Finished",0,"Betis",7090,"Espanyol",1,1,0,1,0,1,NA,NA,1,1,468
+3034,207306,1556643600,"Finished",0,"Montpellier",3040,"Paris SG",3,2,1,1,1,1,NA,NA,1,1,176
+3035,207418,1556730000,"Finished",0,"Rennes",3039,"Monaco",2,2,2,0,2,0,NA,NA,1,1,176
+7105,207417,1556737200,"Finished",0,"Barcelona",2621,"Liverpool",3,0,1,0,1,0,NA,NA,1,1,468
+2617,207883,1556823600,"Finished",0,"Arsenal",7109,"Valencia",3,1,2,1,2,1,NA,NA,1,1,148
+3238,207884,1556823600,"Finished",0,"Eintracht Frankfurt",2616,"Chelsea",1,1,1,1,1,1,NA,NA,1,1,195
+7610,208177,1556904600,"Finished",0,"Sivasspor",7615,"Basaksehir",0,0,0,0,0,0,NA,NA,1,1,511
+3237,207990,1556908200,"Finished",0,"Mainz",3226,"RB Leipzig",3,3,1,2,1,2,NA,NA,1,1,195
+4187,207991,1556908200,"Finished",0,"Juventus",4170,"Torino",1,1,0,1,0,1,NA,NA,1,1,262
+3036,207989,1556909100,"Finished",0,"Strasbourg",3023,"Marseille",1,1,0,0,0,0,NA,NA,1,1,176
+2612,207988,1556910000,"Finished",0,"Everton",2629,"Burnley",2,0,2,0,2,0,NA,NA,1,1,148
+7102,207992,1556910000,"Finished",0,"Sevilla",7103,"Leganes",0,3,0,2,0,2,NA,NA,1,1,468
+2615,208233,1556969400,"Finished",0,"Bournemouth",2628,"Tottenham",1,0,0,0,0,0,NA,NA,1,1,148
+7621,209207,1556974800,"Finished",0,"Ankaragucu",7623,"Rizespor",2,2,0,1,0,1,NA,NA,1,1,511
+3234,208242,1556976600,"Finished",0,"B. Monchengladbach",3233,"Hoffenheim",2,2,0,1,0,1,NA,NA,1,1,195
+2620,208234,1556978400,"Finished",0,"West Ham",2614,"Southampton",3,0,1,0,1,0,NA,NA,1,1,148
+7090,208250,1556979300,"Finished",0,"Espanyol",7106,"Atl. Madrid",3,0,1,0,1,0,NA,NA,1,1,468
+3040,208238,1556982000,"Finished",0,"Paris SG",3041,"Nice",1,1,0,0,0,0,NA,NA,1,1,176
+7619,209209,1556985600,"Finished",0,"Kasimpasa",7603,"Fenerbahce",1,3,1,1,1,1,NA,NA,1,1,511
+3223,208246,1556987400,"Finished",0,"Werder Bremen",3230,"Dortmund",2,2,0,2,0,2,NA,NA,1,1,195
+7108,208251,1556987400,"Finished",0,"Alaves",7101,"Real Sociedad",0,1,0,1,0,1,NA,NA,1,1,468
+3038,208239,1556992800,"Finished",0,"Bordeaux",3037,"Angers",0,1,0,1,0,1,NA,NA,1,1,176
+3046,208241,1556992800,"Finished",0,"Reims",3049,"Nimes",0,3,0,2,0,2,NA,NA,1,1,176
+4180,208248,1556994600,"Finished",0,"Udinese",4189,"Inter",0,0,0,0,0,0,NA,NA,1,1,262
+2630,208237,1556995500,"Finished",0,"Newcastle",2621,"Liverpool",2,3,1,2,1,2,NA,NA,1,1,148
+7095,208252,1556995500,"Finished",0,"Celta Vigo",7105,"Barcelona",2,0,0,0,0,0,NA,NA,1,1,468
+2632,209568,1557055800,"Finished",0,"Aston Villa",2641,"Norwich",1,2,1,1,1,1,NA,NA,1,1,148
+3235,209350,1557055800,"Finished",0,"Schalke",3224,"Augsburg",0,0,0,0,0,0,NA,NA,1,1,195
+7096,209360,1557057600,"Finished",0,"Eibar",7091,"Betis",1,0,1,0,1,0,NA,NA,1,1,468
+2616,209342,1557061200,"Finished",0,"Chelsea",2623,"Watford",3,0,0,0,0,0,NA,NA,1,1,148
+3024,209347,1557061200,"Finished",0,"Toulouse",3035,"Rennes",2,2,1,1,1,1,NA,NA,1,1,176
+3031,209346,1557061200,"Finished",0,"Nantes",3030,"Dijon",3,0,0,0,0,0,NA,NA,1,1,176
+3034,209345,1557061200,"Finished",0,"Montpellier",3033,"Amiens",1,1,0,0,0,0,NA,NA,1,1,176
+4183,209354,1557061200,"Finished",0,"Lazio",4181,"Atalanta",1,3,1,1,1,1,NA,NA,1,1,262
+4192,209355,1557061200,"Finished",0,"Parma",4176,"Sampdoria",3,3,1,2,1,2,NA,NA,1,1,262
+7620,210360,1557061200,"Finished",0,"Goztepe",7608,"Antalyaspor",4,1,2,1,2,1,NA,NA,1,1,511
+3222,209351,1557063000,"Finished",0,"Freiburg",3256,"Dusseldorf",1,1,1,1,1,1,NA,NA,1,1,195
+7099,209361,1557065700,"Finished",0,"Real Madrid",7107,"Villarreal",3,2,2,1,2,1,NA,NA,1,1,468
+3039,209348,1557068400,"Finished",0,"Monaco",3025,"St Etienne",2,3,1,0,1,0,NA,NA,1,1,176
+2617,209344,1557070200,"Finished",0,"Arsenal",2613,"Brighton",1,1,1,0,1,0,NA,NA,1,1,148
+3227,209352,1557072000,"Finished",0,"Bayer Leverkusen",3238,"Eintracht Frankfurt",6,1,6,1,6,1,NA,NA,1,1,195
+4179,209357,1557072000,"Finished",0,"Genoa",4184,"AS Roma",1,1,0,0,0,0,NA,NA,1,1,262
+7606,210361,1557072000,"Finished",0,"Galatasaray",7614,"Besiktas",2,0,1,0,1,0,NA,NA,1,1,511
+7115,209362,1557073800,"Finished",0,"Valladolid",7104,"Ath Bilbao",1,0,1,0,1,0,NA,NA,1,1,468
+7617,210364,1557073800,"Finished",0,"Genclerbirligi",7630,"Denizlispor",0,3,0,1,0,1,NA,NA,1,1,511
+4174,209358,1557081000,"Finished",0,"Napoli",4171,"Cagliari",2,1,0,0,0,0,NA,NA,1,1,262
+3026,209349,1557082800,"Finished",0,"Lyon",3022,"Lille",2,2,1,0,1,0,NA,NA,1,1,176
+7605,210561,1557163800,"Finished",0,"Trabzonspor",7604,"Kayserispor",4,2,2,1,2,1,NA,NA,1,1,511
+7613,210560,1557163800,"Finished",0,"Alanyaspor",7611,"Konyaspor",2,4,1,2,1,2,NA,NA,1,1,511
+4186,210472,1557167400,"Finished",0,"AC Milan",4185,"Bologna",2,1,1,0,1,0,NA,NA,1,1,262
+2626,210471,1557169200,"Finished",0,"Manchester City",2611,"Leicester",1,0,0,0,0,0,NA,NA,1,1,148
+2621,210618,1557255600,"Finished",0,"Liverpool",7105,"Barcelona",4,0,1,0,1,0,NA,NA,1,1,148
+7109,210964,1557428400,"Finished",0,"Valencia",2617,"Arsenal",2,4,1,1,1,1,NA,NA,1,1,468
+3025,211079,1557513900,"Finished",0,"St Etienne",3034,"Montpellier",0,1,0,0,0,0,NA,NA,1,1,176
+4181,211342,1557579600,"Finished",0,"Atalanta",4179,"Genoa",2,1,0,0,0,0,NA,NA,1,1,262
+7623,213265,1557579600,"Finished",0,"Rizespor",7606,"Galatasaray",2,3,1,1,1,1,NA,NA,1,1,511
+3224,211334,1557581400,"Finished",0,"Augsburg",3231,"Hertha Berlin",3,4,1,0,1,0,NA,NA,1,1,195
+3226,211340,1557581400,"Finished",0,"RB Leipzig",3225,"Bayern Munich",0,0,0,0,0,0,NA,NA,1,1,195
+3227,211335,1557581400,"Finished",0,"Bayer Leverkusen",3235,"Schalke",1,1,1,0,1,0,NA,NA,1,1,195
+3230,211336,1557581400,"Finished",0,"Dortmund",3256,"Dusseldorf",3,2,1,0,1,0,NA,NA,1,1,195
+3233,211338,1557581400,"Finished",0,"Hoffenheim",3223,"Werder Bremen",0,1,0,1,0,1,NA,NA,1,1,195
+3037,211328,1557586800,"Finished",0,"Angers",3040,"Paris SG",1,2,0,1,0,1,NA,NA,1,1,176
+4171,211343,1557590400,"Finished",0,"Cagliari",4183,"Lazio",1,2,0,1,0,1,NA,NA,1,1,262
+7620,213262,1557590400,"Finished",0,"Goztepe",7610,"Sivasspor",3,3,1,2,1,2,NA,NA,1,1,511
+3030,211331,1557597600,"Finished",0,"Dijon",3036,"Strasbourg",2,1,1,0,1,0,NA,NA,1,1,176
+3033,211329,1557597600,"Finished",0,"Amiens",3024,"Toulouse",0,0,0,0,0,0,NA,NA,1,1,176
+3041,211332,1557597600,"Finished",0,"Nice",3031,"Nantes",1,1,0,1,0,1,NA,NA,1,1,176
+3049,211333,1557597600,"Finished",0,"Nimes",3039,"Monaco",1,0,1,0,1,0,NA,NA,1,1,176
+4173,211344,1557599400,"Finished",0,"Fiorentina",4186,"AC Milan",0,1,0,1,0,1,NA,NA,1,1,262
+4170,212435,1557657000,"Finished",0,"Torino",4175,"Sassuolo",3,2,0,1,0,1,NA,NA,1,1,262
+7604,213263,1557666000,"Finished",0,"Kayserispor",7619,"Kasimpasa",2,1,0,1,0,1,NA,NA,1,1,511
+7611,213264,1557666000,"Finished",0,"Konyaspor",7605,"Trabzonspor",2,2,2,1,2,1,NA,NA,1,1,511
+7631,213272,1557667800,"Finished",0,"Gaziantep",7617,"Genclerbirligi",0,2,0,1,0,1,NA,NA,1,1,511
+2611,212425,1557669600,"Finished",0,"Leicester",2616,"Chelsea",0,0,0,0,0,0,NA,NA,1,1,148
+2613,212421,1557669600,"Finished",0,"Brighton",2626,"Manchester City",1,4,1,2,1,2,NA,NA,1,1,148
+2619,212423,1557669600,"Finished",0,"Crystal Palace",2615,"Bournemouth",5,3,3,1,3,1,NA,NA,1,1,148
+2621,212426,1557669600,"Finished",0,"Liverpool",2646,"Wolves",2,0,1,0,1,0,NA,NA,1,1,148
+2623,212430,1557669600,"Finished",0,"Watford",2620,"West Ham",1,4,0,2,0,2,NA,NA,1,1,148
+2628,212429,1557669600,"Finished",0,"Tottenham",2612,"Everton",2,2,1,0,1,0,NA,NA,1,1,148
+2629,212422,1557669600,"Finished",0,"Burnley",2617,"Arsenal",1,3,0,0,0,0,NA,NA,1,1,148
+3022,212432,1557673200,"Finished",0,"Lille",3038,"Bordeaux",1,0,1,0,1,0,NA,NA,1,1,176
+3238,212434,1557676800,"Finished",0,"Eintracht Frankfurt",3237,"Mainz",0,2,0,0,0,0,NA,NA,1,1,195
+4178,212438,1557676800,"Finished",0,"Spal",4174,"Napoli",1,2,0,0,0,0,NA,NA,1,1,262
+7615,213259,1557676800,"Finished",0,"Basaksehir",7621,"Ankaragucu",2,1,0,1,0,1,NA,NA,1,1,511
+7101,212456,1557678600,"Finished",0,"Real Sociedad",7099,"Real Madrid",3,1,1,1,1,1,NA,NA,1,1,468
+7103,212454,1557678600,"Finished",0,"Leganes",7090,"Espanyol",0,2,0,1,0,1,NA,NA,1,1,468
+7104,212449,1557678600,"Finished",0,"Ath Bilbao",7095,"Celta Vigo",3,1,3,0,3,0,NA,NA,1,1,468
+7105,212451,1557678600,"Finished",0,"Barcelona",7100,"Getafe",2,0,1,0,1,0,NA,NA,1,1,468
+7106,212450,1557678600,"Finished",0,"Atl. Madrid",7102,"Sevilla",1,1,1,0,1,0,NA,NA,1,1,468
+7107,212458,1557678600,"Finished",0,"Villarreal",7096,"Eibar",1,0,0,0,0,0,NA,NA,1,1,468
+7109,212457,1557678600,"Finished",0,"Valencia",7108,"Alaves",3,1,2,1,2,1,NA,NA,1,1,468
+4184,212439,1557685800,"Finished",0,"AS Roma",4187,"Juventus",2,0,0,0,0,0,NA,NA,1,1,262
+3023,212433,1557687600,"Finished",0,"Marseille",3026,"Lyon",0,3,0,1,0,1,NA,NA,1,1,176
+4185,213359,1557766800,"Finished",0,"Bologna",4192,"Parma",4,1,0,0,0,0,NA,NA,1,1,262
+7614,213260,1557766800,"Finished",0,"Besiktas",7613,"Alanyaspor",2,1,1,1,1,1,NA,NA,1,1,511
+4181,213711,1557945900,"Finished",0,"Atalanta",4183,"Lazio",0,2,0,0,0,0,NA,NA,1,1,262
+7619,214226,1558114200,"Finished",0,"Kasimpasa",7611,"Konyaspor",1,1,0,1,0,1,NA,NA,1,1,511
+3027,214150,1558118700,"Finished",0,"Metz",3052,"Brest",1,0,1,0,1,0,NA,NA,1,1,176
+7097,214341,1558177200,"Finished",0,"Levante",7106,"Atl. Madrid",2,2,2,0,2,0,NA,NA,1,1,468
+4180,214332,1558184400,"Finished",0,"Udinese",4178,"Spal",3,2,3,0,3,0,NA,NA,1,1,262
+3223,214330,1558186200,"Finished",0,"Werder Bremen",3226,"RB Leipzig",2,1,1,0,1,0,NA,NA,1,1,195
+3225,214324,1558186200,"Finished",0,"Bayern Munich",3238,"Eintracht Frankfurt",5,1,1,0,1,0,NA,NA,1,1,195
+3231,214327,1558186200,"Finished",0,"Hertha Berlin",3227,"Bayer Leverkusen",1,5,1,2,1,2,NA,NA,1,1,195
+3234,214323,1558186200,"Finished",0,"B. Monchengladbach",3230,"Dortmund",0,2,0,1,0,1,NA,NA,1,1,195
+3236,214331,1558186200,"Finished",0,"Wolfsburg",3224,"Augsburg",8,1,3,0,3,0,NA,NA,1,1,195
+3237,214328,1558186200,"Finished",0,"Mainz",3233,"Hoffenheim",4,2,0,2,0,2,NA,NA,1,1,195
+7090,214338,1558188900,"Finished",0,"Espanyol",7101,"Real Sociedad",2,0,0,0,0,0,NA,NA,1,1,468
+7100,214339,1558188900,"Finished",0,"Getafe",7107,"Villarreal",2,2,1,1,1,1,NA,NA,1,1,468
+7102,214343,1558188900,"Finished",0,"Sevilla",7104,"Ath Bilbao",2,0,1,0,1,0,NA,NA,1,1,468
+7115,214344,1558188900,"Finished",0,"Valladolid",7109,"Valencia",0,2,0,1,0,1,NA,NA,1,1,468
+2626,214664,1558195200,"Finished",0,"Manchester City",2623,"Watford",6,0,2,0,2,0,NA,NA,1,1,148
+4179,214333,1558195200,"Finished",0,"Genoa",4171,"Cagliari",1,1,0,1,0,1,NA,NA,1,1,262
+7605,215179,1558195200,"Finished",0,"Trabzonspor",7614,"Besiktas",2,1,0,0,0,0,NA,NA,1,1,511
+7608,215178,1558195200,"Finished",0,"Antalyaspor",7618,"Yeni Malatyaspor",3,0,1,0,1,0,NA,NA,1,1,511
+4175,214334,1558204200,"Finished",0,"Sassuolo",4184,"AS Roma",0,0,0,0,0,0,NA,NA,1,1,262
+3022,214315,1558206000,"Finished",0,"Lille",3037,"Angers",5,0,2,0,2,0,NA,NA,1,1,176
+3024,214322,1558206000,"Finished",0,"Toulouse",3023,"Marseille",2,5,1,1,1,1,NA,NA,1,1,176
+3025,214320,1558206000,"Finished",0,"St Etienne",3041,"Nice",3,0,1,0,1,0,NA,NA,1,1,176
+3034,214318,1558206000,"Finished",0,"Montpellier",3031,"Nantes",1,1,0,1,0,1,NA,NA,1,1,176
+3036,214321,1558206000,"Finished",0,"Strasbourg",3035,"Rennes",0,2,0,1,0,1,NA,NA,1,1,176
+3038,214313,1558206000,"Finished",0,"Bordeaux",3046,"Reims",0,1,0,1,0,1,NA,NA,1,1,176
+3039,214317,1558206000,"Finished",0,"Monaco",3033,"Amiens",2,0,1,0,1,0,NA,NA,1,1,176
+3040,214319,1558206000,"Finished",0,"Paris SG",3030,"Dijon",4,0,3,0,3,0,NA,NA,1,1,176
+7099,214342,1558260000,"Finished",0,"Real Madrid",7091,"Betis",0,2,0,0,0,0,NA,NA,1,1,468
+4192,215215,1558270800,"Finished",0,"Parma",4173,"Fiorentina",1,0,0,0,0,0,NA,NA,1,1,262
+7096,214337,1558275300,"Finished",0,"Eibar",7105,"Barcelona",2,2,2,2,2,2,NA,NA,1,1,468
+7606,216006,1558281600,"Finished",0,"Galatasaray",7615,"Basaksehir",2,1,0,1,0,1,NA,NA,1,1,511
+7613,216005,1558281600,"Finished",0,"Alanyaspor",7623,"Rizespor",1,1,1,0,1,0,NA,NA,1,1,511
+4174,215218,1558290600,"Finished",0,"Napoli",4189,"Inter",4,1,1,0,1,0,NA,NA,1,1,262
+4187,215217,1558290600,"Finished",0,"Juventus",4181,"Atalanta",1,1,0,1,0,1,NA,NA,1,1,262
+7621,216184,1558371600,"Finished",0,"Ankaragucu",7610,"Sivasspor",3,1,2,0,2,0,NA,NA,1,1,511
+4183,216096,1558377000,"Finished",0,"Lazio",4185,"Bologna",3,3,1,0,1,0,NA,NA,1,1,262
+7615,218031,1558710000,"Finished",0,"Basaksehir",7613,"Alanyaspor",1,1,1,1,1,1,NA,NA,1,1,511
+7610,218038,1558720800,"Finished",0,"Sivasspor",7606,"Galatasaray",4,3,2,2,2,2,NA,NA,1,1,511
+7614,218032,1558720800,"Finished",0,"Besiktas",7619,"Kasimpasa",3,2,3,1,3,1,NA,NA,1,1,511
+7623,218037,1558720800,"Finished",0,"Rizespor",7605,"Trabzonspor",2,3,1,3,1,3,NA,NA,1,1,511
+3023,216674,1558724700,"Finished",0,"Marseille",3034,"Montpellier",1,0,0,0,0,0,NA,NA,1,1,176
+3030,216673,1558724700,"Finished",0,"Dijon",3024,"Toulouse",2,1,0,1,0,1,NA,NA,1,1,176
+3031,216675,1558724700,"Finished",0,"Nantes",3036,"Strasbourg",0,1,0,0,0,0,NA,NA,1,1,176
+3035,216679,1558724700,"Finished",0,"Rennes",3022,"Lille",3,1,1,1,1,1,NA,NA,1,1,176
+3037,216671,1558724700,"Finished",0,"Angers",3025,"St Etienne",1,1,0,0,0,0,NA,NA,1,1,176
+3041,216676,1558724700,"Finished",0,"Nice",3039,"Monaco",2,0,1,0,1,0,NA,NA,1,1,176
+3046,216678,1558724700,"Finished",0,"Reims",3040,"Paris SG",3,1,1,0,1,0,NA,NA,1,1,176
+3049,216677,1558724700,"Finished",0,"Nimes",3026,"Lyon",2,3,2,1,2,1,NA,NA,1,1,176
+3226,217224,1558807200,"Finished",0,"RB Leipzig",3225,"Bayern Munich",0,3,0,1,0,1,NA,NA,1,1,195
+4185,217647,1558809000,"Finished",0,"Bologna",4174,"Napoli",3,2,2,0,2,0,NA,NA,1,1,262
+7105,217495,1558810800,"Finished",0,"Barcelona",7109,"Valencia",1,2,0,2,0,2,NA,NA,1,1,468
+4170,217654,1558875600,"Finished",0,"Torino",4183,"Lazio",3,1,0,0,0,0,NA,NA,1,1,262
+4176,217652,1558886400,"Finished",0,"Sampdoria",4187,"Juventus",2,0,0,0,0,0,NA,NA,1,1,262
+7603,218033,1558886400,"Finished",0,"Fenerbahce",7608,"Antalyaspor",3,1,1,1,1,1,NA,NA,1,1,511
+7620,218034,1558886400,"Finished",0,"Goztepe",7621,"Ankaragucu",2,1,1,0,1,0,NA,NA,1,1,511
+4171,217648,1558895400,"Finished",0,"Cagliari",4180,"Udinese",1,2,1,0,1,0,NA,NA,1,1,262
+4173,217649,1558895400,"Finished",0,"Fiorentina",4179,"Genoa",0,0,0,0,0,0,NA,NA,1,1,262
+4178,217653,1558895400,"Finished",0,"Spal",4186,"AC Milan",2,3,1,2,1,2,NA,NA,1,1,262
+4181,217646,1558895400,"Finished",0,"Atalanta",4175,"Sassuolo",3,1,1,1,1,1,NA,NA,1,1,262
+4184,217645,1558895400,"Finished",0,"AS Roma",4192,"Parma",2,1,1,0,1,0,NA,NA,1,1,262
+2616,218349,1559156400,"Finished",0,"Chelsea",2617,"Arsenal",4,1,0,0,0,0,NA,NA,1,1,148
+2628,218856,1559415600,"Finished",0,"Tottenham",2621,"Liverpool",0,2,0,1,0,1,NA,NA,1,1,148
+7189,219690,1559674800,"Finished",0,"Mallorca",7110,"Granada CF",1,1,0,0,0,0,NA,NA,1,1,468
+7091,250183,1562958000,"Finished",0,"Betis (Esp)",2654,"Sheffield Utd (Eng)",0,1,0,0,0,0,NA,NA,1,1,468
+3022,251935,1563033600,"Finished",0,"Lille (Fra)",3046,"Reims (Fra)",1,1,1,0,1,0,NA,NA,1,1,176
+7617,267519,1563285600,"Finished",0,"Genclerbirligi (Tur)",7608,"Antalyaspor (Tur)",1,1,1,1,1,1,NA,NA,1,1,511
+2630,237422,1563357600,"Finished",0,"Newcastle",2646,"Wolves",0,4,0,3,0,3,NA,NA,1,1,148
+2626,237423,1563366600,"Finished",0,"Manchester City",2620,"West Ham",4,1,2,1,2,1,NA,NA,1,1,148
+7615,252435,1563380400,"Finished",0,"Basaksehir (Tur)",3234,"B. Monchengladbach (Ger)",1,5,1,3,1,3,NA,NA,1,1,511
+2617,237426,1563418800,"Finished",0,"Arsenal",3225,"Bayern Munich",2,1,0,0,0,0,NA,NA,1,1,148
+3034,252674,1563487200,"Finished",0,"Montpellier (Fra)",3025,"St Etienne (Fra)",2,4,2,1,2,1,NA,NA,1,1,176
+3023,252675,1563498000,"Finished",0,"Marseille (Fra)",3038,"Bordeaux (Fra)",2,1,0,1,0,1,NA,NA,1,1,176
+3039,252684,1563552000,"Finished",0,"Monaco (Fra)",2612,"Everton (Eng)",0,1,0,0,0,0,NA,NA,1,1,176
+3226,267538,1563552000,"Finished",0,"RB Leipzig (Ger)",7606,"Galatasaray (Tur)",3,2,0,1,0,1,NA,NA,1,1,195
+3036,252686,1563553800,"Finished",0,"Strasbourg (Fra)",3024,"Toulouse (Fra)",3,1,1,0,1,0,NA,NA,1,1,176
+3235,252696,1563553800,"Finished",0,"Schalke (Ger)",2641,"Norwich (Eng)",1,2,0,1,0,1,NA,NA,1,1,195
+3230,252814,1563580800,"Finished",0,"Dortmund (Ger)",2621,"Liverpool (Eng)",3,2,1,1,1,1,NA,NA,1,1,195
+2630,267786,1563613200,"Finished",0,"Newcastle",2620,"West Ham",1,0,1,0,1,0,NA,NA,1,1,148
+2627,237427,1563622200,"Finished",0,"Manchester Utd",4189,"Inter",1,0,0,0,0,0,NA,NA,1,1,148
+3227,252836,1563627600,"Finished",0,"Bayer Leverkusen (Ger)",2623,"Watford (Eng)",1,2,0,1,0,1,NA,NA,1,1,195
+7613,272383,1563627600,"Finished",0,"Alanyaspor (Tur)",7611,"Konyaspor (Tur)",1,0,NA,NA,NA,NA,NA,NA,1,1,511
+7615,252891,1563627600,"Finished",0,"Basaksehir (Tur)",3256,"Dusseldorf (Ger)",1,1,0,1,0,1,NA,NA,1,1,511
+3223,252890,1563633000,"Finished",0,"Werder Bremen (Ger)",3228,"FC Koln (Ger)",1,0,0,0,0,0,NA,NA,1,1,195
+3039,252873,1563634800,"Finished",0,"Monaco (Fra)",7109,"Valencia (Esp)",0,1,0,1,0,1,NA,NA,1,1,176
+3227,267646,1563640200,"Finished",0,"Bayer Leverkusen (Ger)",7096,"Eibar (Esp)",2,2,0,1,0,1,NA,NA,1,1,195
+3026,252916,1563642000,"Finished",0,"Lyon (Fra)",4179,"Genoa (Ita)",3,4,1,1,1,1,NA,NA,1,1,176
+7107,252920,1563642000,"Finished",0,"Villarreal (Esp)",7097,"Levante (Esp)",2,1,1,0,1,0,NA,NA,1,1,468
+2617,237429,1563660000,"Finished",0,"Arsenal",4173,"Fiorentina",3,0,1,0,1,0,NA,NA,1,1,148
+3225,237430,1563667200,"Finished",0,"Bayern Munich",7099,"Real Madrid",3,1,1,0,1,0,NA,NA,1,1,195
+4187,237431,1563708600,"Finished",0,"Juventus",2628,"Tottenham",2,3,0,1,0,1,NA,NA,1,1,262
+7096,272913,1563724800,"Finished",0,"Eibar (Esp)",7604,"Kayserispor (Tur)",5,2,2,1,2,1,NA,NA,1,1,468
+3038,272509,1563746400,"Finished",0,"Bordeaux (Fra)",3034,"Montpellier (Fra)",2,1,1,1,1,1,NA,NA,1,1,176
+7102,253009,1563746400,"Finished",0,"Sevilla (Esp)",2621,"Liverpool (Eng)",2,1,1,1,1,1,NA,NA,1,1,468
+3025,272908,1563757200,"Finished",0,"St Etienne (Fra)",3023,"Marseille (Fra)",1,2,1,1,1,1,NA,NA,1,1,176
+7603,253012,1563813000,"Finished",0,"Fenerbahce (Tur)",3236,"Wolfsburg (Ger)",1,1,0,1,0,1,NA,NA,1,1,511
+7105,267458,1563877800,"Finished",0,"Barcelona (Esp)",2616,"Chelsea (Eng)",1,2,0,1,0,1,NA,NA,1,1,468
+7613,272397,1563888600,"Finished",0,"Alanyaspor (Tur)",7608,"Antalyaspor (Tur)",0,0,0,0,0,0,NA,NA,1,1,511
+3052,267461,1563901200,"Finished",0,"Brest (Fra)",3035,"Rennes (Fra)",1,0,0,0,0,0,NA,NA,1,1,176
+3225,237433,1563930000,"Finished",0,"Bayern Munich",4186,"AC Milan",1,0,1,0,1,0,NA,NA,1,1,195
+3046,267708,1563984000,"Finished",0,"Reims (Fra)",3027,"Metz (Fra)",2,0,1,0,1,0,NA,NA,1,1,176
+2628,237437,1564054200,"Finished",0,"Tottenham",2627,"Manchester Utd",1,2,0,1,0,1,NA,NA,1,1,148
+3233,267825,1564066800,"Finished",0,"Hoffenheim (Ger)",4188,"Verona (Ita)",0,0,0,0,0,0,NA,NA,1,1,195
+7613,272454,1564066800,"Finished",0,"Alanyaspor (Tur)",7631,"Gaziantep (Tur)",4,0,NA,NA,NA,NA,NA,NA,1,1,511
+3231,267824,1564072200,"Finished",0,"Hertha Berlin (Ger)",7603,"Fenerbahce (Tur)",2,1,0,0,0,0,NA,NA,1,1,195
+3224,272409,1564074000,"Finished",0,"Augsburg (Ger)",7606,"Galatasaray (Tur)",4,1,2,0,2,0,NA,NA,1,1,195
+3233,267829,1564074000,"Finished",0,"Hoffenheim (Ger)",7605,"Trabzonspor (Tur)",3,3,2,2,2,2,NA,NA,1,1,195
+3222,273015,1564142400,"Finished",0,"Freiburg (Ger)",7604,"Kayserispor (Tur)",2,0,1,0,1,0,NA,NA,1,1,195
+3222,273016,1564149600,"Finished",0,"Freiburg (Ger)",7604,"Kayserispor (Tur)",9,1,5,1,5,1,NA,NA,1,1,195
+3224,272456,1564156800,"Finished",0,"Augsburg (Ger)",7107,"Villarreal (Esp)",2,6,1,3,1,3,NA,NA,1,1,195
+3226,272458,1564156800,"Finished",0,"RB Leipzig (Ger)",3035,"Rennes (Fra)",2,0,NA,NA,NA,NA,NA,NA,1,1,195
+3228,272457,1564156800,"Finished",0,"FC Koln (Ger)",4185,"Bologna (Ita)",3,1,2,0,2,0,NA,NA,1,1,195
+3031,272461,1564160400,"Finished",0,"Nantes (Fra)",3052,"Brest (Fra)",1,0,1,0,1,0,NA,NA,1,1,176
+7099,237438,1564185960,"Finished",0,"Real Madrid",7106,"Atl. Madrid",3,7,0,5,0,5,NA,NA,1,1,468
+7102,272590,1564225200,"Finished",0,"Sevilla (Esp)",2612,"Everton (Eng)",1,0,0,0,0,0,NA,NA,1,1,468
+3237,272596,1564230600,"Finished",0,"Mainz (Ger)",7102,"Sevilla (Esp)",0,5,0,4,0,4,NA,NA,1,1,195
+3236,272959,1564232400,"Finished",0,"Wolfsburg (Ger)",3242,"Union Berlin (Ger)",1,1,NA,NA,NA,NA,NA,NA,1,1,195
+3234,272603,1564236000,"Finished",0,"B. Monchengladbach (Ger)",3037,"Angers (Fra)",2,1,0,1,0,1,NA,NA,1,1,195
+3237,272629,1564236000,"Finished",0,"Mainz (Ger)",2612,"Everton (Eng)",3,1,1,0,1,0,NA,NA,1,1,195
+3268,272654,1564239600,"Finished",0,"Paderborn (Ger)",7104,"Ath Bilbao (Esp)",3,3,2,1,2,1,NA,NA,1,1,195
+4180,272656,1564239600,"Finished",0,"Udinese (Ita)",3230,"Dortmund (Ger)",1,4,0,4,0,4,NA,NA,1,1,262
+7614,272650,1564239600,"Finished",0,"Besiktas (Tur)",7096,"Eibar (Esp)",0,2,0,1,0,1,NA,NA,1,1,511
+3030,272659,1564243200,"Finished",0,"Dijon (Fra)",3046,"Reims (Fra)",1,3,0,1,0,1,NA,NA,1,1,176
+3049,272647,1564243200,"Finished",0,"Nimes (Fra)",3024,"Toulouse (Fra)",2,1,NA,NA,NA,NA,NA,NA,1,1,176
+7605,272962,1564243200,"Finished",0,"Trabzonspor (Tur)",4192,"Parma (Ita)",2,2,1,2,1,2,NA,NA,1,1,511
+3027,272663,1564246800,"Finished",0,"Metz (Fra)",3033,"Amiens (Fra)",1,1,0,1,0,1,NA,NA,1,1,176
+7095,272676,1564252200,"Finished",0,"Celta Vigo (Esp)",3022,"Lille (Fra)",1,0,0,0,0,0,NA,NA,1,1,468
+3223,272861,1564304400,"Finished",0,"Werder Bremen (Ger)",7096,"Eibar (Esp)",4,0,0,0,0,0,NA,NA,1,1,195
+3234,272865,1564322400,"Finished",0,"B. Monchengladbach (Ger)",7104,"Ath Bilbao (Esp)",0,2,0,1,0,1,NA,NA,1,1,195
+2617,237146,1564323300,"Finished",0,"Arsenal",3026,"Lyon",1,2,1,0,1,0,NA,NA,1,1,148
+3038,276790,1564324200,"Finished",0,"Bordeaux (Fra)",7606,"Galatasaray (Tur)",1,3,0,2,0,2,NA,NA,1,1,176
+4174,272872,1564329600,"Finished",0,"Napoli (Ita)",2621,"Liverpool (Eng)",0,3,2,0,2,0,NA,NA,1,1,262
+3228,272875,1564330500,"Finished",0,"FC Koln (Ger)",7107,"Villarreal (Esp)",1,3,1,1,1,1,NA,NA,1,1,195
+3235,272931,1564416000,"Finished",0,"Schalke (Ger)",4185,"Bologna (Ita)",2,3,1,2,1,2,NA,NA,1,1,195
+4188,272968,1564416000,"Finished",0,"Verona (Ita)",7605,"Trabzonspor (Tur)",1,1,1,0,1,0,NA,NA,1,1,262
+7623,277627,1564493400,"Finished",0,"Rizespor (Tur)",7608,"Antalyaspor (Tur)",2,2,2,2,2,2,NA,NA,1,1,511
+7099,237420,1564502400,"Finished",0,"Real Madrid",2628,"Tottenham",0,1,0,1,0,1,NA,NA,1,1,468
+2641,273044,1564509600,"Finished",0,"Norwich (Eng)",4181,"Atalanta (Ita)",1,4,1,1,1,1,NA,NA,1,1,148
+3225,237421,1564511400,"Finished",0,"Bayern Munich",7603,"Fenerbahce",6,1,5,0,5,0,NA,NA,1,1,195
+2629,273050,1564512300,"Finished",0,"Burnley (Eng)",3041,"Nice (Fra)",6,1,4,0,4,0,NA,NA,1,1,148
+3231,273133,1564588800,"Finished",0,"Hertha Berlin (Ger)",2620,"West Ham (Eng)",3,5,2,2,2,2,NA,NA,1,1,195
+7099,280949,1564588800,"Finished",0,"Real Madrid",7603,"Fenerbahce",5,3,2,2,2,2,NA,NA,1,1,468
+3026,273137,1564592400,"Finished",0,"Lyon (Fra)",2621,"Liverpool (Eng)",3,1,2,1,2,1,NA,NA,1,1,176
+7108,273128,1564592400,"Finished",0,"Alaves (Esp)",7101,"Real Sociedad (Esp)",1,0,1,0,1,0,NA,NA,1,1,468
+7620,275129,1564673400,"Finished",0,"Goztepe (Tur)",7630,"Denizlispor (Tur)",0,0,0,0,0,0,NA,NA,1,1,511
+3235,277293,1564747200,"Finished",0,"Schalke (Ger)",7613,"Alanyaspor (Tur)",2,0,1,0,1,0,NA,NA,1,1,195
+3235,277297,1564761600,"Finished",0,"Schalke (Ger)",7107,"Villarreal (Esp)",3,1,1,1,1,1,NA,NA,1,1,195
+7614,277296,1564765200,"Finished",0,"Besiktas (Tur)",4180,"Udinese (Ita)",0,2,0,0,0,0,NA,NA,1,1,511
+7110,277852,1564767000,"Finished",0,"Granada CF (Esp)",7115,"Valladolid (Esp)",2,1,2,1,2,1,NA,NA,1,1,468
+2613,277300,1564768800,"Finished",0,"Brighton (Eng)",7109,"Valencia (Esp)",2,1,1,1,1,1,NA,NA,1,1,148
+3031,277646,1564768800,"Finished",0,"Nantes (Fra)",4179,"Genoa (Ita)",1,1,0,1,0,1,NA,NA,1,1,176
+2611,277301,1564770600,"Finished",0,"Leicester (Eng)",4181,"Atalanta (Ita)",2,1,0,0,0,0,NA,NA,1,1,148
+2615,277302,1564771500,"Finished",0,"Bournemouth (Eng)",4183,"Lazio (Ita)",3,4,2,1,2,1,NA,NA,1,1,148
+3027,277542,1564822800,"Finished",0,"Metz (Fra)",3237,"Mainz (Ger)",0,1,0,1,0,1,NA,NA,1,1,176
+3027,277543,1564831800,"Finished",0,"Metz (Fra)",3237,"Mainz (Ger)",0,1,0,0,0,0,NA,NA,1,1,176
+3040,229166,1564831800,"Finished",0,"Paris SG",3035,"Rennes",2,1,0,1,0,1,NA,NA,1,1,176
+3222,277647,1564835400,"Finished",0,"Freiburg (Ger)",4171,"Cagliari (Ita)",0,1,0,0,0,0,NA,NA,1,1,195
+3223,277559,1564837200,"Finished",0,"Werder Bremen (Ger)",2612,"Everton (Eng)",0,0,0,0,0,0,NA,NA,1,1,195
+3236,277648,1564837200,"Finished",0,"Wolfsburg (Ger)",3041,"Nice (Fra)",8,1,2,1,2,1,NA,NA,1,1,195
+3256,277546,1564837200,"Finished",0,"Dusseldorf (Ger)",7096,"Eibar (Esp)",3,2,1,1,1,1,NA,NA,1,1,195
+3224,277547,1564839000,"Finished",0,"Augsburg (Ger)",4185,"Bologna (Ita)",2,3,1,1,1,1,NA,NA,1,1,195
+3226,277549,1564839000,"Finished",0,"RB Leipzig (Ger)",2632,"Aston Villa (Eng)",1,3,1,1,1,1,NA,NA,1,1,195
+3233,277548,1564839000,"Finished",0,"Hoffenheim (Ger)",7102,"Sevilla (Esp)",1,2,1,1,1,1,NA,NA,1,1,195
+2614,277555,1564840800,"Finished",0,"Southampton (Eng)",3228,"FC Koln (Ger)",2,0,1,0,1,0,NA,NA,1,1,148
+2619,277550,1564840800,"Finished",0,"Crystal Palace (Eng)",3231,"Hertha Berlin (Ger)",0,4,0,1,0,1,NA,NA,1,1,148
+2623,277558,1564840800,"Finished",0,"Watford (Eng)",7101,"Real Sociedad (Esp)",2,1,0,1,0,1,NA,NA,1,1,148
+2630,277553,1564840800,"Finished",0,"Newcastle (Eng)",3025,"St Etienne (Fra)",2,1,1,0,1,0,NA,NA,1,1,148
+3242,277557,1564840800,"Finished",0,"Union Berlin (Ger)",7095,"Celta Vigo (Esp)",0,3,0,1,0,1,NA,NA,1,1,195
+3268,280962,1564840800,"Finished",0,"Paderborn (Ger)",4183,"Lazio (Ita)",2,4,0,3,0,3,NA,NA,1,1,195
+4192,277554,1564840800,"Finished",0,"Parma (Ita)",2629,"Burnley (Eng)",2,0,0,0,0,0,NA,NA,1,1,262
+2615,277561,1564842600,"Finished",0,"Bournemouth (Eng)",3026,"Lyon (Fra)",3,0,2,0,2,0,NA,NA,1,1,148
+2641,277565,1564844400,"Finished",0,"Norwich (Eng)",3024,"Toulouse (Fra)",1,0,1,0,1,0,NA,NA,1,1,148
+3222,281047,1564844400,"Finished",0,"Freiburg (Ger)",4171,"Cagliari (Ita)",4,1,3,1,3,1,NA,NA,1,1,195
+3234,277562,1564844400,"Finished",0,"B. Monchengladbach (Ger)",2616,"Chelsea (Eng)",2,2,2,0,2,0,NA,NA,1,1,195
+3046,277649,1564846200,"Finished",0,"Reims (Fra)",2654,"Sheffield Utd (Eng)",3,1,1,1,1,1,NA,NA,1,1,176
+3022,277552,1564848000,"Finished",0,"Lille (Fra)",4184,"AS Roma (Ita)",2,3,1,0,1,0,NA,NA,1,1,176
+3049,277564,1564848000,"Finished",0,"Nimes (Fra)",3030,"Dijon (Fra)",0,2,0,2,0,2,NA,NA,1,1,176
+3052,277570,1564849800,"Finished",0,"Brest (Fra)",7097,"Levante (Esp)",1,1,1,1,1,1,NA,NA,1,1,176
+3039,277650,1564853400,"Finished",0,"Monaco (Fra)",4176,"Sampdoria (Ita)",1,0,0,0,0,0,NA,NA,1,1,176
+3230,236794,1564857000,"Finished",0,"Dortmund",3225,"Bayern Munich",2,0,0,0,0,0,NA,NA,1,1,195
+3033,277579,1564858800,"Finished",0,"Amiens (Fra)",7103,"Leganes (Esp)",0,1,0,0,0,0,NA,NA,1,1,176
+3233,286088,1564909200,"Finished",0,"Hoffenheim (Ger)",7102,"Sevilla (Esp)",0,4,NA,NA,NA,NA,NA,NA,1,1,195
+3227,277719,1564920000,"Finished",0,"Bayer Leverkusen (Ger)",7109,"Valencia (Esp)",1,2,1,1,1,1,NA,NA,1,1,195
+7614,277720,1564930800,"Finished",0,"Besiktas (Tur)",4203,"Brescia (Ita)",0,2,0,1,0,1,NA,NA,1,1,511
+4178,277728,1564934400,"Finished",0,"Spal (Ita)",4188,"Verona (Ita)",0,0,0,0,0,0,NA,NA,1,1,262
+7189,277804,1564938000,"Finished",0,"Mallorca (Esp)",7115,"Valladolid (Esp)",2,2,1,2,1,2,NA,NA,1,1,468
+7105,277723,1564941600,"Finished",0,"Barcelona (Esp)",2617,"Arsenal (Eng)",2,1,0,1,0,1,NA,NA,1,1,468
+3038,277729,1564944300,"Finished",0,"Bordeaux (Fra)",4179,"Genoa (Ita)",2,3,1,2,1,2,NA,NA,1,1,176
+3023,277730,1564945200,"Finished",0,"Marseille (Fra)",4174,"Napoli (Ita)",0,1,0,1,0,1,NA,NA,1,1,176
+7613,280993,1565193600,"Finished",0,"Alanyaspor (Tur)",4203,"Brescia (Ita)",2,0,0,0,0,0,NA,NA,1,1,511
+7189,280996,1565199000,"Finished",0,"Mallorca (Esp)",7100,"Getafe (Esp)",0,0,0,0,0,0,NA,NA,1,1,468
+7603,280995,1565199000,"Finished",0,"Fenerbahce (Tur)",4171,"Cagliari (Ita)",2,2,2,0,2,0,NA,NA,1,1,511
+4184,286312,1565200800,"Finished",0,"AS Roma (Ita)",7104,"Ath Bilbao (Esp)",2,2,0,1,0,1,NA,NA,1,1,262
+4174,281106,1565220600,"Finished",0,"Napoli (Ita)",7105,"Barcelona (Esp)",1,2,1,1,1,1,NA,NA,1,1,262
+7113,281108,1565285400,"Finished",0,"Osasuna (Esp)",7096,"Eibar (Esp)",0,0,0,0,0,0,NA,NA,1,1,468
+7621,286595,1565370000,"Finished",0,"Ankaragucu (Tur)",7617,"Genclerbirligi (Tur)",2,0,1,0,1,0,NA,NA,1,1,511
+7101,281111,1565371800,"Finished",0,"Real Sociedad (Esp)",7113,"Osasuna (Esp)",2,0,0,0,0,0,NA,NA,1,1,468
+3039,228771,1565376300,"Finished",0,"Monaco",3026,"Lyon",0,3,0,2,0,2,NA,NA,1,1,176
+2621,224424,1565377200,"Finished",0,"Liverpool",2641,"Norwich",4,1,4,0,4,0,NA,NA,1,1,148
+7110,281114,1565377200,"Finished",0,"Granada CF (Esp)",7102,"Sevilla (Esp)",2,1,0,0,0,0,NA,NA,1,1,468
+2620,224425,1565436600,"Finished",0,"West Ham",2626,"Manchester City",0,5,0,1,0,1,NA,NA,1,1,148
+2615,224426,1565445600,"Finished",0,"Bournemouth",2654,"Sheffield Utd",1,1,0,0,0,0,NA,NA,1,1,148
+2619,224428,1565445600,"Finished",0,"Crystal Palace",2612,"Everton",0,0,0,0,0,0,NA,NA,1,1,148
+2623,224429,1565445600,"Finished",0,"Watford",2613,"Brighton",0,3,0,1,0,1,NA,NA,1,1,148
+2629,224427,1565445600,"Finished",0,"Burnley",2614,"Southampton",3,0,0,0,0,0,NA,NA,1,1,148
+3023,228770,1565451000,"Finished",0,"Marseille",3046,"Reims",0,2,0,0,0,0,NA,NA,1,1,176
+7106,237442,1565453160,"Finished",0,"Atl. Madrid",4187,"Juventus",2,1,2,1,2,1,NA,NA,1,1,468
+2628,224430,1565454600,"Finished",0,"Tottenham",2632,"Aston Villa",3,1,0,1,0,1,NA,NA,1,1,148
+4203,281122,1565454600,"Finished",0,"Brescia (Ita)",7115,"Valladolid (Esp)",2,1,1,1,1,1,NA,NA,1,1,262
+7610,286480,1565456400,"Finished",0,"Sivasspor (Tur)",7603,"Fenerbahce (Tur)",2,1,2,0,2,0,NA,NA,1,1,511
+3030,228768,1565460000,"Finished",0,"Dijon",3025,"St Etienne",1,2,1,2,1,2,NA,NA,1,1,176
+3034,228772,1565460000,"Finished",0,"Montpellier",3035,"Rennes",0,1,0,1,0,1,NA,NA,1,1,176
+3037,228766,1565460000,"Finished",0,"Angers",3038,"Bordeaux",3,1,3,1,3,1,NA,NA,1,1,176
+3041,228773,1565460000,"Finished",0,"Nice",3033,"Amiens",2,1,1,0,1,0,NA,NA,1,1,176
+3052,228767,1565460000,"Finished",0,"Brest",3024,"Toulouse",1,1,1,0,1,0,NA,NA,1,1,176
+7095,281118,1565460000,"Finished",0,"Celta Vigo (Esp)",4183,"Lazio (Ita)",1,2,1,2,1,2,NA,NA,1,1,468
+4192,281135,1565461800,"Finished",0,"Parma (Ita)",4176,"Sampdoria (Ita)",2,1,1,1,1,1,NA,NA,1,1,262
+7101,281136,1565461800,"Finished",0,"Real Sociedad (Esp)",7096,"Eibar (Esp)",1,2,1,1,1,1,NA,NA,1,1,468
+4185,286481,1565462700,"Finished",0,"Bologna (Ita)",7107,"Villarreal (Esp)",3,4,1,1,1,1,NA,NA,1,1,262
+4181,281137,1565463600,"Finished",0,"Atalanta (Ita)",7100,"Getafe (Esp)",1,4,0,1,0,1,NA,NA,1,1,262
+7189,281140,1565463600,"Finished",0,"Mallorca (Esp)",7097,"Levante (Esp)",1,2,1,0,1,0,NA,NA,1,1,468
+7105,281143,1565470800,"Finished",0,"Barcelona (Esp)",4174,"Napoli (Ita)",0,4,0,0,0,0,NA,NA,1,1,468
+2611,224431,1565528400,"Finished",0,"Leicester",2646,"Wolves",0,0,0,0,0,0,NA,NA,1,1,148
+2630,224432,1565528400,"Finished",0,"Newcastle",2617,"Arsenal",0,1,0,0,0,0,NA,NA,1,1,148
+3022,228769,1565528400,"Finished",0,"Lille",3031,"Nantes",2,1,1,0,1,0,NA,NA,1,1,176
+3036,228775,1565535600,"Finished",0,"Strasbourg",3027,"Metz",1,1,1,0,1,0,NA,NA,1,1,176
+2627,224433,1565537400,"Finished",0,"Manchester Utd",2616,"Chelsea",4,0,1,0,1,0,NA,NA,1,1,148
+3040,228774,1565550000,"Finished",0,"Paris SG",3049,"Nimes",3,0,1,0,1,0,NA,NA,1,1,176
+4173,281146,1565550000,"Finished",0,"Fiorentina (Ita)",7606,"Galatasaray (Tur)",4,1,2,0,2,0,NA,NA,1,1,262
+7630,271092,1565976600,"Finished",0,"Denizlispor",7606,"Galatasaray",2,0,0,0,0,0,NA,NA,1,1,511
+3225,243150,1565980200,"Finished",0,"Bayern Munich",3231,"Hertha Berlin",2,2,1,2,1,2,NA,NA,1,1,195
+3026,228778,1565981100,"Finished",0,"Lyon",3037,"Angers",6,0,3,0,3,0,NA,NA,1,1,176
+7104,261898,1565982000,"Finished",0,"Ath Bilbao",7105,"Barcelona",1,0,0,0,0,0,NA,NA,1,1,468
+2617,224434,1566041400,"Finished",0,"Arsenal",2629,"Burnley",2,1,1,1,1,1,NA,NA,1,1,148
+3222,243155,1566048600,"Finished",0,"Freiburg",3237,"Mainz",3,0,0,0,0,0,NA,NA,1,1,195
+3223,243157,1566048600,"Finished",0,"Werder Bremen",3256,"Dusseldorf",1,3,0,1,0,1,NA,NA,1,1,195
+3227,243152,1566048600,"Finished",0,"Bayer Leverkusen",3268,"Paderborn",3,2,2,2,2,2,NA,NA,1,1,195
+3230,243153,1566048600,"Finished",0,"Dortmund",3224,"Augsburg",5,1,1,1,1,1,NA,NA,1,1,195
+3236,243158,1566048600,"Finished",0,"Wolfsburg",3228,"FC Koln",2,1,1,0,1,0,NA,NA,1,1,195
+2612,224438,1566050400,"Finished",0,"Everton",2623,"Watford",1,0,1,0,1,0,NA,NA,1,1,148
+2613,224436,1566050400,"Finished",0,"Brighton",2620,"West Ham",1,1,0,0,0,0,NA,NA,1,1,148
+2614,224442,1566050400,"Finished",0,"Southampton",2621,"Liverpool",1,2,0,1,0,1,NA,NA,1,1,148
+2632,224435,1566050400,"Finished",0,"Aston Villa",2615,"Bournemouth",1,2,0,2,0,2,NA,NA,1,1,148
+2641,224440,1566050400,"Finished",0,"Norwich",2630,"Newcastle",3,1,1,0,1,0,NA,NA,1,1,148
+7095,261899,1566054000,"Finished",0,"Celta Vigo",7099,"Real Madrid",1,3,0,1,0,1,NA,NA,1,1,468
+3031,228780,1566055800,"Finished",0,"Nantes",3023,"Marseille",0,0,0,0,0,0,NA,NA,1,1,176
+7617,271094,1566058500,"Finished",0,"Genclerbirligi",7623,"Rizespor",0,1,0,0,0,0,NA,NA,1,1,511
+2626,224439,1566059400,"Finished",0,"Manchester City",2628,"Tottenham",2,2,2,1,2,1,NA,NA,1,1,148
+3234,243151,1566059400,"Finished",0,"B. Monchengladbach",3235,"Schalke",0,0,0,0,0,0,NA,NA,1,1,195
+7109,261900,1566061200,"Finished",0,"Valencia",7101,"Real Sociedad",1,1,0,0,0,0,NA,NA,1,1,468
+3024,228785,1566064800,"Finished",0,"Toulouse",3030,"Dijon",1,0,0,0,0,0,NA,NA,1,1,176
+3027,228779,1566064800,"Finished",0,"Metz",3039,"Monaco",3,0,1,0,1,0,NA,NA,1,1,176
+3033,228776,1566064800,"Finished",0,"Amiens",3022,"Lille",1,0,0,0,0,0,NA,NA,1,1,176
+3038,228777,1566064800,"Finished",0,"Bordeaux",3034,"Montpellier",1,1,0,1,0,1,NA,NA,1,1,176
+3049,228781,1566064800,"Finished",0,"Nimes",3041,"Nice",1,2,1,2,1,2,NA,NA,1,1,176
+7189,261906,1566064800,"Finished",0,"Mallorca",7096,"Eibar",2,1,1,0,1,0,NA,NA,1,1,468
+7604,271097,1566067500,"Finished",0,"Kayserispor",7613,"Alanyaspor",0,1,0,0,0,0,NA,NA,1,1,511
+7610,271099,1566067500,"Finished",0,"Sivasspor",7614,"Besiktas",3,0,1,0,1,0,NA,NA,1,1,511
+7103,261901,1566068400,"Finished",0,"Leganes",7113,"Osasuna",0,1,0,0,0,0,NA,NA,1,1,468
+7107,261902,1566068400,"Finished",0,"Villarreal",7110,"Granada CF",4,4,1,1,1,1,NA,NA,1,1,468
+2654,224441,1566133200,"Finished",0,"Sheffield Utd",2619,"Crystal Palace",1,0,0,0,0,0,NA,NA,1,1,148
+3025,228784,1566133200,"Finished",0,"St Etienne",3052,"Brest",1,1,0,1,0,1,NA,NA,1,1,176
+3238,243154,1566135000,"Finished",0,"Eintracht Frankfurt",3233,"Hoffenheim",1,0,1,0,1,0,NA,NA,1,1,195
+3046,228782,1566140400,"Finished",0,"Reims",3036,"Strasbourg",0,0,0,0,0,0,NA,NA,1,1,176
+7108,261903,1566140400,"Finished",0,"Alaves",7097,"Levante",1,0,0,0,0,0,NA,NA,1,1,468
+2616,224437,1566142200,"Finished",0,"Chelsea",2611,"Leicester",1,1,1,0,1,0,NA,NA,1,1,148
+3242,243156,1566144000,"Finished",0,"Union Berlin",3226,"RB Leipzig",0,4,0,3,0,3,NA,NA,1,1,195
+7611,271098,1566144900,"Finished",0,"Konyaspor",7621,"Ankaragucu",0,0,0,0,0,0,NA,NA,1,1,511
+7090,261904,1566147600,"Finished",0,"Espanyol",7102,"Sevilla",0,2,0,1,0,1,NA,NA,1,1,468
+7618,271100,1566153900,"Finished",0,"Yeni Malatyaspor",7615,"Basaksehir",3,0,0,0,0,0,NA,NA,1,1,511
+7619,271096,1566153900,"Finished",0,"Kasimpasa",7605,"Trabzonspor",1,1,1,1,1,1,NA,NA,1,1,511
+7620,271095,1566153900,"Finished",0,"Goztepe",7608,"Antalyaspor",0,1,0,1,0,1,NA,NA,1,1,511
+3035,228783,1566154800,"Finished",0,"Rennes",3040,"Paris SG",2,1,1,1,1,1,NA,NA,1,1,176
+7091,261907,1566154800,"Finished",0,"Betis",7115,"Valladolid",1,2,0,0,0,0,NA,NA,1,1,468
+7106,261905,1566158400,"Finished",0,"Atl. Madrid",7100,"Getafe",1,0,1,0,1,0,NA,NA,1,1,468
+7603,271093,1566234000,"Finished",0,"Fenerbahce",7631,"Gaziantep",5,0,3,0,3,0,NA,NA,1,1,511
+2646,224443,1566241200,"Finished",0,"Wolves",2627,"Manchester Utd",1,1,0,1,0,1,NA,NA,1,1,148
+3036,287538,1566498600,"Finished",0,"Strasbourg (Fra)",3238,"Eintracht Frankfurt (Ger)",1,0,1,0,1,0,NA,NA,1,1,176
+4170,287540,1566500400,"Finished",0,"Torino (Ita)",2646,"Wolves (Eng)",2,3,0,1,0,1,NA,NA,1,1,262
+7614,271105,1566581400,"Finished",0,"Besiktas",7620,"Goztepe",3,0,1,0,1,0,NA,NA,1,1,511
+7110,261908,1566583200,"Finished",0,"Granada CF",7102,"Sevilla",0,1,0,0,0,0,NA,NA,1,1,468
+3228,243161,1566585000,"Finished",0,"FC Koln",3230,"Dortmund",1,3,1,0,1,0,NA,NA,1,1,195
+2632,224444,1566586800,"Finished",0,"Aston Villa",2612,"Everton",2,0,1,0,1,0,NA,NA,1,1,148
+7097,261909,1566590400,"Finished",0,"Levante",7107,"Villarreal",2,1,0,1,0,1,NA,NA,1,1,468
+2641,224449,1566646200,"Finished",0,"Norwich",2616,"Chelsea",2,3,2,2,2,2,NA,NA,1,1,148
+3224,243159,1566653400,"Finished",0,"Augsburg",3242,"Union Berlin",1,1,0,0,0,0,NA,NA,1,1,195
+3233,243163,1566653400,"Finished",0,"Hoffenheim",3223,"Werder Bremen",3,2,0,1,0,1,NA,NA,1,1,195
+3237,243164,1566653400,"Finished",0,"Mainz",3234,"B. Monchengladbach",1,3,1,1,1,1,NA,NA,1,1,195
+3256,243160,1566653400,"Finished",0,"Dusseldorf",3227,"Bayer Leverkusen",1,3,0,3,0,3,NA,NA,1,1,195
+3268,243165,1566653400,"Finished",0,"Paderborn",3222,"Freiburg",1,3,1,2,1,2,NA,NA,1,1,195
+2613,224446,1566655200,"Finished",0,"Brighton",2614,"Southampton",0,2,0,0,0,0,NA,NA,1,1,148
+2623,224452,1566655200,"Finished",0,"Watford",2620,"West Ham",1,3,1,1,1,1,NA,NA,1,1,148
+2627,224448,1566655200,"Finished",0,"Manchester Utd",2619,"Crystal Palace",1,2,0,1,0,1,NA,NA,1,1,148
+2654,224450,1566655200,"Finished",0,"Sheffield Utd",2611,"Leicester",1,2,0,1,0,1,NA,NA,1,1,148
+7113,261910,1566658800,"Finished",0,"Osasuna",7096,"Eibar",0,0,0,0,0,0,NA,NA,1,1,468
+4192,278704,1566662400,"Finished",0,"Parma",4187,"Juventus",0,1,0,1,0,1,NA,NA,1,1,262
+7621,271102,1566663300,"Finished",0,"Ankaragucu",7604,"Kayserispor",1,1,0,0,0,0,NA,NA,1,1,511
+2621,224447,1566664200,"Finished",0,"Liverpool",2617,"Arsenal",3,1,1,0,1,0,NA,NA,1,1,148
+3235,243167,1566664200,"Finished",0,"Schalke",3225,"Bayern Munich",0,3,0,1,0,1,NA,NA,1,1,195
+7099,261911,1566666000,"Finished",0,"Real Madrid",7115,"Valladolid",1,1,0,0,0,0,NA,NA,1,1,468
+3030,228789,1566669600,"Finished",0,"Dijon",3038,"Bordeaux",0,2,0,1,0,1,NA,NA,1,1,176
+3033,228786,1566669600,"Finished",0,"Amiens",3031,"Nantes",1,2,0,0,0,0,NA,NA,1,1,176
+3037,228787,1566669600,"Finished",0,"Angers",3027,"Metz",3,0,2,0,2,0,NA,NA,1,1,176
+3052,228788,1566669600,"Finished",0,"Brest",3046,"Reims",1,0,0,0,0,0,NA,NA,1,1,176
+4173,278702,1566672300,"Finished",0,"Fiorentina",4174,"Napoli",3,4,1,2,1,2,NA,NA,1,1,262
+7613,271101,1566672300,"Finished",0,"Alanyaspor",7619,"Kasimpasa",4,1,1,1,1,1,NA,NA,1,1,511
+7615,271104,1566672300,"Finished",0,"Basaksehir",7603,"Fenerbahce",1,2,1,0,1,0,NA,NA,1,1,511
+7095,261912,1566673200,"Finished",0,"Celta Vigo",7109,"Valencia",1,0,1,0,1,0,NA,NA,1,1,468
+7100,261913,1566673200,"Finished",0,"Getafe",7104,"Ath Bilbao",1,1,1,1,1,1,NA,NA,1,1,468
+2615,224445,1566738000,"Finished",0,"Bournemouth",2626,"Manchester City",1,3,1,2,1,2,NA,NA,1,1,148
+3039,228791,1566738000,"Finished",0,"Monaco",3049,"Nimes",2,2,2,0,2,0,NA,NA,1,1,176
+3226,243166,1566739800,"Finished",0,"RB Leipzig",3238,"Eintracht Frankfurt",2,1,1,0,1,0,NA,NA,1,1,195
+3036,228795,1566745200,"Finished",0,"Strasbourg",3035,"Rennes",0,2,0,1,0,1,NA,NA,1,1,176
+7108,261914,1566745200,"Finished",0,"Alaves",7090,"Espanyol",0,0,0,0,0,0,NA,NA,1,1,468
+7189,261915,1566745200,"Finished",0,"Mallorca",7101,"Real Sociedad",0,1,0,0,0,0,NA,NA,1,1,468
+2628,224451,1566747000,"Finished",0,"Tottenham",2630,"Newcastle",0,1,0,1,0,1,NA,NA,1,1,148
+2646,224453,1566747000,"Finished",0,"Wolves",2629,"Burnley",1,1,0,1,0,1,NA,NA,1,1,148
+3231,243162,1566748800,"Finished",0,"Hertha Berlin",3236,"Wolfsburg",0,3,0,1,0,1,NA,NA,1,1,195
+4180,278708,1566748800,"Finished",0,"Udinese",4186,"AC Milan",1,0,0,0,0,0,NA,NA,1,1,262
+7605,271109,1566749700,"Finished",0,"Trabzonspor",7618,"Yeni Malatyaspor",2,1,1,0,1,0,NA,NA,1,1,511
+7623,271108,1566749700,"Finished",0,"Rizespor",7610,"Sivasspor",2,1,0,0,0,0,NA,NA,1,1,511
+7103,261917,1566752400,"Finished",0,"Leganes",7106,"Atl. Madrid",0,1,0,0,0,0,NA,NA,1,1,468
+4170,278707,1566758700,"Finished",0,"Torino",4175,"Sassuolo",2,1,1,0,1,0,NA,NA,1,1,262
+4171,278701,1566758700,"Finished",0,"Cagliari",4203,"Brescia",0,1,0,0,0,0,NA,NA,1,1,262
+4176,278705,1566758700,"Finished",0,"Sampdoria",4183,"Lazio",0,3,0,1,0,1,NA,NA,1,1,262
+4178,278706,1566758700,"Finished",0,"Spal",4181,"Atalanta",2,3,2,1,2,1,NA,NA,1,1,262
+4184,278700,1566758700,"Finished",0,"AS Roma",4179,"Genoa",3,3,2,2,2,2,NA,NA,1,1,262
+4188,278709,1566758700,"Finished",0,"Verona",4185,"Bologna",1,1,1,1,1,1,NA,NA,1,1,262
+7606,271106,1566758700,"Finished",0,"Galatasaray",7611,"Konyaspor",1,1,0,0,0,0,NA,NA,1,1,511
+7608,271103,1566758700,"Finished",0,"Antalyaspor",7630,"Denizlispor",0,2,0,1,0,1,NA,NA,1,1,511
+3040,228794,1566759600,"Finished",0,"Paris SG",3024,"Toulouse",4,0,0,0,0,0,NA,NA,1,1,176
+7105,261916,1566759600,"Finished",0,"Barcelona",7091,"Betis",5,2,1,1,1,1,NA,NA,1,1,468
+7631,271107,1566838800,"Finished",0,"Gaziantep",7617,"Genclerbirligi",4,1,2,0,2,0,NA,NA,1,1,511
+4189,278703,1566845100,"Finished",0,"Inter",4268,"Lecce",4,0,2,0,2,0,NA,NA,1,1,262
+3034,228792,1566925200,"Finished",0,"Montpellier",3026,"Lyon",1,0,1,0,1,0,NA,NA,1,1,176
+3022,228790,1567011600,"Finished",0,"Lille",3025,"St Etienne",3,0,1,0,1,0,NA,NA,1,1,176
+3041,228793,1567018800,"Finished",0,"Nice",3023,"Marseille",1,2,0,1,0,1,NA,NA,1,1,176
+3238,295871,1567103400,"Finished",0,"Eintracht Frankfurt (Ger)",3036,"Strasbourg (Fra)",3,0,1,0,1,0,NA,NA,1,1,195
+2646,295873,1567104300,"Finished",0,"Wolves (Eng)",4170,"Torino (Ita)",2,1,1,0,1,0,NA,NA,1,1,148
+7604,271115,1567186200,"Finished",0,"Kayserispor",7606,"Galatasaray",2,3,1,0,1,0,NA,NA,1,1,511
+7619,271114,1567186200,"Finished",0,"Kasimpasa",7621,"Ankaragucu",0,1,0,1,0,1,NA,NA,1,1,511
+7102,261918,1567188000,"Finished",0,"Sevilla",7095,"Celta Vigo",1,1,0,0,0,0,NA,NA,1,1,468
+3234,243168,1567189800,"Finished",0,"B. Monchengladbach",3226,"RB Leipzig",1,3,0,1,0,1,NA,NA,1,1,195
+3027,228798,1567190700,"Finished",0,"Metz",3040,"Paris SG",0,2,0,2,0,2,NA,NA,1,1,176
+4185,278712,1567190700,"Finished",0,"Bologna",4178,"Spal",1,0,0,0,0,0,NA,NA,1,1,262
+7104,261919,1567195200,"Finished",0,"Ath Bilbao",7101,"Real Sociedad",2,0,2,0,2,0,NA,NA,1,1,468
+2614,224462,1567251000,"Finished",0,"Southampton",2627,"Manchester Utd",1,1,0,1,0,1,NA,NA,1,1,148
+3222,243172,1567258200,"Finished",0,"Freiburg",3228,"FC Koln",1,2,1,0,1,0,NA,NA,1,1,195
+3225,243170,1567258200,"Finished",0,"Bayern Munich",3237,"Mainz",6,1,2,1,2,1,NA,NA,1,1,195
+3227,243169,1567258200,"Finished",0,"Bayer Leverkusen",3233,"Hoffenheim",0,0,0,0,0,0,NA,NA,1,1,195
+3235,243173,1567258200,"Finished",0,"Schalke",3231,"Hertha Berlin",3,0,1,0,1,0,NA,NA,1,1,195
+3236,243176,1567258200,"Finished",0,"Wolfsburg",3268,"Paderborn",1,1,0,1,0,1,NA,NA,1,1,195
+2611,224459,1567260000,"Finished",0,"Leicester",2615,"Bournemouth",3,1,2,1,2,1,NA,NA,1,1,148
+2616,224456,1567260000,"Finished",0,"Chelsea",2654,"Sheffield Utd",2,2,2,0,2,0,NA,NA,1,1,148
+2619,224457,1567260000,"Finished",0,"Crystal Palace",2632,"Aston Villa",1,0,0,0,0,0,NA,NA,1,1,148
+2620,224463,1567260000,"Finished",0,"West Ham",2641,"Norwich",2,0,1,0,1,0,NA,NA,1,1,148
+2626,224460,1567260000,"Finished",0,"Manchester City",2613,"Brighton",4,0,2,0,2,0,NA,NA,1,1,148
+2630,224461,1567260000,"Finished",0,"Newcastle",2623,"Watford",1,1,1,1,1,1,NA,NA,1,1,148
+7113,261920,1567263600,"Finished",0,"Osasuna",7105,"Barcelona",2,2,1,0,1,0,NA,NA,1,1,468
+3026,228797,1567265400,"Finished",0,"Lyon",3038,"Bordeaux",1,1,1,0,1,0,NA,NA,1,1,176
+4186,278710,1567267200,"Finished",0,"AC Milan",4203,"Brescia",1,0,1,0,1,0,NA,NA,1,1,262
+7611,271116,1567268100,"Finished",0,"Konyaspor",7608,"Antalyaspor",2,2,0,1,0,1,NA,NA,1,1,511
+2629,224455,1567269000,"Finished",0,"Burnley",2621,"Liverpool",0,3,0,2,0,2,NA,NA,1,1,148
+3242,243174,1567269000,"Finished",0,"Union Berlin",3230,"Dortmund",3,1,1,1,1,1,NA,NA,1,1,195
+7097,261922,1567270800,"Finished",0,"Levante",7115,"Valladolid",2,0,0,0,0,0,NA,NA,1,1,468
+7100,261921,1567270800,"Finished",0,"Getafe",7108,"Alaves",1,1,1,1,1,1,NA,NA,1,1,468
+3024,228804,1567274400,"Finished",0,"Toulouse",3033,"Amiens",2,0,0,0,0,0,NA,NA,1,1,176
+3031,228799,1567274400,"Finished",0,"Nantes",3034,"Montpellier",1,0,0,0,0,0,NA,NA,1,1,176
+3037,228796,1567274400,"Finished",0,"Angers",3030,"Dijon",2,0,0,0,0,0,NA,NA,1,1,176
+3049,228800,1567274400,"Finished",0,"Nimes",3052,"Brest",3,0,2,0,2,0,NA,NA,1,1,176
+4187,278715,1567277100,"Finished",0,"Juventus",4174,"Napoli",4,3,2,0,2,0,NA,NA,1,1,262
+7614,271110,1567277100,"Finished",0,"Besiktas",7623,"Rizespor",1,1,0,1,0,1,NA,NA,1,1,511
+7620,271113,1567277100,"Finished",0,"Goztepe",7630,"Denizlispor",0,0,0,0,0,0,NA,NA,1,1,511
+7091,261923,1567278000,"Finished",0,"Betis",7103,"Leganes",2,1,0,0,0,0,NA,NA,1,1,468
+2612,224458,1567342800,"Finished",0,"Everton",2646,"Wolves",3,2,2,1,2,1,NA,NA,1,1,148
+3035,228802,1567342800,"Finished",0,"Rennes",3041,"Nice",1,2,1,0,1,0,NA,NA,1,1,176
+3046,228801,1567342800,"Finished",0,"Reims",3022,"Lille",2,0,0,0,0,0,NA,NA,1,1,176
+3223,243175,1567344600,"Finished",0,"Werder Bremen",3224,"Augsburg",3,2,2,1,2,1,NA,NA,1,1,195
+3036,228803,1567350000,"Finished",0,"Strasbourg",3039,"Monaco",2,2,1,2,1,2,NA,NA,1,1,176
+7109,261924,1567350000,"Finished",0,"Valencia",7189,"Mallorca",2,0,1,0,1,0,NA,NA,1,1,468
+2617,224454,1567351800,"Finished",0,"Arsenal",2628,"Tottenham",2,2,1,2,1,2,NA,NA,1,1,148
+3238,243171,1567353600,"Finished",0,"Eintracht Frankfurt",3256,"Dusseldorf",2,1,0,1,0,1,NA,NA,1,1,195
+4183,278716,1567353600,"Finished",0,"Lazio",4184,"AS Roma",1,1,0,1,0,1,NA,NA,1,1,262
+7610,271117,1567354500,"Finished",0,"Sivasspor",7631,"Gaziantep",1,1,0,1,0,1,NA,NA,1,1,511
+7617,271112,1567354500,"Finished",0,"Genclerbirligi",7615,"Basaksehir",1,2,1,0,1,0,NA,NA,1,1,511
+7090,261926,1567357200,"Finished",0,"Espanyol",7110,"Granada CF",0,3,0,1,0,1,NA,NA,1,1,468
+7106,261925,1567357200,"Finished",0,"Atl. Madrid",7096,"Eibar",3,2,1,2,1,2,NA,NA,1,1,468
+4171,278713,1567363500,"Finished",0,"Cagliari",4189,"Inter",1,2,0,1,0,1,NA,NA,1,1,262
+4175,278718,1567363500,"Finished",0,"Sassuolo",4176,"Sampdoria",4,1,3,0,3,0,NA,NA,1,1,262
+4179,278714,1567363500,"Finished",0,"Genoa",4173,"Fiorentina",2,1,1,0,1,0,NA,NA,1,1,262
+4180,278719,1567363500,"Finished",0,"Udinese",4192,"Parma",1,3,1,1,1,1,NA,NA,1,1,262
+4181,278711,1567363500,"Finished",0,"Atalanta",4170,"Torino",2,3,1,1,1,1,NA,NA,1,1,262
+4268,278717,1567363500,"Finished",0,"Lecce",4188,"Verona",0,1,0,0,0,0,NA,NA,1,1,262
+7603,271111,1567363500,"Finished",0,"Fenerbahce",7605,"Trabzonspor",1,1,1,1,1,1,NA,NA,1,1,511
+7618,271118,1567363500,"Finished",0,"Yeni Malatyaspor",7613,"Alanyaspor",2,3,0,3,0,3,NA,NA,1,1,511
+3023,228805,1567364400,"Finished",0,"Marseille",3025,"St Etienne",1,0,1,0,1,0,NA,NA,1,1,176
+7107,261927,1567364400,"Finished",0,"Villarreal",7099,"Real Madrid",2,2,1,1,1,1,NA,NA,1,1,468
+7101,307830,1567699200,"Finished",0,"Real Sociedad (Esp)",7108,"Alaves (Esp)",0,0,0,0,0,0,NA,NA,1,1,468
+3024,307926,1567702800,"Finished",0,"Toulouse (Fra)",7104,"Ath Bilbao (Esp)",1,2,1,1,1,1,NA,NA,1,1,176
+7608,308141,1567870200,"Finished",0,"Antalyaspor (Tur)",7613,"Alanyaspor (Tur)",0,0,0,0,0,0,NA,NA,1,1,511
+3022,228810,1568394000,"Finished",0,"Lille",3037,"Angers",2,1,1,0,1,0,NA,NA,1,1,176
+7606,271124,1568395800,"Finished",0,"Galatasaray",7619,"Kasimpasa",1,0,1,0,1,0,NA,NA,1,1,511
+3256,243179,1568399400,"Finished",0,"Dusseldorf",3236,"Wolfsburg",1,1,1,1,1,1,NA,NA,1,1,195
+3033,228806,1568400300,"Finished",0,"Amiens",3026,"Lyon",2,2,1,2,1,2,NA,NA,1,1,176
+7189,261934,1568401200,"Finished",0,"Mallorca",7104,"Ath Bilbao",0,0,0,0,0,0,NA,NA,1,1,468
+7099,261935,1568458800,"Finished",0,"Real Madrid",7097,"Levante",3,2,3,0,3,0,NA,NA,1,1,468
+2621,224467,1568460600,"Finished",0,"Liverpool",2630,"Newcastle",3,1,2,1,2,1,NA,NA,1,1,148
+4173,278722,1568466000,"Finished",0,"Fiorentina",4187,"Juventus",0,0,0,0,0,0,NA,NA,1,1,262
+3224,243177,1568467800,"Finished",0,"Augsburg",3238,"Eintracht Frankfurt",2,1,2,0,2,0,NA,NA,1,1,195
+3228,243180,1568467800,"Finished",0,"FC Koln",3234,"B. Monchengladbach",0,1,0,1,0,1,NA,NA,1,1,195
+3230,243178,1568467800,"Finished",0,"Dortmund",3227,"Bayer Leverkusen",4,0,1,0,1,0,NA,NA,1,1,195
+3237,243182,1568467800,"Finished",0,"Mainz",3231,"Hertha Berlin",2,1,1,0,1,0,NA,NA,1,1,195
+3242,243185,1568467800,"Finished",0,"Union Berlin",3223,"Werder Bremen",1,2,1,1,1,1,NA,NA,1,1,195
+2613,224466,1568469600,"Finished",0,"Brighton",2629,"Burnley",1,1,0,0,0,0,NA,NA,1,1,148
+2627,224468,1568469600,"Finished",0,"Manchester Utd",2611,"Leicester",1,0,1,0,1,0,NA,NA,1,1,148
+2628,224471,1568469600,"Finished",0,"Tottenham",2619,"Crystal Palace",4,0,4,0,4,0,NA,NA,1,1,148
+2646,224473,1568469600,"Finished",0,"Wolves",2616,"Chelsea",2,5,0,3,0,3,NA,NA,1,1,148
+2654,224470,1568469600,"Finished",0,"Sheffield Utd",2614,"Southampton",0,1,0,0,0,0,NA,NA,1,1,148
+7103,261933,1568469600,"Finished",0,"Leganes",7107,"Villarreal",0,3,0,2,0,2,NA,NA,1,1,468
+7615,271122,1568469600,"Finished",0,"Basaksehir",7610,"Sivasspor",1,1,0,1,0,1,NA,NA,1,1,511
+3040,228814,1568475000,"Finished",0,"Paris SG",3036,"Strasbourg",1,0,0,0,0,0,NA,NA,1,1,176
+4174,278725,1568476800,"Finished",0,"Napoli",4176,"Sampdoria",2,0,1,0,1,0,NA,NA,1,1,262
+2641,224469,1568478600,"Finished",0,"Norwich",2626,"Manchester City",3,2,2,1,2,1,NA,NA,1,1,148
+3226,243184,1568478600,"Finished",0,"RB Leipzig",3225,"Bayern Munich",1,1,1,1,1,1,NA,NA,1,1,195
+7101,261936,1568478600,"Finished",0,"Real Sociedad",7106,"Atl. Madrid",2,0,0,0,0,0,NA,NA,1,1,468
+7608,271121,1568480400,"Finished",0,"Antalyaspor",7604,"Kayserispor",2,2,1,1,1,1,NA,NA,1,1,511
+7631,271125,1568480400,"Finished",0,"Gaziantep",7614,"Besiktas",3,2,1,0,1,0,NA,NA,1,1,511
+3030,228809,1568484000,"Finished",0,"Dijon",3049,"Nimes",0,0,0,0,0,0,NA,NA,1,1,176
+3034,228812,1568484000,"Finished",0,"Montpellier",3041,"Nice",2,1,1,1,1,1,NA,NA,1,1,176
+3038,228807,1568484000,"Finished",0,"Bordeaux",3027,"Metz",2,0,2,0,2,0,NA,NA,1,1,176
+3052,228808,1568484000,"Finished",0,"Brest",3035,"Rennes",0,0,0,0,0,0,NA,NA,1,1,176
+4189,278724,1568486700,"Finished",0,"Inter",4180,"Udinese",1,0,1,0,1,0,NA,NA,1,1,262
+7105,261929,1568487600,"Finished",0,"Barcelona",7109,"Valencia",5,2,2,1,2,1,NA,NA,1,1,468
+7096,261932,1568541600,"Finished",0,"Eibar",7090,"Espanyol",1,2,0,0,0,0,NA,NA,1,1,468
+4179,278723,1568543400,"Finished",0,"Genoa",4181,"Atalanta",1,2,0,0,0,0,NA,NA,1,1,262
+7108,261928,1568548800,"Finished",0,"Alaves",7102,"Sevilla",0,1,0,1,0,1,NA,NA,1,1,468
+2615,224465,1568552400,"Finished",0,"Bournemouth",2612,"Everton",3,1,1,1,1,1,NA,NA,1,1,148
+3031,228813,1568552400,"Finished",0,"Nantes",3046,"Reims",1,0,0,0,0,0,NA,NA,1,1,176
+4178,278727,1568552400,"Finished",0,"Spal",4183,"Lazio",2,1,0,1,0,1,NA,NA,1,1,262
+4192,278726,1568552400,"Finished",0,"Parma",4171,"Cagliari",1,3,0,2,0,2,NA,NA,1,1,262
+4203,278721,1568552400,"Finished",0,"Brescia",4185,"Bologna",3,4,3,1,3,1,NA,NA,1,1,262
+3233,243181,1568554200,"Finished",0,"Hoffenheim",3222,"Freiburg",0,3,0,2,0,2,NA,NA,1,1,195
+7095,261931,1568556000,"Finished",0,"Celta Vigo",7110,"Granada CF",0,2,0,1,0,1,NA,NA,1,1,468
+7621,271120,1568556000,"Finished",0,"Ankaragucu",7618,"Yeni Malatyaspor",0,4,0,3,0,3,NA,NA,1,1,511
+7623,271126,1568556000,"Finished",0,"Rizespor",7620,"Goztepe",0,0,0,0,0,0,NA,NA,1,1,511
+3025,228815,1568559600,"Finished",0,"St Etienne",3024,"Toulouse",2,2,1,2,1,2,NA,NA,1,1,176
+2623,224472,1568561400,"Finished",0,"Watford",2617,"Arsenal",2,2,0,2,0,2,NA,NA,1,1,148
+3268,243183,1568563200,"Finished",0,"Paderborn",3235,"Schalke",1,5,1,1,1,1,NA,NA,1,1,195
+4184,278720,1568563200,"Finished",0,"AS Roma",4175,"Sassuolo",4,2,4,0,4,0,NA,NA,1,1,262
+7115,261937,1568565000,"Finished",0,"Valladolid",7113,"Osasuna",1,1,0,0,0,0,NA,NA,1,1,468
+7605,271127,1568566800,"Finished",0,"Trabzonspor",7617,"Genclerbirligi",2,2,1,1,1,1,NA,NA,1,1,511
+7630,271123,1568566800,"Finished",0,"Denizlispor",7611,"Konyaspor",0,1,0,0,0,0,NA,NA,1,1,511
+4188,278729,1568573100,"Finished",0,"Verona",4186,"AC Milan",0,1,0,0,0,0,NA,NA,1,1,262
+3039,228811,1568574000,"Finished",0,"Monaco",3023,"Marseille",3,4,2,2,2,2,NA,NA,1,1,176
+7091,261930,1568574000,"Finished",0,"Betis",7100,"Getafe",1,1,0,1,0,1,NA,NA,1,1,468
+7613,271119,1568653200,"Finished",0,"Alanyaspor",7603,"Fenerbahce",3,1,1,1,1,1,NA,NA,1,1,511
+4170,278728,1568659500,"Finished",0,"Torino",4268,"Lecce",1,2,0,1,0,1,NA,NA,1,1,262
+2632,224464,1568660400,"Finished",0,"Aston Villa",2620,"West Ham",0,0,0,0,0,0,NA,NA,1,1,148
+2616,306858,1568746800,"Finished",0,"Chelsea",7109,"Valencia",0,1,0,0,0,0,NA,NA,1,1,148
+3230,306859,1568746800,"Finished",0,"Dortmund",7105,"Barcelona",0,0,0,0,0,0,NA,NA,1,1,195
+4174,306860,1568746800,"Finished",0,"Napoli",2621,"Liverpool",2,0,0,0,0,0,NA,NA,1,1,262
+3040,306868,1568833200,"Finished",0,"Paris SG",7099,"Real Madrid",3,0,2,0,2,0,NA,NA,1,1,176
+7106,306864,1568833200,"Finished",0,"Atl. Madrid",4187,"Juventus",2,2,0,0,0,0,NA,NA,1,1,468
+3238,306954,1568912100,"Finished",0,"Eintracht Frankfurt",2617,"Arsenal",0,3,0,1,0,1,NA,NA,1,1,195
+7100,306956,1568912100,"Finished",0,"Getafe",7605,"Trabzonspor",1,0,1,0,1,0,NA,NA,1,1,468
+4184,306962,1568919600,"Finished",0,"AS Roma",7615,"Basaksehir",4,0,1,0,1,0,NA,NA,1,1,262
+7620,271131,1569000600,"Finished",0,"Goztepe",7611,"Konyaspor",1,0,0,0,0,0,NA,NA,1,1,511
+3235,243192,1569004200,"Finished",0,"Schalke",3237,"Mainz",2,1,1,0,1,0,NA,NA,1,1,195
+3036,228824,1569005100,"Finished",0,"Strasbourg",3031,"Nantes",2,1,0,1,0,1,NA,NA,1,1,176
+4171,278733,1569005100,"Finished",0,"Cagliari",4179,"Genoa",3,1,0,0,0,0,NA,NA,1,1,262
+2614,224482,1569006000,"Finished",0,"Southampton",2615,"Bournemouth",1,3,0,2,0,2,NA,NA,1,1,148
+7113,261944,1569006000,"Finished",0,"Osasuna",7091,"Betis",0,0,0,0,0,0,NA,NA,1,1,468
+7107,261947,1569063600,"Finished",0,"Villarreal",7115,"Valladolid",2,0,0,0,0,0,NA,NA,1,1,468
+2611,224479,1569065400,"Finished",0,"Leicester",2628,"Tottenham",2,1,0,1,0,1,NA,NA,1,1,148
+7619,271132,1569067200,"Finished",0,"Kasimpasa",7608,"Antalyaspor",3,0,0,0,0,0,NA,NA,1,1,511
+4180,278739,1569070800,"Finished",0,"Udinese",4203,"Brescia",0,1,0,0,0,0,NA,NA,1,1,262
+3222,243190,1569072600,"Finished",0,"Freiburg",3224,"Augsburg",1,1,1,1,1,1,NA,NA,1,1,195
+3225,243188,1569072600,"Finished",0,"Bayern Munich",3228,"FC Koln",4,0,1,0,1,0,NA,NA,1,1,195
+3227,243187,1569072600,"Finished",0,"Bayer Leverkusen",3242,"Union Berlin",2,0,2,0,2,0,NA,NA,1,1,195
+3231,243191,1569072600,"Finished",0,"Hertha Berlin",3268,"Paderborn",2,1,1,0,1,0,NA,NA,1,1,195
+2612,224478,1569074400,"Finished",0,"Everton",2654,"Sheffield Utd",0,2,0,1,0,1,NA,NA,1,1,148
+2626,224480,1569074400,"Finished",0,"Manchester City",2623,"Watford",8,0,5,0,5,0,NA,NA,1,1,148
+2629,224475,1569074400,"Finished",0,"Burnley",2641,"Norwich",2,0,2,0,2,0,NA,NA,1,1,148
+7097,261943,1569074400,"Finished",0,"Levante",7096,"Eibar",0,0,0,0,0,0,NA,NA,1,1,468
+7604,271133,1569076200,"Finished",0,"Kayserispor",7630,"Denizlispor",1,1,1,0,1,0,NA,NA,1,1,511
+3023,228818,1569079800,"Finished",0,"Marseille",3034,"Montpellier",1,1,0,1,0,1,NA,NA,1,1,176
+4187,278734,1569081600,"Finished",0,"Juventus",4188,"Verona",2,1,1,1,1,1,NA,NA,1,1,262
+2630,224481,1569083400,"Finished",0,"Newcastle",2613,"Brighton",0,0,0,0,0,0,NA,NA,1,1,148
+3223,243193,1569083400,"Finished",0,"Werder Bremen",3226,"RB Leipzig",0,3,0,2,0,2,NA,NA,1,1,195
+7106,261939,1569083400,"Finished",0,"Atl. Madrid",7095,"Celta Vigo",0,0,0,0,0,0,NA,NA,1,1,468
+7603,271129,1569085200,"Finished",0,"Fenerbahce",7621,"Ankaragucu",2,1,1,1,1,1,NA,NA,1,1,511
+3027,228819,1569088800,"Finished",0,"Metz",3033,"Amiens",1,2,0,1,0,1,NA,NA,1,1,176
+3038,228817,1569088800,"Finished",0,"Bordeaux",3052,"Brest",2,2,1,2,1,2,NA,NA,1,1,176
+3041,228820,1569088800,"Finished",0,"Nice",3030,"Dijon",2,1,1,1,1,1,NA,NA,1,1,176
+3046,228822,1569088800,"Finished",0,"Reims",3039,"Monaco",0,0,0,0,0,0,NA,NA,1,1,176
+3049,228821,1569088800,"Finished",0,"Nimes",3024,"Toulouse",1,0,1,0,1,0,NA,NA,1,1,176
+4186,278730,1569091500,"Finished",0,"AC Milan",4189,"Inter",0,2,0,0,0,0,NA,NA,1,1,262
+7110,261942,1569092400,"Finished",0,"Granada CF",7105,"Barcelona",2,0,1,0,1,0,NA,NA,1,1,468
+7100,261941,1569146400,"Finished",0,"Getafe",7189,"Mallorca",4,2,2,0,2,0,NA,NA,1,1,468
+4175,278738,1569148200,"Finished",0,"Sassuolo",4178,"Spal",3,0,2,0,2,0,NA,NA,1,1,262
+7623,271134,1569150000,"Finished",0,"Rizespor",7631,"Gaziantep",1,2,0,2,0,2,NA,NA,1,1,511
+7090,261940,1569153600,"Finished",0,"Espanyol",7101,"Real Sociedad",1,3,0,2,0,2,NA,NA,1,1,468
+2619,224477,1569157200,"Finished",0,"Crystal Palace",2646,"Wolves",1,1,0,0,0,0,NA,NA,1,1,148
+2620,224483,1569157200,"Finished",0,"West Ham",2627,"Manchester Utd",2,0,1,0,1,0,NA,NA,1,1,148
+3035,228823,1569157200,"Finished",0,"Rennes",3022,"Lille",1,1,0,0,0,0,NA,NA,1,1,176
+4176,278737,1569157200,"Finished",0,"Sampdoria",4170,"Torino",1,0,0,0,0,0,NA,NA,1,1,262
+4185,278732,1569157200,"Finished",0,"Bologna",4184,"AS Roma",1,2,0,0,0,0,NA,NA,1,1,262
+4268,278736,1569157200,"Finished",0,"Lecce",4174,"Napoli",1,4,0,2,0,2,NA,NA,1,1,262
+3234,243186,1569159000,"Finished",0,"B. Monchengladbach",3256,"Dusseldorf",2,1,0,1,0,1,NA,NA,1,1,195
+7617,271130,1569159000,"Finished",0,"Genclerbirligi",7613,"Alanyaspor",1,1,1,0,1,0,NA,NA,1,1,511
+7109,261946,1569160800,"Finished",0,"Valencia",7103,"Leganes",1,1,1,1,1,1,NA,NA,1,1,468
+3037,228816,1569164400,"Finished",0,"Angers",3025,"St Etienne",4,1,0,1,0,1,NA,NA,1,1,176
+2616,224476,1569166200,"Finished",0,"Chelsea",2621,"Liverpool",1,2,0,2,0,2,NA,NA,1,1,148
+2617,224474,1569166200,"Finished",0,"Arsenal",2632,"Aston Villa",3,2,0,1,0,1,NA,NA,1,1,148
+3238,243189,1569168000,"Finished",0,"Eintracht Frankfurt",3230,"Dortmund",2,2,1,1,1,1,NA,NA,1,1,195
+4181,278731,1569168000,"Finished",0,"Atalanta",4173,"Fiorentina",2,2,0,1,0,1,NA,NA,1,1,262
+7618,271136,1569168000,"Finished",0,"Yeni Malatyaspor",7606,"Galatasaray",1,1,0,1,0,1,NA,NA,1,1,511
+7104,261938,1569169800,"Finished",0,"Ath Bilbao",7108,"Alaves",2,0,1,0,1,0,NA,NA,1,1,468
+4183,278735,1569177900,"Finished",0,"Lazio",4192,"Parma",2,0,1,0,1,0,NA,NA,1,1,262
+3026,228825,1569178800,"Finished",0,"Lyon",3040,"Paris SG",0,1,0,0,0,0,NA,NA,1,1,176
+7102,261945,1569178800,"Finished",0,"Sevilla",7099,"Real Madrid",0,1,0,0,0,0,NA,NA,1,1,468
+7610,271135,1569258000,"Finished",0,"Sivasspor",7605,"Trabzonspor",2,1,1,1,1,1,NA,NA,1,1,511
+7614,271128,1569258000,"Finished",0,"Besiktas",7615,"Basaksehir",1,1,0,0,0,0,NA,NA,1,1,511
+3236,243194,1569263400,"Finished",0,"Wolfsburg",3233,"Hoffenheim",1,1,1,1,1,1,NA,NA,1,1,195
+3030,228828,1569344400,"Finished",0,"Dijon",3023,"Marseille",0,0,0,0,0,0,NA,NA,1,1,176
+4188,278749,1569344400,"Finished",0,"Verona",4180,"Udinese",0,0,0,0,0,0,NA,NA,1,1,262
+7115,261957,1569344400,"Finished",0,"Valladolid",7110,"Granada CF",1,1,1,1,1,1,NA,NA,1,1,468
+7091,261949,1569348000,"Finished",0,"Betis",7097,"Levante",3,1,1,1,1,1,NA,NA,1,1,468
+3039,228830,1569351600,"Finished",0,"Monaco",3041,"Nice",3,1,1,0,1,0,NA,NA,1,1,176
+4203,278741,1569351600,"Finished",0,"Brescia",4187,"Juventus",1,2,1,1,1,1,NA,NA,1,1,262
+7105,261948,1569351600,"Finished",0,"Barcelona",7107,"Villarreal",2,1,2,1,2,1,NA,NA,1,1,468
+3022,228829,1569430800,"Finished",0,"Lille",3036,"Strasbourg",2,0,1,0,1,0,NA,NA,1,1,176
+3024,228835,1569430800,"Finished",0,"Toulouse",3037,"Angers",0,2,0,0,0,0,NA,NA,1,1,176
+3025,228834,1569430800,"Finished",0,"St Etienne",3027,"Metz",0,1,0,1,0,1,NA,NA,1,1,176
+3031,228832,1569430800,"Finished",0,"Nantes",3035,"Rennes",1,0,0,0,0,0,NA,NA,1,1,176
+3033,228826,1569430800,"Finished",0,"Amiens",3038,"Bordeaux",1,3,1,2,1,2,NA,NA,1,1,176
+3034,228831,1569430800,"Finished",0,"Montpellier",3049,"Nimes",1,0,1,0,1,0,NA,NA,1,1,176
+3052,228827,1569430800,"Finished",0,"Brest",3026,"Lyon",2,2,1,1,1,1,NA,NA,1,1,176
+4184,278740,1569430800,"Finished",0,"AS Roma",4181,"Atalanta",0,2,0,0,0,0,NA,NA,1,1,262
+7103,261952,1569430800,"Finished",0,"Leganes",7104,"Ath Bilbao",1,1,0,0,0,0,NA,NA,1,1,468
+7189,261953,1569430800,"Finished",0,"Mallorca",7106,"Atl. Madrid",0,2,0,1,0,1,NA,NA,1,1,468
+7109,261956,1569434400,"Finished",0,"Valencia",7100,"Getafe",3,3,3,1,3,1,NA,NA,1,1,468
+2613,307209,1569437100,"Finished",0,"Brighton",2632,"Aston Villa",1,3,0,2,0,2,NA,NA,1,1,148
+3040,228833,1569438000,"Finished",0,"Paris SG",3046,"Reims",0,2,0,1,0,1,NA,NA,1,1,176
+4173,278742,1569438000,"Finished",0,"Fiorentina",4176,"Sampdoria",2,1,1,0,1,0,NA,NA,1,1,262
+4174,278745,1569438000,"Finished",0,"Napoli",4171,"Cagliari",0,1,0,0,0,0,NA,NA,1,1,262
+4178,278747,1569438000,"Finished",0,"Spal",4268,"Lecce",1,3,1,1,1,1,NA,NA,1,1,262
+4179,278743,1569438000,"Finished",0,"Genoa",4185,"Bologna",0,0,0,0,0,0,NA,NA,1,1,262
+4189,278744,1569438000,"Finished",0,"Inter",4183,"Lazio",1,0,1,0,1,0,NA,NA,1,1,262
+4192,278746,1569438000,"Finished",0,"Parma",4175,"Sassuolo",1,0,0,0,0,0,NA,NA,1,1,262
+7099,261954,1569438000,"Finished",0,"Real Madrid",7113,"Osasuna",2,0,1,0,1,0,NA,NA,1,1,468
+7096,261951,1569517200,"Finished",0,"Eibar",7102,"Sevilla",3,2,0,2,0,2,NA,NA,1,1,468
+7095,261950,1569520800,"Finished",0,"Celta Vigo",7090,"Espanyol",1,1,0,0,0,0,NA,NA,1,1,468
+4170,278748,1569524400,"Finished",0,"Torino",4186,"AC Milan",2,1,0,1,0,1,NA,NA,1,1,262
+7101,261955,1569524400,"Finished",0,"Real Sociedad",7108,"Alaves",3,0,3,0,3,0,NA,NA,1,1,468
+7615,271140,1569605400,"Finished",0,"Basaksehir",7623,"Rizespor",5,0,2,0,2,0,NA,NA,1,1,511
+3242,243203,1569609000,"Finished",0,"Union Berlin",3238,"Eintracht Frankfurt",1,2,0,0,0,0,NA,NA,1,1,195
+7107,261967,1569610800,"Finished",0,"Villarreal",7091,"Betis",5,1,1,0,1,0,NA,NA,1,1,468
+7104,261959,1569668400,"Finished",0,"Ath Bilbao",7109,"Valencia",0,1,0,1,0,1,NA,NA,1,1,468
+2654,224491,1569670200,"Finished",0,"Sheffield Utd",2621,"Liverpool",0,1,0,0,0,0,NA,NA,1,1,148
+3026,228838,1569670200,"Finished",0,"Lyon",3031,"Nantes",0,1,0,0,0,0,NA,NA,1,1,176
+7630,271141,1569672000,"Finished",0,"Denizlispor",7619,"Kasimpasa",0,1,0,0,0,0,NA,NA,1,1,511
+4187,278752,1569675600,"Finished",0,"Juventus",4178,"Spal",2,0,1,0,1,0,NA,NA,1,1,262
+3224,243195,1569677400,"Finished",0,"Augsburg",3227,"Bayer Leverkusen",0,3,0,1,0,1,NA,NA,1,1,195
+3226,243202,1569677400,"Finished",0,"RB Leipzig",3235,"Schalke",1,3,0,2,0,2,NA,NA,1,1,195
+3233,243199,1569677400,"Finished",0,"Hoffenheim",3234,"B. Monchengladbach",0,3,0,1,0,1,NA,NA,1,1,195
+3237,243200,1569677400,"Finished",0,"Mainz",3236,"Wolfsburg",0,1,0,1,0,1,NA,NA,1,1,195
+3268,243201,1569677400,"Finished",0,"Paderborn",3225,"Bayern Munich",2,3,0,1,0,1,NA,NA,1,1,195
+2615,224485,1569679200,"Finished",0,"Bournemouth",2620,"West Ham",2,2,1,1,1,1,NA,NA,1,1,148
+2616,224486,1569679200,"Finished",0,"Chelsea",2613,"Brighton",2,0,0,0,0,0,NA,NA,1,1,148
+2619,224487,1569679200,"Finished",0,"Crystal Palace",2641,"Norwich",2,0,1,0,1,0,NA,NA,1,1,148
+2628,224492,1569679200,"Finished",0,"Tottenham",2614,"Southampton",2,1,2,1,2,1,NA,NA,1,1,148
+2632,224484,1569679200,"Finished",0,"Aston Villa",2629,"Burnley",2,2,1,0,1,0,NA,NA,1,1,148
+2646,224493,1569679200,"Finished",0,"Wolves",2623,"Watford",2,0,1,0,1,0,NA,NA,1,1,148
+7100,261963,1569679200,"Finished",0,"Getafe",7105,"Barcelona",0,2,0,1,0,1,NA,NA,1,1,468
+7613,271137,1569681000,"Finished",0,"Alanyaspor",7610,"Sivasspor",1,1,0,1,0,1,NA,NA,1,1,511
+3038,228837,1569684600,"Finished",0,"Bordeaux",3040,"Paris SG",0,1,0,0,0,0,NA,NA,1,1,176
+4176,278757,1569686400,"Finished",0,"Sampdoria",4189,"Inter",1,3,0,2,0,2,NA,NA,1,1,262
+2612,224488,1569688200,"Finished",0,"Everton",2626,"Manchester City",1,3,1,1,1,1,NA,NA,1,1,148
+3230,243196,1569688200,"Finished",0,"Dortmund",3223,"Werder Bremen",2,2,2,1,2,1,NA,NA,1,1,195
+7110,261964,1569688200,"Finished",0,"Granada CF",7103,"Leganes",1,0,1,0,1,0,NA,NA,1,1,468
+7606,271142,1569690000,"Finished",0,"Galatasaray",7603,"Fenerbahce",0,0,0,0,0,0,NA,NA,1,1,511
+3027,228840,1569693600,"Finished",0,"Metz",3024,"Toulouse",2,2,1,0,1,0,NA,NA,1,1,176
+3037,228836,1569693600,"Finished",0,"Angers",3033,"Amiens",1,1,0,1,0,1,NA,NA,1,1,176
+3039,228841,1569693600,"Finished",0,"Monaco",3052,"Brest",4,1,1,0,1,0,NA,NA,1,1,176
+3041,228842,1569693600,"Finished",0,"Nice",3022,"Lille",1,1,1,1,1,1,NA,NA,1,1,176
+3046,228844,1569693600,"Finished",0,"Reims",3030,"Dijon",1,2,1,1,1,1,NA,NA,1,1,176
+4175,278758,1569696300,"Finished",0,"Sassuolo",4181,"Atalanta",1,4,0,4,0,4,NA,NA,1,1,262
+7106,261960,1569697200,"Finished",0,"Atl. Madrid",7099,"Real Madrid",0,0,0,0,0,0,NA,NA,1,1,468
+7090,261962,1569751200,"Finished",0,"Espanyol",7115,"Valladolid",0,2,0,1,0,1,NA,NA,1,1,468
+4174,278755,1569753000,"Finished",0,"Napoli",4203,"Brescia",2,1,2,0,2,0,NA,NA,1,1,262
+7611,271144,1569754800,"Finished",0,"Konyaspor",7604,"Kayserispor",2,1,1,1,1,1,NA,NA,1,1,511
+7096,261961,1569758400,"Finished",0,"Eibar",7095,"Celta Vigo",2,0,0,0,0,0,NA,NA,1,1,468
+3036,228845,1569762000,"Finished",0,"Strasbourg",3034,"Montpellier",1,0,1,0,1,0,NA,NA,1,1,176
+4180,278759,1569762000,"Finished",0,"Udinese",4185,"Bologna",1,0,1,0,1,0,NA,NA,1,1,262
+4183,278753,1569762000,"Finished",0,"Lazio",4179,"Genoa",4,0,2,0,2,0,NA,NA,1,1,262
+4268,278754,1569762000,"Finished",0,"Lecce",4184,"AS Roma",0,1,0,0,0,0,NA,NA,1,1,262
+3256,243197,1569763800,"Finished",0,"Dusseldorf",3222,"Freiburg",1,2,1,1,1,1,NA,NA,1,1,195
+7608,271139,1569763800,"Finished",0,"Antalyaspor",7618,"Yeni Malatyaspor",3,0,1,0,1,0,NA,NA,1,1,511
+7621,271138,1569763800,"Finished",0,"Ankaragucu",7617,"Genclerbirligi",2,1,0,0,0,0,NA,NA,1,1,511
+7108,261958,1569765600,"Finished",0,"Alaves",7189,"Mallorca",2,0,0,0,0,0,NA,NA,1,1,468
+3049,228843,1569769200,"Finished",0,"Nimes",3025,"St Etienne",0,1,0,0,0,0,NA,NA,1,1,176
+2611,224489,1569771000,"Finished",0,"Leicester",2630,"Newcastle",5,0,1,0,1,0,NA,NA,1,1,148
+3228,243198,1569772800,"Finished",0,"FC Koln",3231,"Hertha Berlin",0,4,0,1,0,1,NA,NA,1,1,195
+4171,278751,1569772800,"Finished",0,"Cagliari",4188,"Verona",1,1,1,0,1,0,NA,NA,1,1,262
+7605,271145,1569772800,"Finished",0,"Trabzonspor",7614,"Besiktas",4,1,2,0,2,0,NA,NA,1,1,511
+7097,261965,1569774600,"Finished",0,"Levante",7113,"Osasuna",1,1,1,0,1,0,NA,NA,1,1,468
+4186,278750,1569782700,"Finished",0,"AC Milan",4173,"Fiorentina",1,3,0,1,0,1,NA,NA,1,1,262
+3023,228839,1569783600,"Finished",0,"Marseille",3035,"Rennes",1,1,0,1,0,1,NA,NA,1,1,176
+7102,261966,1569783600,"Finished",0,"Sevilla",7101,"Real Sociedad",3,2,1,1,1,1,NA,NA,1,1,468
+7631,271143,1569862800,"Finished",0,"Gaziantep",7620,"Goztepe",1,1,0,0,0,0,NA,NA,1,1,511
+4192,278756,1569869100,"Finished",0,"Parma",4170,"Torino",3,2,2,2,2,2,NA,NA,1,1,262
+2627,224490,1569870000,"Finished",0,"Manchester Utd",2617,"Arsenal",1,1,1,0,1,0,NA,NA,1,1,148
+2628,306877,1569956400,"Finished",0,"Tottenham",3225,"Bayern Munich",2,7,1,2,1,2,NA,NA,1,1,148
+4187,306874,1569956400,"Finished",0,"Juventus",3227,"Bayer Leverkusen",3,0,1,0,1,0,NA,NA,1,1,262
+7606,306873,1569956400,"Finished",0,"Galatasaray",3040,"Paris SG",0,1,0,0,0,0,NA,NA,1,1,511
+3022,306881,1570042800,"Finished",0,"Lille",2616,"Chelsea",1,2,1,1,1,1,NA,NA,1,1,176
+3226,306883,1570042800,"Finished",0,"RB Leipzig",3026,"Lyon",0,2,0,1,0,1,NA,NA,1,1,195
+7105,306880,1570042800,"Finished",0,"Barcelona",4189,"Inter",2,1,0,1,0,1,NA,NA,1,1,468
+7603,271147,1570210200,NA,0,"Fenerbahce",7608,"Antalyaspor",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+7618,271154,1570210200,NA,0,"Yeni Malatyaspor",7630,"Denizlispor",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+3231,243209,1570213800,NA,0,"Hertha Berlin",3256,"Dusseldorf",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+3033,228846,1570214700,NA,0,"Amiens",3023,"Marseille",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+4203,278763,1570214700,NA,0,"Brescia",4175,"Sassuolo",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+7091,261969,1570215600,NA,0,"Betis",7096,"Eibar",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+7103,261971,1570273200,NA,0,"Leganes",7097,"Levante",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+2613,224495,1570275000,NA,0,"Brighton",2628,"Tottenham",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+7619,271151,1570276800,NA,0,"Kasimpasa",7611,"Konyaspor",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+4178,278767,1570280400,NA,0,"Spal",4192,"Parma",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+3222,243208,1570282200,NA,0,"Freiburg",3230,"Dortmund",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+3225,243206,1570282200,NA,0,"Bayern Munich",3233,"Hoffenheim",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+3227,243205,1570282200,NA,0,"Bayer Leverkusen",3226,"RB Leipzig",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+3268,243210,1570282200,NA,0,"Paderborn",3237,"Mainz",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+2621,224497,1570284000,NA,0,"Liverpool",2611,"Leicester",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+2623,224502,1570284000,NA,0,"Watford",2654,"Sheffield Utd",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+2629,224496,1570284000,NA,0,"Burnley",2612,"Everton",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+2641,224500,1570284000,NA,0,"Norwich",2632,"Aston Villa",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+7099,261974,1570284000,NA,0,"Real Madrid",7110,"Granada CF",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+7620,271150,1570285800,NA,0,"Goztepe",7604,"Kayserispor",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+3040,228852,1570289400,NA,0,"Paris SG",3037,"Angers",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+4188,278769,1570291200,NA,0,"Verona",4176,"Sampdoria",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+2620,224503,1570293000,NA,0,"West Ham",2619,"Crystal Palace",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+3235,243211,1570293000,NA,0,"Schalke",3228,"FC Koln",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+7109,261976,1570293000,NA,0,"Valencia",7108,"Alaves",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+7617,271149,1570294800,NA,0,"Genclerbirligi",7606,"Galatasaray",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+3024,228854,1570298400,NA,0,"Toulouse",3038,"Bordeaux",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+3030,228848,1570298400,NA,0,"Dijon",3036,"Strasbourg",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+3031,228851,1570298400,NA,0,"Nantes",3041,"Nice",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+3034,228850,1570298400,NA,0,"Montpellier",3039,"Monaco",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+3052,228847,1570298400,NA,0,"Brest",3027,"Metz",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+4179,278765,1570301100,NA,0,"Genoa",4186,"AC Milan",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+7113,261973,1570302000,NA,0,"Osasuna",7107,"Villarreal",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+7189,261972,1570356000,NA,0,"Mallorca",7090,"Espanyol",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+4173,278764,1570357800,NA,0,"Fiorentina",4180,"Udinese",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+7610,271153,1570359600,NA,0,"Sivasspor",7621,"Ankaragucu",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+3234,243204,1570361400,NA,0,"B. Monchengladbach",3224,"Augsburg",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+7095,261970,1570363200,NA,0,"Celta Vigo",7104,"Ath Bilbao",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+2614,224501,1570366800,NA,0,"Southampton",2616,"Chelsea",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+2617,224494,1570366800,NA,0,"Arsenal",2615,"Bournemouth",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+2626,224498,1570366800,NA,0,"Manchester City",2646,"Wolves",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+3022,228849,1570366800,NA,0,"Lille",3049,"Nimes",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+4181,278761,1570366800,NA,0,"Atalanta",4268,"Lecce",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+4184,278760,1570366800,NA,0,"AS Roma",4171,"Cagliari",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+4185,278762,1570366800,NA,0,"Bologna",4183,"Lazio",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+3236,243212,1570368600,NA,0,"Wolfsburg",3242,"Union Berlin",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+7614,271146,1570368600,NA,0,"Besiktas",7613,"Alanyaspor",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+7115,261977,1570370400,NA,0,"Valladolid",7106,"Atl. Madrid",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+3035,228853,1570374000,NA,0,"Rennes",3046,"Reims",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+2630,224499,1570375800,NA,0,"Newcastle",2627,"Manchester Utd",NA,NA,NA,NA,NA,NA,NA,NA,1,1,148
+3238,243207,1570377600,NA,0,"Eintracht Frankfurt",3223,"Werder Bremen",NA,NA,NA,NA,NA,NA,NA,NA,1,1,195
+4170,278768,1570377600,NA,0,"Torino",4174,"Napoli",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+7623,271152,1570377600,NA,0,"Rizespor",7605,"Trabzonspor",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+7631,271148,1570377600,NA,0,"Gaziantep",7615,"Basaksehir",NA,NA,NA,NA,NA,NA,NA,NA,1,1,511
+7101,261975,1570379400,NA,0,"Real Sociedad",7100,"Getafe",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468
+4189,278766,1570387500,NA,0,"Inter",4187,"Juventus",NA,NA,NA,NA,NA,NA,NA,NA,1,1,262
+3025,228855,1570388400,NA,0,"St Etienne",3026,"Lyon",NA,NA,NA,NA,NA,NA,NA,NA,1,1,176
+7105,261968,1570388400,NA,0,"Barcelona",7102,"Sevilla",NA,NA,NA,NA,NA,NA,NA,NA,1,1,468

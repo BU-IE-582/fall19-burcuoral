@@ -1,0 +1,909 @@
+---
+title: "BurcuHW1"
+author: "Burcu Oral"
+date: "18 10 2019"
+output: html_document
+---
+
+The data was taken as the initial data posted on the site. It may not produce realiable results with new data due to coding.
+
+## TASK 1
+
+```{r echo=FALSE}
+library(plyr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(readr)
+library(sqldf)
+
+# READING DATA
+matches <- read_csv("matches.csv")
+goals   <- read_csv("goals.csv")
+booking <- read_csv("booking.csv")
+bets    <- read_csv("bets.csv")
+#Filtering English Premier League and combining all the data
+matches_league148<-matches%>% filter(league_id == 148)
+
+#Selecting the columns that will be used
+matches_league148<-matches_league148%>% select(match_id,match_hometeam_score,match_awayteam_score)
+matches_league148<-na.omit(matches_league148)
+
+# defining new arrays for home away and home-away 
+home<- matches_league148 %>% select(match_hometeam_score)
+away<- matches_league148 %>% select(match_awayteam_score)
+dif<-as.array(matches_league148$match_hometeam_score - matches_league148$match_awayteam_score)
+# combining all goal data into a new data frame
+new_data<-cbind(home,away,dif)
+
+```
+## Plots
+
+
+```{r plots of histograms, echo=FALSE}
+#plotting the histograms
+#qplot(new_data$match_hometeam_score, geom="histogram",binwidth = 0.2, main = "Histogram for Home Team",xlab = "Goals", ylab = "Number of Games")#
+#qplot(new_data$match_awayteam_score, geom="histogram",binwidth = 0.2,main = "Histogram for Away Team",xlab = "Goals", ylab = "Number of Games")
+#qplot(new_data$dif, geom="histogram",binwidth = 0.2,main = "Histogram for Home-Away",xlab = "Goals", ylab = "Number of Games")
+```
+
+The plots of home win, away win and home win- away wins are represented and Poisson Distribution is investigated for the data
+
+```{r echo=FALSE}
+#Calculations for Poisson Distribution
+No_games<-length(new_data$match_hometeam_score) # total number of games in data
+home_mean<-mean(matches_league148$match_hometeam_score)
+away_mean<-mean(matches_league148$match_awayteam_score)
+#finding probability by poisson distribution using mean values and multiplying with number of games
+poissonNo_home<-rep(0,No_games)
+poissonNo_away<-rep(0,No_games)
+for (i in 1:No_games){
+  poissonNo_home[i]<-No_games*((home_mean^(home[i,1]))*exp(-home_mean)/factorial(home[i,1])) 
+  poissonNo_away[i]<-No_games*((away_mean^(away[i,1]))*exp(-away_mean)/factorial(away[i,1]))
+  }
+numberofgameshome_new<-unlist (poissonNo_home)
+numberofgamesaway_new<-unlist (poissonNo_away)
+poisson_line_home<-cbind(matches_league148$match_hometeam_score,numberofgameshome_new)
+poisson_line_away<-cbind(matches_league148$match_awayteam_score,numberofgamesaway_new)
+
+```
+Plots for Poisson distribution and histograms will be :
+```{r echo=FALSE}
+#plotting all together
+
+plot(hist(new_data$match_hometeam_score,breaks=30,xlab = 'Goals',ylab='Number of Games',main='Home Team'),xlab = 'Goals',ylab='Number of Games',main='Home Team')
+points(poisson_line_home)
+
+plot(hist(new_data$match_awayteam_score,breaks=30,xlab = 'Goals',ylab='Number of Games',main='Away Team'),xlab = 'Goals',ylab='Number of Games',main='Away Team')
+points(poisson_line_away)
+
+```
+
+
+
+Since the histogram data trend matches with poisson distribution, it is consistent with Poisson distribution.
+
+## TASK 2
+
+```{r echo=FALSE}
+# identifying the result of the match
+for(i in 1:length(matches_league148$match_hometeam_score)){
+  if (matches_league148[i,2]>matches_league148[i,3]){
+    matches_league148[i,4]<-'win'}
+  else if (matches_league148[i,3]>matches_league148[i,2]){
+    matches_league148[i,4]<-'lose'}
+  else{matches_league148[i,4]<-'draw'}
+}
+
+
+
+
+
+```
+
+
+
+For first bookmaker(Betclic) the results are: 
+
+```{r BetsBetclic, echo=FALSE}
+ #Finding probabilities from odd values for Bookmaker 1 (Betclic)
+
+bets_Betclic<- bets %>% filter(odd_bookmakers=='Betclic')
+bets_Betclic <- bets_Betclic %>% select(match_id,variable,value)
+bets_Betclic<-na.omit(bets_Betclic)
+bets_Betclic<- bets_Betclic %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined=sqldf("select * from  bets_Betclic  join matches_league148 where bets_Betclic.match_id = matches_league148.match_id ")
+
+win_case<-combined %>% filter(variable=='odd_1')
+lose_case<-combined %>% filter(variable=='odd_2')
+draw_case<-combined %>% filter(variable=='odd_x')
+#For task 2.1 finding probabilities from odd values
+p_win<-(1/win_case$value)
+p_lose<-(1/lose_case$value)
+p_draw<-(1/draw_case$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm<-(1/win_case$value)/(1/draw_case$value+1/lose_case$value+1/win_case$value)
+p_lose_norm<-(1/lose_case$value)/(1/draw_case$value+1/lose_case$value+1/win_case$value)
+p_draw_norm<-(1/draw_case$value)/(1/draw_case$value+1/lose_case$value+1/win_case$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win-p_lose),p_draw,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betclic') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df<-cbind.data.frame(combined,p_win,p_lose,p_draw,p_win-p_lose)
+#sort the data frame by home_win-away_win
+df <-df[order(df$`p_win - p_lose`),]
+bins<-cut_number(df$`p_win - p_lose`,11) # 11 bins are created with equal sizes
+c <- summary(bins) # number of instances in the bins are recorded here
+no<- c[1]
+
+data<-cbind.data.frame(df,bins)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting bins and calculating the draw number and probability
+
+number_table_firstbin<-data%>%slice(1:(no))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin<-(number_table_firstbin[1,2])/(number_table_firstbin[1,2]+number_table_firstbin[2,2]+number_table_firstbin[3,2])
+
+
+number_table_secondbin<-data%>%slice((no+1):(no*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin<-(number_table_secondbin[1,2])/(number_table_secondbin[1,2]+number_table_secondbin[2,2]+number_table_secondbin[3,2])
+
+number_table_thirdbin<-data%>%slice((no*2+1):(no*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin<-(number_table_thirdbin[1,2])/(number_table_thirdbin[1,2]+number_table_thirdbin[2,2]+number_table_thirdbin[3,2])
+
+
+number_table_fourthbin<-data%>%slice((no*3+1):(no*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin<-(number_table_fourthbin[1,2])/(number_table_fourthbin[1,2]+number_table_fourthbin[2,2]+number_table_fourthbin[3,2])
+
+number_table_fifthbin<-data%>%slice((no*4+1):(no*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin<-(number_table_fifthbin[1,2])/(number_table_fifthbin[1,2]+number_table_fifthbin[2,2]+number_table_fifthbin[3,2])
+
+number_table_sixthbin<-data%>%slice((no*5+1):(no*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin<-(number_table_sixthbin[1,2])/(number_table_sixthbin[1,2]+number_table_sixthbin[2,2]+number_table_sixthbin[3,2])
+
+number_table_seventhbin<-data%>%slice((no*6+1):(no*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin<-(number_table_seventhbin[1,2])/(number_table_seventhbin[1,2]+number_table_seventhbin[2,2]+number_table_seventhbin[3,2])
+
+number_table_eighthbin<-data%>%slice((no*7+1):(no*8))%>% group_by(V4)%>% summarize(n())
+p_draw_match_eighthbin<-(number_table_eighthbin[1,2])/(number_table_eighthbin[1,2]+number_table_eighthbin[2,2]+number_table_eighthbin[3,2])
+
+number_table_ninthbin<-data%>%slice((no*8+1):(no*9))%>% group_by(V4)%>% summarize(n())
+p_draw_match_ninthbin<-(number_table_ninthbin[1,2])/(number_table_ninthbin[1,2]+number_table_ninthbin[2,2]+number_table_ninthbin[3,2])
+
+number_table_tenthbin<-data%>%slice((no*9+1):(no*10))%>% group_by(V4)%>% summarize(n())
+p_draw_match_tenthbin<-(number_table_tenthbin[1,2])/(number_table_tenthbin[1,2]+number_table_tenthbin[2,2]+number_table_tenthbin[3,2])
+
+number_table_eleventhbin<-data%>%slice((no*10+1):(no*11))%>% group_by(V4)%>% summarize(n())
+p_draw_match_eleventhbin<-(number_table_eleventhbin[1,2])/(number_table_eleventhbin[1,2]+number_table_eleventhbin[2,2]+number_table_eleventhbin[3,2])
+
+
+#datas with bins
+d_one   <-data%>%slice(1:(no))
+d_two   <-data%>%slice((no+1):(no*2))
+d_three <-data%>%slice((no*2+1):(no*3))
+d_four  <-data%>%slice((no*3+1):(no*4))
+d_five  <-data%>%slice((no*4+1):(no*5))
+d_six   <-data%>%slice((no*5+1):(no*6))
+d_seven <-data%>%slice((no*6+1):(no*7))
+d_eight <-data%>%slice((no*7+1):(no*8))
+d_nine  <-data%>%slice((no*8+1):(no*9))
+d_ten   <-data%>%slice((no*9+1):(no*10))
+d_eleven<-data%>%slice((no*10+1):(no*11))
+
+#combining probablity values for each bin
+x<-rbind(p_draw_match_firstbin,p_draw_match_secondbin,p_draw_match_thirdbin,p_draw_match_fourthbin,p_draw_match_fifthbin,p_draw_match_sixthbin,p_draw_match_seventhbin,p_draw_match_eighthbin,p_draw_match_ninthbin,p_draw_match_tenthbin,p_draw_match_eleventhbin)
+#combining mean values for each bin
+y<-rbind(mean(d_one$`p_win - p_lose`),mean(d_two$`p_win - p_lose`),mean(d_three$`p_win - p_lose`),mean(d_four$`p_win - p_lose`),mean(d_five$`p_win - p_lose`),mean(d_six$`p_win - p_lose`),mean(d_seven$`p_win - p_lose`),mean(d_eight$`p_win - p_lose`),mean(d_nine$`p_win - p_lose`),mean(d_ten$`p_win - p_lose`),mean(d_eleven$`p_win - p_lose`))
+
+d<-cbind(y,x)
+
+plot((p_win-p_lose),p_draw,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betclic') 
+points(d,col=2,pch = 19)
+
+```
+
+
+
+Since the red dots are not above the trends of the probabilities estimated by bookmaker, it is not profitable to bet in the long run except for 2 bins. 
+
+For second bookmaker(1xBet) the results are: 
+
+```{r echo=FALSE}
+ #Finding probabilities from odd values for Bookmaker 2 (1xBet)
+
+bets_1xBet <- bets %>% filter(odd_bookmakers=='1xBet')
+bets_1xBet <- bets_1xBet %>% select(match_id,variable,value)
+bets_1xBet <-na.omit(bets_1xBet)
+bets_1xBet <- bets_1xBet %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined_1xBet=sqldf("select * from  bets_1xBet  join matches_league148 where bets_1xBet.match_id = matches_league148.match_id ")
+
+win_case_1xBet  <-combined_1xBet %>% filter(variable=='odd_1')
+lose_case_1xBet <-combined_1xBet %>% filter(variable=='odd_2')
+draw_case_1xBet <-combined_1xBet %>% filter(variable=='odd_x')
+
+#For task 2.1 finding probabilities from odd values
+
+p_win_1xBet <-(1/win_case_1xBet$value)
+p_lose_1xBet<-(1/lose_case_1xBet$value)
+p_draw_1xBet<-(1/draw_case_1xBet$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm_1xBet <-(1/win_case_1xBet$value) /(1/draw_case_1xBet$value+1/lose_case_1xBet$value+1/win_case_1xBet$value)
+p_lose_norm_1xBet<-(1/lose_case_1xBet$value)/(1/draw_case_1xBet$value+1/lose_case_1xBet$value+1/win_case_1xBet$value)
+p_draw_norm_1xBet<-(1/draw_case_1xBet$value)/(1/draw_case_1xBet$value+1/lose_case_1xBet$value+1/win_case_1xBet$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win_1xBet-p_lose_1xBet),p_draw_1xBet,xlab = 'P_home win - P_away win',ylab='P_draw',main='1xBet') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_1xBet<-cbind.data.frame(combined_1xBet,p_win_1xBet,p_lose_1xBet,p_draw_1xBet,p_win_1xBet-p_lose_1xBet)
+#sort the data frame by home_win-away_win
+df_1xBet <-df_1xBet[order(df_1xBet$`p_win_1xBet - p_lose_1xBet`),]
+bins_1xBet<-cut_number(df_1xBet$`p_win_1xBet - p_lose_1xBet`,7) # 7 bins are created with equal sizes
+c_1xBet <- summary(bins_1xBet) # number of instances in the bins are recorded here
+no_1xBet<- c_1xBet[1]
+data_1xBet<-cbind.data.frame(df_1xBet,bins_1xBet)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting first bins and calculating the draw number and probability
+
+number_table_firstbin_1xBet<-data_1xBet%>%slice(1:(no_1xBet))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin_1xBet<-(number_table_firstbin_1xBet[1,2])/(number_table_firstbin_1xBet[1,2]+number_table_firstbin_1xBet[2,2]+number_table_firstbin_1xBet[3,2])
+
+number_table_secondbin_1xBet<-data_1xBet%>%slice((no_1xBet+1):(no_1xBet*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin_1xBet<-(number_table_secondbin_1xBet[1,2])/(number_table_secondbin_1xBet[1,2]+number_table_secondbin_1xBet[2,2]+number_table_secondbin_1xBet[3,2])
+
+number_table_thirdbin_1xBet<-data_1xBet%>%slice((no_1xBet*2+1):(no_1xBet*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin_1xBet<-(number_table_thirdbin_1xBet[1,2])/(number_table_thirdbin_1xBet[1,2]+number_table_thirdbin_1xBet[2,2]+number_table_thirdbin_1xBet[3,2])
+
+
+number_table_fourthbin_1xBet<-data_1xBet%>%slice((no_1xBet*3+1):(no_1xBet*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin_1xBet<-(number_table_fourthbin_1xBet[1,2])/(number_table_fourthbin_1xBet[1,2]+number_table_fourthbin_1xBet[2,2]+number_table_fourthbin_1xBet[3,2])
+
+number_table_fifthbin_1xBet<-data_1xBet%>%slice((no_1xBet*4+1):(no_1xBet*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin_1xBet<-(number_table_fifthbin_1xBet[1,2])/(number_table_fifthbin_1xBet[1,2]+number_table_fifthbin_1xBet[2,2]+number_table_fifthbin_1xBet[3,2])
+
+number_table_sixthbin_1xBet<-data_1xBet%>%slice((no_1xBet*5+1):(no_1xBet*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin_1xBet<-(number_table_sixthbin_1xBet[1,2])/(number_table_sixthbin_1xBet[1,2]+number_table_sixthbin_1xBet[2,2]+number_table_sixthbin_1xBet[3,2])
+
+number_table_seventhbin_1xBet<-data_1xBet%>%slice((no_1xBet*6+1):(no_1xBet*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin_1xBet<-(number_table_seventhbin_1xBet[1,2])/(number_table_seventhbin_1xBet[1,2]+number_table_seventhbin_1xBet[2,2]+number_table_seventhbin_1xBet[3,2])
+
+
+
+#datas with bins
+d_one_1xBet<-data_1xBet%>%slice(1:(no_1xBet))
+d_two_1xBet<-data_1xBet%>%slice((no_1xBet+1):(no_1xBet*2))
+d_three_1xBet<-data_1xBet%>%slice((no_1xBet*2+1):(no_1xBet*3))
+d_four_1xBet<-data_1xBet%>%slice((no_1xBet*3+1):(no_1xBet*4))
+d_five_1xBet<-data_1xBet%>%slice((no_1xBet*4+1):(no_1xBet*5))
+d_six_1xBet<-data_1xBet%>%slice((no_1xBet*5+1):(no_1xBet*6))
+d_seven_1xBet<-data_1xBet%>%slice((no_1xBet*6+1):(no_1xBet*7))
+
+
+#combining probablity values for each bin
+x_1xBet<-rbind(p_draw_match_firstbin_1xBet,p_draw_match_secondbin_1xBet,p_draw_match_thirdbin_1xBet,p_draw_match_fourthbin_1xBet,p_draw_match_fifthbin_1xBet,p_draw_match_sixthbin_1xBet,p_draw_match_seventhbin_1xBet)
+#combining mean values for each bin
+y_1xBet<-rbind(mean(d_one_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_two_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_three_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_four_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_five_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_six_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_seven_1xBet$`p_win_1xBet - p_lose_1xBet`))
+
+d_1xBet<-cbind(y_1xBet,x_1xBet)
+
+
+plot((p_win_1xBet-p_lose_1xBet),p_draw_1xBet,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='1xBet') 
+points(d_1xBet,col=2,pch = 19)
+
+
+```
+
+
+Since the red dots are not above the trends of the probabilities estimated by bookmaker, it is not profitable to bet in the long run. 
+
+For third bookmaker(Betsafe) the results are: 
+
+
+```{r echo=FALSE}
+bets_Betsafe<- bets %>% filter(odd_bookmakers=='Betsafe')
+bets_Betsafe <- bets_Betsafe %>% select(match_id,variable,value)
+bets_Betsafe<-na.omit(bets_Betsafe)
+bets_Betsafe<- bets_Betsafe %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined_Betsafe=sqldf("select * from  bets_Betsafe  join matches_league148 where bets_Betsafe.match_id = matches_league148.match_id ")
+
+win_case_Betsafe<-combined_Betsafe %>% filter(variable=='odd_1')
+lose_case_Betsafe<-combined_Betsafe %>% filter(variable=='odd_2')
+draw_case_Betsafe<-combined_Betsafe %>% filter(variable=='odd_x')
+
+#For task 2.1 finding probabilities from odd values
+
+p_win_Betsafe <-(1/win_case_Betsafe$value)
+p_lose_Betsafe<-(1/lose_case_Betsafe$value)
+p_draw_Betsafe<-(1/draw_case_Betsafe$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm_Betsafe <-(1/win_case_Betsafe$value) /(1/draw_case_Betsafe$value+1/lose_case_Betsafe$value+1/win_case_Betsafe$value)
+p_lose_norm_Betsafe<-(1/lose_case_Betsafe$value)/(1/draw_case_Betsafe$value+1/lose_case_Betsafe$value+1/win_case_Betsafe$value)
+p_draw_norm_Betsafe<-(1/draw_case_Betsafe$value)/(1/draw_case_Betsafe$value+1/lose_case_Betsafe$value+1/win_case_Betsafe$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win_Betsafe-p_lose_Betsafe),p_draw_Betsafe,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betsafe') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_Betsafe<-cbind.data.frame(combined_Betsafe,p_win_Betsafe,p_lose_Betsafe,p_draw_Betsafe,p_win_Betsafe-p_lose_Betsafe)
+#sort the data frame by home_win-away_win
+df_Betsafe <-df_Betsafe[order(df_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),]
+
+bins_Betsafe<-cut_number(df_Betsafe$`p_win_Betsafe - p_lose_Betsafe`,8) # 8 bins are created with equal sizes
+c_Betsafe <- summary(bins_Betsafe) # number of instances in the bins are recorded here
+no_Betsafe<- c_Betsafe[1]
+data_Betsafe<-cbind.data.frame(df_Betsafe,bins_Betsafe)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting bins and calculating the draw number and probability
+
+number_table_firstbin_Betsafe<-data_Betsafe%>%slice(1:(no_Betsafe))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin_Betsafe<-(number_table_firstbin_Betsafe[1,2])/(number_table_firstbin_Betsafe[1,2]+number_table_firstbin_Betsafe[2,2]+number_table_firstbin_Betsafe[3,2])
+
+number_table_secondbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe+1):(no_Betsafe*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin_Betsafe<-(number_table_secondbin_Betsafe[1,2])/(number_table_secondbin_Betsafe[1,2]+number_table_secondbin_Betsafe[2,2]+number_table_secondbin_Betsafe[3,2])
+
+number_table_thirdbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*2+1):(no_Betsafe*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin_Betsafe<-(number_table_thirdbin_Betsafe[1,2])/(number_table_thirdbin_Betsafe[1,2]+number_table_thirdbin_Betsafe[2,2]+number_table_thirdbin_Betsafe[3,2])
+
+
+number_table_fourthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*3+1):(no_Betsafe*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin_Betsafe<-(number_table_fourthbin_Betsafe[1,2])/(number_table_fourthbin_Betsafe[1,2]+number_table_fourthbin_Betsafe[2,2]+number_table_fourthbin_Betsafe[3,2])
+
+number_table_fifthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*4+1):(no_Betsafe*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin_Betsafe<-(number_table_fifthbin_Betsafe[1,2])/(number_table_fifthbin_Betsafe[1,2]+number_table_fifthbin_Betsafe[2,2]+number_table_fifthbin_Betsafe[3,2])
+
+number_table_sixthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*5+1):(no_Betsafe*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin_Betsafe<-(number_table_sixthbin_Betsafe[1,2])/(number_table_sixthbin_Betsafe[1,2]+number_table_sixthbin_Betsafe[2,2]+number_table_sixthbin_Betsafe[3,2])
+
+number_table_seventhbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*6+1):(no_Betsafe*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin_Betsafe<-(number_table_seventhbin_Betsafe[1,2])/(number_table_seventhbin_Betsafe[1,2]+number_table_seventhbin_Betsafe[2,2]+number_table_seventhbin_Betsafe[3,2])
+
+number_table_eighthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*7+1):(no_Betsafe*8))%>% group_by(V4)%>% summarize(n())
+p_draw_match_eighthbin_Betsafe<-(number_table_eighthbin_Betsafe[1,2])/(number_table_eighthbin_Betsafe[1,2]+number_table_eighthbin_Betsafe[2,2]+number_table_eighthbin_Betsafe[3,2])
+
+#datas with bins
+d_one_Betsafe<-data_Betsafe%>%slice(1:(no_Betsafe))
+d_two_Betsafe<-data_Betsafe%>%slice((no_Betsafe+1):(no_Betsafe*2))
+d_three_Betsafe<-data_Betsafe%>%slice((no_Betsafe*2+1):(no_Betsafe*3))
+d_four_Betsafe<-data_Betsafe%>%slice((no_Betsafe*3+1):(no_Betsafe*4))
+d_five_Betsafe<-data_Betsafe%>%slice((no_Betsafe*4+1):(no_Betsafe*5))
+d_six_Betsafe<-data_Betsafe%>%slice((no_Betsafe*5+1):(no_Betsafe*6))
+d_seven_Betsafe<-data_Betsafe%>%slice((no_Betsafe*6+1):(no_Betsafe*7))
+d_eight_Betsafe<-data_Betsafe%>%slice((no_Betsafe*7+1):(no_Betsafe*8))
+#combining probablity values for each bin
+x_Betsafe<-rbind(p_draw_match_firstbin_Betsafe,p_draw_match_secondbin_Betsafe,p_draw_match_thirdbin_Betsafe,p_draw_match_fourthbin_Betsafe,p_draw_match_fifthbin_Betsafe,p_draw_match_sixthbin_Betsafe,p_draw_match_seventhbin_Betsafe)
+#combining mean values for each bin
+y_Betsafe<-rbind(mean(d_one_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_two_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_three_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_four_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_five_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_six_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_seven_Betsafe$`p_win_Betsafe - p_lose_Betsafe`))                   
+
+d_Betsafe<-cbind(y_Betsafe,x_Betsafe)
+
+
+plot((p_win_Betsafe-p_lose_Betsafe),p_draw_Betsafe,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betsafe') 
+points(d_Betsafe,col=2,pch = 19)
+
+```
+
+Since the red dots are not above the trends of the probabilities estimated by bookmaker, it is not profitable to bet in the long run. 
+
+For fourth bookmaker(5Dimes) the results are: 
+
+```{r echo=FALSE}
+bets_5Dimes<- bets %>% filter(odd_bookmakers=='5Dimes')
+bets_5Dimes <- bets_5Dimes %>% select(match_id,variable,value)
+bets_5Dimes<-na.omit(bets_5Dimes)
+bets_5Dimes<- bets_5Dimes %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined_5Dimes=sqldf("select * from  bets_5Dimes  join matches_league148 where bets_5Dimes.match_id = matches_league148.match_id ")
+
+win_case_5Dimes<-combined_5Dimes %>% filter(variable=='odd_1')
+lose_case_5Dimes<-combined_5Dimes %>% filter(variable=='odd_2')
+draw_case_5Dimes<-combined_5Dimes %>% filter(variable=='odd_x')
+
+#For task 2.1 finding probabilities from odd values
+
+p_win_5Dimes <-(1/win_case_5Dimes$value)
+p_lose_5Dimes<-(1/lose_case_5Dimes$value)
+p_draw_5Dimes<-(1/draw_case_5Dimes$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm_5Dimes <-(1/win_case_5Dimes$value) /(1/draw_case_5Dimes$value+1/lose_case_5Dimes$value+1/win_case_5Dimes$value)
+p_lose_norm_5Dimes<-(1/lose_case_5Dimes$value)/(1/draw_case_5Dimes$value+1/lose_case_5Dimes$value+1/win_case_5Dimes$value)
+p_draw_norm_5Dimes<-(1/draw_case_5Dimes$value)/(1/draw_case_5Dimes$value+1/lose_case_5Dimes$value+1/win_case_5Dimes$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win_5Dimes-p_lose_5Dimes),p_draw_5Dimes,xlab = 'P_home win - P_away win',ylab='P_draw',main='5Dimes') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_5Dimes<-cbind.data.frame(combined_5Dimes,p_win_5Dimes,p_lose_5Dimes,p_draw_5Dimes,p_win_5Dimes-p_lose_5Dimes)
+#sort the data frame by home_win-away_win
+df_5Dimes <-df_5Dimes[order(df_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),]
+
+bins_5Dimes<-cut_number(df_5Dimes$`p_win_5Dimes - p_lose_5Dimes`,7) # 7 bins are created with equal sizes
+c_5Dimes <- summary(bins_5Dimes) # number of instances in the bins are recorded here
+no_5Dimes<- c_5Dimes[1]
+data_5Dimes<-cbind.data.frame(df_5Dimes,bins_5Dimes)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting bins and calculating the draw number and probability
+
+number_table_firstbin_5Dimes<-data_5Dimes%>%slice(1:(no_5Dimes))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin_5Dimes<-(number_table_firstbin_5Dimes[1,2])/(number_table_firstbin_5Dimes[1,2]+number_table_firstbin_5Dimes[2,2]+number_table_firstbin_5Dimes[3,2])
+
+number_table_secondbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes+1):(no_5Dimes*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin_5Dimes<-(number_table_secondbin_5Dimes[1,2])/(number_table_secondbin_5Dimes[1,2]+number_table_secondbin_5Dimes[2,2]+number_table_secondbin_5Dimes[3,2])
+
+number_table_thirdbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*2+1):(no_5Dimes*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin_5Dimes<-(number_table_thirdbin_5Dimes[1,2])/(number_table_thirdbin_5Dimes[1,2]+number_table_thirdbin_5Dimes[2,2]+number_table_thirdbin_5Dimes[3,2])
+
+
+number_table_fourthbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*3+1):(no_5Dimes*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin_5Dimes<-(number_table_fourthbin_5Dimes[1,2])/(number_table_fourthbin_5Dimes[1,2]+number_table_fourthbin_5Dimes[2,2]+number_table_fourthbin_5Dimes[3,2])
+
+number_table_fifthbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*4+1):(no_5Dimes*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin_5Dimes<-(number_table_fifthbin_5Dimes[1,2])/(number_table_fifthbin_5Dimes[1,2]+number_table_fifthbin_5Dimes[2,2]+number_table_fifthbin_5Dimes[3,2])
+
+number_table_sixthbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*5+1):(no_5Dimes*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin_5Dimes<-(number_table_sixthbin_5Dimes[1,2])/(number_table_sixthbin_5Dimes[1,2]+number_table_sixthbin_5Dimes[2,2]+number_table_sixthbin_5Dimes[3,2])
+
+number_table_seventhbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*6+1):(no_5Dimes*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin_5Dimes<-(number_table_seventhbin_5Dimes[1,2])/(number_table_seventhbin_5Dimes[1,2]+number_table_seventhbin_5Dimes[2,2]+number_table_seventhbin_5Dimes[3,2])
+
+
+#datas with bins
+d_one_5Dimes<-data_5Dimes%>%slice(1:(no_5Dimes))
+d_two_5Dimes<-data_5Dimes%>%slice((no_5Dimes+1):(no_5Dimes*2))
+d_three_5Dimes<-data_5Dimes%>%slice((no_5Dimes*2+1):(no_5Dimes*3))
+d_four_5Dimes<-data_5Dimes%>%slice((no_5Dimes*3+1):(no_5Dimes*4))
+d_five_5Dimes<-data_5Dimes%>%slice((no_5Dimes*4+1):(no_5Dimes*5))
+d_six_5Dimes<-data_5Dimes%>%slice((no_5Dimes*5+1):(no_5Dimes*6))
+d_seven_5Dimes<-data_5Dimes%>%slice((no_5Dimes*6+1):(no_5Dimes*7))
+
+#combining probablity values for each bin
+x_5Dimes<-rbind(p_draw_match_firstbin_5Dimes,p_draw_match_secondbin_5Dimes,p_draw_match_thirdbin_5Dimes,p_draw_match_fourthbin_5Dimes,p_draw_match_fifthbin_5Dimes,p_draw_match_sixthbin_5Dimes,p_draw_match_seventhbin_5Dimes)
+#combining mean values for each bin
+y_5Dimes<-rbind(mean(d_one_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_two_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_three_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_four_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_five_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_six_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_seven_5Dimes$`p_win_5Dimes - p_lose_5Dimes`))                   
+
+d_5Dimes<-cbind(y_5Dimes,x_5Dimes)
+
+
+plot((p_win_5Dimes-p_lose_5Dimes),p_draw_5Dimes,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='5Dimes') 
+points(d_5Dimes,col=2,pch = 19)
+
+```
+
+
+Since the red dots are not above the trends of the probabilities estimated by bookmaker, it is not profitable to bet in the long run except for one bin. 
+
+
+
+
+## TASK 3
+
+
+```{r echo=FALSE}
+
+combined=sqldf("select * from  booking  join matches_league148 where booking.match_id = matches_league148.match_id ")
+combined=sqldf("select * from  goals join combined where goals.match_id = combined.match_id ")
+combined_reduced<-distinct(combined%>% select(match_id,match_hometeam_score,match_awayteam_score,time,card,time..7))
+
+# remove red cards that were given in first 30 mins
+a<-as.numeric(combined_reduced$time..7)
+com<- cbind.data.frame(a,combined_reduced)
+first.30mins.red.card<-subset(com,card== 'red card'& a< 30)
+removed_matches <- as.data.frame(first.30mins.red.card%>%group_by(match_id)%>% summarise(n()))
+removed_matches_id<-removed_matches[,-2]
+
+combined_reduced<- combined_reduced%>%filter(match_id!=removed_matches_id[1])
+for(i in 1:length(removed_matches_id)){
+  combined_reduced<- combined_reduced%>%filter(match_id!=removed_matches_id[i])
+}
+
+
+# remove last minute goals
+a_1<-as.numeric(combined_reduced$time)
+com_1<- cbind.data.frame(a_1,combined_reduced)
+#filter the matches that ended in draw or with 1 goal difference
+co_reduced<- com_1%>%filter(match_hometeam_score==match_awayteam_score|abs(match_hometeam_score-match_awayteam_score)==1)  
+#filter the matches that the last goal was after 90 mins
+co<-co_reduced%>%filter(time=='90+1'|time=='90+2'|time=='90+3'|time=='90+4'|time=='90+5'|time=='90+6'|time=='90+7'|time=='90+8')
+
+#identify match id that suits the last minute goals
+lastmingoals <- as.data.frame(co%>%group_by(match_id)%>% summarise(n()))
+lastmin<-lastmingoals[,-2]
+
+combined_reducedlast<- combined_reduced%>%filter(match_id!=lastmin[1])
+
+for(i in 1:length(lastmin)){
+  combined_reducedlast<- combined_reducedlast%>%filter(match_id!=lastmin[i])
+}
+#reidentify the match-bet data
+matches_league148_modified<-combined_reducedlast%>% select(match_id,match_hometeam_score,match_awayteam_score)
+combined=sqldf("select * from  bets_Betclic  join matches_league148_modified where bets_Betclic.match_id = matches_league148_modified.match_id ")
+win_case<-combined %>% filter(variable=='odd_1')
+lose_case<-combined %>% filter(variable=='odd_2')
+draw_case<-combined %>% filter(variable=='odd_x')
+#For task 2.1 finding probabilities from odd values
+p_win<-(1/win_case$value)
+p_lose<-(1/lose_case$value)
+p_draw<-(1/draw_case$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm<-(1/win_case$value)/(1/draw_case$value+1/lose_case$value+1/win_case$value)
+p_lose_norm<-(1/lose_case$value)/(1/draw_case$value+1/lose_case$value+1/win_case$value)
+p_draw_norm<-(1/draw_case$value)/(1/draw_case$value+1/lose_case$value+1/win_case$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win-p_lose),p_draw,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betclic_modified') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_k<-cbind.data.frame(combined,p_win,p_lose,p_draw,p_win-p_lose)
+
+combined=sqldf("select * from  bets_Betclic  join matches_league148_modified where bets_Betclic.match_id = matches_league148_modified.match_id ")
+
+#sort the data frame by home_win-away_win
+df <-df[order(df$`p_win - p_lose`),]
+df<-distinct(df)
+bins<-cut_number(df$`p_win - p_lose`,11) # 11 bins are created with equal sizes
+c <- summary(bins) # number of instances in the bins are recorded here
+no<- c[1]
+
+
+data<-cbind.data.frame(df,bins)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting bins and calculating the draw number and probability
+
+number_table_firstbin<-data%>%slice(1:(no))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin<-(number_table_firstbin[1,2])/(number_table_firstbin[1,2]+number_table_firstbin[2,2]+number_table_firstbin[3,2])
+
+number_table_secondbin<-data%>%slice((no+1):(no*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin<-(number_table_secondbin[1,2])/(number_table_secondbin[1,2]+number_table_secondbin[2,2]+number_table_secondbin[3,2])
+
+number_table_thirdbin<-data%>%slice((no*2+1):(no*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin<-(number_table_thirdbin[1,2])/(number_table_thirdbin[1,2]+number_table_thirdbin[2,2]+number_table_thirdbin[3,2])
+
+number_table_fourthbin<-data%>%slice((no*3+1):(no*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin<-(number_table_fourthbin[1,2])/(number_table_fourthbin[1,2]+number_table_fourthbin[2,2]+number_table_fourthbin[3,2])
+
+number_table_fifthbin<-data%>%slice((no*4+1):(no*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin<-(number_table_fifthbin[1,2])/(number_table_fifthbin[1,2]+number_table_fifthbin[2,2]+number_table_fifthbin[3,2])
+
+number_table_sixthbin<-data%>%slice((no*5+1):(no*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin<-(number_table_sixthbin[1,2])/(number_table_sixthbin[1,2]+number_table_sixthbin[2,2]+number_table_sixthbin[3,2])
+
+number_table_seventhbin<-data%>%slice((no*6+1):(no*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin<-(number_table_seventhbin[1,2])/(number_table_seventhbin[1,2]+number_table_seventhbin[2,2]+number_table_seventhbin[3,2])
+
+number_table_eighthbin<-data%>%slice((no*7+1):(no*8))%>% group_by(V4)%>% summarize(n())
+p_draw_match_eighthbin<-(number_table_eighthbin[1,2])/(number_table_eighthbin[1,2]+number_table_eighthbin[2,2]+number_table_eighthbin[3,2])
+
+number_table_ninthbin<-data%>%slice((no*8+1):(no*9))%>% group_by(V4)%>% summarize(n())
+p_draw_match_ninthbin<-(number_table_ninthbin[1,2])/(number_table_ninthbin[1,2]+number_table_ninthbin[2,2]+number_table_ninthbin[3,2])
+
+number_table_tenthbin<-data%>%slice((no*9+1):(no*10))%>% group_by(V4)%>% summarize(n())
+p_draw_match_tenthbin<-(number_table_tenthbin[1,2])/(number_table_tenthbin[1,2]+number_table_tenthbin[2,2]+number_table_tenthbin[3,2])
+
+number_table_eleventhbin<-data%>%slice((no*10+1):(no*11))%>% group_by(V4)%>% summarize(n())
+p_draw_match_eleventhbin<-(number_table_eleventhbin[1,2])/(number_table_eleventhbin[1,2]+number_table_eleventhbin[2,2]+number_table_eleventhbin[3,2])
+
+
+#datas with bins
+d_one   <-data%>%slice(1:(no))
+d_two   <-data%>%slice((no+1):(no*2))
+d_three <-data%>%slice((no*2+1):(no*3))
+d_four  <-data%>%slice((no*3+1):(no*4))
+d_five  <-data%>%slice((no*4+1):(no*5))
+d_six   <-data%>%slice((no*5+1):(no*6))
+d_seven <-data%>%slice((no*6+1):(no*7))
+d_eight <-data%>%slice((no*7+1):(no*8))
+d_nine  <-data%>%slice((no*8+1):(no*9))
+d_ten   <-data%>%slice((no*9+1):(no*10))
+d_eleven<-data%>%slice((no*10+1):(no*11))
+
+#combining probablity values for each bin
+x<-rbind(p_draw_match_firstbin,p_draw_match_secondbin,p_draw_match_thirdbin,p_draw_match_fourthbin,p_draw_match_fifthbin,p_draw_match_sixthbin,p_draw_match_seventhbin,p_draw_match_eighthbin,p_draw_match_ninthbin,p_draw_match_tenthbin,p_draw_match_eleventhbin)
+#combining mean values for each bin
+y<-rbind(mean(d_one$`p_win - p_lose`),mean(d_two$`p_win - p_lose`),mean(d_three$`p_win - p_lose`),mean(d_four$`p_win - p_lose`),mean(d_five$`p_win - p_lose`),mean(d_six$`p_win - p_lose`),mean(d_seven$`p_win - p_lose`),mean(d_eight$`p_win - p_lose`),mean(d_nine$`p_win - p_lose`),mean(d_ten$`p_win - p_lose`),mean(d_eleven$`p_win - p_lose`))
+
+d<-cbind(y,x)
+
+plot((p_win-p_lose),p_draw,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betclic_modified') 
+points(d,col=2,pch = 19)
+
+#Finding probabilities from odd values for Bookmaker 2 (1xBet)
+
+bets_1xBet <- bets %>% filter(odd_bookmakers=='1xBet')
+bets_1xBet <- bets_1xBet %>% select(match_id,variable,value)
+bets_1xBet <-na.omit(bets_1xBet)
+bets_1xBet <- bets_1xBet %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined_1xBet=sqldf("select * from  bets_1xBet  join matches_league148 where bets_1xBet.match_id = matches_league148.match_id ")
+
+win_case_1xBet  <-combined_1xBet %>% filter(variable=='odd_1')
+lose_case_1xBet <-combined_1xBet %>% filter(variable=='odd_2')
+draw_case_1xBet <-combined_1xBet %>% filter(variable=='odd_x')
+
+#For task 2.1 finding probabilities from odd values
+
+p_win_1xBet <-(1/win_case_1xBet$value)
+p_lose_1xBet<-(1/lose_case_1xBet$value)
+p_draw_1xBet<-(1/draw_case_1xBet$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm_1xBet <-(1/win_case_1xBet$value) /(1/draw_case_1xBet$value+1/lose_case_1xBet$value+1/win_case_1xBet$value)
+p_lose_norm_1xBet<-(1/lose_case_1xBet$value)/(1/draw_case_1xBet$value+1/lose_case_1xBet$value+1/win_case_1xBet$value)
+p_draw_norm_1xBet<-(1/draw_case_1xBet$value)/(1/draw_case_1xBet$value+1/lose_case_1xBet$value+1/win_case_1xBet$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win_1xBet-p_lose_1xBet),p_draw_1xBet,xlab = 'P_home win - P_away win',ylab='P_draw',main='1xBet_modified') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_1xBet<-cbind.data.frame(combined_1xBet,p_win_1xBet,p_lose_1xBet,p_draw_1xBet,p_win_1xBet-p_lose_1xBet)
+#sort the data frame by home_win-away_win
+df_1xBet <-df_1xBet[order(df_1xBet$`p_win_1xBet - p_lose_1xBet`),]
+df_1xBet<-distinct(df_1xBet)
+bins_1xBet<-cut_number(df_1xBet$`p_win_1xBet - p_lose_1xBet`,7) # 7 bins are created with equal sizes
+c_1xBet <- summary(bins_1xBet) # number of instances in the bins are recorded here
+no_1xBet<- c_1xBet[1]
+data_1xBet<-cbind.data.frame(df_1xBet,bins_1xBet)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting first bins and calculating the draw number and probability
+
+number_table_firstbin_1xBet<-data_1xBet%>%slice(1:(no_1xBet))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin_1xBet<-(number_table_firstbin_1xBet[1,2])/(number_table_firstbin_1xBet[1,2]+number_table_firstbin_1xBet[2,2]+number_table_firstbin_1xBet[3,2])
+
+number_table_secondbin_1xBet<-data_1xBet%>%slice((no_1xBet+1):(no_1xBet*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin_1xBet<-(number_table_secondbin_1xBet[1,2])/(number_table_secondbin_1xBet[1,2]+number_table_secondbin_1xBet[2,2]+number_table_secondbin_1xBet[3,2])
+
+number_table_thirdbin_1xBet<-data_1xBet%>%slice((no_1xBet*2+1):(no_1xBet*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin_1xBet<-(number_table_thirdbin_1xBet[1,2])/(number_table_thirdbin_1xBet[1,2]+number_table_thirdbin_1xBet[2,2]+number_table_thirdbin_1xBet[3,2])
+
+
+number_table_fourthbin_1xBet<-data_1xBet%>%slice((no_1xBet*3+1):(no_1xBet*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin_1xBet<-(number_table_fourthbin_1xBet[1,2])/(number_table_fourthbin_1xBet[1,2]+number_table_fourthbin_1xBet[2,2]+number_table_fourthbin_1xBet[3,2])
+
+number_table_fifthbin_1xBet<-data_1xBet%>%slice((no_1xBet*4+1):(no_1xBet*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin_1xBet<-(number_table_fifthbin_1xBet[1,2])/(number_table_fifthbin_1xBet[1,2]+number_table_fifthbin_1xBet[2,2]+number_table_fifthbin_1xBet[3,2])
+
+number_table_sixthbin_1xBet<-data_1xBet%>%slice((no_1xBet*5+1):(no_1xBet*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin_1xBet<-(number_table_sixthbin_1xBet[1,2])/(number_table_sixthbin_1xBet[1,2]+number_table_sixthbin_1xBet[2,2]+number_table_sixthbin_1xBet[3,2])
+
+number_table_seventhbin_1xBet<-data_1xBet%>%slice((no_1xBet*6+1):(no_1xBet*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin_1xBet<-(number_table_seventhbin_1xBet[1,2])/(number_table_seventhbin_1xBet[1,2]+number_table_seventhbin_1xBet[2,2]+number_table_seventhbin_1xBet[3,2])
+
+
+
+#datas with bins
+d_one_1xBet<-data_1xBet%>%slice(1:(no_1xBet))
+d_two_1xBet<-data_1xBet%>%slice((no_1xBet+1):(no_1xBet*2))
+d_three_1xBet<-data_1xBet%>%slice((no_1xBet*2+1):(no_1xBet*3))
+d_four_1xBet<-data_1xBet%>%slice((no_1xBet*3+1):(no_1xBet*4))
+d_five_1xBet<-data_1xBet%>%slice((no_1xBet*4+1):(no_1xBet*5))
+d_six_1xBet<-data_1xBet%>%slice((no_1xBet*5+1):(no_1xBet*6))
+d_seven_1xBet<-data_1xBet%>%slice((no_1xBet*6+1):(no_1xBet*7))
+
+
+#combining probablity values for each bin
+x_1xBet<-rbind(p_draw_match_firstbin_1xBet,p_draw_match_secondbin_1xBet,p_draw_match_thirdbin_1xBet,p_draw_match_fourthbin_1xBet,p_draw_match_fifthbin_1xBet,p_draw_match_sixthbin_1xBet,p_draw_match_seventhbin_1xBet)
+#combining mean values for each bin
+y_1xBet<-rbind(mean(d_one_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_two_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_three_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_four_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_five_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_six_1xBet$`p_win_1xBet - p_lose_1xBet`),mean(d_seven_1xBet$`p_win_1xBet - p_lose_1xBet`))
+
+d_1xBet<-cbind(y_1xBet,x_1xBet)
+
+plot((p_win_1xBet-p_lose_1xBet),p_draw_1xBet,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='1xBet_modified') 
+points(d_1xBet,col=2,pch = 19)
+
+
+
+
+#Finding probabilities from odd values for Bookmaker 3 (Betsafe)
+
+
+bets_Betsafe <- bets %>% filter(odd_bookmakers=='Betsafe')
+bets_Betsafe <- bets_Betsafe %>% select(match_id,variable,value)
+bets_Betsafe <- na.omit(bets_Betsafe)
+bets_Betsafe <- bets_Betsafe %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined_Betsafe=sqldf("select * from  bets_Betsafe  join matches_league148 where bets_Betsafe.match_id = matches_league148.match_id ")
+win_case_Betsafe<-combined_Betsafe %>% filter(variable=='odd_1')
+lose_case_Betsafe<-combined_Betsafe %>% filter(variable=='odd_2')
+draw_case_Betsafe<-combined_Betsafe %>% filter(variable=='odd_x')
+
+#For task 2.1 finding probabilities from odd values
+
+p_win_Betsafe <-(1/win_case_Betsafe$value)
+p_lose_Betsafe<-(1/lose_case_Betsafe$value)
+p_draw_Betsafe<-(1/draw_case_Betsafe$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm_Betsafe <-(1/win_case_Betsafe$value) /(1/draw_case_Betsafe$value+1/lose_case_Betsafe$value+1/win_case_Betsafe$value)
+p_lose_norm_Betsafe<-(1/lose_case_Betsafe$value)/(1/draw_case_Betsafe$value+1/lose_case_Betsafe$value+1/win_case_Betsafe$value)
+p_draw_norm_Betsafe<-(1/draw_case_Betsafe$value)/(1/draw_case_Betsafe$value+1/lose_case_Betsafe$value+1/win_case_Betsafe$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win_Betsafe-p_lose_Betsafe),p_draw_Betsafe,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betsafe_modified') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_Betsafe<-cbind.data.frame(combined_Betsafe,p_win_Betsafe,p_lose_Betsafe,p_draw_Betsafe,p_win_Betsafe-p_lose_Betsafe)
+#sort the data frame by home_win-away_win
+df_Betsafe <-df_Betsafe[order(df_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),]
+df_Betsafe<-distinct(df_Betsafe)
+bins_Betsafe<-cut_number(df_Betsafe$`p_win_Betsafe - p_lose_Betsafe`,8) # 8 bins are created with equal sizes
+c_Betsafe <- summary(bins_Betsafe) # number of instances in the bins are recorded here
+no_Betsafe<- c_Betsafe[1]
+data_Betsafe<-cbind.data.frame(df_Betsafe,bins_Betsafe)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+#selecting bins and calculating the draw number and probability
+
+number_table_firstbin_Betsafe<-data_Betsafe%>%slice(1:(no_Betsafe))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin_Betsafe<-(number_table_firstbin_Betsafe[1,2])/(number_table_firstbin_Betsafe[1,2]+number_table_firstbin_Betsafe[2,2]+number_table_firstbin_Betsafe[3,2])
+
+number_table_secondbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe+1):(no_Betsafe*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin_Betsafe<-(number_table_secondbin_Betsafe[1,2])/(number_table_secondbin_Betsafe[1,2]+number_table_secondbin_Betsafe[2,2]+number_table_secondbin_Betsafe[3,2])
+
+number_table_thirdbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*2+1):(no_Betsafe*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin_Betsafe<-(number_table_thirdbin_Betsafe[1,2])/(number_table_thirdbin_Betsafe[1,2]+number_table_thirdbin_Betsafe[2,2]+number_table_thirdbin_Betsafe[3,2])
+
+
+number_table_fourthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*3+1):(no_Betsafe*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin_Betsafe<-(number_table_fourthbin_Betsafe[1,2])/(number_table_fourthbin_Betsafe[1,2]+number_table_fourthbin_Betsafe[2,2]+number_table_fourthbin_Betsafe[3,2])
+
+number_table_fifthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*4+1):(no_Betsafe*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin_Betsafe<-(number_table_fifthbin_Betsafe[1,2])/(number_table_fifthbin_Betsafe[1,2]+number_table_fifthbin_Betsafe[2,2]+number_table_fifthbin_Betsafe[3,2])
+
+number_table_sixthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*5+1):(no_Betsafe*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin_Betsafe<-(number_table_sixthbin_Betsafe[1,2])/(number_table_sixthbin_Betsafe[1,2]+number_table_sixthbin_Betsafe[2,2]+number_table_sixthbin_Betsafe[3,2])
+
+number_table_seventhbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*6+1):(no_Betsafe*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin_Betsafe<-(number_table_seventhbin_Betsafe[1,2])/(number_table_seventhbin_Betsafe[1,2]+number_table_seventhbin_Betsafe[2,2]+number_table_seventhbin_Betsafe[3,2])
+
+number_table_eighthbin_Betsafe<-data_Betsafe%>%slice((no_Betsafe*7+1):(no_Betsafe*8))%>% group_by(V4)%>% summarize(n())
+p_draw_match_eighthbin_Betsafe<-(number_table_eighthbin_Betsafe[1,2])/(number_table_eighthbin_Betsafe[1,2]+number_table_eighthbin_Betsafe[2,2]+number_table_eighthbin_Betsafe[3,2])
+
+
+#datas with bins
+d_one_Betsafe<-data_Betsafe%>%slice(1:(no_Betsafe))
+d_two_Betsafe<-data_Betsafe%>%slice((no_Betsafe+1):(no_Betsafe*2))
+d_three_Betsafe<-data_Betsafe%>%slice((no_Betsafe*2+1):(no_Betsafe*3))
+d_four_Betsafe<-data_Betsafe%>%slice((no_Betsafe*3+1):(no_Betsafe*4))
+d_five_Betsafe<-data_Betsafe%>%slice((no_Betsafe*4+1):(no_Betsafe*5))
+d_six_Betsafe<-data_Betsafe%>%slice((no_Betsafe*5+1):(no_Betsafe*6))
+d_seven_Betsafe<-data_Betsafe%>%slice((no_Betsafe*6+1):(no_Betsafe*7))
+d_eight_Betsafe<-data_Betsafe%>%slice((no_Betsafe*7+1):(no_Betsafe*8))
+
+#combining probablity values for each bin
+x_Betsafe<-rbind(p_draw_match_firstbin_Betsafe,p_draw_match_secondbin_Betsafe,p_draw_match_thirdbin_Betsafe,p_draw_match_fourthbin_Betsafe,p_draw_match_fifthbin_Betsafe,p_draw_match_sixthbin_Betsafe,p_draw_match_seventhbin_Betsafe,p_draw_match_eighthbin_Betsafe)
+#combining mean values for each bin
+y_Betsafe<-rbind(mean(d_one_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_two_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_three_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_four_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_five_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_six_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_seven_Betsafe$`p_win_Betsafe - p_lose_Betsafe`),mean(d_eight_Betsafe$`p_win_Betsafe - p_lose_Betsafe`))                   
+
+d_Betsafe<-cbind(y_Betsafe,x_Betsafe)
+
+plot((p_win_Betsafe-p_lose_Betsafe),p_draw_Betsafe,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='Betsafe_modified') 
+points(d_Betsafe,col=2,pch = 19)
+
+
+#Finding probabilities from odd values for Bookmaker 4 (5Dimes)
+
+
+bets_5Dimes<- bets %>% filter(odd_bookmakers=='5Dimes')
+bets_5Dimes <- bets_5Dimes %>% select(match_id,variable,value)
+bets_5Dimes<-na.omit(bets_5Dimes)
+bets_5Dimes<- bets_5Dimes %>% filter(variable=='odd_1'|variable=='odd_2'|variable=='odd_x')
+
+#combining match results with bookmakers odd values
+
+combined_5Dimes=sqldf("select * from  bets_5Dimes  join matches_league148 where bets_5Dimes.match_id = matches_league148.match_id ")
+win_case_5Dimes<-combined_5Dimes %>% filter(variable=='odd_1')
+lose_case_5Dimes<-combined_5Dimes %>% filter(variable=='odd_2')
+draw_case_5Dimes<-combined_5Dimes %>% filter(variable=='odd_x')
+
+#For task 2.1 finding probabilities from odd values
+
+p_win_5Dimes <-(1/win_case_5Dimes$value)
+p_lose_5Dimes<-(1/lose_case_5Dimes$value)
+p_draw_5Dimes<-(1/draw_case_5Dimes$value)
+
+#For task 2.2 finding normalized probabilities from odd values
+p_win_norm_5Dimes <-(1/win_case_5Dimes$value) /(1/draw_case_5Dimes$value+1/lose_case_5Dimes$value+1/win_case_5Dimes$value)
+p_lose_norm_5Dimes<-(1/lose_case_5Dimes$value)/(1/draw_case_5Dimes$value+1/lose_case_5Dimes$value+1/win_case_5Dimes$value)
+p_draw_norm_5Dimes<-(1/draw_case_5Dimes$value)/(1/draw_case_5Dimes$value+1/lose_case_5Dimes$value+1/win_case_5Dimes$value)
+
+#For task 2.3 plotting draw versus homewin-awaywin 
+plot((p_win_5Dimes-p_lose_5Dimes),p_draw_5Dimes,xlab = 'P_home win - P_away win',ylab='P_draw',main='5Dimes_modified') 
+
+#Creating bins of the probabilities of home_win-away_win
+
+df_5Dimes<-cbind.data.frame(combined_5Dimes,p_win_5Dimes,p_lose_5Dimes,p_draw_5Dimes,p_win_5Dimes-p_lose_5Dimes)
+#sort the data frame by home_win-away_win
+df_5Dimes <-df_5Dimes[order(df_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),]
+df_5Dimes<-distinct(df_5Dimes)
+bins_5Dimes<-cut_number(df_5Dimes$`p_win_5Dimes - p_lose_5Dimes`,7) # 7 bins are created with equal sizes
+c_5Dimes <- summary(bins_5Dimes) # number of instances in the bins are recorded here
+no_5Dimes<- c_5Dimes[1]
+data_5Dimes<-cbind.data.frame(df_5Dimes,bins_5Dimes)
+
+#number table corresponds to numbers of draws, wins and loses and [1,2] is draw , [2,2] is lose and [3,2] is win 
+
+# selecting bins and calculating the draw number and probability
+
+number_table_firstbin_5Dimes<-data_5Dimes%>%slice(1:(no_5Dimes))%>% group_by(V4)%>% summarize(n())
+p_draw_match_firstbin_5Dimes<-(number_table_firstbin_5Dimes[1,2])/(number_table_firstbin_5Dimes[1,2]+number_table_firstbin_5Dimes[2,2]+number_table_firstbin_5Dimes[3,2])
+
+number_table_secondbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes+1):(no_5Dimes*2))%>% group_by(V4)%>% summarize(n())
+p_draw_match_secondbin_5Dimes<-(number_table_secondbin_5Dimes[1,2])/(number_table_secondbin_5Dimes[1,2]+number_table_secondbin_5Dimes[2,2]+number_table_secondbin_5Dimes[3,2])
+
+number_table_thirdbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*2+1):(no_5Dimes*3))%>% group_by(V4)%>% summarize(n())
+p_draw_match_thirdbin_5Dimes<-(number_table_thirdbin_5Dimes[1,2])/(number_table_thirdbin_5Dimes[1,2]+number_table_thirdbin_5Dimes[2,2]+number_table_thirdbin_5Dimes[3,2])
+
+
+number_table_fourthbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*3+1):(no_5Dimes*4))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fourthbin_5Dimes<-(number_table_fourthbin_5Dimes[1,2])/(number_table_fourthbin_5Dimes[1,2]+number_table_fourthbin_5Dimes[2,2]+number_table_fourthbin_5Dimes[3,2])
+
+number_table_fifthbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*4+1):(no_5Dimes*5))%>% group_by(V4)%>% summarize(n())
+p_draw_match_fifthbin_5Dimes<-(number_table_fifthbin_5Dimes[1,2])/(number_table_fifthbin_5Dimes[1,2]+number_table_fifthbin_5Dimes[2,2]+number_table_fifthbin_5Dimes[3,2])
+
+number_table_sixthbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*5+1):(no_5Dimes*6))%>% group_by(V4)%>% summarize(n())
+p_draw_match_sixthbin_5Dimes<-(number_table_sixthbin_5Dimes[1,2])/(number_table_sixthbin_5Dimes[1,2]+number_table_sixthbin_5Dimes[2,2]+number_table_sixthbin_5Dimes[3,2])
+
+number_table_seventhbin_5Dimes<-data_5Dimes%>%slice((no_5Dimes*6+1):(no_5Dimes*7))%>% group_by(V4)%>% summarize(n())
+p_draw_match_seventhbin_5Dimes<-(number_table_seventhbin_5Dimes[1,2])/(number_table_seventhbin_5Dimes[1,2]+number_table_seventhbin_5Dimes[2,2]+number_table_seventhbin_5Dimes[3,2])
+
+
+#datas with bins
+d_one_5Dimes<-data_5Dimes%>%slice(1:(no_5Dimes))
+d_two_5Dimes<-data_5Dimes%>%slice((no_5Dimes+1):(no_5Dimes*2))
+d_three_5Dimes<-data_5Dimes%>%slice((no_5Dimes*2+1):(no_5Dimes*3))
+d_four_5Dimes<-data_5Dimes%>%slice((no_5Dimes*3+1):(no_5Dimes*4))
+d_five_5Dimes<-data_5Dimes%>%slice((no_5Dimes*4+1):(no_5Dimes*5))
+d_six_5Dimes<-data_5Dimes%>%slice((no_5Dimes*5+1):(no_5Dimes*6))
+d_seven_5Dimes<-data_5Dimes%>%slice((no_5Dimes*6+1):(no_5Dimes*7))
+
+#combining probablity values for each bin
+x_5Dimes<-rbind(p_draw_match_firstbin_5Dimes,p_draw_match_secondbin_5Dimes,p_draw_match_thirdbin_5Dimes,p_draw_match_fourthbin_5Dimes,p_draw_match_fifthbin_5Dimes,p_draw_match_sixthbin_5Dimes,p_draw_match_seventhbin_5Dimes)
+#combining mean values for each bin
+y_5Dimes<-rbind(mean(d_one_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_two_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_three_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_four_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_five_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_six_5Dimes$`p_win_5Dimes - p_lose_5Dimes`),mean(d_seven_5Dimes$`p_win_5Dimes - p_lose_5Dimes`))                   
+
+d_5Dimes<-cbind(y_5Dimes,x_5Dimes)
+
+plot((p_win_5Dimes-p_lose_5Dimes),p_draw_5Dimes,col=1,xlab = 'P_home win - P_away win',ylab='P_draw',main='5Dimes_modified') 
+points(d_5Dimes,col=2,pch = 19)
+
+```
+
+The trend in the data has not changed after modifications were done. It shows there are almost no bias in odds. 
