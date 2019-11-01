@@ -1,0 +1,165 @@
+---
+title: "HW2"
+author: "Burcu Oral"
+date: "01 11 2019"
+output: html_document
+---
+
+# Required packages 
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(milr)
+library(jpeg)
+library(raster)
+library(imager)
+library (factoextra)
+library (magick)
+library(ggfortify)
+```
+# TASK 1 
+#a
+```{r}
+
+musk<- read.csv("Musk1.csv",header = FALSE)
+#in musk data first column is whether the molecule is identified as musk(1) or not(0) and second column is the type of that molecule
+number_of_molecules<-length(unique(musk$V2))
+print(number_of_molecules)
+
+#For PCA analysis first two colums are extracted since one is class labels and the other is molecule ID
+pca<-prcomp(musk[,-(1:2)],scale=TRUE,center=TRUE)
+plot(pca)
+plot(pca$x,col=(musk$V1+1),main="Visualization for bag label groups red 1, black 0")
+#highest variance is found in 1st component as expected and from loadings most important features for 
+summary(pca)
+components_task1<-pca$rotation
+View(components_task1)
+
+#eigenvectors are found by
+fviz_eig(pca,c("eigenvalue"))
+fviz_eig(pca)
+#Plotting all according to bag labels(is musk or not)
+
+fviz_pca_ind(pca,label="none",habillage=musk$V1,palette = c("red","blue"))
+fviz_pca_biplot(pca,label="none",habillage=musk$V1,palette = c("red","blue"))
+fviz_pca_var(pca,label="none")
+#MDS METHOD
+
+dist_matrix<-as.matrix(dist(musk[,-(1:2)]))
+
+mds= cmdscale(dist_matrix)
+
+plot(mds,col=(musk$V1+1),main="MDS Visualization for bag label groups red 1, black 0")
+
+```
+as we can see, MDS 2 dimensional and PCA 2 dimensional results in similar plots. 
+When summmary of PCA is investigated, it is seen that around 40 components are needed to cover 90% of the data and first component covers 30%. 
+
+#b
+```{r}
+# reduce number of rows by taking average for each molecule
+#for that purpose aggregate function is used, the data is grouped by unique molecules and the correspondin colum means are evaluated
+musk_red<-aggregate(musk,by=list(musk$V2),FUN=mean)
+#same procedures in TASK 1 is applied to reduced data
+
+pca_red<-prcomp(musk_red[,-(1:3)],scale=TRUE,center=TRUE)
+plot(pca_red)
+str(pca_red)
+summary(pca_red)
+plot(pca_red$x,col=(musk_red$V1+1),main="Visualization for bag label groups red 1, black 0")
+components_task2<-pca_red$rotation
+View(components_task2)
+
+
+#MDS METHOD
+dist_matrix_red<-as.matrix(dist(musk_red[,-(1:3)]))
+
+mds_red= cmdscale(dist_matrix_red)
+
+plot(mds_red)
+
+plot(mds_red,col=(musk_red$V1+1),main=" MDS Visualization for bag label groups red 1, black 0")
+
+```
+
+
+#TASK 2
+```{r}
+tree = readJPEG("agac.JPG")
+par(mfrow=c(1,1))
+plot(0:256, 0:256, type="n",xlab='', ylab='',main="Original image")
+rasterImage(tree, 0, 0, 256, 256)
+
+#create uniform distribution between 0 and 0.1 for addition of noise
+noise<-runif(256*256,min=0,max=0.1)
+
+R<-tree[1:256,1:256,1]
+G<-tree[1:256,1:256,2]
+B<-tree[1:256,1:256,3]
+
+noisy_red=R+ noise               
+noisy_green=G+noise
+noisy_blue=B+noise
+#channel pixel values should be between 0 and 1
+noisy_red=ifelse(noisy_red>1,1,noisy_red) 
+noisy_blue=ifelse(noisy_blue>1,1,noisy_blue) 
+noisy_green=ifelse(noisy_green>1,1,noisy_green) 
+
+tree[,,1]<-noisy_red
+tree[,,2]<-noisy_green
+tree[,,3]<-noisy_blue
+
+#plotting noisy image
+
+par(mfrow=c(1,1))
+plot(0:256, 0:256, type="n")
+rasterImage(tree, 0, 0, 256, 256)
+
+#displaying channels
+#Since image function plots images in rotated way, matrix reverse(2 times) is taken and transpose function is applied
+
+par(mfrow=c(1,3))
+
+
+image(0:256,0:256,t(apply(noisy_red, 2, rev)),main="Red Channel",xlab="",ylab="")
+
+image(0:256,0:256,t(apply(noisy_blue, 2, rev)),main="Blue Channel",xlab="",ylab="")
+
+image(0:256,0:256,t(apply(noisy_green, 2, rev)),main="Green Channel",xlab="",ylab="")
+
+
+#Converting to grayscale and adding noise
+
+tree_new<-as.cimg(tree)
+tree_gr = grayscale(tree_new)
+par(mfrow=c(1,1))
+plot(0:256, 0:256, type="n",xlab='', ylab='',main="Grayscale image")
+rasterImage(t(apply(tree_gr, 1, rev)), 0, 0, 256, 256)
+dim_patches<-25
+#number of patches in columns or rows can be found by n-(patchdimension-1); for 10X10 matrix with 3x3 patch size it gives 10-2= 8 possible patches for rows or columns 
+n_patch<-256-(dim_patches-1)
+
+# define an empty matrix for storing patch values
+#normally to have patches exactly from image (dim_patches+1)/2 must be starting point, therefore when i starts from 1, it should go to dim_image-(dim_patches-1)
+patches <- (matrix(0, n_patch^2,dim_patches^2))
+
+r=1
+for(i in 1:n_patch){
+  for(j in 1:n_patch){
+       patches[r,] = as.matrix(unlist(extract_patches(tree_gr,i+((dim_patches-1)/2),j+((dim_patches-1)/2),dim_patches,dim_patches)))
+    r = r +1
+  }
+}
+pca_im<-prcomp(patches,scale=TRUE,center=TRUE)
+
+pca_im<-princomp(patches,scale=TRUE)
+
+plot(pca_im)
+plot(pca_im$scores,main="Visualization for PCA of image")
+summary(pca_im,loadings=T)
+#the coefficients of patches are found by
+View(pca_im$loadings[,])
+
+```
+
