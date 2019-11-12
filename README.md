@@ -1,4 +1,6 @@
 # fall19-burcuoral
-fall19-burcuoral created by GitHub Classroom
+Repository page:
+https://bu-ie-582.github.io/fall19-burcuoral/
+
 IE 582 repository for data mining applications
 Homework 2 is uploaded. HW2
