@@ -45,7 +45,9 @@ For first task the 2 days and 7 days ago values are used as predictions. Hence t
 train_data<-data.frame(df_train[,(3:4)])
 test_data<-data.frame(df_test)
 mape_a_using48<- mape(test_data[,3],test_data[,5])
+mape_a_using48
 mape_a_using168<- mape(test_data[,4],test_data[,5])
+mape_a_using168
 ```
 
 
