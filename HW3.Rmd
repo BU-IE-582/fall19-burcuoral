@@ -1,0 +1,829 @@
+---
+title: "Homework 3"
+author: "Burcu Oral"
+date: "22 11 2019"
+output: html_document
+---
+Firs the consumption data between 1 January 2016 to 21 November 2019 is downloaded from EPIAS and then the data till 1 November 2019 is used as train set whereas data from 1 November is used for predictions and error estimation.
+
+```{r,echo=FALSE}
+require(readr)
+require(dplyr)
+require(glmnet)
+require(ie2misc)
+
+set.seed(256)
+#data from Jan 1, 2016 to Nov 21, 2019 
+data_all<- read_csv("Data.csv",col_types = cols(`Consumption (MWh)` = col_number(), Date=col_date(format = "%d.%m.%Y"), Hour = col_character()))
+
+names(data_all)[3]<-'Consumption'
+#The data date will start from January 8 where Jan. 6 will be the first instance for lag_48 and Jan.1 will be for lag_168
+#lag_168 will be from jan 1 
+lag_168<-data_all$Consumption[1:(length(data_all$Consumption)-168)]
+#lag_48 will be from jan 6 
+lag_48<-data_all$Consumption[121:(length(data_all$Consumption)-48)]
+
+#To start from Jan 8, the data from Jan 1 to Jan 8 are discarded and all data is combined in to a data frame
+df<-cbind.data.frame(data_all[-(1:168),],lag_48,lag_168)
+#reordering the columns so that consumption will be at final column
+df<-df[,c(1,2,4,5,3)]
+# data till 1 November 2019 is used as train set whereas data from 1 November is used for test set
+df_train<-df[1:33408,]
+df_test<-df[33409:length(df$Date),]
+#identifying our target variables
+train_results<-df_train$Consumption
+test_results<-df_test$Consumption
+
+```
+
+
+## TASK A
+
+For first task the 2 days and 7 days ago values are used as predictions. Hence the separetly lag48 and lag168 values will be equal to predictions and calculated mape values for using lag 48 and lag 168 are as follows:
+```{r,echo=FALSE}
+# Use 48 hour and 168 hour lag values to have mape results without any model fitting
+train_data<-data.frame(df_train[,(3:4)])
+test_data<-data.frame(df_test)
+mape_a_using48<- mape(test_data[,3],test_data[,5])
+mape_a_using168<- mape(test_data[,4],test_data[,5])
+```
+
+
+## TASK  B
+
+For second task using lag 48 and lag 168 as features a linear model is fitted with coefficients for lag48 and lag168 as follows and mape value as :
+
+
+```{r,echo=FALSE}
+
+
+fit_lin <- lm(train_results~.,data=train_data)
+summary(fit_lin)
+coef<-fit_lin$coefficients
+coef
+prediction <- predict(fit_lin,df_test)
+
+# summarize accuracy 
+#MAPE
+
+mape_b<-mape(prediction,test_results)
+mape_b
+
+plot(test_results,prediction)
+
+
+
+
+```
+
+As the plot shows, test results are in agreement with predictions. R2 value is around 0.75 which suggests that the fit is not very bad. When we look at the coefficients 1 week ago consumption predictor has more importance in predicting as expected. 
+
+## TASK  C
+
+For third task all hour values are filtered and their lag_48, lag_168 and consumption values are stored and then each hour is used as predictors for the same hour in linear regression mode with coefficients and mape values as: 
+
+```{r,echo=FALSE}
+#FOR TRAIN
+h_0<-filter(df_train,df_train$Hour=='00:00')
+colnames(h_0) <- c("Date", "Hour" , "lag_48_0", "lag_168_0","cons_0")
+h_1<-filter(df_train,df_train$Hour=='01:00')
+colnames(h_1) <- c("Date", "Hour" , "lag_48_1", "lag_168_1","cons_1")
+h_2<-filter(df_train,df_train$Hour=='02:00')
+colnames(h_2) <- c("Date", "Hour" , "lag_48_2", "lag_168_2","cons_2")
+h_3<-filter(df_train,df_train$Hour=='03:00')
+colnames(h_3) <- c("Date", "Hour" , "lag_48_3", "lag_168_3","cons_3")
+h_4<-filter(df_train,df_train$Hour=='04:00')
+colnames(h_4) <- c("Date", "Hour" , "lag_48_4", "lag_168_4","cons_4")
+h_5<-filter(df_train,df_train$Hour=='05:00')
+colnames(h_5) <- c("Date", "Hour" , "lag_48_5", "lag_168_5","cons_5")
+h_6<-filter(df_train,df_train$Hour=='06:00')
+colnames(h_6) <- c("Date", "Hour" , "lag_48_6", "lag_168_6","cons_6")
+h_7<-filter(df_train,df_train$Hour=='07:00')
+colnames(h_7) <- c("Date", "Hour" , "lag_48_7", "lag_168_7","cons_7")
+h_8<-filter(df_train,df_train$Hour=='08:00')
+colnames(h_8) <- c("Date", "Hour" , "lag_48_8", "lag_168_8","cons_8")
+h_9<-filter(df_train,df_train$Hour=='09:00')
+colnames(h_9) <- c("Date", "Hour" , "lag_48_9", "lag_168_9","cons_9")
+h_10<-filter(df_train,df_train$Hour=='10:00')
+colnames(h_10) <- c("Date", "Hour" , "lag_48_10", "lag_168_10","cons_10")
+h_11<-filter(df_train,df_train$Hour=='11:00')
+colnames(h_11) <- c("Date", "Hour" , "lag_48_11", "lag_168_11","cons_11")
+h_12<-filter(df_train,df_train$Hour=='12:00')
+colnames(h_12) <- c("Date", "Hour" , "lag_48_12", "lag_168_12","cons_12")
+h_13<-filter(df_train,df_train$Hour=='13:00')
+colnames(h_13) <- c("Date", "Hour" , "lag_48_13", "lag_168_13","cons_13")
+h_14<-filter(df_train,df_train$Hour=='14:00')
+colnames(h_14) <- c("Date", "Hour" , "lag_48_14", "lag_168_14","cons_14")
+h_15<-filter(df_train,df_train$Hour=='15:00')
+colnames(h_15) <- c("Date", "Hour" , "lag_48_15", "lag_168_15","cons_15")
+h_16<-filter(df_train,df_train$Hour=='16:00')
+colnames(h_16) <- c("Date", "Hour" , "lag_48_16", "lag_168_16","cons_16")
+h_17<-filter(df_train,df_train$Hour=='17:00')
+colnames(h_17) <- c("Date", "Hour" , "lag_48_17", "lag_168_17","cons_17")
+h_18<-filter(df_train,df_train$Hour=='18:00')
+colnames(h_18) <- c("Date", "Hour" , "lag_48_18", "lag_168_18","cons_18")
+h_19<-filter(df_train,df_train$Hour=='19:00')
+colnames(h_19) <- c("Date", "Hour" , "lag_48_19", "lag_168_19","cons_19")
+h_20<-filter(df_train,df_train$Hour=='20:00')
+colnames(h_20) <- c("Date", "Hour" , "lag_48_20", "lag_168_20","cons_20")
+h_21<-filter(df_train,df_train$Hour=='21:00')
+colnames(h_21) <- c("Date", "Hour" , "lag_48_21", "lag_168_21","cons_21")
+h_22<-filter(df_train,df_train$Hour=='22:00')
+colnames(h_22) <- c("Date", "Hour" , "lag_48_22", "lag_168_22","cons_22")
+h_23<-filter(df_train,df_train$Hour=='23:00')
+colnames(h_23) <- c("Date", "Hour" , "lag_48_23", "lag_168_23","cons_23")
+#FOR TEST 
+h_t_0<-filter(df_test,df_test$Hour=='00:00')
+colnames(h_t_0) <- c("Date", "Hour" , "lag_48_0", "lag_168_0","cons_0")
+h_t_1<-filter(df_test,df_test$Hour=='01:00')
+colnames(h_t_1) <- c("Date", "Hour" , "lag_48_1", "lag_168_1","cons_1")
+h_t_2<-filter(df_test,df_test$Hour=='02:00')
+colnames(h_t_2) <- c("Date", "Hour" , "lag_48_2", "lag_168_2","cons_2")
+h_t_3<-filter(df_test,df_test$Hour=='03:00')
+colnames(h_t_3) <- c("Date", "Hour" , "lag_48_3", "lag_168_3","cons_3")
+h_t_4<-filter(df_test,df_test$Hour=='04:00')
+colnames(h_t_4) <- c("Date", "Hour" , "lag_48_4", "lag_168_4","cons_4")
+h_t_5<-filter(df_test,df_test$Hour=='05:00')
+colnames(h_t_5) <- c("Date", "Hour" , "lag_48_5", "lag_168_5","cons_5")
+h_t_6<-filter(df_test,df_test$Hour=='06:00')
+colnames(h_t_6) <- c("Date", "Hour" , "lag_48_6", "lag_168_6","cons_6")
+h_t_7<-filter(df_test,df_test$Hour=='07:00')
+colnames(h_t_7) <- c("Date", "Hour" , "lag_48_7", "lag_168_7","cons_7")
+h_t_8<-filter(df_test,df_test$Hour=='08:00')
+colnames(h_t_8) <- c("Date", "Hour" , "lag_48_8", "lag_168_8","cons_8")
+h_t_9<-filter(df_test,df_test$Hour=='09:00')
+colnames(h_t_9) <- c("Date", "Hour" , "lag_48_9", "lag_168_9","cons_9")
+h_t_10<-filter(df_test,df_test$Hour=='10:00')
+colnames(h_t_10) <- c("Date", "Hour" , "lag_48_10", "lag_168_10","cons_10")
+h_t_11<-filter(df_test,df_test$Hour=='11:00')
+colnames(h_t_11) <- c("Date", "Hour" , "lag_48_11", "lag_168_11","cons_11")
+h_t_12<-filter(df_test,df_test$Hour=='12:00')
+colnames(h_t_12) <- c("Date", "Hour" , "lag_48_12", "lag_168_12","cons_12")
+h_t_13<-filter(df_test,df_test$Hour=='13:00')
+colnames(h_t_13) <- c("Date", "Hour" , "lag_48_13", "lag_168_13","cons_13")
+h_t_14<-filter(df_test,df_test$Hour=='14:00')
+colnames(h_t_14) <- c("Date", "Hour" , "lag_48_14", "lag_168_14","cons_14")
+h_t_15<-filter(df_test,df_test$Hour=='15:00')
+colnames(h_t_15) <- c("Date", "Hour" , "lag_48_15", "lag_168_15","cons_15")
+h_t_16<-filter(df_test,df_test$Hour=='16:00')
+colnames(h_t_16) <- c("Date", "Hour" , "lag_48_16", "lag_168_16","cons_16")
+h_t_17<-filter(df_test,df_test$Hour=='17:00')
+colnames(h_t_17) <- c("Date", "Hour" , "lag_48_17", "lag_168_17","cons_17")
+h_t_18<-filter(df_test,df_test$Hour=='18:00')
+colnames(h_t_18) <- c("Date", "Hour" , "lag_48_18", "lag_168_18","cons_18")
+h_t_19<-filter(df_test,df_test$Hour=='19:00')
+colnames(h_t_19) <- c("Date", "Hour" , "lag_48_19", "lag_168_19","cons_19")
+h_t_20<-filter(df_test,df_test$Hour=='20:00')
+colnames(h_t_20) <- c("Date", "Hour" , "lag_48_20", "lag_168_20","cons_20")
+h_t_21<-filter(df_test,df_test$Hour=='21:00')
+colnames(h_t_21) <- c("Date", "Hour" , "lag_48_21", "lag_168_21","cons_21")
+h_t_22<-filter(df_test,df_test$Hour=='22:00')
+colnames(h_t_22) <- c("Date", "Hour" , "lag_48_22", "lag_168_22","cons_22")
+h_t_23<-filter(df_test,df_test$Hour=='23:00')
+colnames(h_t_23) <- c("Date", "Hour" , "lag_48_23", "lag_168_23","cons_23")
+
+
+#For hour 00:00
+fit_lr_0 <- lm(h_0[,5]~.,h_0[,3:4])
+pred_0<-predict(fit_lr_0,h_t_0[,3:4])
+#For hour 01:00 and onwards 
+fit_lr_1 <- lm(h_1[,5]~.,h_1[,3:4])
+pred_1<-predict(fit_lr_1,h_t_1[,3:4])
+fit_lr_2 <- lm(h_2[,5]~.,h_2[,3:4])
+pred_2<-predict(fit_lr_2,h_t_2[,3:4])
+fit_lr_3 <- lm(h_3[,5]~.,h_3[,3:4])
+pred_3<-predict(fit_lr_3,h_t_3[,3:4])
+fit_lr_4 <- lm(h_4[,5]~.,h_4[,3:4])
+pred_4<-predict(fit_lr_4,h_t_4[,3:4])
+fit_lr_5 <- lm(h_5[,5]~.,h_5[,3:4])
+pred_5<-predict(fit_lr_5,h_t_5[,3:4])
+fit_lr_6 <- lm(h_6[,5]~.,h_6[,3:4])
+pred_6<-predict(fit_lr_6,h_t_6[,3:4])
+fit_lr_7 <- lm(h_7[,5]~.,h_7[,3:4])
+pred_7<-predict(fit_lr_7,h_t_7[,3:4])
+fit_lr_8 <- lm(h_8[,5]~.,h_8[,3:4])
+pred_8<-predict(fit_lr_8,h_t_8[,3:4])
+fit_lr_9 <- lm(h_9[,5]~.,h_9[,3:4])
+pred_9<-predict(fit_lr_9,h_t_9[,3:4])
+fit_lr_10 <- lm(h_10[,5]~.,h_10[,3:4])
+pred_10<-predict(fit_lr_10,h_t_10[,3:4])
+fit_lr_11 <- lm(h_11[,5]~.,h_11[,3:4])
+pred_11<-predict(fit_lr_11,h_t_11[,3:4])
+fit_lr_12 <- lm(h_12[,5]~.,h_12[,3:4])
+pred_12<-predict(fit_lr_12,h_t_12[,3:4])
+fit_lr_13 <- lm(h_13[,5]~.,h_13[,3:4])
+pred_13<-predict(fit_lr_13,h_t_13[,3:4])
+fit_lr_14 <- lm(h_14[,5]~.,h_14[,3:4])
+pred_14<-predict(fit_lr_14,h_t_14[,3:4])
+fit_lr_15 <- lm(h_15[,5]~.,h_15[,3:4])
+pred_15<-predict(fit_lr_15,h_t_15[,3:4])
+fit_lr_16 <- lm(h_16[,5]~.,h_16[,3:4])
+pred_16<-predict(fit_lr_16,h_t_16[,3:4])
+fit_lr_17 <- lm(h_17[,5]~.,h_17[,3:4])
+pred_17<-predict(fit_lr_17,h_t_17[,3:4])
+fit_lr_18 <- lm(h_18[,5]~.,h_18[,3:4])
+pred_18<-predict(fit_lr_18,h_t_18[,3:4])
+fit_lr_19 <- lm(h_19[,5]~.,h_19[,3:4])
+pred_19<-predict(fit_lr_19,h_t_19[,3:4])
+fit_lr_20 <- lm(h_20[,5]~.,h_20[,3:4])
+pred_20<-predict(fit_lr_20,h_t_20[,3:4])
+fit_lr_21 <- lm(h_21[,5]~.,h_21[,3:4])
+pred_21<-predict(fit_lr_21,h_t_21[,3:4])
+fit_lr_22 <- lm(h_22[,5]~.,h_22[,3:4])
+pred_22<-predict(fit_lr_22,h_t_22[,3:4])
+fit_lr_23 <- lm(h_23[,5]~.,h_23[,3:4])
+pred_23<-predict(fit_lr_23,h_t_23[,3:4])
+
+#Coefficients are 
+coef_hour0<-fit_lr_0$coefficients
+coef_hour1<-fit_lr_1$coefficients
+coef_hour2<-fit_lr_2$coefficients
+coef_hour3<-fit_lr_3$coefficients
+coef_hour4<-fit_lr_4$coefficients
+coef_hour5<-fit_lr_5$coefficients
+coef_hour6<-fit_lr_6$coefficients
+coef_hour7<-fit_lr_7$coefficients
+coef_hour8<-fit_lr_8$coefficients
+coef_hour9<-fit_lr_9$coefficients
+coef_hour10<-fit_lr_10$coefficients
+coef_hour11<-fit_lr_11$coefficients
+coef_hour12<-fit_lr_12$coefficients
+coef_hour13<-fit_lr_13$coefficients
+coef_hour14<-fit_lr_14$coefficients
+coef_hour15<-fit_lr_15$coefficients
+coef_hour16<-fit_lr_16$coefficients
+coef_hour17<-fit_lr_17$coefficients
+coef_hour18<-fit_lr_18$coefficients
+coef_hour19<-fit_lr_19$coefficients
+coef_hour20<-fit_lr_20$coefficients
+coef_hour21<-fit_lr_21$coefficients
+coef_hour22<-fit_lr_22$coefficients
+coef_hour23<-fit_lr_23$coefficients
+
+rbind(coef_hour0,coef_hour1,coef_hour2,coef_hour3,coef_hour4,coef_hour5,coef_hour6,coef_hour7,coef_hour8,coef_hour9,coef_hour10,coef_hour11,coef_hour12,coef_hour13,coef_hour14,coef_hour15,coef_hour16,coef_hour17,coef_hour18,coef_hour19,coef_hour20,coef_hour21,coef_hour22,coef_hour23)
+
+#predictions are combined in a matrix for mape calculation
+
+pred<-pred_0
+pred[22:42]<-pred_1
+pred[(21*2+1):(21*3)]<-pred_2
+pred[(21*3+1):(21*4)]<-pred_3
+pred[(21*4+1):(21*5)]<-pred_4
+pred[(21*5+1):(21*6)]<-pred_5
+pred[(21*6+1):(21*7)]<-pred_6
+pred[(21*7+1):(21*8)]<-pred_7
+pred[(21*8+1):(21*9)]<-pred_8
+pred[(21*9+1):(21*10)]<-pred_9
+pred[(21*10+1):(21*11)]<-pred_10
+pred[(21*11+1):(21*12)]<-pred_11
+pred[(21*12+1):(21*13)]<-pred_12
+pred[(21*13+1):(21*14)]<-pred_13
+pred[(21*14+1):(21*15)]<-pred_14
+pred[(21*15+1):(21*16)]<-pred_15
+pred[(21*16+1):(21*17)]<-pred_16
+pred[(21*17+1):(21*18)]<-pred_17
+pred[(21*18+1):(21*19)]<-pred_18
+pred[(21*19+1):(21*20)]<-pred_19
+pred[(21*20+1):(21*21)]<-pred_20
+pred[(21*21+1):(21*22)]<-pred_21
+pred[(21*22+1):(21*23)]<-pred_22
+pred[(21*23+1):(21*24)]<-pred_23
+
+#MAPE
+mape_c<-mape(pred,test_results)
+mape_c
+```
+The coefficients suggest that in 1 week ago estimations the peak hours (day consumption) between 9 and 17 has more importance in the estimation of consumption. 
+
+## TASK D
+Both train and test data are converted into wide format and the features are used as predictors in penalized regression mode with lambda value found by 10-fold cross validation. The lambda values, coefficients and mape value are: 
+
+```{r,echo=FALSE}
+
+data_wide_train<-cbind(h_0[,-c(1,2,5)],h_1[,-c(1,2,5)],h_2[,-c(1,2,5)],h_3[,-c(1,2,5)],h_4[,-c(1,2,5)],h_5[,-c(1,2,5)],h_6[,-c(1,2,5)],h_7[,-c(1,2,5)],h_8[,-c(1,2,5)],h_9[,-c(1,2,5)],h_10[,-c(1,2,5)],h_11[,-c(1,2,5)],h_12[,-c(1,2,5)],h_13[,-c(1,2,5)],h_14[,-c(1,2,5)],h_15[,-c(1,2,5)],h_16[,-c(1,2,5)],h_17[,-c(1,2,5)],h_18[,-c(1,2,5)],h_19[,-c(1,2,5)],h_20[,-c(1,2,5)],h_21[,-c(1,2,5)],h_22[,-c(1,2,5)],h_23[,-c(1,2,5)])
+
+data_wide_test<-cbind(h_t_0[,-c(1,2,5)],h_t_1[,-c(1,2,5)],h_t_2[,-c(1,2,5)],h_t_3[,-c(1,2,5)],h_t_4[,-c(1,2,5)],h_t_5[,-c(1,2,5)],h_t_6[,-c(1,2,5)],h_t_7[,-c(1,2,5)],h_t_8[,-c(1,2,5)],h_t_9[,-c(1,2,5)],h_t_10[,-c(1,2,5)],h_t_11[,-c(1,2,5)],h_t_12[,-c(1,2,5)],h_t_13[,-c(1,2,5)],h_t_14[,-c(1,2,5)],h_t_15[,-c(1,2,5)],h_t_16[,-c(1,2,5)],h_t_17[,-c(1,2,5)],h_t_18[,-c(1,2,5)],h_t_19[,-c(1,2,5)],h_t_20[,-c(1,2,5)],h_t_21[,-c(1,2,5)],h_t_22[,-c(1,2,5)],h_t_23[,-c(1,2,5)])
+
+data_w_train<-as.matrix(data_wide_train)
+data_w_test<-as.matrix(data_wide_test)
+
+#For hour 0
+model_0<-glmnet(data_w_train,h_0[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_0[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_0<-predict(model_0,data_w_test)
+
+#For hour 1 and onwards
+model_1<-glmnet(data_w_train,h_1[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_1[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_1<-predict(model_1,data_w_test)
+
+model_2<-glmnet(data_w_train,h_2[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_2[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_2<-predict(model_2,data_w_test)
+
+model_3<-glmnet(data_w_train,h_3[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_3[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_3<-predict(model_3,data_w_test)
+
+model_4<-glmnet(data_w_train,h_4[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_4[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_4<-predict(model_4,data_w_test)
+
+model_5<-glmnet(data_w_train,h_5[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_5[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_5<-predict(model_5,data_w_test)
+
+model_6<-glmnet(data_w_train,h_6[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_6[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_6<-predict(model_6,data_w_test)
+
+model_7<-glmnet(data_w_train,h_7[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_7[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_7<-predict(model_7,data_w_test)
+
+model_8<-glmnet(data_w_train,h_8[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_8[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_8<-predict(model_8,data_w_test)
+
+model_9<-glmnet(data_w_train,h_9[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_9[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_9<-predict(model_9,data_w_test)
+
+model_10<-glmnet(data_w_train,h_10[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_10[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_10<-predict(model_10,data_w_test)
+
+model_11<-glmnet(data_w_train,h_11[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_11[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_11<-predict(model_11,data_w_test)
+
+model_12<-glmnet(data_w_train,h_12[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_12[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_12<-predict(model_12,data_w_test)
+
+model_13<-glmnet(data_w_train,h_13[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_13[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_13<-predict(model_13,data_w_test)
+
+model_14<-glmnet(data_w_train,h_14[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_14[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_14<-predict(model_14,data_w_test)
+
+model_15<-glmnet(data_w_train,h_15[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_15[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_15<-predict(model_15,data_w_test)
+
+model_16<-glmnet(data_w_train,h_16[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_16[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_16<-predict(model_16,data_w_test)
+
+model_17<-glmnet(data_w_train,h_17[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_17[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_17<-predict(model_17,data_w_test)
+
+model_18<-glmnet(data_w_train,h_18[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_18[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_18<-predict(model_18,data_w_test)
+
+model_19<-glmnet(data_w_train,h_19[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_19[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_19<-predict(model_19,data_w_test)
+
+model_20<-glmnet(data_w_train,h_20[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_20[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_20<-predict(model_20,data_w_test)
+
+model_21<-glmnet(data_w_train,h_21[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_21[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_21<-predict(model_21,data_w_test)
+
+model_22<-glmnet(data_w_train,h_22[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_22[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_22<-predict(model_22,data_w_test)
+
+model_23<-glmnet(data_w_train,h_23[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_23[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_23<-predict(model_23,data_w_test)
+
+lasso_predict<-predict_0
+lasso_predict[22:42]<-predict_1
+lasso_predict[(21*2+1):(21*3)]<-predict_2
+lasso_predict[(21*3+1):(21*4)]<-predict_3
+lasso_predict[(21*4+1):(21*5)]<-predict_4
+lasso_predict[(21*5+1):(21*6)]<-predict_5
+lasso_predict[(21*6+1):(21*7)]<-predict_6
+lasso_predict[(21*7+1):(21*8)]<-predict_7
+lasso_predict[(21*8+1):(21*9)]<-predict_8
+lasso_predict[(21*9+1):(21*10)]<-predict_9
+lasso_predict[(21*10+1):(21*11)]<-predict_10
+lasso_predict[(21*11+1):(21*12)]<-predict_11
+lasso_predict[(21*12+1):(21*13)]<-predict_12
+lasso_predict[(21*13+1):(21*14)]<-predict_13
+lasso_predict[(21*14+1):(21*15)]<-predict_14
+lasso_predict[(21*15+1):(21*16)]<-predict_15
+lasso_predict[(21*16+1):(21*17)]<-predict_16
+lasso_predict[(21*17+1):(21*18)]<-predict_17
+lasso_predict[(21*18+1):(21*19)]<-predict_18
+lasso_predict[(21*19+1):(21*20)]<-predict_19
+lasso_predict[(21*20+1):(21*21)]<-predict_20
+lasso_predict[(21*21+1):(21*22)]<-predict_21
+lasso_predict[(21*22+1):(21*23)]<-predict_22
+lasso_predict[(21*23+1):(21*24)]<-predict_23
+
+lambdas<-rbind(model_0$lambda,model_1$lambda,model_2$lambda,model_3$lambda,model_4$lambda,model_5$lambda,model_6$lambda,model_7$lambda,model_8$lambda,model_9$lambda,model_10$lambda,model_11$lambda,model_12$lambda,model_13$lambda,model_14$lambda,model_15$lambda,model_16$lambda,model_17$lambda,model_18$lambda,model_19$lambda,model_20$lambda,model_21$lambda,model_22$lambda,model_23$lambda)
+
+result_lambda<-as.data.frame(cbind(df[1:24,2],lambdas))
+names(result_lambda)[1]<-'Hour'
+names(result_lambda)[2]<-'Lambdas'
+result_lambda
+
+betas<-cbind(model_0$beta,model_1$beta,model_2$beta,model_3$beta,model_4$beta,model_5$beta,model_6$beta,model_7$beta,model_8$beta,model_9$beta,model_10$beta,model_11$beta,model_12$beta,model_13$beta,model_14$beta,model_15$beta,model_16$beta,model_17$beta,model_18$beta,model_19$beta,model_20$beta,model_21$beta,model_22$beta,model_23$beta)
+result_beta<-as.matrix(betas)
+colnames(result_beta)[1:24]<-c("Hour 0 prediction","Hour 1 prediction","Hour 2 prediction","Hour 3 prediction","Hour 4 prediction","Hour 5 prediction","Hour 6 prediction","Hour 7 prediction","Hour 8 prediction","Hour 9 prediction","Hour 10 prediction","Hour 11 prediction","Hour 12 prediction","Hour 13 prediction","Hour 14 prediction","Hour 15 prediction","Hour 16 prediction","Hour 17 prediction","Hour 18 prediction","Hour 19 prediction","Hour 20 prediction","Hour 21 prediction","Hour 22 prediction","Hour 23 prediction")
+result_beta
+
+mape_d<-mape(lasso_predict,test_results)
+mape_d
+```
+  
+## TASK F 
+
+Boxplot of mape values can be plotted as:
+
+```{r, echo=FALSE}
+
+print("box plot of mape_a_using48,mape_a_using168,mape_b,mape_c,mape_d respectively")
+boxplot(mape_a_using48,mape_a_using168,mape_b,mape_c,mape_d)
+
+print("combined mape boxplot is ")
+mape<-c(mape_a_using48,mape_a_using168,mape_b,mape_c,mape_d)
+boxplot(mape)
+```
+
+The results show that the best fit is found by using 168 hour ago values as predictors for forecasting the next day's electricity consumption value. As we complicated our data set, the errors have gradually increased. Overall results show that the all hourly consumption is not a good way for forcasting in this type of data. Normally penalized regression is used for better estimates but in this case it was not observed. 
+
+##APPENDIX
+
+```{r, echo=TRUE ,eval=FALSE}
+require(readr)
+require(MASS)
+require(dplyr)
+require(glmnet)
+require(ie2misc)
+
+set.seed(256)
+#data from Jan 1, 2016 to Nov 21, 2019 
+data_all<- read_csv("Data.csv",col_types = cols(`Consumption (MWh)` = col_number(), Date=col_date(format = "%d.%m.%Y"), Hour = col_character()))
+
+names(data_all)[3]<-'Consumption'
+#The data date will start from January 8 where Jan. 6 will be the first instance for lag_48 and Jan.1 will be for lag_168
+#lag_168 will be from jan 1 
+lag_168<-data_all$Consumption[1:(length(data_all$Consumption)-168)]
+#lag_48 will be from jan 6 
+lag_48<-data_all$Consumption[121:(length(data_all$Consumption)-48)]
+
+#To start from Jan 8, the data from Jan 1 to Jan 8 are discarded and all data is combined in to a data frame
+df<-cbind.data.frame(data_all[-(1:168),],lag_48,lag_168)
+#reordering the columns so that consumption will be at final column
+df<-df[,c(1,2,4,5,3)]
+# data till 1 November 2019 is used as train set whereas data from 1 November is used for test set
+df_train<-df[1:33408,]
+df_test<-df[33409:length(df$Date),]
+#identifying our target variables
+train_results<-df_train$Consumption
+test_results<-df_test$Consumption
+
+# Use 48 hour and 168 hour lag values to have mape results without any model fitting
+mape_a_using48<- mape(test_data[,3],test_data[,5])
+mape_a_using168<- mape(test_data[,4],test_data[,5])
+
+train_data<-data.frame(df_train[,(3:4)])
+test_data<-data.frame(df_test)
+
+fit_lin <- lm(train_results~.,data=train_data)
+summary(fit_lin)
+coef<-fit_lin$coefficients
+coef
+prediction <- predict(fit_lin,df_test)
+
+mape_b<-mape(prediction,test_results)
+mape_b
+
+plot(test_results,prediction)
+
+#FOR TRAIN
+h_0<-filter(df_train,df_train$Hour=='00:00')
+colnames(h_0) <- c("Date", "Hour" , "lag_48_0", "lag_168_0","cons_0")
+h_1<-filter(df_train,df_train$Hour=='01:00')
+colnames(h_1) <- c("Date", "Hour" , "lag_48_1", "lag_168_1","cons_1")
+h_2<-filter(df_train,df_train$Hour=='02:00')
+colnames(h_2) <- c("Date", "Hour" , "lag_48_2", "lag_168_2","cons_2")
+h_3<-filter(df_train,df_train$Hour=='03:00')
+colnames(h_3) <- c("Date", "Hour" , "lag_48_3", "lag_168_3","cons_3")
+h_4<-filter(df_train,df_train$Hour=='04:00')
+colnames(h_4) <- c("Date", "Hour" , "lag_48_4", "lag_168_4","cons_4")
+h_5<-filter(df_train,df_train$Hour=='05:00')
+colnames(h_5) <- c("Date", "Hour" , "lag_48_5", "lag_168_5","cons_5")
+h_6<-filter(df_train,df_train$Hour=='06:00')
+colnames(h_6) <- c("Date", "Hour" , "lag_48_6", "lag_168_6","cons_6")
+h_7<-filter(df_train,df_train$Hour=='07:00')
+colnames(h_7) <- c("Date", "Hour" , "lag_48_7", "lag_168_7","cons_7")
+h_8<-filter(df_train,df_train$Hour=='08:00')
+colnames(h_8) <- c("Date", "Hour" , "lag_48_8", "lag_168_8","cons_8")
+h_9<-filter(df_train,df_train$Hour=='09:00')
+colnames(h_9) <- c("Date", "Hour" , "lag_48_9", "lag_168_9","cons_9")
+h_10<-filter(df_train,df_train$Hour=='10:00')
+colnames(h_10) <- c("Date", "Hour" , "lag_48_10", "lag_168_10","cons_10")
+h_11<-filter(df_train,df_train$Hour=='11:00')
+colnames(h_11) <- c("Date", "Hour" , "lag_48_11", "lag_168_11","cons_11")
+h_12<-filter(df_train,df_train$Hour=='12:00')
+colnames(h_12) <- c("Date", "Hour" , "lag_48_12", "lag_168_12","cons_12")
+h_13<-filter(df_train,df_train$Hour=='13:00')
+colnames(h_13) <- c("Date", "Hour" , "lag_48_13", "lag_168_13","cons_13")
+h_14<-filter(df_train,df_train$Hour=='14:00')
+colnames(h_14) <- c("Date", "Hour" , "lag_48_14", "lag_168_14","cons_14")
+h_15<-filter(df_train,df_train$Hour=='15:00')
+colnames(h_15) <- c("Date", "Hour" , "lag_48_15", "lag_168_15","cons_15")
+h_16<-filter(df_train,df_train$Hour=='16:00')
+colnames(h_16) <- c("Date", "Hour" , "lag_48_16", "lag_168_16","cons_16")
+h_17<-filter(df_train,df_train$Hour=='17:00')
+colnames(h_17) <- c("Date", "Hour" , "lag_48_17", "lag_168_17","cons_17")
+h_18<-filter(df_train,df_train$Hour=='18:00')
+colnames(h_18) <- c("Date", "Hour" , "lag_48_18", "lag_168_18","cons_18")
+h_19<-filter(df_train,df_train$Hour=='19:00')
+colnames(h_19) <- c("Date", "Hour" , "lag_48_19", "lag_168_19","cons_19")
+h_20<-filter(df_train,df_train$Hour=='20:00')
+colnames(h_20) <- c("Date", "Hour" , "lag_48_20", "lag_168_20","cons_20")
+h_21<-filter(df_train,df_train$Hour=='21:00')
+colnames(h_21) <- c("Date", "Hour" , "lag_48_21", "lag_168_21","cons_21")
+h_22<-filter(df_train,df_train$Hour=='22:00')
+colnames(h_22) <- c("Date", "Hour" , "lag_48_22", "lag_168_22","cons_22")
+h_23<-filter(df_train,df_train$Hour=='23:00')
+colnames(h_23) <- c("Date", "Hour" , "lag_48_23", "lag_168_23","cons_23")
+#FOR TEST 
+h_t_0<-filter(df_test,df_test$Hour=='00:00')
+colnames(h_t_0) <- c("Date", "Hour" , "lag_48_0", "lag_168_0","cons_0")
+h_t_1<-filter(df_test,df_test$Hour=='01:00')
+colnames(h_t_1) <- c("Date", "Hour" , "lag_48_1", "lag_168_1","cons_1")
+h_t_2<-filter(df_test,df_test$Hour=='02:00')
+colnames(h_t_2) <- c("Date", "Hour" , "lag_48_2", "lag_168_2","cons_2")
+h_t_3<-filter(df_test,df_test$Hour=='03:00')
+colnames(h_t_3) <- c("Date", "Hour" , "lag_48_3", "lag_168_3","cons_3")
+h_t_4<-filter(df_test,df_test$Hour=='04:00')
+colnames(h_t_4) <- c("Date", "Hour" , "lag_48_4", "lag_168_4","cons_4")
+h_t_5<-filter(df_test,df_test$Hour=='05:00')
+colnames(h_t_5) <- c("Date", "Hour" , "lag_48_5", "lag_168_5","cons_5")
+h_t_6<-filter(df_test,df_test$Hour=='06:00')
+colnames(h_t_6) <- c("Date", "Hour" , "lag_48_6", "lag_168_6","cons_6")
+h_t_7<-filter(df_test,df_test$Hour=='07:00')
+colnames(h_t_7) <- c("Date", "Hour" , "lag_48_7", "lag_168_7","cons_7")
+h_t_8<-filter(df_test,df_test$Hour=='08:00')
+colnames(h_t_8) <- c("Date", "Hour" , "lag_48_8", "lag_168_8","cons_8")
+h_t_9<-filter(df_test,df_test$Hour=='09:00')
+colnames(h_t_9) <- c("Date", "Hour" , "lag_48_9", "lag_168_9","cons_9")
+h_t_10<-filter(df_test,df_test$Hour=='10:00')
+colnames(h_t_10) <- c("Date", "Hour" , "lag_48_10", "lag_168_10","cons_10")
+h_t_11<-filter(df_test,df_test$Hour=='11:00')
+colnames(h_t_11) <- c("Date", "Hour" , "lag_48_11", "lag_168_11","cons_11")
+h_t_12<-filter(df_test,df_test$Hour=='12:00')
+colnames(h_t_12) <- c("Date", "Hour" , "lag_48_12", "lag_168_12","cons_12")
+h_t_13<-filter(df_test,df_test$Hour=='13:00')
+colnames(h_t_13) <- c("Date", "Hour" , "lag_48_13", "lag_168_13","cons_13")
+h_t_14<-filter(df_test,df_test$Hour=='14:00')
+colnames(h_t_14) <- c("Date", "Hour" , "lag_48_14", "lag_168_14","cons_14")
+h_t_15<-filter(df_test,df_test$Hour=='15:00')
+colnames(h_t_15) <- c("Date", "Hour" , "lag_48_15", "lag_168_15","cons_15")
+h_t_16<-filter(df_test,df_test$Hour=='16:00')
+colnames(h_t_16) <- c("Date", "Hour" , "lag_48_16", "lag_168_16","cons_16")
+h_t_17<-filter(df_test,df_test$Hour=='17:00')
+colnames(h_t_17) <- c("Date", "Hour" , "lag_48_17", "lag_168_17","cons_17")
+h_t_18<-filter(df_test,df_test$Hour=='18:00')
+colnames(h_t_18) <- c("Date", "Hour" , "lag_48_18", "lag_168_18","cons_18")
+h_t_19<-filter(df_test,df_test$Hour=='19:00')
+colnames(h_t_19) <- c("Date", "Hour" , "lag_48_19", "lag_168_19","cons_19")
+h_t_20<-filter(df_test,df_test$Hour=='20:00')
+colnames(h_t_20) <- c("Date", "Hour" , "lag_48_20", "lag_168_20","cons_20")
+h_t_21<-filter(df_test,df_test$Hour=='21:00')
+colnames(h_t_21) <- c("Date", "Hour" , "lag_48_21", "lag_168_21","cons_21")
+h_t_22<-filter(df_test,df_test$Hour=='22:00')
+colnames(h_t_22) <- c("Date", "Hour" , "lag_48_22", "lag_168_22","cons_22")
+h_t_23<-filter(df_test,df_test$Hour=='23:00')
+colnames(h_t_23) <- c("Date", "Hour" , "lag_48_23", "lag_168_23","cons_23")
+
+
+#For hour 00:00
+fit_lr_0 <- lm(h_0[,5]~.,h_0[,3:4])
+pred_0<-predict(fit_lr_0,h_t_0[,3:4])
+#For hour 01:00 and onwards 
+fit_lr_1 <- lm(h_1[,5]~.,h_1[,3:4])
+pred_1<-predict(fit_lr_1,h_t_1[,3:4])
+fit_lr_2 <- lm(h_2[,5]~.,h_2[,3:4])
+pred_2<-predict(fit_lr_2,h_t_2[,3:4])
+fit_lr_3 <- lm(h_3[,5]~.,h_3[,3:4])
+pred_3<-predict(fit_lr_3,h_t_3[,3:4])
+fit_lr_4 <- lm(h_4[,5]~.,h_4[,3:4])
+pred_4<-predict(fit_lr_4,h_t_4[,3:4])
+fit_lr_5 <- lm(h_5[,5]~.,h_5[,3:4])
+pred_5<-predict(fit_lr_5,h_t_5[,3:4])
+fit_lr_6 <- lm(h_6[,5]~.,h_6[,3:4])
+pred_6<-predict(fit_lr_6,h_t_6[,3:4])
+fit_lr_7 <- lm(h_7[,5]~.,h_7[,3:4])
+pred_7<-predict(fit_lr_7,h_t_7[,3:4])
+fit_lr_8 <- lm(h_8[,5]~.,h_8[,3:4])
+pred_8<-predict(fit_lr_8,h_t_8[,3:4])
+fit_lr_9 <- lm(h_9[,5]~.,h_9[,3:4])
+pred_9<-predict(fit_lr_9,h_t_9[,3:4])
+fit_lr_10 <- lm(h_10[,5]~.,h_10[,3:4])
+pred_10<-predict(fit_lr_10,h_t_10[,3:4])
+fit_lr_11 <- lm(h_11[,5]~.,h_11[,3:4])
+pred_11<-predict(fit_lr_11,h_t_11[,3:4])
+fit_lr_12 <- lm(h_12[,5]~.,h_12[,3:4])
+pred_12<-predict(fit_lr_12,h_t_12[,3:4])
+fit_lr_13 <- lm(h_13[,5]~.,h_13[,3:4])
+pred_13<-predict(fit_lr_13,h_t_13[,3:4])
+fit_lr_14 <- lm(h_14[,5]~.,h_14[,3:4])
+pred_14<-predict(fit_lr_14,h_t_14[,3:4])
+fit_lr_15 <- lm(h_15[,5]~.,h_15[,3:4])
+pred_15<-predict(fit_lr_15,h_t_15[,3:4])
+fit_lr_16 <- lm(h_16[,5]~.,h_16[,3:4])
+pred_16<-predict(fit_lr_16,h_t_16[,3:4])
+fit_lr_17 <- lm(h_17[,5]~.,h_17[,3:4])
+pred_17<-predict(fit_lr_17,h_t_17[,3:4])
+fit_lr_18 <- lm(h_18[,5]~.,h_18[,3:4])
+pred_18<-predict(fit_lr_18,h_t_18[,3:4])
+fit_lr_19 <- lm(h_19[,5]~.,h_19[,3:4])
+pred_19<-predict(fit_lr_19,h_t_19[,3:4])
+fit_lr_20 <- lm(h_20[,5]~.,h_20[,3:4])
+pred_20<-predict(fit_lr_20,h_t_20[,3:4])
+fit_lr_21 <- lm(h_21[,5]~.,h_21[,3:4])
+pred_21<-predict(fit_lr_21,h_t_21[,3:4])
+fit_lr_22 <- lm(h_22[,5]~.,h_22[,3:4])
+pred_22<-predict(fit_lr_22,h_t_22[,3:4])
+fit_lr_23 <- lm(h_23[,5]~.,h_23[,3:4])
+pred_23<-predict(fit_lr_23,h_t_23[,3:4])
+
+#Coefficients are 
+coef_hour0<-fit_lr_0$coefficients
+coef_hour1<-fit_lr_1$coefficients
+coef_hour2<-fit_lr_2$coefficients
+coef_hour3<-fit_lr_3$coefficients
+coef_hour4<-fit_lr_4$coefficients
+coef_hour5<-fit_lr_5$coefficients
+coef_hour6<-fit_lr_6$coefficients
+coef_hour7<-fit_lr_7$coefficients
+coef_hour8<-fit_lr_8$coefficients
+coef_hour9<-fit_lr_9$coefficients
+coef_hour10<-fit_lr_10$coefficients
+coef_hour11<-fit_lr_11$coefficients
+coef_hour12<-fit_lr_12$coefficients
+coef_hour13<-fit_lr_13$coefficients
+coef_hour14<-fit_lr_14$coefficients
+coef_hour15<-fit_lr_15$coefficients
+coef_hour16<-fit_lr_16$coefficients
+coef_hour17<-fit_lr_17$coefficients
+coef_hour18<-fit_lr_18$coefficients
+coef_hour19<-fit_lr_19$coefficients
+coef_hour20<-fit_lr_20$coefficients
+coef_hour21<-fit_lr_21$coefficients
+coef_hour22<-fit_lr_22$coefficients
+coef_hour23<-fit_lr_23$coefficients
+
+rbind(coef_hour0,coef_hour1,coef_hour2,coef_hour3,coef_hour4,coef_hour5,coef_hour6,coef_hour7,coef_hour8,coef_hour9,coef_hour10,coef_hour11,coef_hour12,coef_hour13,coef_hour14,coef_hour15,coef_hour16,coef_hour17,coef_hour18,coef_hour19,coef_hour20,coef_hour21,coef_hour22,coef_hour23)
+
+#predictions are combined in a matrix for mape calculation
+
+pred<-pred_0
+pred[22:42]<-pred_1
+pred[(21*2+1):(21*3)]<-pred_2
+pred[(21*3+1):(21*4)]<-pred_3
+pred[(21*4+1):(21*5)]<-pred_4
+pred[(21*5+1):(21*6)]<-pred_5
+pred[(21*6+1):(21*7)]<-pred_6
+pred[(21*7+1):(21*8)]<-pred_7
+pred[(21*8+1):(21*9)]<-pred_8
+pred[(21*9+1):(21*10)]<-pred_9
+pred[(21*10+1):(21*11)]<-pred_10
+pred[(21*11+1):(21*12)]<-pred_11
+pred[(21*12+1):(21*13)]<-pred_12
+pred[(21*13+1):(21*14)]<-pred_13
+pred[(21*14+1):(21*15)]<-pred_14
+pred[(21*15+1):(21*16)]<-pred_15
+pred[(21*16+1):(21*17)]<-pred_16
+pred[(21*17+1):(21*18)]<-pred_17
+pred[(21*18+1):(21*19)]<-pred_18
+pred[(21*19+1):(21*20)]<-pred_19
+pred[(21*20+1):(21*21)]<-pred_20
+pred[(21*21+1):(21*22)]<-pred_21
+pred[(21*22+1):(21*23)]<-pred_22
+pred[(21*23+1):(21*24)]<-pred_23
+
+#MAPE
+mape_c<-mape(pred,test_results)
+mape_c
+
+data_wide_train<-cbind(h_0[,-c(1,2,5)],h_1[,-c(1,2,5)],h_2[,-c(1,2,5)],h_3[,-c(1,2,5)],h_4[,-c(1,2,5)],h_5[,-c(1,2,5)],h_6[,-c(1,2,5)],h_7[,-c(1,2,5)],h_8[,-c(1,2,5)],h_9[,-c(1,2,5)],h_10[,-c(1,2,5)],h_11[,-c(1,2,5)],h_12[,-c(1,2,5)],h_13[,-c(1,2,5)],h_14[,-c(1,2,5)],h_15[,-c(1,2,5)],h_16[,-c(1,2,5)],h_17[,-c(1,2,5)],h_18[,-c(1,2,5)],h_19[,-c(1,2,5)],h_20[,-c(1,2,5)],h_21[,-c(1,2,5)],h_22[,-c(1,2,5)],h_23[,-c(1,2,5)])
+
+data_wide_test<-cbind(h_t_0[,-c(1,2,5)],h_t_1[,-c(1,2,5)],h_t_2[,-c(1,2,5)],h_t_3[,-c(1,2,5)],h_t_4[,-c(1,2,5)],h_t_5[,-c(1,2,5)],h_t_6[,-c(1,2,5)],h_t_7[,-c(1,2,5)],h_t_8[,-c(1,2,5)],h_t_9[,-c(1,2,5)],h_t_10[,-c(1,2,5)],h_t_11[,-c(1,2,5)],h_t_12[,-c(1,2,5)],h_t_13[,-c(1,2,5)],h_t_14[,-c(1,2,5)],h_t_15[,-c(1,2,5)],h_t_16[,-c(1,2,5)],h_t_17[,-c(1,2,5)],h_t_18[,-c(1,2,5)],h_t_19[,-c(1,2,5)],h_t_20[,-c(1,2,5)],h_t_21[,-c(1,2,5)],h_t_22[,-c(1,2,5)],h_t_23[,-c(1,2,5)])
+
+data_w_train<-as.matrix(data_wide_train)
+data_w_test<-as.matrix(data_wide_test)
+
+#For hour 0
+model_0<-glmnet(data_w_train,h_0[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_0[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_0<-predict(model_0,data_w_test)
+
+#For hour 1 and onwards
+model_1<-glmnet(data_w_train,h_1[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_1[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_1<-predict(model_1,data_w_test)
+
+model_2<-glmnet(data_w_train,h_2[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_2[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_2<-predict(model_2,data_w_test)
+
+model_3<-glmnet(data_w_train,h_3[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_3[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_3<-predict(model_3,data_w_test)
+
+model_4<-glmnet(data_w_train,h_4[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_4[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_4<-predict(model_4,data_w_test)
+
+model_5<-glmnet(data_w_train,h_5[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_5[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_5<-predict(model_5,data_w_test)
+
+model_6<-glmnet(data_w_train,h_6[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_6[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_6<-predict(model_6,data_w_test)
+
+model_7<-glmnet(data_w_train,h_7[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_7[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_7<-predict(model_7,data_w_test)
+
+model_8<-glmnet(data_w_train,h_8[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_8[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_8<-predict(model_8,data_w_test)
+
+model_9<-glmnet(data_w_train,h_9[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_9[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_9<-predict(model_9,data_w_test)
+
+model_10<-glmnet(data_w_train,h_10[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_10[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_10<-predict(model_10,data_w_test)
+
+model_11<-glmnet(data_w_train,h_11[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_11[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_11<-predict(model_11,data_w_test)
+
+model_12<-glmnet(data_w_train,h_12[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_12[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_12<-predict(model_12,data_w_test)
+
+model_13<-glmnet(data_w_train,h_13[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_13[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_13<-predict(model_13,data_w_test)
+
+model_14<-glmnet(data_w_train,h_14[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_14[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_14<-predict(model_14,data_w_test)
+
+model_15<-glmnet(data_w_train,h_15[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_15[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_15<-predict(model_15,data_w_test)
+
+model_16<-glmnet(data_w_train,h_16[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_16[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_16<-predict(model_16,data_w_test)
+
+model_17<-glmnet(data_w_train,h_17[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_17[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_17<-predict(model_17,data_w_test)
+
+model_18<-glmnet(data_w_train,h_18[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_18[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_18<-predict(model_18,data_w_test)
+
+model_19<-glmnet(data_w_train,h_19[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_19[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_19<-predict(model_19,data_w_test)
+
+model_20<-glmnet(data_w_train,h_20[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_20[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_20<-predict(model_20,data_w_test)
+
+model_21<-glmnet(data_w_train,h_21[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_21[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_21<-predict(model_21,data_w_test)
+
+model_22<-glmnet(data_w_train,h_22[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_22[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_22<-predict(model_22,data_w_test)
+
+model_23<-glmnet(data_w_train,h_23[,5],family='gaussian',alpha=1,lambda = cv.glmnet(data_w_train,h_23[,5],nfolds=10,type.measure='mse',family='gaussian',alpha=1)$lambda.min)
+predict_23<-predict(model_23,data_w_test)
+
+lasso_predict<-predict_0
+lasso_predict[22:42]<-predict_1
+lasso_predict[(21*2+1):(21*3)]<-predict_2
+lasso_predict[(21*3+1):(21*4)]<-predict_3
+lasso_predict[(21*4+1):(21*5)]<-predict_4
+lasso_predict[(21*5+1):(21*6)]<-predict_5
+lasso_predict[(21*6+1):(21*7)]<-predict_6
+lasso_predict[(21*7+1):(21*8)]<-predict_7
+lasso_predict[(21*8+1):(21*9)]<-predict_8
+lasso_predict[(21*9+1):(21*10)]<-predict_9
+lasso_predict[(21*10+1):(21*11)]<-predict_10
+lasso_predict[(21*11+1):(21*12)]<-predict_11
+lasso_predict[(21*12+1):(21*13)]<-predict_12
+lasso_predict[(21*13+1):(21*14)]<-predict_13
+lasso_predict[(21*14+1):(21*15)]<-predict_14
+lasso_predict[(21*15+1):(21*16)]<-predict_15
+lasso_predict[(21*16+1):(21*17)]<-predict_16
+lasso_predict[(21*17+1):(21*18)]<-predict_17
+lasso_predict[(21*18+1):(21*19)]<-predict_18
+lasso_predict[(21*19+1):(21*20)]<-predict_19
+lasso_predict[(21*20+1):(21*21)]<-predict_20
+lasso_predict[(21*21+1):(21*22)]<-predict_21
+lasso_predict[(21*22+1):(21*23)]<-predict_22
+lasso_predict[(21*23+1):(21*24)]<-predict_23
+
+lambdas<-rbind(model_0$lambda,model_1$lambda,model_2$lambda,model_3$lambda,model_4$lambda,model_5$lambda,model_6$lambda,model_7$lambda,model_8$lambda,model_9$lambda,model_10$lambda,model_11$lambda,model_12$lambda,model_13$lambda,model_14$lambda,model_15$lambda,model_16$lambda,model_17$lambda,model_18$lambda,model_19$lambda,model_20$lambda,model_21$lambda,model_22$lambda,model_23$lambda)
+
+result_lambda<-as.data.frame(cbind(df[1:24,2],lambdas))
+names(result_lambda)[1]<-'Hour'
+names(result_lambda)[2]<-'Lambdas'
+result_lambda
+
+betas<-cbind(model_0$beta,model_1$beta,model_2$beta,model_3$beta,model_4$beta,model_5$beta,model_6$beta,model_7$beta,model_8$beta,model_9$beta,model_10$beta,model_11$beta,model_12$beta,model_13$beta,model_14$beta,model_15$beta,model_16$beta,model_17$beta,model_18$beta,model_19$beta,model_20$beta,model_21$beta,model_22$beta,model_23$beta)
+result_beta<-as.matrix(betas)
+colnames(result_beta)[1:24]<-c("Hour 0 prediction","Hour 1 prediction","Hour 2 prediction","Hour 3 prediction","Hour 4 prediction","Hour 5 prediction","Hour 6 prediction","Hour 7 prediction","Hour 8 prediction","Hour 9 prediction","Hour 10 prediction","Hour 11 prediction","Hour 12 prediction","Hour 13 prediction","Hour 14 prediction","Hour 15 prediction","Hour 16 prediction","Hour 17 prediction","Hour 18 prediction","Hour 19 prediction","Hour 20 prediction","Hour 21 prediction","Hour 22 prediction","Hour 23 prediction")
+result_beta
+
+mape_d<-mape(lasso_predict,test_results)
+mape_d
+
+print("box plot of mape_a_using48,mape_a_using168,mape_b,mape_c,mape_d respectively")
+boxplot(mape_a_using48,mape_a_using168,mape_b,mape_c,mape_d)
+
+print("combined mape boxplot is ")
+mape<-c(mape_a_using48,mape_a_using168,mape_b,mape_c,mape_d)
+boxplot(mape)
+
+```
+
