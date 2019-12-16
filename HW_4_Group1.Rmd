@@ -1,0 +1,465 @@
+---
+title: "HW4"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Ayşegül Karakuş, Burcu Oral, Zeynep Bal
+### R Markdown of HW-4
+
+This homework consists of two parts: predicting the total number of a goals in a match and whether the total goals will be larger than 2.5 or not. There are many approaches to get these prediction. In the context of this homework, four approaches are used, namely; penalized regression, decision trees, random forets and stochastic gradient boosting. 
+
+Regardless of the prediction method, data preperation step is very crucial. Not all the datasets are perfect nor they are related to the predicted values. Moreover, some features in the original dataset may be dependent on each other and may represent the same thing. Hence, the predicted values may be biased towards these features. To avoid the problems with the original data, data preprocessing is also performed prior to the prediction analysis.
+
+In this homework, relevant features are taken from the stats data. The features where there is not enough instances are not taken into consideration. On the other hand, for some of the features only 5 of the instances were missing. These missing values are replaced with the mean of the column.
+
+
+[1] "match_id"             "home_BallPossession"  "home_CornerKicks"     "home_Fouls"          
+ [5] "home_GoalAttempts"    "home_GoalkeeperSaves" "home_Offsides"        "home_ShotsoffGoal"   
+ [9] "home_ShotsonGoal"     "away_BallPossession"  "away_CornerKicks"     "away_Fouls"          
+[13] "away_GoalAttempts"    "away_GoalkeeperSaves" "away_Offsides"        "away_ShotsoffGoal"   
+[17] "away_ShotsonGoal"     "home_BlockedShots"    "away_BlockedShots"    "home_FreeKicks"      
+[21] "away_FreeKicks"       "home_Tackles"         "home_TotalPasses"     "away_Tackles"        
+[25] "away_TotalPasses"   
+
+
+In football, there is usually one strong so called favorite team in a match. The bet companies always give lower bets to these strong teams in favor of the other team. However, these bets can be changed depending on the home team or if two strong teams are oppenents. Hence, in addition to stats, the performances of the home and away teams against each other are added as the features. 
+
+[1] "match_hometeam_id" "match_awayteam_id" "match_id"          "home_goal"         "away_goal"        
+[6] "no_win"            "no_lose"           "no_draw"             
+
+(no_win: number of win of home team, no_lose: number of lost of home team)
+
+After the data preprocessing, the dataset is divided into test and train groups. The 80 % of the randomly selected data is taken as the training and the rest is taken as the test data. Finally, These two matrices are saved in two separate csv files. The data preprocessing codes can be seen in appendix. 
+
+### Prediction of total number of goals in a match
+
+The training and testing datasets are read in a separate r script and prediction models are applied. The mean square erros of these models are also calculated for predicting the total number of goals
+
+The first method used is the lasso regression with lambda as the penalization parameter. 
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(data.table)
+require(arules)
+library(tidyverse)
+library(Jmisc)
+library(imputeTS)
+library(lubridate)
+library(glmnet)
+library(penalized)
+library(ISLR)
+library(ie2misc)
+library(caret)
+library(randomForest)
+library(rpart)
+```
+
+```{r, warning=FALSE, message=FALSE}
+
+test=read.table("test.csv",header=TRUE, sep=',')
+train=read.table("train.csv",header=TRUE, sep=',')
+
+test<-test[,-1]
+train<-train[,-1]
+
+x_train<-train[,1:27]
+y_train<- array(numeric(),c(nrow(x_train),1))
+y_train[,1]<-train[,28]
+x_train_scale<-scale(x_train, center = TRUE, scale = TRUE)
+
+x_test<-test[,1:27]
+y_test<- array(numeric(),c(nrow(x_test),1))
+y_test[,1]<-test[,28]
+x_test_scale<-scale(x_test, center = TRUE, scale = TRUE)
+
+alpha_fit <- cv.glmnet(x_train_scale, y_train, alpha = 1, family="gaussian",type.measure = "mse")
+alpha_predicted<-predict(alpha_fit, s=alpha_fit$lambda.1se,newx=x_test_scale)
+mean_lasso<-mean((y_test-alpha_predicted)^2)
+alpha_fit$lambda
+mean_lasso
+```
+
+The mean square error is found as 0.22 with the lasso regression model. The tuning of the lamda parameter for the regression model is shown above.
+
+```{r, warning=FALSE, message=FALSE, results=FALSE}
+
+####GBM
+
+gbm_fit<-train(total_goals~.,data=train,method='gbm',trControl=trainControl(method = 'cv'))
+
+gbm_fit$bestTune
+
+plot(gbm_fit)
+
+summary(gbm_fit)
+estimate_gbm=predict(gbm_fit,test,n.trees = 150)
+View(cbind(estimate_gbm,y_test,alpha_predicted))
+mean_gbm<-mean((y_test-estimate_gbm)^2)
+mean_gbm
+```
+
+In this part, Gradient Boosted Trees are used for training. The number of trees used is 150 and cross-validation is applied. The mean error of the gbm is found as 1.84. 
+
+
+Random forests anaysis is also performed. Later, the predictions are done using 150 trees. According to random forest analysis the ball possessions, cornerkicks, fouls, goal attempts, goal keeper saves, offsides and shots off goal of teams are the most important features that determine the match results.
+
+```{r, warning=FALSE, message=FALSE}
+###Random Forest
+
+rf<-randomForest(total_goals~.,data=train)
+plot(rf)
+importance(rf)
+
+rf$ntree
+
+est_rf=predict(rf,test,n.trees = 150,type='response')
+
+mean_rf<-mean((y_test-est_rf)^2)
+mean_rf
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+###Decision Trees
+
+tree=rpart(total_goals~.,train,
+           method='anova',
+           control=rpart.control(cp=0.01))
+
+est_dt=predict(tree,test)
+
+mean_dt<-mean((y_test-est_dt)^2)
+
+
+```
+
+The performances of these methods are compared with the mean square error. The minimum mean square error is obtained with lasso regression. This shows that for the specific data set, lasso regression prediction is much more better as compared to other tree based methods. 
+
+### Prediction of whether the total number of goals in a match will be higher than 2.5 or not.. 
+
+A similar procedure is applied here as well. The only difference is that, in this case the prediction is a binary variable, it is "1" if the total goals exceed 2.5 and "0" if not. 
+
+
+```{r, echo=TRUE, results='hide',message=FALSE}
+#### PREDICTION OF CLASS
+
+test_class=read.table("test.csv",header=TRUE, sep=',')
+train_class=read.table("train.csv",header=TRUE, sep=',')
+
+test_class<-test_class[,-1]
+train_class<-train_class[,-1]
+
+train_class$over<-ifelse(train_class$total_goals>2.5,yes=1,no=0)
+test_class$over<-ifelse(test_class$total_goals>2.5,yes=1,no=0)
+
+train_class<-train_class[,-28]
+test_class<-test_class[,-28]
+x_train_class<-train_class[,1:27]
+y_train_class<- array(numeric(),c(nrow(x_train_class),1))
+y_train_class[,1]<-train_class[,28]
+x_train_class_scale<-scale(x_train_class, center = TRUE, scale = TRUE)
+
+x_test_class<-test_class[,1:27]
+y_test_class<- array(numeric(),c(nrow(x_test_class),1))
+y_test_class[,1]<-test_class[,28]
+x_test_class_scale<-scale(x_test_class, center = TRUE, scale = TRUE)
+
+alpha_fit_class <- cv.glmnet(x_train_class_scale, y_train_class, alpha = 1, family="gaussian",type.measure = "mse")
+alpha_predicted_class<-predict(alpha_fit_class,s=alpha_fit_class$lambda.1se,newx=x_test_class_scale)
+
+## ACCURACY
+acc_1=data.frame(cbind(y_test_class,alpha_predicted_class))
+COUNT=0
+for (i in 1:nrow(acc_1)){if (acc_1[i,1]!=acc_1[i,2]){
+  COUNT=COUNT +1
+  COUNT
+}}
+accuracy_lasso=COUNT/nrow(acc_1)
+accuracy_lasso
+
+####GBM
+train_class$over<-as.factor(train_class$over)
+test_class$over<-as.factor(test_class$over)
+
+gbm_fit_class<-train(over~.,data=train_class,method='gbm',trControl=trainControl(method = 'cv'))
+estimate_gbm_class=predict(gbm_fit_class,test_class[,-28],n.trees = 100)## 1 class 0, 2 class 1
+
+
+acc_2=data.frame(cbind(y_test_class,estimate_gbm_class))
+COUNT=0
+for (i in 1:nrow(acc_2)){if (acc_2[i,1]!=acc_2[i,2]){
+  COUNT=COUNT +1
+  COUNT
+}}
+accuracy_gbm=COUNT/nrow(acc_2)
+accuracy_gbm
+
+###Random Forest
+
+rf_class<-randomForest(over~.,data=train_class)
+est_rf_class=predict(rf_class,test_class,n.trees = 100,type='response')
+## ACCURACY 
+
+acc_3=data.frame(cbind(y_test_class,est_rf_class))
+COUNT=0
+for (i in 1:nrow(acc_3)){if (acc_3[i,1]!=acc_3[i,2]){
+  COUNT=COUNT +1
+  COUNT
+}}
+accuracy_rf=COUNT/nrow(acc_3)
+accuracy_rf 
+
+###Decision Trees
+
+tree_class=rpart(over~.,train_class,method='class',control=rpart.control(cp=0.01))
+
+est_dt_class=predict(tree_class,test_class,type='class')
+
+## ACCURACY 
+acc_4=data.frame(cbind(y_test_class,est_dt_class))
+COUNT=0
+for (i in 1:nrow(acc_4)){if (acc_4[i,1]!=acc_4[i,2]){
+  COUNT=COUNT +1
+  COUNT
+}}
+accuracy_dt=COUNT/nrow(acc_4)
+
+
+```
+
+
+When the problem is turned to predict the binary variable, the accuracy of the models are compared. It is found out that, in this case the tree methods perform better than the lasso regression. The best accuracy is obtained with the decision tree method. 
+
+```{r, echo=TRUE,message=FALSE}
+
+accuracy_lasso
+accuracy_gbm
+accuracy_rf
+accuracy_dt
+
+```
+
+
+
+#Appendix 1: Data Preprocessing
+
+```{r, echo=TRUE, results='hide',message=FALSE}
+
+library(data.table)
+library(dplyr)
+library(lubridate)
+library(caret)
+library(gbm)
+library(glmnet)
+library(MASS)
+library(rattle)
+library(readr)
+library(tidyr)
+library(tidyselect)
+
+matches = read.table('matches_last.csv', header=TRUE, sep=',')
+matches$match_hometeam_name=ifelse(matches$match_hometeam_name=="Manchester United","Manchester Utd",as.character(matches$match_hometeam_name))
+matches$match_awayteam_name=ifelse(matches$match_awayteam_name=="Manchester United","Manchester Utd",as.character(matches$match_awayteam_name))
+matches$match_hometeam_name=ifelse(matches$match_hometeam_name=="Aston Villa (Eng)","Aston Villa",as.character(matches$match_hometeam_name))
+matches$match_awayteam_name=ifelse(matches$match_awayteam_name=="Aston Villa (Eng)","Aston Villa",as.character(matches$match_awayteam_name))
+matches$match_hometeam_name=ifelse(matches$match_hometeam_name=="Newcastle Utd","Newcastle",as.character(matches$match_hometeam_name))
+matches$match_awayteam_name=ifelse(matches$match_awayteam_name=="Newcastle Utd","Newcastle",as.character(matches$match_awayteam_name))
+matches$match_hometeam_name=ifelse(matches$match_hometeam_name=="West Ham (Eng)","West Ham",as.character(matches$match_hometeam_name))
+matches$match_awayteam_name=ifelse(matches$match_awayteam_name=="West Ham (Eng)","West Ham",as.character(matches$match_awayteam_name))
+
+epl=filter(matches, league_id=="148")
+epl=mutate(epl,epoch=as_datetime(epl$epoch))
+final=epl[,c(1,2,4,5,3,7,8,9,10)]
+
+finish=filter(final,match_status=='Finished')
+finish=finish%>%mutate(total_goals=match_hometeam_score+match_awayteam_score)
+# train=final[1:length(which(epl$match_status=="Finished") ),]
+# test=final[(length(train$match_id)+1):length(epl$match_status),]
+
+
+for(i in 1:length(finish$match_hometeam_score)){
+  if(finish$match_hometeam_score[i]>finish$match_awayteam_score[i]){  
+    finish$win[i]=1
+    finish$lose[i]=0
+    finish$draw[i]=0
+  }
+  if(finish$match_awayteam_score[i]>finish$match_hometeam_score[i]){  
+    finish$lose[i]=1
+    finish$win[i]=0
+    finish$draw[i]=0
+  }
+  if(finish$match_hometeam_score[i]==finish$match_awayteam_score[i]){
+    finish$draw[i]=1
+    finish$win[i]=0
+    finish$lose[i]=0
+  }
+}
+
+#for(i in 1:length(finish$match_hometeam_score)){if(finish$match_hometeam_score[i]>finish$match_awayteam_score[i]){  finish$result[i]=as.character('win')}
+#if(finish$match_awayteam_score[i]>finish$match_hometeam_score[i]){  finish$result[i]=as.character('away')}
+#if(finish$match_hometeam_score[i]==finish$match_awayteam_score[i]){ finish$result[i]=as.character('draw')}}
+
+#USING TOTAL NUMBER OF GOALS
+TEAMS=matrix(unique(final$match_hometeam_id))
+Team_1=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[1]))))
+Team1_a=Team_1%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team1=(rep(as.numeric(TEAMS[1]),length(Team1_a$home_goal)))
+cc1=data.frame(team=Team1,Team1_a)
+
+Team_2=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[2]))))
+Team2_a=Team_2%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team2=(rep(as.numeric(TEAMS[2]),length(Team2_a$home_goal)))
+cc2=data.frame(team=Team2,Team2_a)
+
+Team_3=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[3]))))
+Team3_a=Team_3%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team3=(rep(as.numeric(TEAMS[3]),length(Team3_a$home_goal)))
+cc3=data.frame(team=Team3,Team3_a)
+
+Team_4=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[4]))))
+Team4_a=Team_4%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team4=(rep(as.numeric(TEAMS[4]),length(Team4_a$home_goal)))
+cc4=data.frame(team=Team4,Team4_a)
+
+Team_5=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[5]))))
+Team5_a=Team_5%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team5=(rep(as.numeric(TEAMS[5]),length(Team5_a$home_goal)))
+cc5=data.frame(team=Team5,Team5_a)
+
+Team_6=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[6]))))
+Team6_a=Team_6%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team6=(rep(as.numeric(TEAMS[6]),length(Team6_a$home_goal)))
+cc6=data.frame(team=Team6,Team6_a)
+
+Team_7=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[7]))))
+Team7_a=Team_7%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team7=(rep(as.numeric(TEAMS[7]),length(Team7_a$home_goal)))
+cc7=data.frame(team=Team7,Team7_a)
+
+Team_8=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[8]))))
+Team8_a=Team_8%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team8=(rep(as.numeric(TEAMS[8]),length(Team8_a$home_goal)))
+cc8=data.frame(team=Team8,Team8_a)
+
+Team_9=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[9]))))
+Team9_a=Team_9%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team9=(rep(as.numeric(TEAMS[9]),length(Team9_a$home_goal)))
+cc9=data.frame(team=Team9,Team9_a)
+
+Team_10=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[10]))))
+Team10_a=Team_10%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team10=(rep(as.numeric(TEAMS[10]),length(Team10_a$home_goal)))
+cc10=data.frame(team=Team10,Team10_a)
+
+Team_11=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[11]))))
+Team11_a=Team_11%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team11=(rep(as.numeric(TEAMS[11]),length(Team11_a$home_goal)))
+cc11=data.frame(team=Team11,Team11_a)
+
+Team_12=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[12]))))
+Team12_a=Team_12%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team12=(rep(as.numeric(TEAMS[12]),length(Team12_a$home_goal)))
+cc12=data.frame(team=Team12,Team12_a)
+
+Team_13=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[13]))))
+Team13_a=Team_13%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team13=(rep(as.numeric(TEAMS[13]),length(Team13_a$home_goal)))
+cc13=data.frame(team=Team13,Team13_a)
+
+Team_14=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[14]))))
+Team14_a=Team_14%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team14=(rep(as.numeric(TEAMS[14]),length(Team14_a$home_goal)))
+cc14=data.frame(team=Team14,Team14_a)
+
+Team_15=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[15]))))
+Team15_a=Team_15%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team15=(rep(as.numeric(TEAMS[15]),length(Team15_a$home_goal)))
+cc15=data.frame(team=Team15,Team15_a)
+
+Team_16=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[16]))))
+Team16_a=Team_16%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team16=(rep(as.numeric(TEAMS[16]),length(Team16_a$home_goal)))
+cc16=data.frame(team=Team16,Team16_a)
+
+Team_17=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[17]))))
+Team17_a=Team_17%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team17=(rep(as.numeric(TEAMS[17]),length(Team17_a$home_goal)))
+cc17=data.frame(team=Team17,Team17_a)
+
+Team_18=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[18]))))
+Team18_a=Team_18%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team18=(rep(as.numeric(TEAMS[18]),length(Team18_a$home_goal)))
+cc18=data.frame(team=Team18,Team18_a)
+
+Team_19=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[19]))))
+Team19_a=Team_19%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team19=(rep(as.numeric(TEAMS[19]),length(Team19_a$home_goal)))
+cc19=data.frame(team=Team19,Team19_a)
+
+Team_20=data.frame((filter(finish,match_hometeam_id==as.numeric(TEAMS[20]))))
+Team20_a=Team_20%>% group_by(opponent=match_awayteam_id)%>%summarise(home_goal=sum(match_hometeam_score),away_goal=sum(match_awayteam_score),no_win=sum(win),no_lose=sum(lose),no_draw=sum(draw))
+Team20=(rep(as.numeric(TEAMS[20]),length(Team20_a$home_goal)))
+cc20=data.frame(team=Team20,Team20_a)
+
+allream=rbind(cc1,cc2,cc3,cc4,cc5,cc6,cc7,cc8,cc9,cc10,cc11,cc12,cc13,cc14,cc15,cc16,cc17,cc18,cc19,cc20)
+abc=finish[,-c(3,4,6,7,8,9,11,12,13)]
+col=ncol(abc)+1
+for (i in 1:nrow(abc)){  
+  for (j in 1: nrow(allream)){  
+    if (abc$match_hometeam_id[i]==allream$team[j] && abc$match_awayteam_id[i]==allream$opponent[j]){
+      abc[i,col]=allream[j,3]
+      abc[i,col+1]=allream[j,4]
+      abc[i,col+2]=allream[j,5]
+      abc[i,col+3]=allream[j,6]
+      abc[i,col+4]=allream[j,7]
+    }
+  } }
+colnames_abc=colnames(abc)
+colnames_allream=colnames(allream)
+colnames(abc)<-c(colnames_abc[1],colnames_abc[2],colnames_abc[3],colnames_abc[4],colnames_allream[3],colnames_allream[4],colnames_allream[5],colnames_allream[6],colnames_allream[7])
+fin<-abc[,c(2,1,3,5,6,7,8,9,4)]
+
+####stats
+stats=fread("stats.csv",stringsAsFactors = FALSE)
+epl_ids <- epl$match_id
+epl_stats=stats[stats$match_id %in% epl_ids, ]
+
+
+
+epl_only<-cbind(epl_stats[,1:23], epl_stats[,c(28,29,30,31)])
+epl_only<-epl_only[,c(-10,-19)]
+
+epl_only$home_BallPossession<-as.numeric(gsub("%", "", as.character(factor(epl_only$home_BallPossession))))
+epl_only$away_BallPossession<-as.numeric(gsub("%", "", as.character(factor(epl_only$away_BallPossession))))
+epl_only <- lapply(epl_only, function(x) ifelse(is.na(x), mean(x, na.rm = TRUE), x))
+#####
+
+epl_merged<-merge.data.frame(epl_only, fin, by.x ="match_id" , by.y = "match_id")
+epl_merged<-epl_merged[,-c(1,9,17,26,27)]
+write.csv(epl_merged, file = "usedstats.csv")
+
+epl_only<-data.frame(epl_only)
+smp_siz = floor(0.8*nrow(epl_only)) 
+
+set.seed(123)   
+train_ind = sample(seq_len(nrow(epl_merged)),size = smp_siz) 
+train =epl_merged[train_ind,]
+test=epl_merged[-train_ind,] 
+
+x_train<-train[,1:27]
+y_train<- array(numeric(),c(nrow(x_train),1))
+y_train[,1]<-train[,28]
+write.csv(train, file = "train.csv")
+
+
+x_test<-test[,1:27]
+y_test<- array(numeric(),c(nrow(x_test),1))
+y_test[,1]<-test[,28]
+write.csv(test, file = "test.csv")
+
+
+```
+
